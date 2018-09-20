@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab4_ex4.vf
+// /___/   /\     Timestamp : 09/20/2018 09:14:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab4/Lab4_Ex4/Lab4_ex4.vf -w C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab4/Lab4_Ex4/Lab4_ex4.sch
+//Design Name: Lab4_ex4
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Lab4_ex4(A, 
+                B, 
+                C, 
+                Co, 
+                Q);
+
+    input A;
+    input B;
+    input C;
+   output Co;
+   output Q;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_19;
+   wire XLXN_30;
+   wire XLXN_31;
+   wire XLXN_33;
+   wire XLXN_38;
+   
+   NAND2  XLXI_1 (.I0(B), 
+                 .I1(A), 
+                 .O(XLXN_1));
+   NAND2  XLXI_2 (.I0(XLXN_1), 
+                 .I1(A), 
+                 .O(XLXN_2));
+   NAND2  XLXI_3 (.I0(XLXN_19), 
+                 .I1(XLXN_2), 
+                 .O(XLXN_38));
+   NAND2  XLXI_4 (.I0(B), 
+                 .I1(XLXN_1), 
+                 .O(XLXN_19));
+   NAND2  XLXI_5 (.I0(C), 
+                 .I1(XLXN_38), 
+                 .O(XLXN_30));
+   NAND2  XLXI_6 (.I0(XLXN_30), 
+                 .I1(XLXN_38), 
+                 .O(XLXN_31));
+   NAND2  XLXI_7 (.I0(C), 
+                 .I1(XLXN_30), 
+                 .O(XLXN_33));
+   NAND2  XLXI_8 (.I0(XLXN_33), 
+                 .I1(XLXN_31), 
+                 .O(Q));
+   NAND2  XLXI_13 (.I0(XLXN_1), 
+                  .I1(XLXN_30), 
+                  .O(Co));
+endmodule
