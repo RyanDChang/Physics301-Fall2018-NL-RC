@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab4/Lab4_Ex5/adder2b.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab4/Lab4_Ex5/adder2b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder2b.ucf -p xc3s100e-cp132-4 adder2b.ngc adder2b.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o adder2b_map.ncd adder2b.ngd adder2b.pcf 
+par -w -intstyle ise -ol high -t 1 adder2b_map.ncd adder2b.ncd adder2b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml adder2b.twx adder2b.ncd -o adder2b.twr adder2b.pcf -ucf adder2b.ucf 
+bitgen -intstyle ise -f adder2b.ut adder2b.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder2b.ucf -p xc3s100e-cp132-4 adder2b.ngc adder2b.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o adder2b_map.ncd adder2b.ngd adder2b.pcf 
+par -w -intstyle ise -ol high -t 1 adder2b_map.ncd adder2b.ncd adder2b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml adder2b.twx adder2b.ncd -o adder2b.twr adder2b.pcf -ucf adder2b.ucf 
+bitgen -intstyle ise -f adder2b.ut adder2b.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder2b.ucf -p xc3s100e-cp132-4 adder2b.ngc adder2b.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o adder2b_map.ncd adder2b.ngd adder2b.pcf 
+par -w -intstyle ise -ol high -t 1 adder2b_map.ncd adder2b.ncd adder2b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml adder2b.twx adder2b.ncd -o adder2b.twr adder2b.pcf -ucf adder2b.ucf 
+bitgen -intstyle ise -f adder2b.ut adder2b.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder2b.ucf -p xc3s100e-cp132-4 adder2b.ngc adder2b.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o adder2b_map.ncd adder2b.ngd adder2b.pcf 
+par -w -intstyle ise -ol high -t 1 adder2b_map.ncd adder2b.ncd adder2b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml adder2b.twx adder2b.ncd -o adder2b.twr adder2b.pcf -ucf adder2b.ucf 
+bitgen -intstyle ise -f adder2b.ut adder2b.ncd 

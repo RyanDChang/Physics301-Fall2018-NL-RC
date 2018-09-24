@@ -1,0 +1,272 @@
+(edif Lab4_ex4
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2018 9 23 17 59 25)
+      (program "Xilinx ngc2edif" (version "P.20131013"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -mdp2sp -w -secure Lab4_ex4.ngc Lab4_ex4.edif ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell NAND2
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell IBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+  )
+
+  (library Lab4_ex4_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell Lab4_ex4
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port Co
+              (direction OUTPUT)
+            )
+            (port A
+              (direction INPUT)
+            )
+            (port B
+              (direction INPUT)
+            )
+            (port C
+              (direction INPUT)
+            )
+            (port Q
+              (direction OUTPUT)
+            )
+            (designator "xc3s100e-4-cp132")
+            (property TYPE (string "Lab4_ex4") (owner "Xilinx"))
+            (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_TAG (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_ALIAS (string "Lab4_ex4_Lab4_ex4") (owner "Xilinx"))
+          )
+          (contents
+            (instance XLXI_1
+              (viewRef view_1 (cellRef NAND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance XLXI_2
+              (viewRef view_1 (cellRef NAND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance XLXI_3
+              (viewRef view_1 (cellRef NAND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance XLXI_4
+              (viewRef view_1 (cellRef NAND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance XLXI_5
+              (viewRef view_1 (cellRef NAND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance XLXI_6
+              (viewRef view_1 (cellRef NAND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance XLXI_7
+              (viewRef view_1 (cellRef NAND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance XLXI_8
+              (viewRef view_1 (cellRef NAND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance XLXI_13
+              (viewRef view_1 (cellRef NAND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename A_IBUF_renamed_0 "A_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename B_IBUF_renamed_1 "B_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename C_IBUF_renamed_2 "C_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename Co_OBUF_renamed_3 "Co_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename Q_OBUF_renamed_4 "Q_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net A
+              (joined
+                (portRef A)
+                (portRef I (instanceRef A_IBUF_renamed_0))
+              )
+            )
+            (net A_IBUF
+              (joined
+                (portRef I1 (instanceRef XLXI_1))
+                (portRef I1 (instanceRef XLXI_2))
+                (portRef O (instanceRef A_IBUF_renamed_0))
+              )
+            )
+            (net B
+              (joined
+                (portRef B)
+                (portRef I (instanceRef B_IBUF_renamed_1))
+              )
+            )
+            (net B_IBUF
+              (joined
+                (portRef I0 (instanceRef XLXI_1))
+                (portRef I0 (instanceRef XLXI_4))
+                (portRef O (instanceRef B_IBUF_renamed_1))
+              )
+            )
+            (net C
+              (joined
+                (portRef C)
+                (portRef I (instanceRef C_IBUF_renamed_2))
+              )
+            )
+            (net C_IBUF
+              (joined
+                (portRef I0 (instanceRef XLXI_5))
+                (portRef I0 (instanceRef XLXI_7))
+                (portRef O (instanceRef C_IBUF_renamed_2))
+              )
+            )
+            (net Co
+              (joined
+                (portRef Co)
+                (portRef O (instanceRef Co_OBUF_renamed_3))
+              )
+            )
+            (net Co_OBUF
+              (joined
+                (portRef O (instanceRef XLXI_13))
+                (portRef I (instanceRef Co_OBUF_renamed_3))
+              )
+            )
+            (net Q
+              (joined
+                (portRef Q)
+                (portRef O (instanceRef Q_OBUF_renamed_4))
+              )
+            )
+            (net Q_OBUF
+              (joined
+                (portRef O (instanceRef XLXI_8))
+                (portRef I (instanceRef Q_OBUF_renamed_4))
+              )
+            )
+            (net XLXN_1
+              (joined
+                (portRef O (instanceRef XLXI_1))
+                (portRef I0 (instanceRef XLXI_2))
+                (portRef I1 (instanceRef XLXI_4))
+                (portRef I0 (instanceRef XLXI_13))
+              )
+            )
+            (net XLXN_19
+              (joined
+                (portRef I0 (instanceRef XLXI_3))
+                (portRef O (instanceRef XLXI_4))
+              )
+            )
+            (net XLXN_2
+              (joined
+                (portRef O (instanceRef XLXI_2))
+                (portRef I1 (instanceRef XLXI_3))
+              )
+            )
+            (net XLXN_30
+              (joined
+                (portRef O (instanceRef XLXI_5))
+                (portRef I0 (instanceRef XLXI_6))
+                (portRef I1 (instanceRef XLXI_7))
+                (portRef I1 (instanceRef XLXI_13))
+              )
+            )
+            (net XLXN_31
+              (joined
+                (portRef O (instanceRef XLXI_6))
+                (portRef I1 (instanceRef XLXI_8))
+              )
+            )
+            (net XLXN_33
+              (joined
+                (portRef O (instanceRef XLXI_7))
+                (portRef I0 (instanceRef XLXI_8))
+              )
+            )
+            (net XLXN_38
+              (joined
+                (portRef O (instanceRef XLXI_3))
+                (portRef I1 (instanceRef XLXI_5))
+                (portRef I1 (instanceRef XLXI_6))
+              )
+            )
+          )
+      )
+    )
+  )
+
+  (design Lab4_ex4
+    (cellRef Lab4_ex4
+      (libraryRef Lab4_ex4_lib)
+    )
+    (property PART (string "xc3s100e-4-cp132") (owner "Xilinx"))
+  )
+)
+
