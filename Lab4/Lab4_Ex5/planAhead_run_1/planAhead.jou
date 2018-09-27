@@ -1,57 +1,21 @@
 #-----------------------------------------------------------
 # PlanAhead v14.7 (64-bit)
 # Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
-# Start of session at: Sun Sep 23 18:01:44 2018
-# Process ID: 36004
-# Log file: C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab4/Lab4_Ex5/planAhead_run_1/planAhead.log
-# Journal file: C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab4/Lab4_Ex5/planAhead_run_1/planAhead.jou
+# Start of session at: Tue Sep 25 10:49:33 2018
+# Process ID: 6008
+# Log file: C:/Users/Robert/Desktop/phys301/ISE projects/Ryan/Physics301-Fall2018-NL-RC-master/Physics301-Fall2018-NL-RC-master/Lab4/Lab4_Ex5/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Robert/Desktop/phys301/ISE projects/Ryan/Physics301-Fall2018-NL-RC-master/Physics301-Fall2018-NL-RC-master/Lab4/Lab4_Ex5/planAhead_run_1/planAhead.jou
 #-----------------------------------------------------------
 start_gui
-source C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab4/Lab4_Ex5/pa.fromNetlist.tcl
-startgroup
-set_property package_pin B4 [get_ports A0]
-endgroup
-startgroup
-set_property package_pin K3 [get_ports A1]
-endgroup
-startgroup
-set_property package_pin L3 [get_ports B0]
-endgroup
-startgroup
-set_property package_pin P11 [get_ports B1]
-endgroup
-startgroup
-set_property package_pin P7 [get_ports S0out]
-endgroup
-startgroup
-set_property package_pin M11 [get_ports Cout]
-endgroup
-startgroup
-set_property package_pin M5 [get_ports S1out]
-endgroup
-save_constraints
+source {C:/Users/Robert/Desktop/phys301/ISE projects/Ryan/Physics301-Fall2018-NL-RC-master/Physics301-Fall2018-NL-RC-master/Lab4/Lab4_Ex5/pa.fromNetlist.tcl}
+set_property package_pin "" [get_ports [list  A1]]
+set_property package_pin "" [get_ports [list  B0]]
+set_property package_pin "" [get_ports [list  B1]]
+set_property package_pin "" [get_ports [list  Cout]]
+set_property package_pin "" [get_ports [list  S0out]]
 set_property package_pin "" [get_ports [list  S1out]]
 startgroup
-set_property package_pin M5 [get_ports Cout]
-endgroup
-startgroup
-set_property package_pin M11 [get_ports S1out]
-endgroup
-save_constraints
-startgroup
-set_property package_pin M5 [get_ports Cout]
-endgroup
-set_property package_pin "" [get_ports [list  B1]]
-set_property package_pin "" [get_ports [list  B0]]
-set_property package_pin "" [get_ports [list  A1]]
-startgroup
-set_property package_pin P11 [get_ports A0]
-endgroup
-startgroup
 set_property package_pin L3 [get_ports A1]
-endgroup
-startgroup
-set_property package_pin B4 [get_ports B0]
 endgroup
 startgroup
 set_property package_pin K3 [get_ports B0]
@@ -59,16 +23,15 @@ endgroup
 startgroup
 set_property package_pin B4 [get_ports B1]
 endgroup
-save_constraints
-set_property package_pin "" [get_ports [list  A1]]
-set_property package_pin "" [get_ports [list  B0]]
 startgroup
-set_property package_pin K3 [get_ports A1]
+set_property package_pin P7 [get_ports Cout]
 endgroup
 startgroup
-set_property package_pin B4 [get_ports B1]
+set_property package_pin M5 [get_ports S0out]
 endgroup
 startgroup
-set_property package_pin L3 [get_ports B0]
+set_property package_pin M11 [get_ports S1out]
 endgroup
+set_property is_loc_fixed false [get_ports [list  S1out]]
+set_property is_loc_fixed true [get_ports [list  S1out]]
 save_constraints

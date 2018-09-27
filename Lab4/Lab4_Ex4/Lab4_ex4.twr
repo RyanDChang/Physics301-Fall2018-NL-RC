@@ -44,23 +44,23 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-A              |Co             |    6.528|
-A              |Q              |    7.165|
-B              |Co             |    6.378|
-B              |Q              |    7.022|
-C              |Co             |    6.787|
-C              |Q              |    7.366|
+A              |Co             |    7.126|
+A              |Q              |    6.419|
+B              |Co             |    7.276|
+B              |Q              |    6.562|
+C              |Co             |    7.535|
+C              |Q              |    6.763|
 ---------------+---------------+---------+
 
 
-Analysis completed Sun Sep 23 17:57:32 2018 
+Analysis completed Tue Sep 25 11:30:00 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 152 MB
+Peak Memory Usage: 146 MB
 
 
 

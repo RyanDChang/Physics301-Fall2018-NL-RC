@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Sep 25 13:34:52 2018
+# Process ID: 1008
+# Log file: C:/Users/Robert/Desktop/phys301/ISE projects/Ryan/Physics301-Fall2018-NL-RC-master/Physics301-Fall2018-NL-RC-master/Lab5/Lab5_Ex1/Lab5_Ex1/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Robert/Desktop/phys301/ISE projects/Ryan/Physics301-Fall2018-NL-RC-master/Physics301-Fall2018-NL-RC-master/Lab5/Lab5_Ex1/Lab5_Ex1/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Robert/Desktop/phys301/ISE projects/Ryan/Physics301-Fall2018-NL-RC-master/Physics301-Fall2018-NL-RC-master/Lab5/Lab5_Ex1/Lab5_Ex1/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin P11 [get_ports {Ain[3]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {Ain[2]}]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports {Ain[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Ain[0]}]]
+startgroup
+set_property package_pin B4 [get_ports {Ain[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Ain[1]}]]
+startgroup
+set_property package_pin K3 [get_ports {Ain[2]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {Ain[2]}]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports {Ain[2]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {Ain[1]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {Ain[0]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {Bin[3]}]
+endgroup
+startgroup
+set_property package_pin E2 [get_ports {Bin[2]}]
+endgroup
+startgroup
+set_property package_pin F3 [get_ports {Bin[1]}]
+endgroup
+startgroup
+set_property package_pin G3 [get_ports {Bin[0]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {Qout[3]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {Qout[2]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {Qout[1]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {Qout[0]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports Cout]
+endgroup
+save_constraints

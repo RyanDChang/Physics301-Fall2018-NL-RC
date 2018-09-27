@@ -1,23 +1,10 @@
 #-----------------------------------------------------------
 # PlanAhead v14.7 (64-bit)
 # Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
-# Start of session at: Thu Sep 20 09:04:07 2018
-# Process ID: 13624
-# Log file: C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab4/Lab4_Ex3/planAhead_run_1/planAhead.log
-# Journal file: C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab4/Lab4_Ex3/planAhead_run_1/planAhead.jou
+# Start of session at: Tue Sep 25 11:16:02 2018
+# Process ID: 1232
+# Log file: C:/Users/Robert/Desktop/phys301/ISE projects/Ryan/Physics301-Fall2018-NL-RC-master/Physics301-Fall2018-NL-RC-master/Lab4/Lab4_Ex3/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Robert/Desktop/phys301/ISE projects/Ryan/Physics301-Fall2018-NL-RC-master/Physics301-Fall2018-NL-RC-master/Lab4/Lab4_Ex3/planAhead_run_1/planAhead.jou
 #-----------------------------------------------------------
 start_gui
-source C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab4/Lab4_Ex3/pa.fromNetlist.tcl
-startgroup
-set_property package_pin P11 [get_ports A]
-endgroup
-startgroup
-set_property package_pin L3 [get_ports B]
-endgroup
-startgroup
-set_property package_pin M11 [get_ports Co]
-endgroup
-startgroup
-set_property package_pin M5 [get_ports Q]
-endgroup
-save_constraints
+source {C:/Users/Robert/Desktop/phys301/ISE projects/Ryan/Physics301-Fall2018-NL-RC-master/Physics301-Fall2018-NL-RC-master/Lab4/Lab4_Ex3/pa.fromNetlist.tcl}

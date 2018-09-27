@@ -44,27 +44,27 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-A0             |Cout           |   10.333|
-A0             |S0out          |    6.592|
-A0             |S1out          |    8.721|
-A1             |Cout           |    7.857|
-A1             |S1out          |    8.225|
-B0             |Cout           |   10.429|
-B0             |S0out          |    7.637|
-B0             |S1out          |    8.864|
-B1             |Cout           |   10.218|
-B1             |S1out          |    8.566|
+A0             |Cout           |   10.012|
+A0             |S0out          |    7.565|
+A0             |S1out          |    8.196|
+A1             |Cout           |    8.030|
+A1             |S1out          |    7.902|
+B0             |Cout           |    9.243|
+B0             |S0out          |    6.994|
+B0             |S1out          |    8.284|
+B1             |Cout           |    9.778|
+B1             |S1out          |    8.515|
 ---------------+---------------+---------+
 
 
-Analysis completed Sun Sep 23 18:11:21 2018 
+Analysis completed Tue Sep 25 10:51:38 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 152 MB
+Peak Memory Usage: 146 MB
 
 
 

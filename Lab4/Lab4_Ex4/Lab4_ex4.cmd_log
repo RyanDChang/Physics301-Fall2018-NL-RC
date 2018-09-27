@@ -5,3 +5,8 @@ map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab4_ex
 par -w -intstyle ise -ol high -t 1 Lab4_ex4_map.ncd Lab4_ex4.ncd Lab4_ex4.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab4_ex4.twx Lab4_ex4.ncd -o Lab4_ex4.twr Lab4_ex4.pcf -ucf Lab4_ex4.ucf 
 bitgen -intstyle ise -f Lab4_ex4.ut Lab4_ex4.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab4_ex4.ucf -p xc3s100e-cp132-4 "Lab4_ex4.ngc" Lab4_ex4.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab4_ex4_map.ncd Lab4_ex4.ngd Lab4_ex4.pcf 
+par -w -intstyle ise -ol high -t 1 Lab4_ex4_map.ncd Lab4_ex4.ncd Lab4_ex4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab4_ex4.twx Lab4_ex4.ncd -o Lab4_ex4.twr Lab4_ex4.pcf -ucf Lab4_ex4.ucf 
+bitgen -intstyle ise -f Lab4_ex4.ut Lab4_ex4.ncd 

@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">adder2b.vf</arg>&quot; line <arg fmt="%d" index="2">75</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">Cin</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_1</arg>&apos; is tied to GND.
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">adder2b.vf</arg>&quot; line <arg fmt="%d" index="2">75</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">Cin</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_1</arg>&apos; is tied to GND.
 </msg>
 
 </messages>
