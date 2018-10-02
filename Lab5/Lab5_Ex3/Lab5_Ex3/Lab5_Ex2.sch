@@ -9,6 +9,7 @@
         <signal name="Bin(3:0)" />
         <signal name="Ain(3:0)" />
         <signal name="Switch" />
+        <signal name="XLXN_12" />
         <signal name="Bin(0)" />
         <signal name="Bin_Switch0" />
         <signal name="Bin_Switch1" />
@@ -30,6 +31,14 @@
         <signal name="Cout" />
         <signal name="Ain(0)" />
         <signal name="Cout1" />
+        <signal name="XLXN_45" />
+        <signal name="XLXN_46" />
+        <signal name="XLXN_47" />
+        <signal name="XLXN_49" />
+        <signal name="Overflow" />
+        <signal name="Negative" />
+        <signal name="AboveMeIsForEx3" />
+        <signal name="XLXN_53" />
         <port polarity="Input" name="Bin(3:0)" />
         <port polarity="Input" name="Ain(3:0)" />
         <port polarity="Input" name="Switch" />
@@ -55,6 +64,25 @@
             <line x2="64" y1="-48" y2="-48" x1="128" />
             <arc ex="128" ey="-144" sx="208" sy="-96" r="88" cx="132" cy="-56" />
             <arc ex="208" ey="-96" sx="128" sy="-48" r="88" cx="132" cy="-136" />
+        </blockdef>
+        <blockdef name="and2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="144" ey="-144" sx="144" sy="-48" r="48" cx="144" cy="-96" />
+            <line x2="64" y1="-48" y2="-48" x1="144" />
+            <line x2="144" y1="-144" y2="-144" x1="64" />
+            <line x2="64" y1="-48" y2="-144" x1="64" />
+        </blockdef>
+        <blockdef name="inv">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="160" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="-64" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="0" x1="128" />
+            <line x2="64" y1="0" y2="-64" x1="64" />
+            <circle r="16" cx="144" cy="-32" />
         </blockdef>
         <block symbolname="FA" name="Cout_1_to_2">
             <blockpin signalname="Cout0" name="Cin" />
@@ -103,6 +131,24 @@
             <blockpin signalname="Switch" name="I0" />
             <blockpin signalname="Bin(3)" name="I1" />
             <blockpin signalname="Bin_Switch3" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_24">
+            <blockpin signalname="Cout" name="I0" />
+            <blockpin signalname="XLXN_46" name="I1" />
+            <blockpin signalname="Overflow" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_25">
+            <blockpin signalname="XLXN_49" name="I0" />
+            <blockpin signalname="Switch" name="I1" />
+            <blockpin signalname="Negative" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_26">
+            <blockpin signalname="Switch" name="I" />
+            <blockpin signalname="XLXN_46" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_27">
+            <blockpin signalname="Cout" name="I" />
+            <blockpin signalname="XLXN_49" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -281,6 +327,14 @@
             <wire x2="1552" y1="160" y2="160" x1="1504" />
             <wire x2="1584" y1="160" y2="160" x1="1552" />
         </branch>
+        <branch name="Cout">
+            <wire x2="1520" y1="1488" y2="1488" x1="1504" />
+            <wire x2="1536" y1="1488" y2="1488" x1="1520" />
+            <wire x2="1520" y1="1488" y2="1680" x1="1520" />
+            <wire x2="1520" y1="1680" y2="1824" x1="1520" />
+            <wire x2="1536" y1="1824" y2="1824" x1="1520" />
+            <wire x2="1808" y1="1680" y2="1680" x1="1520" />
+        </branch>
         <branch name="Switch">
             <wire x2="480" y1="80" y2="80" x1="400" />
         </branch>
@@ -288,9 +342,44 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="160" type="branch" />
             <wire x2="1120" y1="160" y2="160" x1="1040" />
         </branch>
+        <instance x="1808" y="1744" name="XLXI_24" orien="R0" />
+        <instance x="1808" y="1888" name="XLXI_25" orien="R0" />
+        <instance x="1536" y="1648" name="XLXI_26" orien="R0" />
+        <instance x="1536" y="1856" name="XLXI_27" orien="R0" />
         <iomarker fontsize="28" x="1536" y="1488" name="Cout" orien="R0" />
-        <branch name="Cout">
-            <wire x2="1536" y1="1488" y2="1488" x1="1504" />
+        <branch name="XLXN_46">
+            <wire x2="1808" y1="1616" y2="1616" x1="1760" />
+        </branch>
+        <branch name="Switch">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="1616" type="branch" />
+            <wire x2="1456" y1="1616" y2="1616" x1="1408" />
+            <wire x2="1536" y1="1616" y2="1616" x1="1456" />
+            <wire x2="1456" y1="1616" y2="1760" x1="1456" />
+            <wire x2="1808" y1="1760" y2="1760" x1="1456" />
+        </branch>
+        <branch name="XLXN_49">
+            <wire x2="1808" y1="1824" y2="1824" x1="1760" />
+        </branch>
+        <branch name="Overflow">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="1648" type="branch" />
+            <wire x2="2160" y1="1648" y2="1648" x1="2064" />
+        </branch>
+        <branch name="Negative">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="1792" type="branch" />
+            <wire x2="2160" y1="1792" y2="1792" x1="2064" />
+        </branch>
+        <branch name="AboveMeIsForEx3">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1552" y="2128" type="branch" />
+            <wire x2="1440" y1="2048" y2="2128" x1="1440" />
+            <wire x2="1552" y1="2128" y2="2128" x1="1440" />
+            <wire x2="1664" y1="2048" y2="2048" x1="1440" />
+            <wire x2="1664" y1="1936" y2="1936" x1="1616" />
+            <wire x2="1664" y1="1936" y2="2048" x1="1664" />
+            <wire x2="1616" y1="1936" y2="1984" x1="1616" />
+            <wire x2="1728" y1="1984" y2="1984" x1="1616" />
+            <wire x2="1648" y1="1888" y2="1952" x1="1648" />
+            <wire x2="1728" y1="1952" y2="1952" x1="1648" />
+            <wire x2="1728" y1="1952" y2="1984" x1="1728" />
         </branch>
     </sheet>
 </drawing>

@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml Lab5_Ex3.twx Lab5_Ex3.ncd -o Lab5_Ex3.twr Lab5_Ex3.pcf
+-ucf Lab5_Ex3.ucf
+
+Design file:              Lab5_Ex3.ncd
+Physical constraint file: Lab5_Ex3.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Ain<0>         |Negative       |   10.766|
+Ain<0>         |Overflow       |   11.229|
+Ain<0>         |Qout<0>        |    7.865|
+Ain<0>         |Qout<1>        |   14.194|
+Ain<0>         |Qout<2>        |   14.564|
+Ain<0>         |Qout<3>        |   14.116|
+Ain<1>         |Negative       |    9.731|
+Ain<1>         |Overflow       |   10.194|
+Ain<1>         |Qout<1>        |   13.159|
+Ain<1>         |Qout<2>        |   13.529|
+Ain<1>         |Qout<3>        |   13.081|
+Ain<2>         |Negative       |    8.725|
+Ain<2>         |Overflow       |    9.188|
+Ain<2>         |Qout<1>        |   12.153|
+Ain<2>         |Qout<2>        |   12.523|
+Ain<2>         |Qout<3>        |   12.075|
+Ain<3>         |Negative       |    9.129|
+Ain<3>         |Overflow       |    8.004|
+Ain<3>         |Qout<1>        |   12.557|
+Ain<3>         |Qout<2>        |   12.927|
+Ain<3>         |Qout<3>        |   12.479|
+Bin<0>         |Negative       |   10.949|
+Bin<0>         |Overflow       |   11.412|
+Bin<0>         |Qout<0>        |    6.978|
+Bin<0>         |Qout<1>        |   14.377|
+Bin<0>         |Qout<2>        |   14.747|
+Bin<0>         |Qout<3>        |   14.299|
+Bin<1>         |Negative       |    9.907|
+Bin<1>         |Overflow       |   10.370|
+Bin<1>         |Qout<1>        |   13.335|
+Bin<1>         |Qout<2>        |   13.705|
+Bin<1>         |Qout<3>        |   13.257|
+Bin<2>         |Negative       |    8.835|
+Bin<2>         |Overflow       |    9.298|
+Bin<2>         |Qout<1>        |   12.263|
+Bin<2>         |Qout<2>        |   12.633|
+Bin<2>         |Qout<3>        |   12.185|
+Bin<3>         |Negative       |    8.636|
+Bin<3>         |Overflow       |    8.200|
+Bin<3>         |Qout<1>        |   12.064|
+Bin<3>         |Qout<2>        |   12.434|
+Bin<3>         |Qout<3>        |   11.986|
+Switch         |Negative       |   10.903|
+Switch         |Overflow       |   11.366|
+Switch         |Qout<1>        |   14.331|
+Switch         |Qout<2>        |   14.701|
+Switch         |Qout<3>        |   14.253|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Sep 30 14:00:10 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 169 MB
+
+
+

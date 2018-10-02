@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab5/Lab5_Ex3/Lab5_Ex3/Lab5_Ex3.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab5/Lab5_Ex3/Lab5_Ex3/Lab5_Ex3.syr" 
+xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab5/Lab5_Ex3/Lab5_Ex3/Lab5_Ex3.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab5/Lab5_Ex3/Lab5_Ex3/Lab5_Ex3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab5_Ex3.ucf -p xc3s100e-cp132-4 Lab5_Ex3.ngc Lab5_Ex3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab5_Ex3_map.ncd Lab5_Ex3.ngd Lab5_Ex3.pcf 
+par -w -intstyle ise -ol high -t 1 Lab5_Ex3_map.ncd Lab5_Ex3.ncd Lab5_Ex3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab5_Ex3.twx Lab5_Ex3.ncd -o Lab5_Ex3.twr Lab5_Ex3.pcf -ucf Lab5_Ex3.ucf 
+bitgen -intstyle ise -f Lab5_Ex3.ut Lab5_Ex3.ncd 

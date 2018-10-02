@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : FA.vf
+// /___/   /\     Timestamp : 09/30/2018 13:54:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab5/Lab5_Ex3/Lab5_Ex3/FA.vf -w C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab5/Lab5_Ex3/Lab5_Ex3/FA.sch
+//Design Name: FA
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FA(Ain, 
+          Bin, 
+          Cin, 
+          Cout, 
+          Qout);
+
+    input Ain;
+    input Bin;
+    input Cin;
+   output Cout;
+   output Qout;
+   
+   wire XLXN_12;
+   wire XLXN_18;
+   wire XLXN_22;
+   
+   XOR2  XLXI_1 (.I0(Bin), 
+                .I1(Ain), 
+                .O(XLXN_12));
+   XOR2  XLXI_2 (.I0(XLXN_12), 
+                .I1(Cin), 
+                .O(Qout));
+   NAND2  XLXI_3 (.I0(Bin), 
+                 .I1(Ain), 
+                 .O(XLXN_22));
+   NAND2  XLXI_4 (.I0(XLXN_12), 
+                 .I1(Cin), 
+                 .O(XLXN_18));
+   NAND2  XLXI_5 (.I0(XLXN_22), 
+                 .I1(XLXN_18), 
+                 .O(Cout));
+endmodule
