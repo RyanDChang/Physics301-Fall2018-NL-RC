@@ -1,0 +1,17 @@
+V3 14
+FL "/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf" 2018/10/04.12:28:37 P.68d
+EN work/D4_16E_MXILINX_Lab6_Ex1 1538681320 \
+      FL "/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/D4_16E_MXILINX_Lab6_Ex1/BEHAVIORAL 1538681321 \
+      FL "/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf" \
+      EN work/D4_16E_MXILINX_Lab6_Ex1 1538681320 CP AND5B3 CP AND5B2 CP AND5B1 \
+      CP AND5 CP AND5B4
+EN work/Lab6_Ex1 1538681322 \
+      FL "/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/Lab6_Ex1/BEHAVIORAL 1538681323 \
+      FL "/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf" \
+      EN work/Lab6_Ex1 1538681322 CP D4_16E_MXILINX_Lab6_Ex1 CP AND2 CP INV

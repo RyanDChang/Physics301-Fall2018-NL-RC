@@ -1,0 +1,39 @@
+V3 25
+FL "/home/nick/Documents/Physics/Lab 6/Experiment4/Experiment3.vhf" 2018/10/04.15:01:44 P.68d
+EN work/Experiment3 1538690669 \
+      FL "/home/nick/Documents/Physics/Lab 6/Experiment4/Experiment3.vhf" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/Experiment3/BEHAVIORAL 1538690670 \
+      FL "/home/nick/Documents/Physics/Lab 6/Experiment4/Experiment3.vhf" \
+      EN work/Experiment3 1538690669 CP DCM_50M CP bin2BCD3en CP sel_strobeB \
+      CP SSD_1dig CP mux4SSD CP PULLUP
+FL /home/nick/Downloads/bin2BCD3en.vhd 2018/10/04.14:15:56 P.68d
+EN work/bin2BCD3en 1538690661 FL /home/nick/Downloads/bin2BCD3en.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/bin2BCD3en/Behavioral 1538690662 \
+      FL /home/nick/Downloads/bin2BCD3en.vhd EN work/bin2BCD3en 1538690661
+FL /home/nick/Downloads/DCM_50M.vhd 2018/10/04.14:21:20 P.68d
+EN work/DCM_50M 1538690659 FL /home/nick/Downloads/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/DCM_50M/Behavioral 1538690660 \
+      FL /home/nick/Downloads/DCM_50M.vhd EN work/DCM_50M 1538690659
+FL /home/nick/Downloads/mux4SSD.vhd 2018/10/04.12:58:20 P.68d
+EN work/mux4SSD 1538690667 FL /home/nick/Downloads/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/mux4SSD/Behavioral 1538690668 \
+      FL /home/nick/Downloads/mux4SSD.vhd EN work/mux4SSD 1538690667
+FL /home/nick/Downloads/sel_strobeB.vhd 2018/10/04.14:24:58 P.68d
+EN work/sel_strobeB 1538690663 FL /home/nick/Downloads/sel_strobeB.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/sel_strobeB/Behavioral 1538690664 \
+      FL /home/nick/Downloads/sel_strobeB.vhd EN work/sel_strobeB 1538690663
+FL /home/nick/Downloads/SSD_1dig.vhd 2018/10/04.12:53:42 P.68d
+EN work/SSD_1dig 1538690665 FL /home/nick/Downloads/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/SSD_1dig/Behavioral 1538690666 \
+      FL /home/nick/Downloads/SSD_1dig.vhd EN work/SSD_1dig 1538690665

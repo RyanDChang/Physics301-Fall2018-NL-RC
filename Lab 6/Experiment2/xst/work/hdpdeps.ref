@@ -1,0 +1,21 @@
+V3 14
+FL "/home/nick/Documents/Physics/Lab 6/Experiment2/Lab6_Ex2.vhf" 2018/10/04.13:58:17 P.68d
+EN work/Lab6_Ex2 1538686704 \
+      FL "/home/nick/Documents/Physics/Lab 6/Experiment2/Lab6_Ex2.vhf" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/Lab6_Ex2/BEHAVIORAL 1538686705 \
+      FL "/home/nick/Documents/Physics/Lab 6/Experiment2/Lab6_Ex2.vhf" \
+      EN work/Lab6_Ex2 1538686704 CP SSD_1dig CP mux4SSD CP PULLDOWN CP PULLUP
+FL /home/nick/Downloads/mux4SSD.vhd 2018/10/04.12:58:20 P.68d
+EN work/mux4SSD 1538686702 FL /home/nick/Downloads/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/mux4SSD/Behavioral 1538686703 \
+      FL /home/nick/Downloads/mux4SSD.vhd EN work/mux4SSD 1538686702
+FL /home/nick/Downloads/SSD_1dig.vhd 2018/10/04.12:53:42 P.68d
+EN work/SSD_1dig 1538686700 FL /home/nick/Downloads/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/SSD_1dig/Behavioral 1538686701 \
+      FL /home/nick/Downloads/SSD_1dig.vhd EN work/SSD_1dig 1538686700

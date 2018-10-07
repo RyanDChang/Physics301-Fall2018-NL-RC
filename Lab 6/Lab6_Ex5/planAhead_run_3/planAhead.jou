@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:07:37 MDT 2013
+# Start of session at: Tue Oct  2 15:01:28 2018
+# Process ID: 6246
+# Log file: /home/nick/Documents/Physics/Lab 6/Lab6_Ex5/planAhead_run_3/planAhead.log
+# Journal file: /home/nick/Documents/Physics/Lab 6/Lab6_Ex5/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin G12 [get_ports Switch1]
+endgroup
+save_constraints

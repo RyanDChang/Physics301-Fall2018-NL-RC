@@ -1,0 +1,16 @@
+EN dcm_50m NULL /home/nick/Downloads/DCM_50M.vhd sub00/vhpl06 1538692913
+AR ex4 behavioral "/home/nick/Documents/Physics/Lab 6/Exp4/Ex4.vhf" sub00/vhpl15 1538692922
+EN ssd_1dig NULL /home/nick/Downloads/SSD_1dig.vhd sub00/vhpl08 1538692915
+AR mux4ssd behavioral /home/nick/Downloads/mux4SSD.vhd sub00/vhpl13 1538692920
+AR keycr4b behavioral /home/nick/Downloads/keyCR4b.vhd sub00/vhpl01 1538691621
+AR crenc4bin behavioral /home/nick/Downloads/CRenc4bin.vhd sub00/vhpl11 1538692918
+EN ex4 NULL "/home/nick/Documents/Physics/Lab 6/Exp4/Ex4.vhf" sub00/vhpl14 1538692921
+EN bin2bcd3en NULL /home/nick/Downloads/bin2BCD3en.vhd sub00/vhpl04 1538692911
+EN keycr4b NULL /home/nick/Downloads/keyCR4b.vhd sub00/vhpl00 1538691620
+AR ssd_1dig behavioral /home/nick/Downloads/SSD_1dig.vhd sub00/vhpl09 1538692916
+EN mux4ssd NULL /home/nick/Downloads/mux4SSD.vhd sub00/vhpl12 1538692919
+EN col_strobe NULL /home/nick/Downloads/col_strobe.vhd sub00/vhpl02 1538692909
+AR col_strobe behavioral /home/nick/Downloads/col_strobe.vhd sub00/vhpl03 1538692910
+AR bin2bcd3en behavioral /home/nick/Downloads/bin2BCD3en.vhd sub00/vhpl05 1538692912
+EN crenc4bin NULL /home/nick/Downloads/CRenc4bin.vhd sub00/vhpl10 1538692917
+AR dcm_50m behavioral /home/nick/Downloads/DCM_50M.vhd sub00/vhpl07 1538692914

@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:07:37 MDT 2013
+# Start of session at: Thu Oct  4 15:43:00 2018
+# Process ID: 15573
+# Log file: /home/nick/Documents/Physics/Lab 6/Exp4/planAhead_run_1/planAhead.log
+# Journal file: /home/nick/Documents/Physics/Lab 6/Exp4/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {/home/nick/Documents/Physics/Lab 6/Exp4/pa.fromNetlist.tcl}
+# create_project -name Exp4 -dir "/home/nick/Documents/Physics/Lab 6/Exp4/planAhead_run_1" -part xc3s100ecp132-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/nick/Documents/Physics/Lab 6/Exp4/Ex4.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/nick/Documents/Physics/Lab 6/Exp4} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "Ex4.ucf" [current_fileset -constrset]
+Adding file '/home/nick/Documents/Physics/Lab 6/Exp4/Ex4.ucf' to fileset 'constrs_1'
+# add_files [list {Ex4.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s100ecp132-4
+Release 14.6 - ngc2edif P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.6 - ngc2edif P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Ex4.ngc ...
+WARNING:NetListWriters:298 - No output is written to Ex4.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus XLXI_3/Mcompar_clk_1k_cmp_gt0000_lut<11
+   : 0> on block Ex4 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_3/Mcompar_cnt10k_cmp_gt0000_lut<11
+   : 0> on block Ex4 is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file Ex4.edif ...
+ngc2edif: Total memory usage is 105660 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/Exp4.data/cache/Ex4_ngc_f38584a9.edif]
+Finished Parsing EDIF File [./planAhead_run_1/Exp4.data/cache/Ex4_ngc_f38584a9.edif]
+INFO: [Designutils 20-910] Reading macro library /opt/Xilinx/14.6/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx/14.6/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/Xilinx/14.6/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from /opt/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from /opt/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/Package.xml
+Loading io standards from /opt/Xilinx/14.6/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /opt/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/SSORules.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.6/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library /opt/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library /opt/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [/home/nick/Documents/Physics/Lab 6/Exp4/Ex4.ucf]
+Finished Parsing UCF File [/home/nick/Documents/Physics/Lab 6/Exp4/Ex4.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 1faf8e5f
+link_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2815.703 ; gain = 110.387
+startgroup
+set_property package_pin F12 [get_ports {anO[0]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {anO[1]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {anO[2]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {anO[3]}]
+endgroup
+startgroup
+set_property package_pin C6 [get_ports {colO[0]}]
+endgroup
+startgroup
+set_property package_pin B6 [get_ports {colO[1]}]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports {colO[2]}]
+endgroup
+startgroup
+set_property package_pin B7 [get_ports {colO[3]}]
+endgroup
+startgroup
+set_property package_pin B5 [get_ports {row[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {row[1]}]]
+startgroup
+set_property package_pin C5 [get_ports {colO[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {row[3]}]]
+startgroup
+set_property package_pin J3 [get_ports {row[1]}]
+endgroup
+startgroup
+set_property package_pin A3 [get_ports {row[2]}]
+endgroup
+startgroup
+set_property package_pin B2 [get_ports {row[3]}]
+endgroup
+startgroup
+set_property package_pin M12 [get_ports {sseg[0]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {sseg[1]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {sseg[2]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {sseg[3]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {sseg[4]}]
+endgroup
+startgroup
+set_property package_pin H12 [get_ports {sseg[5]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {sseg[6]}]
+endgroup
+startgroup
+set_property package_pin N13 [get_ports {sseg[7]}]
+endgroup
+startgroup
+set_property package_pin G12 [get_ports En]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports keyO]
+endgroup
+save_constraints
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See /home/nick/Documents/Physics/Lab 6/Exp4/planAhead_pid15573.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Oct  4 15:47:06 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

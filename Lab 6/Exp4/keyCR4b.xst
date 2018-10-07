@@ -1,0 +1,5 @@
+set -tmpdir "/home/nick/Documents/Physics/Lab 6/Exp4/xst/projnav.tmp"
+set -xsthdpdir "/home/nick/Documents/Physics/Lab 6/Exp4/xst"
+elaborate
+-ifn keyCR4b.prj
+-ifmt mixed

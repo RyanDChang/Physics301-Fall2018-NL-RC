@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:07:37 MDT 2013
+# Start of session at: Tue Oct  2 14:42:34 2018
+# Process ID: 5326
+# Log file: /home/nick/Documents/Physics/Lab 6/Lab6_Ex5/planAhead_run_2/planAhead.log
+# Journal file: /home/nick/Documents/Physics/Lab 6/Lab6_Ex5/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin C6 [get_ports Light2]
+endgroup
+startgroup
+set_property package_pin B2 [get_ports Light3]
+endgroup
+startgroup
+set_property package_pin J3 [get_ports Light4]
+endgroup
+startgroup
+set_property package_pin A3 [get_ports Light5]
+endgroup
+startgroup
+set_property package_pin B5 [get_ports Light1]
+endgroup
+set_property is_loc_fixed false [get_ports [list  Light1]]
+set_property is_loc_fixed true [get_ports [list  Light1]]
+startgroup
+set_property package_pin P11 [get_ports {A[0]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {A[1]}]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports {A[2]}]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports {A[3]}]
+endgroup
+save_constraints

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/nick/Documents/Physics/Lab 6/Experiment2/Lab6_Ex2.ncd
+OUTFILE=/home/nick/Documents/Physics/Lab 6/Experiment2/Lab6_Ex2.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=/home/nick/Documents/Physics/Lab 6/Experiment2
+LICENSE=WebPack
+USER_INFO=211602393_0_0_819

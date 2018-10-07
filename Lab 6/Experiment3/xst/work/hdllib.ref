@@ -1,0 +1,12 @@
+EN dcm_50m NULL /home/nick/Downloads/DCM_50M.vhd sub00/vhpl02 1538689207
+AR lab6_ex3 behavioral "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.vhf" sub00/vhpl11 1538689216
+EN ssd_1dig NULL /home/nick/Downloads/SSD_1dig.vhd sub00/vhpl04 1538689209
+EN sel_strobeb NULL /home/nick/Downloads/sel_strobeB.vhd sub00/vhpl08 1538689213
+EN lab6_ex3 NULL "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.vhf" sub00/vhpl10 1538689215
+AR mux4ssd behavioral /home/nick/Downloads/mux4SSD.vhd sub00/vhpl07 1538689212
+EN bin2bcd3en NULL /home/nick/Downloads/bin2BCD3en.vhd sub00/vhpl00 1538689205
+AR ssd_1dig behavioral /home/nick/Downloads/SSD_1dig.vhd sub00/vhpl05 1538689210
+AR sel_strobeb behavioral /home/nick/Downloads/sel_strobeB.vhd sub00/vhpl09 1538689214
+EN mux4ssd NULL /home/nick/Downloads/mux4SSD.vhd sub00/vhpl06 1538689211
+AR bin2bcd3en behavioral /home/nick/Downloads/bin2BCD3en.vhd sub00/vhpl01 1538689206
+AR dcm_50m behavioral /home/nick/Downloads/DCM_50M.vhd sub00/vhpl03 1538689208

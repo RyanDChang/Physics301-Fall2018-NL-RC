@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D0</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D1</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D10</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D11</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D12</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D14</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D15</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D2</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D4</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D7</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/Documents/Physics/Lab 6/Lab6_Ex5/Lab6_Ex1.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D8</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_Lab6_Ex1</arg>&apos;.
+</msg>
+
+</messages>
+
