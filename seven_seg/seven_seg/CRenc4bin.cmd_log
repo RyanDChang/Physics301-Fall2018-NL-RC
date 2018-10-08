@@ -1,0 +1,4 @@
+vhdtdtfi -lib work ../../goodies/CRenc4bin.vhd -prj seven_seg -o CRenc4bin.spl -module CRenc4bin -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CRenc4bin.spl C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/seven_seg/seven_seg/CRenc4bin.sym 
+vhdtdtfi -lib work ../../goodies/CRenc4bin.vhd -prj seven_seg -o CRenc4bin.spl -module CRenc4bin -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CRenc4bin.spl C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/seven_seg/seven_seg/CRenc4bin.sym 

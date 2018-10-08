@@ -1,0 +1,47 @@
+
+NET "En" LOC = A7;
+NET "Switch" LOC = G12;
+NET "SYS_CLK" LOC = B8;
+
+#Din, unused
+
+NET "Din[0]" LOC = P6;
+NET "Din[1]" LOC = P7;
+NET "Din[2]" LOC = M11;
+NET "Din[3]" LOC = M5;
+#NET "Din[4]" LOC = G3;
+#NET "Din[5]" LOC = F3;
+#NET "Din[6]" LOC = E2;
+#NET "Din[7]" LOC = N3;
+
+#Ain
+
+NET "Ain[0]" LOC = G3;
+NET "Ain[1]" LOC = F3;
+NET "Ain[2]" LOC = E2;
+NET "Ain[3]" LOC = N3;
+
+#Bin
+
+NET "Bin[0]" LOC = P11;
+NET "Bin[1]" LOC = L3;
+NET "Bin[2]" LOC = K3;
+NET "Bin[3]" LOC = B4;
+
+#anO
+
+NET "anO[0]" LOC = F12;
+NET "anO[1]" LOC = J12;
+NET "anO[2]" LOC = M13;
+NET "anO[3]" LOC = K14;
+
+#sseg
+
+NET "sseg[0]" LOC = m12;
+NET "sseg[1]" LOC = l13;
+NET "sseg[2]" LOC = p12;
+NET "sseg[3]" LOC = n11;
+NET "sseg[4]" LOC = n14;
+NET "sseg[5]" LOC = h12;
+NET "sseg[6]" LOC = l14;
+NET "sseg[7]" LOC = n13;

@@ -1,0 +1,79 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : seven_seg.vf
+// /___/   /\     Timestamp : 10/07/2018 16:14:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex5/Lab6_Ex5/seven_seg.vf -w C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/seven_seg/seven_seg/seven_seg.sch
+//Design Name: seven_seg
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module seven_seg(Din, 
+                 En, 
+                 SYS_CLK, 
+                 anO, 
+                 sseg);
+
+    input [7:0] Din;
+    input En;
+    input SYS_CLK;
+   output [3:0] anO;
+   output [7:0] sseg;
+   
+   wire XLXN_7;
+   wire [3:0] XLXN_14;
+   wire [3:0] XLXN_16;
+   wire [3:0] XLXN_17;
+   wire [3:0] XLXN_18;
+   wire [0:1] XLXN_34;
+   wire [3:0] XLXN_36;
+   wire XLXN_37;
+   wire XLXN_39;
+   wire [3:0] XLXN_41;
+   wire XLXN_42;
+   
+   assign XLXN_7 = 0;
+   assign XLXN_41 = 4'h0;
+   DCM_50M  XLXI_10 (.CLK(SYS_CLK), 
+                    .RST(XLXN_7), 
+                    .CLK1(), 
+                    .CLK1k(XLXN_39), 
+                    .CLK1M(), 
+                    .CLK10k());
+   SSD_1dig  XLXI_11 (.dp_in(XLXN_37), 
+                     .hexD(XLXN_36[3:0]), 
+                     .sseg(sseg[7:0]));
+   sel_strobeB  XLXI_12 (.clk(XLXN_39), 
+                        .sel(XLXN_34[0:1]));
+   bin2BCD3en  XLXI_13 (.CLK(XLXN_39), 
+                       .Din(Din[7:0]), 
+                       .En(En), 
+                       .Dout0(XLXN_17[3:0]), 
+                       .Dout1(XLXN_16[3:0]), 
+                       .Dout2(XLXN_18[3:0]), 
+                       .Dout3(XLXN_14[3:0]), 
+                       .RBout());
+   mux4SSD  XLXI_14 (.dp_in(XLXN_41[3:0]), 
+                    .hexA(XLXN_17[3:0]), 
+                    .hexB(XLXN_16[3:0]), 
+                    .hexC(XLXN_18[3:0]), 
+                    .hexD(XLXN_14[3:0]), 
+                    .rb_in(XLXN_42), 
+                    .sel(XLXN_34[0:1]), 
+                    .anO(anO[3:0]), 
+                    .dpO(XLXN_37), 
+                    .hexO(XLXN_36[3:0]));
+   PULLUP  XLXI_16 (.O(XLXN_42));
+endmodule

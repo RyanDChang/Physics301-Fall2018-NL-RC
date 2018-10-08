@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+bin2BCD3en instance_name (
+    .Din(Din), 
+    .CLK(CLK), 
+    .En(En), 
+    .Dout3(Dout3), 
+    .Dout2(Dout2), 
+    .Dout1(Dout1), 
+    .Dout0(Dout0), 
+    .RBout(RBout)
+    );
+
+

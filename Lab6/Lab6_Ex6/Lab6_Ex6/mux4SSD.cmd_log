@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../../goodies/mux4SSD.vhd -prj Lab6_Ex6 -o mux4SSD.spl -module mux4SSD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mux4SSD.spl C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/mux4SSD.sym 

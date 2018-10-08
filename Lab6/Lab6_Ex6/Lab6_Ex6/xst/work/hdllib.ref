@@ -1,0 +1,9 @@
+EN dcm_50m NULL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd sub00/vhpl02 1538969436
+EN ssd_1dig NULL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd sub00/vhpl06 1538969440
+AR mux4ssd behavioral C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd sub00/vhpl05 1538969439
+EN bin2bcd3en NULL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd sub00/vhpl00 1538969434
+AR ssd_1dig behavioral C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd sub00/vhpl07 1538969441
+EN mux4ssd NULL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd sub00/vhpl04 1538969438
+MO Lab6_Ex6 NULL Lab6_Ex6.vf vlg13/_lab6___ex6.bin 1538969434
+AR bin2bcd3en behavioral C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd sub00/vhpl01 1538969435
+AR dcm_50m behavioral C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd sub00/vhpl03 1538969437

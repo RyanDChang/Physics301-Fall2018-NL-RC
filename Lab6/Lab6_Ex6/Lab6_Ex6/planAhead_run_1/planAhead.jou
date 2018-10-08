@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Oct 07 20:28:08 2018
+# Process ID: 948
+# Log file: C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/pa.fromNetlist.tcl
+set_property package_pin "" [get_ports [list  SYS_CLK]]
+startgroup
+set_property package_pin A7 [get_ports En]
+endgroup
+save_constraints
+startgroup
+set_property package_pin B8 [get_ports SYS_CLK]
+endgroup
+set_property is_loc_fixed false [get_ports [list  SYS_CLK]]
+set_property is_loc_fixed true [get_ports [list  SYS_CLK]]
+save_constraints

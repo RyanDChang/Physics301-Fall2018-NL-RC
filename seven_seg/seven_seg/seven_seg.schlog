@@ -1,0 +1,12 @@
+select all in -2147483648 -2147483648 2147483647 2147483647 -sn=1
+select all in -2147483648 -2147483648 2147483647 2147483647 -sn=1
+select figure at 486 1403 8 -branches -sn=1
+select figure at 232 1435 8 -branches -sn=1
+select all in 232 682 578 1435 -branches -enclosed -sn=1
+select all in 843 739 1417 1532 -branches -enclosed -extend -sn=1
+select all in 1514 582 2035 1489 -branches -enclosed -extend -sn=1
+select all in 2131 607 2692 1703 -branches -enclosed -extend -sn=1
+select all in 2735 325 3224 1364 -branches -enclosed -extend -sn=1
+select figure at 436 1492 8 -branches -sn=1
+select figure at 200 346 8 -branches -sn=1
+select figure at 200 346 8 -branches -sn=1
