@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-10-04T15:03:13</DateModified>
+  <DateModified>2018-10-09T13:07:18</DateModified>
   <ModuleName>Experiment3</ModuleName>
   <SummaryTimeStamp>2018-10-04T15:02:58</SummaryTimeStamp>
-  <SavedFilePath>/home/nick/Documents/Physics/Lab 6/Experiment4/iseconfig/Experiment3.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/nick/Documents/Physics/Lab 6/Experiment4</ImplementationReportsDirectory>
+  <SavedFilePath>/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment4/iseconfig/Experiment3.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment4/</ImplementationReportsDirectory>
   <DateInitialized>2018-10-04T15:03:13</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

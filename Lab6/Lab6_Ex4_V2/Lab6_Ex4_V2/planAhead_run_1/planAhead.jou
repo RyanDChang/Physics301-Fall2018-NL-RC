@@ -1,14 +1,38 @@
 #-----------------------------------------------------------
-# PlanAhead v14.7 (64-bit)
-# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
-# Start of session at: Sat Oct 06 18:19:34 2018
-# Process ID: 3728
-# Log file: C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/planAhead_run_1/planAhead.log
-# Journal file: C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/planAhead_run_1/planAhead.jou
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:07:37 MDT 2013
+# Start of session at: Tue Oct  9 13:35:28 2018
+# Process ID: 14756
+# Log file: /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/planAhead_run_1/planAhead.log
+# Journal file: /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/planAhead_run_1/planAhead.jou
 #-----------------------------------------------------------
 start_gui
-source C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/pa.fromNetlist.tcl
+source /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/pa.fromNetlist.tcl
 startgroup
-set_property package_pin M5 [get_ports keyO]
+set_property package_pin A9 [get_ports {anO[3]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {anO[0]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {anO[3]}]
+endgroup
+startgroup
+set_property package_pin F2 [get_ports {anO[2]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {anO[1]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {anO[1]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {anO[2]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {anO[2]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {anO[3]}]
 endgroup
 save_constraints

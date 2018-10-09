@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt64)
+Release 14.6 Map P.68d (lin64)
 Xilinx Mapping Report File for Design 'Lab6_Ex4_V2'
 
 Design Information
@@ -9,7 +9,7 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Oct 09 09:43:09 2018
+Mapped Date    : Tue Oct  9 13:38:04 2018
 
 Design Summary
 --------------
@@ -35,7 +35,7 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                2.11
 
-Peak Memory Usage:  256 MB
+Peak Memory Usage:  577 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
@@ -80,8 +80,8 @@ Section 2 - Warnings
 --------------------
 WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
    slice components.  The resulting carry chain will have suboptimal timing.
-   	XLXI_1/Mcompar_cnt1M_cmp_ge0000_cy<10>
-   	XLXI_1/Mcount_cnt1M_cy<0>
+   	XLXI_11/Mcompar_cnt1M_cmp_ge0000_cy<10>
+   	XLXI_11/Mcount_cnt1M_cy<0>
 
 Section 3 - Informational
 -------------------------
@@ -103,13 +103,13 @@ The trimmed logic reported below is either:
    2. part of disabled logic
    3. a side-effect of other trimmed logic
 
-The signal "XLXI_1/RST_inv" is unused and has been removed.
+The signal "XLXI_11/RST_inv" is unused and has been removed.
 The signal "XLXN_8" is unused and has been removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
-INV 		XLXI_1/RST_inv1_INV_0
 PULLUP 		XLXI_10
+INV 		XLXI_11/RST_inv1_INV_0
 PULLDOWN 		XLXI_9
 GND 		XST_GND
 VCC 		XST_VCC

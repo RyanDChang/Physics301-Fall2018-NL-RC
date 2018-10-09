@@ -5,10 +5,40 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Mux is complete : default of case is discarded
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/bin2BCD3en</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd</arg>&quot;.
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Mux is complete : default of case is discarded
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/bin2BCD3en/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DCM_50M</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DCM_50M/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux4SSD</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux4SSD/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/sel_strobeB</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/sel_strobeB/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/SSD_1dig</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/SSD_1dig/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd</arg>&quot;.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Mux is complete : default of case is discarded
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">Dout3</arg>&gt; in unit &lt;<arg fmt="%s" index="2">bin2bcd3en</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.

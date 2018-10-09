@@ -1,14 +1,14 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
+Release 14.6 Trace  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
--n 3 -fastpaths -xml Lab6_Ex5.twx Lab6_Ex5.ncd -o Lab6_Ex5.twr Lab6_Ex5.pcf
--ucf Lab6_Ex5.ucf
+/opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml Lab6_Ex5.twx Lab6_Ex5.ncd -o Lab6_Ex5.twr Lab6_Ex5.pcf -ucf
+Lab6_Ex5.ucf
 
 Design file:              Lab6_Ex5.ncd
 Physical constraint file: Lab6_Ex5.pcf
-Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-06-08)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -49,14 +49,14 @@ SYS_CLK        |    9.443|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue Oct 09 10:04:05 2018 
+Analysis completed Tue Oct  9 12:56:38 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 169 MB
+Peak Memory Usage: 336 MB
 
 
 

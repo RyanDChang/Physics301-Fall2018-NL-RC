@@ -1,27 +1,25 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Oct 07 20:39:59 2018
+// Written by: Map P.68d on Tue Oct 09 13:53:16 2018
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "hexD<0>" LOCATE = SITE "P11" LEVEL 1;
+COMP "hexD<1>" LOCATE = SITE "L3" LEVEL 1;
+COMP "hexD<2>" LOCATE = SITE "K3" LEVEL 1;
+COMP "hexD<3>" LOCATE = SITE "B4" LEVEL 1;
 COMP "Switch<0>" LOCATE = SITE "E2" LEVEL 1;
 COMP "anO<0>" LOCATE = SITE "F12" LEVEL 1;
 COMP "Switch<1>" LOCATE = SITE "N3" LEVEL 1;
-COMP "SYS_CLK" LOCATE = SITE "B8" LEVEL 1;
 COMP "anO<1>" LOCATE = SITE "J12" LEVEL 1;
 COMP "anO<2>" LOCATE = SITE "M13" LEVEL 1;
 COMP "sseg<0>" LOCATE = SITE "M12" LEVEL 1;
 COMP "anO<3>" LOCATE = SITE "K14" LEVEL 1;
 COMP "sseg<1>" LOCATE = SITE "L13" LEVEL 1;
 COMP "sseg<2>" LOCATE = SITE "P12" LEVEL 1;
-COMP "En" LOCATE = SITE "A7" LEVEL 1;
 COMP "sseg<3>" LOCATE = SITE "N11" LEVEL 1;
 COMP "sseg<4>" LOCATE = SITE "N14" LEVEL 1;
 COMP "sseg<5>" LOCATE = SITE "H12" LEVEL 1;
 COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
-COMP "Ain<0>" LOCATE = SITE "B4" LEVEL 1;
-COMP "Ain<1>" LOCATE = SITE "K3" LEVEL 1;
-COMP "Ain<2>" LOCATE = SITE "L3" LEVEL 1;
-COMP "Ain<3>" LOCATE = SITE "P11" LEVEL 1;
-NET "SYS_CLK_BUFGP/IBUFG" BEL "SYS_CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+COMP "sseg<7>" LOCATE = SITE "N13" LEVEL 1;
 SCHEMATIC END;
 

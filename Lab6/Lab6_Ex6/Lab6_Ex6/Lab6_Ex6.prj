@@ -1,5 +1,2 @@
 vhdl work "../../../goodies/SSD_1dig.vhd"
-vhdl work "../../../goodies/mux4SSD.vhd"
-vhdl work "../../../goodies/DCM_50M.vhd"
-vhdl work "../../../goodies/bin2BCD3en.vhd"
 verilog work "Lab6_Ex6.vf"

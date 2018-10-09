@@ -1,16 +1,16 @@
 
-NET "En" LOC = A7;
-NET "SYS_CLK" LOC = B8;
+#NET "En" LOC = A7;
+#NET "SYS_CLK" LOC = B8;
 
 NET "Switch[0]" LOC = E2;
 NET "Switch[1]" LOC = N3;
 
 #Ain
 
-NET "Ain[0]" LOC = B4;
-NET "Ain[1]" LOC = K3;
-NET "Ain[2]" LOC = L3;
-NET "Ain[3]" LOC = P11;
+NET "hexD[0]" LOC = P11;
+NET "hexD[1]" LOC = L3;
+NET "hexD[2]" LOC = K3;
+NET "hexD[3]" LOC = B4;
 
 #anO
 

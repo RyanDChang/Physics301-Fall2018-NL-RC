@@ -1,56 +1,48 @@
-V3 22
-FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/bin2BCD3en.vhd 2018/10/06.18:00:12 P.20131013
-EN work/bin2BCD3en 1539103372 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/bin2BCD3en.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/bin2BCD3en/Behavioral 1539103373 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/bin2BCD3en.vhd \
-      EN work/bin2BCD3en 1539103372
-FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/col_strobe.vhd 2018/10/06.18:00:13 P.20131013
-EN work/col_strobe 1538877020 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/col_strobe.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/col_strobe/Behavioral 1538877021 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/col_strobe.vhd \
-      EN work/col_strobe 1538877020
-FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/CRenc4bin.vhd 2018/10/06.18:00:14 P.20131013
-EN work/CRenc4bin 1539103374 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/CRenc4bin.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/CRenc4bin/Behavioral 1539103375 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/CRenc4bin.vhd \
-      EN work/CRenc4bin 1539103374
-FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/DCM_50M.vhd 2018/10/06.18:00:34 P.20131013
-EN work/DCM_50M 1539103376 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/DCM_50M.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/DCM_50M/Behavioral 1539103377 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/DCM_50M.vhd \
-      EN work/DCM_50M 1539103376
-FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/mux4SSD.vhd 2018/10/06.18:00:50 P.20131013
-EN work/mux4SSD 1539103378 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/mux4SSD.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/mux4SSD/Behavioral 1539103379 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/mux4SSD.vhd \
-      EN work/mux4SSD 1539103378
-FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/sel_strobeB.vhd 2018/10/06.18:01:01 P.20131013
-EN work/sel_strobeB 1539103380 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/sel_strobeB.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/sel_strobeB/Behavioral 1539103381 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/sel_strobeB.vhd \
-      EN work/sel_strobeB 1539103380
-FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/SSD_1dig.vhd 2018/10/06.18:01:03 P.20131013
-EN work/SSD_1dig 1539103382 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/SSD_1dig.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/SSD_1dig/Behavioral 1539103383 \
-      FL C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/SSD_1dig.vhd \
-      EN work/SSD_1dig 1539103382
+V3 19
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd 2018/10/06.21:00:18 P.68d
+EN work/bin2BCD3en 1539116933 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/bin2BCD3en/Behavioral 1539116934 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd \
+      EN work/bin2BCD3en 1539116933
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd 2018/10/06.21:00:18 P.68d
+EN work/sel_strobeB 1539116935 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/sel_strobeB/Behavioral 1539116936 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd \
+      EN work/sel_strobeB 1539116935
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/CRenc4bin.vhd 2018/10/06.21:00:18 P.68d
+EN work/CRenc4bin 1539116937 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/CRenc4bin.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/CRenc4bin/Behavioral 1539116938 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/CRenc4bin.vhd \
+      EN work/CRenc4bin 1539116937
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/DCM_50M.vhd 2018/10/06.21:00:18 P.68d
+EN work/DCM_50M 1539116939 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/DCM_50M/Behavioral 1539116940 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/DCM_50M.vhd \
+      EN work/DCM_50M 1539116939
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/mux4SSD.vhd 2018/10/06.21:00:18 P.68d
+EN work/mux4SSD 1539116941 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/mux4SSD/Behavioral 1539116942 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/mux4SSD.vhd \
+      EN work/mux4SSD 1539116941
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/SSD_1dig.vhd 2018/10/06.21:00:18 P.68d
+EN work/SSD_1dig 1539116943 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/SSD_1dig/Behavioral 1539116944 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/SSD_1dig.vhd \
+      EN work/SSD_1dig 1539116943

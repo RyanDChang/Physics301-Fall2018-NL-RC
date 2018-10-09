@@ -1,14 +1,14 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
+Release 14.6 Trace  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
--n 3 -fastpaths -xml Lab6_Ex6.twx Lab6_Ex6.ncd -o Lab6_Ex6.twr Lab6_Ex6.pcf
--ucf Lab6_Ex6.ucf
+/opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml Lab6_Ex6.twx Lab6_Ex6.ncd -o Lab6_Ex6.twr Lab6_Ex6.pcf -ucf
+Lab6_Ex6.ucf
 
 Design file:              Lab6_Ex6.ncd
 Physical constraint file: Lab6_Ex6.pcf
-Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-06-08)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -40,51 +40,57 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Clock to Setup on destination clock SYS_CLK
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-SYS_CLK        |    9.070|         |         |         |
----------------+---------+---------+---------+---------+
-
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-Switch<0>      |anO<0>         |    8.618|
-Switch<0>      |anO<1>         |    8.312|
-Switch<0>      |anO<2>         |    9.304|
-Switch<0>      |anO<3>         |    8.516|
-Switch<0>      |sseg<0>        |   11.546|
-Switch<0>      |sseg<1>        |   11.659|
-Switch<0>      |sseg<2>        |   10.293|
-Switch<0>      |sseg<3>        |   10.283|
-Switch<0>      |sseg<4>        |   11.749|
-Switch<0>      |sseg<5>        |   11.850|
-Switch<0>      |sseg<6>        |   11.511|
-Switch<1>      |anO<0>         |    7.909|
-Switch<1>      |anO<1>         |    7.473|
-Switch<1>      |anO<2>         |    8.317|
-Switch<1>      |anO<3>         |    7.504|
-Switch<1>      |sseg<0>        |   12.092|
-Switch<1>      |sseg<1>        |   12.205|
-Switch<1>      |sseg<2>        |   10.540|
-Switch<1>      |sseg<3>        |   10.657|
-Switch<1>      |sseg<4>        |   12.295|
-Switch<1>      |sseg<5>        |   12.396|
-Switch<1>      |sseg<6>        |   12.057|
+Switch<0>      |anO<0>         |    8.509|
+Switch<0>      |anO<1>         |    7.690|
+Switch<0>      |anO<2>         |    8.128|
+Switch<0>      |anO<3>         |    7.433|
+Switch<1>      |anO<0>         |    8.693|
+Switch<1>      |anO<1>         |    7.495|
+Switch<1>      |anO<2>         |    8.062|
+Switch<1>      |anO<3>         |    7.682|
+hexD<0>        |sseg<0>        |    7.604|
+hexD<0>        |sseg<1>        |    7.988|
+hexD<0>        |sseg<2>        |    8.144|
+hexD<0>        |sseg<3>        |    7.742|
+hexD<0>        |sseg<4>        |    7.596|
+hexD<0>        |sseg<5>        |    8.080|
+hexD<0>        |sseg<6>        |    7.584|
+hexD<1>        |sseg<0>        |    8.595|
+hexD<1>        |sseg<1>        |    8.300|
+hexD<1>        |sseg<2>        |    8.431|
+hexD<1>        |sseg<3>        |    8.054|
+hexD<1>        |sseg<4>        |    8.092|
+hexD<1>        |sseg<5>        |    8.583|
+hexD<1>        |sseg<6>        |    7.871|
+hexD<2>        |sseg<0>        |    7.390|
+hexD<2>        |sseg<1>        |    7.338|
+hexD<2>        |sseg<2>        |    7.429|
+hexD<2>        |sseg<3>        |    7.092|
+hexD<2>        |sseg<4>        |    7.533|
+hexD<2>        |sseg<5>        |    8.082|
+hexD<2>        |sseg<6>        |    6.869|
+hexD<3>        |sseg<0>        |    8.853|
+hexD<3>        |sseg<1>        |    8.922|
+hexD<3>        |sseg<2>        |    9.018|
+hexD<3>        |sseg<3>        |    8.676|
+hexD<3>        |sseg<4>        |    8.631|
+hexD<3>        |sseg<5>        |    9.153|
+hexD<3>        |sseg<6>        |    8.458|
 ---------------+---------------+---------+
 
 
-Analysis completed Sun Oct 07 20:40:11 2018 
+Analysis completed Tue Oct  9 13:53:22 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 169 MB
+Peak Memory Usage: 334 MB
 
 
 

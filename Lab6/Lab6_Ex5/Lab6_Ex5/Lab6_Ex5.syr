@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.6 - xst P.68d (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Reading design: Lab6_Ex5.prj
+--> 
+Reading design: Lab6_Ex5.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -104,15 +107,25 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/bin2BCD3en is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd".
+WARNING:HDLParsers:3607 - Unit work/bin2BCD3en/Behavioral is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd".
+WARNING:HDLParsers:3607 - Unit work/DCM_50M is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd".
+WARNING:HDLParsers:3607 - Unit work/DCM_50M/Behavioral is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd".
+WARNING:HDLParsers:3607 - Unit work/mux4SSD is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd".
+WARNING:HDLParsers:3607 - Unit work/mux4SSD/Behavioral is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd".
+WARNING:HDLParsers:3607 - Unit work/sel_strobeB is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd".
+WARNING:HDLParsers:3607 - Unit work/sel_strobeB/Behavioral is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd".
+WARNING:HDLParsers:3607 - Unit work/SSD_1dig is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd".
+WARNING:HDLParsers:3607 - Unit work/SSD_1dig/Behavioral is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd".
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd" in Library work.
 Architecture behavioral of Entity bin2bcd3en is up to date.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd" in Library work.
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd" in Library work.
 Architecture behavioral of Entity dcm_50m is up to date.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd" in Library work.
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd" in Library work.
 Architecture behavioral of Entity mux4ssd is up to date.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd" in Library work.
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd" in Library work.
 Architecture behavioral of Entity sel_strobeb is up to date.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd" in Library work.
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd" in Library work.
 Architecture behavioral of Entity ssd_1dig is up to date.
 Compiling verilog file "seven_seg.vf" in library work
 Compiling verilog file "Lab6_Ex5.vf" in library work
@@ -165,8 +178,8 @@ Analyzing Entity <sel_strobeb> in library <work> (Architecture <behavioral>).
 Entity <sel_strobeb> analyzed. Unit <sel_strobeb> generated.
 
 Analyzing Entity <bin2bcd3en> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
-INFO:Xst:1561 - "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
 INFO:Xst:2679 - Register <Dout3> in unit <bin2bcd3en> has a constant value of 0000 during circuit operation. The register is replaced by logic.
 Entity <bin2bcd3en> analyzed. Unit <bin2bcd3en> generated.
 
@@ -181,7 +194,7 @@ Entity <mux4ssd> analyzed. Unit <mux4ssd> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <dcm_50m>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd".
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd".
     Found 1-bit register for signal <clk_1>.
     Found 32-bit adder for signal <clk_1$addsub0000> created at line 121.
     Found 32-bit comparator greater for signal <clk_1$cmp_gt0000> created at line 122.
@@ -207,7 +220,7 @@ Unit <dcm_50m> synthesized.
 
 
 Synthesizing Unit <ssd_1dig>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd".
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd".
     Found 16x7-bit ROM for signal <hexD$rom0000>.
     Summary:
 	inferred   1 ROM(s).
@@ -215,7 +228,7 @@ Unit <ssd_1dig> synthesized.
 
 
 Synthesizing Unit <sel_strobeb>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd".
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd".
     Found 4x2-bit ROM for signal <sel$mux0001> created at line 44.
     Found 2-bit register for signal <sel>.
     Found 2-bit register for signal <selx>.
@@ -226,7 +239,7 @@ Unit <sel_strobeb> synthesized.
 
 
 Synthesizing Unit <bin2bcd3en>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd".
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd".
     Found 16x4-bit ROM for signal <b9$mux0000> created at line 50.
     Found 16x4-bit ROM for signal <b8$mux0000> created at line 50.
     Found 16x4-bit ROM for signal <b7$mux0000> created at line 50.
@@ -246,7 +259,7 @@ Unit <bin2bcd3en> synthesized.
 
 
 Synthesizing Unit <mux4ssd>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd".
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd".
 Unit <mux4ssd> synthesized.
 
 
@@ -718,14 +731,15 @@ Offset:              7.856ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.03 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.13 secs
  
 --> 
 
-Total memory usage is 269084 kilobytes
+
+Total memory usage is 542944 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   77 (   0 filtered)
+Number of warnings :   87 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 
