@@ -34,3 +34,9 @@ map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab6_Ex
 par -w -intstyle ise -ol high -t 1 Lab6_Ex4_V2_map.ncd Lab6_Ex4_V2.ncd Lab6_Ex4_V2.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab6_Ex4_V2.twx Lab6_Ex4_V2.ncd -o Lab6_Ex4_V2.twr Lab6_Ex4_V2.pcf -ucf Lab6_Ex4_V2.ucf 
 bitgen -intstyle ise -f Lab6_Ex4_V2.ut Lab6_Ex4_V2.ncd 
+xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/Lab6_Ex4_V2.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex4_V2/Lab6_Ex4_V2/Lab6_Ex4_V2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6_Ex4_V2.ucf -p xc3s100e-cp132-4 Lab6_Ex4_V2.ngc Lab6_Ex4_V2.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab6_Ex4_V2_map.ncd Lab6_Ex4_V2.ngd Lab6_Ex4_V2.pcf 
+par -w -intstyle ise -ol high -t 1 Lab6_Ex4_V2_map.ncd Lab6_Ex4_V2.ncd Lab6_Ex4_V2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab6_Ex4_V2.twx Lab6_Ex4_V2.ncd -o Lab6_Ex4_V2.twr Lab6_Ex4_V2.pcf -ucf Lab6_Ex4_V2.ucf 
+bitgen -intstyle ise -f Lab6_Ex4_V2.ut Lab6_Ex4_V2.ncd 

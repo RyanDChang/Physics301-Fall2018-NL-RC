@@ -45,11 +45,11 @@ Clock to Setup on destination clock SYS_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SYS_CLK        |    9.670|         |         |         |
+SYS_CLK        |   11.746|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Oct 06 18:53:46 2018 
+Analysis completed Tue Oct 09 09:43:25 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

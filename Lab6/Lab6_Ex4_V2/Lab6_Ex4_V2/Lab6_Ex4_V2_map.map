@@ -9,10 +9,14 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sat Oct 06 18:53:34 2018
+Mapped Date    : Tue Oct 09 09:43:09 2018
 
 Mapping design into LUTs...
 Running directed packing...
+WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
+   slice components.  The resulting carry chain will have suboptimal timing.
+   	XLXI_1/Mcompar_cnt1M_cmp_ge0000_cy<10>
+   	XLXI_1/Mcount_cnt1M_cy<0>
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
@@ -22,18 +26,18 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    1
 Logic Utilization:
-  Number of Slice Flip Flops:           121 out of   1,920    6%
-  Number of 4 input LUTs:                95 out of   1,920    4%
+  Number of Slice Flip Flops:            88 out of   1,920    4%
+  Number of 4 input LUTs:               145 out of   1,920    7%
 Logic Distribution:
-  Number of occupied Slices:            152 out of     960   15%
-    Number of Slices containing only related logic:     152 out of     152 100%
-    Number of Slices containing unrelated logic:          0 out of     152   0%
+  Number of occupied Slices:            113 out of     960   11%
+    Number of Slices containing only related logic:     113 out of     113 100%
+    Number of Slices containing unrelated logic:          0 out of     113   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         285 out of   1,920   14%
-    Number used as logic:                95
-    Number used as a route-thru:        190
+  Total Number of 4 input LUTs:         209 out of   1,920   10%
+    Number used as logic:               145
+    Number used as a route-thru:         64
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -41,7 +45,7 @@ Logic Distribution:
   Number of bonded IOBs:                 23 out of      83   27%
   Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                1.98
+Average Fanout of Non-Clock Nets:                2.11
 
 Peak Memory Usage:  256 MB
 Total REAL time to MAP completion:  1 secs 

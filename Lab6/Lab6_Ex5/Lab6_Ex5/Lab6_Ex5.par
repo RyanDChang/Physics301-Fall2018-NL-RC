@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DRFINALLY::  Sun Oct 07 20:05:51 2018
+DRFINALLY::  Tue Oct 09 10:03:57 2018
 
 par -w -intstyle ise -ol high -t 1 Lab6_Ex5_map.ncd Lab6_Ex5.ncd Lab6_Ex5.pcf 
 
@@ -57,7 +57,7 @@ Finished initial Timing Analysis.  REAL time: 0 secs
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 1 secs 
+Total REAL time at the beginning of Placer: 0 secs 
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
@@ -127,16 +127,16 @@ Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 WARNING:Route:455 - CLK Net:XLXI_2/XLXI_10/clk_1k may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 5 secs 
-Total CPU time to Router completion: 5 secs 
+Total REAL time to Router completion: 4 secs 
+Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
 -------------------------------

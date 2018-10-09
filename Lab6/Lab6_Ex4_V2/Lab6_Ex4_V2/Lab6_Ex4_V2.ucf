@@ -3,10 +3,6 @@ NET "En" LOC = G12;
 NET "keyO" LOC = M5;
 NET "SYS_CLK" LOC = B8;
 
-#NET "anO[0]" LOC = F12;
-#NET "anO[1]" LOC = J12;
-#NET "anO[2]" LOC = M13;
-#NET "anO[3]" LOC = K14;
 NET "anO[0]" LOC = K14;
 NET "anO[1]" LOC = M13;
 NET "anO[2]" LOC = J12;
