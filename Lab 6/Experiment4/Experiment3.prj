@@ -1,0 +1,6 @@
+vhdl work "../../../../Downloads/SSD_1dig.vhd"
+vhdl work "../../../../Downloads/sel_strobeB.vhd"
+vhdl work "../../../../Downloads/mux4SSD.vhd"
+vhdl work "../../../../Downloads/DCM_50M.vhd"
+vhdl work "../../../../Downloads/bin2BCD3en.vhd"
+vhdl work "Experiment3.vhf"

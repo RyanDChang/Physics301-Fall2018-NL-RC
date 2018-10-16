@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/nick/Documents/Physics/Lab 6/Experiment4/Experiment4.xst" -ofn "/home/nick/Documents/Physics/Lab 6/Experiment4/Experiment4.syr" 
+xst -intstyle ise -ifn "/home/nick/Documents/Physics/Lab 6/Experiment4/Experiment4.xst" -ofn "/home/nick/Documents/Physics/Lab 6/Experiment4/Experiment4.syr" 
