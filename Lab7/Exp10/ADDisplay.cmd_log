@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ADDisplay_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym ADDisplay /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ADDisplay_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sch 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ADDisplay_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym ADDisplay /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ADDisplay_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym ADDisplay /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sym 

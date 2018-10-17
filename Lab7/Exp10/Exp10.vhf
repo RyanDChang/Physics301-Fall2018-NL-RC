@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Exp10.vhf
--- /___/   /\     Timestamp : 10/17/2018 13:40:45
+-- /___/   /\     Timestamp : 10/17/2018 14:27:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,6 +18,136 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity ADDisplay_MUSER_Exp10 is
+   port ( Address  : in    std_logic_vector (7 downto 0); 
+          CLK      : in    std_logic; 
+          Dout     : in    std_logic_vector (7 downto 0); 
+          ReadData : in    std_logic; 
+          anO      : out   std_logic_vector (3 downto 0); 
+          Data     : out   std_logic_vector (7 downto 0));
+end ADDisplay_MUSER_Exp10;
+
+architecture BEHAVIORAL of ADDisplay_MUSER_Exp10 is
+   signal XLXN_58  : std_logic;
+   signal XLXN_59  : std_logic_vector (3 downto 0);
+   signal XLXN_62  : std_logic;
+   signal XLXN_65  : std_logic_vector (3 downto 0);
+   signal XLXN_70  : std_logic_vector (3 downto 0);
+   signal XLXN_71  : std_logic_vector (3 downto 0);
+   signal XLXN_74  : std_logic_vector (0 to 1);
+   signal XLXN_75  : std_logic;
+   signal XLXN_77  : std_logic;
+   signal XLXN_78  : std_logic_vector (3 downto 0);
+   signal XLXN_79  : std_logic_vector (3 downto 0);
+   signal XLXN_80  : std_logic;
+   component mux4SSD
+      port ( rb_in : in    std_logic; 
+             hexD  : in    std_logic_vector (3 downto 0); 
+             hexC  : in    std_logic_vector (3 downto 0); 
+             hexB  : in    std_logic_vector (3 downto 0); 
+             hexA  : in    std_logic_vector (3 downto 0); 
+             sel   : in    std_logic_vector (0 to 1); 
+             dp_in : in    std_logic_vector (3 downto 0); 
+             dpO   : out   std_logic; 
+             anO   : out   std_logic_vector (3 downto 0); 
+             hexO  : out   std_logic_vector (3 downto 0));
+   end component;
+   
+   component SSD_1dig
+      port ( dp_in : in    std_logic; 
+             hexD  : in    std_logic_vector (3 downto 0); 
+             sseg  : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component bin2BCD3en
+      port ( CLK   : in    std_logic; 
+             En    : in    std_logic; 
+             Din   : in    std_logic_vector (7 downto 0); 
+             Dout3 : out   std_logic_vector (3 downto 0); 
+             Dout2 : out   std_logic_vector (3 downto 0); 
+             Dout1 : out   std_logic_vector (3 downto 0); 
+             Dout0 : out   std_logic_vector (3 downto 0); 
+             RBout : out   std_logic_vector (3 downto 0));
+   end component;
+   
+   component DCM_50M
+      port ( CLK    : in    std_logic; 
+             RST    : in    std_logic; 
+             CLK1M  : out   std_logic; 
+             CLK10k : out   std_logic; 
+             CLK1k  : out   std_logic; 
+             CLK1   : out   std_logic);
+   end component;
+   
+   component sel_strobeB
+      port ( clk : in    std_logic; 
+             sel : inout std_logic_vector (0 to 1));
+   end component;
+   
+begin
+   XLXN_58 <= '1';
+   XLXN_59(3 downto 0) <= x"0";
+   XLXN_77 <= '0';
+   XLXN_80 <= '1';
+   XLXI_20 : mux4SSD
+      port map (dp_in(3 downto 0)=>XLXN_59(3 downto 0),
+                hexA(3 downto 0)=>XLXN_71(3 downto 0),
+                hexB(3 downto 0)=>XLXN_70(3 downto 0),
+                hexC(3 downto 0)=>XLXN_79(3 downto 0),
+                hexD(3 downto 0)=>XLXN_78(3 downto 0),
+                rb_in=>XLXN_58,
+                sel(0 to 1)=>XLXN_74(0 to 1),
+                anO(3 downto 0)=>anO(3 downto 0),
+                dpO=>XLXN_62,
+                hexO(3 downto 0)=>XLXN_65(3 downto 0));
+   
+   XLXI_23 : SSD_1dig
+      port map (dp_in=>XLXN_62,
+                hexD(3 downto 0)=>XLXN_65(3 downto 0),
+                sseg(7 downto 0)=>Data(7 downto 0));
+   
+   XLXI_25 : bin2BCD3en
+      port map (CLK=>XLXN_75,
+                Din(7 downto 0)=>Dout(7 downto 0),
+                En=>ReadData,
+                Dout0(3 downto 0)=>XLXN_71(3 downto 0),
+                Dout1(3 downto 0)=>XLXN_70(3 downto 0),
+                Dout2=>open,
+                Dout3=>open,
+                RBout=>open);
+   
+   XLXI_26 : DCM_50M
+      port map (CLK=>CLK,
+                RST=>XLXN_77,
+                CLK1=>open,
+                CLK1k=>XLXN_75,
+                CLK1M=>open,
+                CLK10k=>open);
+   
+   XLXI_27 : sel_strobeB
+      port map (clk=>XLXN_75,
+                sel(0 to 1)=>XLXN_74(0 to 1));
+   
+   XLXI_31 : bin2BCD3en
+      port map (CLK=>XLXN_75,
+                Din(7 downto 0)=>Address(7 downto 0),
+                En=>XLXN_80,
+                Dout0=>open,
+                Dout1=>open,
+                Dout2(3 downto 0)=>XLXN_79(3 downto 0),
+                Dout3(3 downto 0)=>XLXN_78(3 downto 0),
+                RBout=>open);
+   
+end BEHAVIORAL;
+
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -137,10 +267,10 @@ architecture BEHAVIORAL of M8_1E_MXILINX_Exp10 is
    end component;
    attribute BOX_TYPE of MUXF6 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_3";
-   attribute HU_SET of I_M23 : label is "I_M23_2";
-   attribute HU_SET of I_M45 : label is "I_M45_1";
-   attribute HU_SET of I_M67 : label is "I_M67_0";
+   attribute HU_SET of I_M01 : label is "I_M01_20";
+   attribute HU_SET of I_M23 : label is "I_M23_19";
+   attribute HU_SET of I_M45 : label is "I_M45_18";
+   attribute HU_SET of I_M67 : label is "I_M67_17";
 begin
    I_M01 : M2_1E_MXILINX_Exp10
       port map (D0=>D0,
@@ -230,10 +360,10 @@ architecture BEHAVIORAL of MUXLIFE_MUSER_Exp10 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_4";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_5";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_6";
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_21";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_22";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_23";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_24";
 begin
    XLXI_1 : M8_1E_MXILINX_Exp10
       port map (D0=>Q0(0),
@@ -408,14 +538,14 @@ architecture BEHAVIORAL of Memory_MUSER_Exp10 is
              Q3  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_8";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_9";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_10";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_11";
-   attribute HU_SET of XLXI_38 : label is "XLXI_38_12";
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_13";
-   attribute HU_SET of XLXI_40 : label is "XLXI_40_14";
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_15";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_25";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_26";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_27";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_28";
+   attribute HU_SET of XLXI_38 : label is "XLXI_38_29";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_30";
+   attribute HU_SET of XLXI_40 : label is "XLXI_40_31";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_32";
 begin
    XLXI_1 : FD4CE_MXILINX_Exp10
       port map (C=>CLK,
@@ -663,24 +793,16 @@ end Exp10;
 
 architecture BEHAVIORAL of Exp10 is
    attribute HU_SET     : string ;
-   signal Address                 : std_logic_vector (7 downto 0);
-   signal Dout                    : std_logic_vector (3 downto 0);
-   signal XLXN_32                 : std_logic_vector (3 downto 0);
-   signal XLXN_33                 : std_logic_vector (3 downto 0);
-   signal XLXN_34                 : std_logic_vector (3 downto 0);
-   signal XLXN_35                 : std_logic_vector (3 downto 0);
-   signal XLXN_37                 : std_logic_vector (3 downto 0);
-   signal XLXN_38                 : std_logic_vector (3 downto 0);
-   signal XLXN_39                 : std_logic_vector (3 downto 0);
-   signal XLXN_40                 : std_logic_vector (3 downto 0);
-   signal XLXN_58                 : std_logic;
-   signal XLXN_59                 : std_logic_vector (3 downto 0);
-   signal XLXN_62                 : std_logic;
-   signal XLXN_65                 : std_logic_vector (3 downto 0);
-   signal XLXN_70                 : std_logic_vector (0 to 1);
-   signal XLXI_20_hexB_openSignal : std_logic_vector (3 downto 0);
-   signal XLXI_20_hexC_openSignal : std_logic_vector (3 downto 0);
-   signal XLXI_20_hexD_openSignal : std_logic_vector (3 downto 0);
+   signal Address   : std_logic_vector (7 downto 0);
+   signal Dout      : std_logic_vector (7 downto 0);
+   signal XLXN_32   : std_logic_vector (3 downto 0);
+   signal XLXN_33   : std_logic_vector (3 downto 0);
+   signal XLXN_34   : std_logic_vector (3 downto 0);
+   signal XLXN_35   : std_logic_vector (3 downto 0);
+   signal XLXN_37   : std_logic_vector (3 downto 0);
+   signal XLXN_38   : std_logic_vector (3 downto 0);
+   signal XLXN_39   : std_logic_vector (3 downto 0);
+   signal XLXN_40   : std_logic_vector (3 downto 0);
    component D3_8E_MXILINX_Exp10
       port ( A0 : in    std_logic; 
              A1 : in    std_logic; 
@@ -724,29 +846,17 @@ architecture BEHAVIORAL of Exp10 is
              Dout      : out   std_logic_vector (3 downto 0));
    end component;
    
-   component mux4SSD
-      port ( rb_in : in    std_logic; 
-             hexD  : in    std_logic_vector (3 downto 0); 
-             hexC  : in    std_logic_vector (3 downto 0); 
-             hexB  : in    std_logic_vector (3 downto 0); 
-             hexA  : in    std_logic_vector (3 downto 0); 
-             sel   : in    std_logic_vector (0 to 1); 
-             dp_in : in    std_logic_vector (3 downto 0); 
-             dpO   : out   std_logic; 
-             anO   : out   std_logic_vector (3 downto 0); 
-             hexO  : out   std_logic_vector (3 downto 0));
+   component ADDisplay_MUSER_Exp10
+      port ( ReadData : in    std_logic; 
+             Dout     : in    std_logic_vector (7 downto 0); 
+             Address  : in    std_logic_vector (7 downto 0); 
+             Data     : out   std_logic_vector (7 downto 0); 
+             anO      : out   std_logic_vector (3 downto 0); 
+             CLK      : in    std_logic);
    end component;
    
-   component SSD_1dig
-      port ( dp_in : in    std_logic; 
-             hexD  : in    std_logic_vector (3 downto 0); 
-             sseg  : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_16";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_33";
 begin
-   XLXN_58 <= '1';
-   XLXN_59(3 downto 0) <= x"0";
    XLXI_12 : D3_8E_MXILINX_Exp10
       port map (A0=>Ain(0),
                 A1=>Ain(1),
@@ -787,22 +897,13 @@ begin
                 Q7(3 downto 0)=>XLXN_40(3 downto 0),
                 Dout(3 downto 0)=>Dout(3 downto 0));
    
-   XLXI_20 : mux4SSD
-      port map (dp_in(3 downto 0)=>XLXN_59(3 downto 0),
-                hexA(3 downto 0)=>Dout(3 downto 0),
-                hexB(3 downto 0)=>XLXI_20_hexB_openSignal(3 downto 0),
-                hexC(3 downto 0)=>XLXI_20_hexC_openSignal(3 downto 0),
-                hexD(3 downto 0)=>XLXI_20_hexD_openSignal(3 downto 0),
-                rb_in=>XLXN_58,
-                sel(0 to 1)=>XLXN_70(0 to 1),
+   XLXI_31 : ADDisplay_MUSER_Exp10
+      port map (Address(7 downto 0)=>Address(7 downto 0),
+                CLK=>CLK,
+                Dout(7 downto 0)=>Dout(7 downto 0),
+                ReadData=>ReadData,
                 anO(3 downto 0)=>anO(3 downto 0),
-                dpO=>XLXN_62,
-                hexO(3 downto 0)=>XLXN_65(3 downto 0));
-   
-   XLXI_23 : SSD_1dig
-      port map (dp_in=>XLXN_62,
-                hexD(3 downto 0)=>XLXN_65(3 downto 0),
-                sseg(7 downto 0)=>Data(7 downto 0));
+                Data(7 downto 0)=>Data(7 downto 0));
    
 end BEHAVIORAL;
 
