@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../goodies/DCM_50M.vhd -prj Exp10 -o DCM_50M.spl -module DCM_50M -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w DCM_50M.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/DCM_50M.sym 

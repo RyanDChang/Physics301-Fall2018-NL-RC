@@ -35,10 +35,15 @@
         <signal name="XLXN_59(3:0)" />
         <signal name="XLXN_62" />
         <signal name="Data(7:0)" />
-        <signal name="XLXN_64(3:0)" />
         <signal name="XLXN_65(3:0)" />
         <signal name="anO(3:0)" />
         <signal name="Dout(3:0)" />
+        <signal name="XLXN_70(3:0)" />
+        <signal name="XLXN_71(3:0)" />
+        <signal name="XLXN_74(0:1)" />
+        <signal name="XLXN_75" />
+        <signal name="XLXN_77" />
+        <signal name="XLXN_83(7:0)" />
         <port polarity="Input" name="Din(3:0)" />
         <port polarity="Input" name="Ain(2:0)" />
         <port polarity="Input" name="WriteData" />
@@ -148,6 +153,41 @@
             <rect width="64" x="320" y="-108" height="24" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
+        <blockdef name="bin2BCD3en">
+            <timestamp>2018-10-17T2:15:7</timestamp>
+            <rect width="256" x="64" y="-320" height="320" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-300" height="24" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <rect width="64" x="320" y="-236" height="24" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <rect width="64" x="320" y="-172" height="24" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="DCM_50M">
+            <timestamp>2018-10-17T20:57:21</timestamp>
+            <rect width="256" x="64" y="-256" height="256" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="sel_strobeB">
+            <timestamp>2018-10-17T2:13:33</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="d3_8e" name="XLXI_12">
             <blockpin signalname="Ain(0)" name="A0" />
             <blockpin signalname="Ain(1)" name="A1" />
@@ -192,9 +232,9 @@
             <blockpin signalname="XLXN_58" name="rb_in" />
             <blockpin name="hexD(3:0)" />
             <blockpin name="hexC(3:0)" />
-            <blockpin name="hexB(3:0)" />
-            <blockpin signalname="Dout(3:0)" name="hexA(3:0)" />
-            <blockpin name="sel(0:1)" />
+            <blockpin signalname="XLXN_70(3:0)" name="hexB(3:0)" />
+            <blockpin signalname="XLXN_71(3:0)" name="hexA(3:0)" />
+            <blockpin signalname="XLXN_74(0:1)" name="sel(0:1)" />
             <blockpin signalname="XLXN_59(3:0)" name="dp_in(3:0)" />
             <blockpin signalname="XLXN_62" name="dpO" />
             <blockpin signalname="anO(3:0)" name="anO(3:0)" />
@@ -220,6 +260,36 @@
             <blockpin signalname="XLXN_62" name="dp_in" />
             <blockpin signalname="XLXN_65(3:0)" name="hexD(3:0)" />
             <blockpin signalname="Data(7:0)" name="sseg(7:0)" />
+        </block>
+        <block symbolname="bin2BCD3en" name="XLXI_25">
+            <blockpin signalname="XLXN_75" name="CLK" />
+            <blockpin signalname="ReadData" name="En" />
+            <blockpin signalname="XLXN_83(7:0)" name="Din(7:0)" />
+            <blockpin name="Dout3(3:0)" />
+            <blockpin name="Dout2(3:0)" />
+            <blockpin signalname="XLXN_70(3:0)" name="Dout1(3:0)" />
+            <blockpin signalname="XLXN_71(3:0)" name="Dout0(3:0)" />
+            <blockpin name="RBout(3:0)" />
+        </block>
+        <block symbolname="DCM_50M" name="XLXI_26">
+            <blockpin signalname="CLK" name="CLK" />
+            <blockpin signalname="XLXN_77" name="RST" />
+            <blockpin name="CLK1M" />
+            <blockpin name="CLK10k" />
+            <blockpin signalname="XLXN_75" name="CLK1k" />
+            <blockpin name="CLK1" />
+        </block>
+        <block symbolname="sel_strobeB" name="XLXI_27">
+            <blockpin signalname="XLXN_75" name="clk" />
+            <blockpin signalname="XLXN_74(0:1)" name="sel(0:1)" />
+        </block>
+        <block symbolname="constant" name="XLXI_29">
+            <attr value="0" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_77" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -402,12 +472,49 @@
         <iomarker fontsize="28" x="2624" y="1472" name="anO(3:0)" orien="R0" />
         <iomarker fontsize="28" x="3360" y="1248" name="Data(7:0)" orien="R0" />
         <branch name="Dout(3:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2096" y="1536" type="branch" />
-            <wire x2="2192" y1="1536" y2="1536" x1="2096" />
-        </branch>
-        <branch name="Dout(3:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2496" y="400" type="branch" />
             <wire x2="2496" y1="400" y2="400" x1="2384" />
+        </branch>
+        <branch name="XLXN_70(3:0)">
+            <wire x2="2192" y1="1472" y2="1472" x1="1744" />
+        </branch>
+        <branch name="XLXN_71(3:0)">
+            <wire x2="2192" y1="1536" y2="1536" x1="1744" />
+        </branch>
+        <instance x="1360" y="1632" name="XLXI_25" orien="R0">
+        </instance>
+        <branch name="ReadData">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1472" type="branch" />
+            <wire x2="1360" y1="1472" y2="1472" x1="1280" />
+        </branch>
+        <instance x="1392" y="1792" name="XLXI_27" orien="R0">
+        </instance>
+        <branch name="XLXN_74(0:1)">
+            <wire x2="1984" y1="1760" y2="1760" x1="1776" />
+            <wire x2="1984" y1="1600" y2="1760" x1="1984" />
+            <wire x2="2192" y1="1600" y2="1600" x1="1984" />
+        </branch>
+        <branch name="XLXN_75">
+            <wire x2="928" y1="1568" y2="1568" x1="864" />
+            <wire x2="928" y1="1568" y2="1760" x1="928" />
+            <wire x2="1392" y1="1760" y2="1760" x1="928" />
+            <wire x2="928" y1="1328" y2="1344" x1="928" />
+            <wire x2="1360" y1="1344" y2="1344" x1="928" />
+            <wire x2="928" y1="1344" y2="1568" x1="928" />
+        </branch>
+        <instance x="480" y="1664" name="XLXI_26" orien="R0">
+        </instance>
+        <branch name="CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="400" y="1440" type="branch" />
+            <wire x2="480" y1="1440" y2="1440" x1="400" />
+        </branch>
+        <branch name="XLXN_77">
+            <wire x2="480" y1="1632" y2="1632" x1="448" />
+        </branch>
+        <instance x="304" y="1600" name="XLXI_29" orien="R0">
+        </instance>
+        <branch name="XLXN_83(7:0)">
+            <wire x2="1360" y1="1600" y2="1600" x1="1248" />
         </branch>
     </sheet>
 </drawing>
