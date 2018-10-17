@@ -1,0 +1,10 @@
+V3 6
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp1/Lab7_Ex1.vhf 2018/10/11.12:15:27 P.68d
+EN work/Lab7_Ex1 1539285330 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp1/Lab7_Ex1.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/Lab7_Ex1/BEHAVIORAL 1539285331 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp1/Lab7_Ex1.vhf \
+      EN work/Lab7_Ex1 1539285330 CP NOR2
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Lab7_Ex1.vhf 2018/10/11.12:05:31 P.68d

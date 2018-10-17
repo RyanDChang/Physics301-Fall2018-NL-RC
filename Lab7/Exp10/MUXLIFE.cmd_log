@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl MUXLIFE_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/MUXLIFE.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym MUXLIFE /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/MUXLIFE.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/MUXLIFE.sym 

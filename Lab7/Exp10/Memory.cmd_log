@@ -1,0 +1,18 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Memory_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch 
+sch2sym -intstyle ise -family spartan3e -refsym Memory /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Memory_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Memory_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch 
+sch2sym -intstyle ise -family spartan3e -refsym Memory /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Memory /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Memory_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym Memory /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Memory_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym Memory /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Memory_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym Memory /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Memory_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym Memory /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Memory_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym Memory /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Memory_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym Memory /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sym 

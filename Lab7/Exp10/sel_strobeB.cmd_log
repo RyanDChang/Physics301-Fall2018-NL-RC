@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../goodies/sel_strobeB.vhd -prj Exp10 -o sel_strobeB.spl -module sel_strobeB -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w sel_strobeB.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/sel_strobeB.sym 

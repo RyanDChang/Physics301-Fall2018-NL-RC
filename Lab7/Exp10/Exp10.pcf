@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.68d on Tue Oct 16 19:49:54 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "anO<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "anO<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "anO<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "anO<3>" LOCATE = SITE "K14" LEVEL 1;
+SCHEMATIC END;
+
