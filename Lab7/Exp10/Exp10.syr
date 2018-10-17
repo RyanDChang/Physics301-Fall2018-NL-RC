@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: Exp10.prj
@@ -109,6 +109,8 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd" in Library work.
 Architecture behavioral of Entity mux4ssd is up to date.
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd" in Library work.
+Architecture behavioral of Entity ssd_1dig is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" in Library work.
 Entity <m2_1e_mxilinx_exp10> compiled.
 Entity <m2_1e_mxilinx_exp10> (Architecture <behavioral>) compiled.
@@ -145,6 +147,8 @@ Analyzing hierarchy for entity <MUXLIFE_MUSER_Exp10> in library <work> (architec
 
 Analyzing hierarchy for entity <mux4SSD> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <SSD_1dig> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <FD4CE_MXILINX_Exp10> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <M8_1E_MXILINX_Exp10> in library <work> (architecture <behavioral>).
@@ -157,8 +161,6 @@ Analyzing hierarchy for entity <M2_1E_MXILINX_Exp10> in library <work> (architec
 =========================================================================
 Analyzing Entity <Exp10> in library <work> (Architecture <behavioral>).
     Set user-defined property "HU_SET =  XLXI_12_16" for instance <XLXI_12> in unit <Exp10>.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 781: Unconnected output port 'dpO' of component 'mux4SSD'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 781: Unconnected output port 'hexO' of component 'mux4SSD'.
 Entity <Exp10> analyzed. Unit <Exp10> generated.
 
 Analyzing Entity <D3_8E_MXILINX_Exp10> in library <work> (Architecture <behavioral>).
@@ -202,6 +204,9 @@ Entity <M2_1E_MXILINX_Exp10> analyzed. Unit <M2_1E_MXILINX_Exp10> generated.
 Analyzing Entity <mux4SSD> in library <work> (Architecture <behavioral>).
 Entity <mux4SSD> analyzed. Unit <mux4SSD> generated.
 
+Analyzing Entity <SSD_1dig> in library <work> (Architecture <behavioral>).
+Entity <SSD_1dig> analyzed. Unit <SSD_1dig> generated.
+
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -218,6 +223,14 @@ Synthesizing Unit <mux4SSD>.
 	inferred   5 Multiplexer(s).
 	inferred   1 Decoder(s).
 Unit <mux4SSD> synthesized.
+
+
+Synthesizing Unit <SSD_1dig>.
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd".
+    Found 16x7-bit ROM for signal <hexD$rom0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <SSD_1dig> synthesized.
 
 
 Synthesizing Unit <D3_8E_MXILINX_Exp10>.
@@ -260,10 +273,10 @@ Unit <MUXLIFE_MUSER_Exp10> synthesized.
 
 Synthesizing Unit <Exp10>.
     Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf".
-WARNING:Xst:653 - Signal <XLXI_23_sel_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00.
-WARNING:Xst:653 - Signal <XLXI_23_hexD_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
-WARNING:Xst:653 - Signal <XLXI_23_hexC_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
-WARNING:Xst:653 - Signal <XLXI_23_hexB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <XLXN_70> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <XLXI_20_hexD_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <XLXI_20_hexC_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <XLXI_20_hexB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 Unit <Exp10> synthesized.
 
 
@@ -271,6 +284,8 @@ Unit <Exp10> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
 # Multiplexers                                         : 2
  1-bit 4-to-1 multiplexer                              : 1
  4-bit 4-to-1 multiplexer                              : 1
@@ -288,6 +303,8 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
 # Registers                                            : 32
  Flip-Flops                                            : 32
 # Multiplexers                                         : 2
@@ -351,10 +368,10 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 14
+# IOs                              : 22
 
 Cell Usage :
-# BELS                             : 70
+# BELS                             : 77
 #      AND3                        : 16
 #      AND3B1                      : 16
 #      AND4                        : 1
@@ -362,6 +379,7 @@ Cell Usage :
 #      AND4B2                      : 3
 #      AND4B3                      : 1
 #      GND                         : 1
+#      LUT4                        : 7
 #      MUXF5_L                     : 8
 #      MUXF6                       : 4
 #      OR2                         : 16
@@ -370,9 +388,9 @@ Cell Usage :
 #      FDCE                        : 32
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 13
+# IO Buffers                       : 21
 #      IBUF                        : 9
-#      OBUF                        : 4
+#      OBUF                        : 12
 =========================================================================
 
 Device utilization summary:
@@ -382,8 +400,9 @@ Selected Device : 3s100ecp132-4
 
  Number of Slices:                       16  out of    960     1%  
  Number of Slice Flip Flops:             32  out of   1920     1%  
- Number of IOs:                          14
- Number of bonded IOBs:                  14  out of     83    16%  
+ Number of 4 input LUTs:                  7  out of   1920     0%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of     83    26%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -424,8 +443,8 @@ Speed Grade: -4
 
    Minimum period: No path found
    Minimum input arrival time before clock: 4.329ns
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
+   Maximum output required time after clock: 8.960ns
+   Maximum combinational path delay: 10.432ns
 
 Timing Detail:
 --------------
@@ -455,17 +474,73 @@ Offset:              4.329ns (Levels of Logic = 4)
                                        (57.2% logic, 42.8% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 224 / 7
+-------------------------------------------------------------------------
+Offset:              8.960ns (Levels of Logic = 9)
+  Source:            XLXI_14/XLXI_35/I_Q0 (FF)
+  Destination:       Data<6> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_14/XLXI_35/I_Q0 to Data<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.591   0.420  I_Q0 (Q0)
+     end scope: 'XLXI_14/XLXI_35'
+     begin scope: 'XLXI_19/XLXI_1'
+     begin scope: 'I_M01'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M01'
+     MUXF5_L:I0->LO        1   0.321   0.000  I_M03 (M03)
+     MUXF6:I0->O           7   0.521   0.883  I_O (O)
+     end scope: 'XLXI_19/XLXI_1'
+     LUT4:I0->O            1   0.704   0.420  XLXI_23/Mrom_hexD_rom0000111 (Data_5_OBUF)
+     OBUF:I->O                 3.272          Data_5_OBUF (Data<5>)
+    ----------------------------------------
+    Total                      8.960ns (6.817ns logic, 2.143ns route)
+                                       (76.1% logic, 23.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 532 / 7
+-------------------------------------------------------------------------
+Delay:               10.432ns (Levels of Logic = 9)
+  Source:            Ain<0> (PAD)
+  Destination:       Data<6> (PAD)
+
+  Data Path: Ain<0> to Data<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            40   1.218   1.265  Ain_0_IBUF (Ain_0_IBUF)
+     begin scope: 'XLXI_19/XLXI_1'
+     begin scope: 'I_M67'
+     AND3:I2->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M67'
+     MUXF5_L:I1->LO        1   0.321   0.000  I_M47 (M47)
+     MUXF6:I1->O           7   0.521   0.883  I_O (O)
+     end scope: 'XLXI_19/XLXI_1'
+     LUT4:I0->O            1   0.704   0.420  XLXI_23/Mrom_hexD_rom0000111 (Data_5_OBUF)
+     OBUF:I->O                 3.272          Data_5_OBUF (Data<5>)
+    ----------------------------------------
+    Total                     10.432ns (7.444ns logic, 2.988ns route)
+                                       (71.4% logic, 28.6% route)
+
+=========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.46 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.58 secs
  
 --> 
 
 
-Total memory usage is 533872 kilobytes
+Total memory usage is 534016 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   14 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

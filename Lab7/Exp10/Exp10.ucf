@@ -13,14 +13,14 @@ NET "Ain[1]" LOC = E2;
 NET "Ain[2]" LOC = N3;
 
 
-#NET "Data[0]" LOC = m12;
-#NET "Data[1]" LOC = l13;
-#NET "Data[2]" LOC = p12;
-#NET "Data[3]" LOC = n11;
-#NET "Data[4]" LOC = n14;
-#NET "Data[5]" LOC = h12;
-#NET "Data[6]" LOC = l14;
-#NET "Data[7]" LOC = n13;
+NET "Data[0]" LOC = m12;
+NET "Data[1]" LOC = l13;
+NET "Data[2]" LOC = p12;
+NET "Data[3]" LOC = n11;
+NET "Data[4]" LOC = n14;
+NET "Data[5]" LOC = h12;
+NET "Data[6]" LOC = l14;
+NET "Data[7]" LOC = n13;
 
 NET "anO[0]" LOC = F12;
 NET "anO[1]" LOC = J12;

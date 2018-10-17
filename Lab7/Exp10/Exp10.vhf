@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Exp10.vhf
--- /___/   /\     Timestamp : 10/16/2018 19:49:03
+-- /___/   /\     Timestamp : 10/17/2018 13:40:45
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -657,13 +657,14 @@ entity Exp10 is
           Din       : in    std_logic_vector (3 downto 0); 
           ReadData  : in    std_logic; 
           WriteData : in    std_logic; 
-          anO       : out   std_logic_vector (3 downto 0));
+          anO       : out   std_logic_vector (3 downto 0); 
+          Data      : out   std_logic_vector (7 downto 0));
 end Exp10;
 
 architecture BEHAVIORAL of Exp10 is
    attribute HU_SET     : string ;
    signal Address                 : std_logic_vector (7 downto 0);
-   signal hexD                    : std_logic_vector (3 downto 0);
+   signal Dout                    : std_logic_vector (3 downto 0);
    signal XLXN_32                 : std_logic_vector (3 downto 0);
    signal XLXN_33                 : std_logic_vector (3 downto 0);
    signal XLXN_34                 : std_logic_vector (3 downto 0);
@@ -672,12 +673,14 @@ architecture BEHAVIORAL of Exp10 is
    signal XLXN_38                 : std_logic_vector (3 downto 0);
    signal XLXN_39                 : std_logic_vector (3 downto 0);
    signal XLXN_40                 : std_logic_vector (3 downto 0);
-   signal XLXN_58                 : std_logic_vector (3 downto 0);
-   signal XLXN_59                 : std_logic;
-   signal XLXI_23_hexB_openSignal : std_logic_vector (3 downto 0);
-   signal XLXI_23_hexC_openSignal : std_logic_vector (3 downto 0);
-   signal XLXI_23_hexD_openSignal : std_logic_vector (3 downto 0);
-   signal XLXI_23_sel_openSignal  : std_logic_vector (0 to 1);
+   signal XLXN_58                 : std_logic;
+   signal XLXN_59                 : std_logic_vector (3 downto 0);
+   signal XLXN_62                 : std_logic;
+   signal XLXN_65                 : std_logic_vector (3 downto 0);
+   signal XLXN_70                 : std_logic_vector (0 to 1);
+   signal XLXI_20_hexB_openSignal : std_logic_vector (3 downto 0);
+   signal XLXI_20_hexC_openSignal : std_logic_vector (3 downto 0);
+   signal XLXI_20_hexD_openSignal : std_logic_vector (3 downto 0);
    component D3_8E_MXILINX_Exp10
       port ( A0 : in    std_logic; 
              A1 : in    std_logic; 
@@ -734,10 +737,16 @@ architecture BEHAVIORAL of Exp10 is
              hexO  : out   std_logic_vector (3 downto 0));
    end component;
    
+   component SSD_1dig
+      port ( dp_in : in    std_logic; 
+             hexD  : in    std_logic_vector (3 downto 0); 
+             sseg  : out   std_logic_vector (7 downto 0));
+   end component;
+   
    attribute HU_SET of XLXI_12 : label is "XLXI_12_16";
 begin
-   XLXN_58(3 downto 0) <= x"0";
-   XLXN_59 <= '1';
+   XLXN_58 <= '1';
+   XLXN_59(3 downto 0) <= x"0";
    XLXI_12 : D3_8E_MXILINX_Exp10
       port map (A0=>Ain(0),
                 A1=>Ain(1),
@@ -776,19 +785,24 @@ begin
                 Q5(3 downto 0)=>XLXN_38(3 downto 0),
                 Q6(3 downto 0)=>XLXN_39(3 downto 0),
                 Q7(3 downto 0)=>XLXN_40(3 downto 0),
-                Dout(3 downto 0)=>hexD(3 downto 0));
+                Dout(3 downto 0)=>Dout(3 downto 0));
    
-   XLXI_23 : mux4SSD
-      port map (dp_in(3 downto 0)=>XLXN_58(3 downto 0),
-                hexA(3 downto 0)=>hexD(3 downto 0),
-                hexB(3 downto 0)=>XLXI_23_hexB_openSignal(3 downto 0),
-                hexC(3 downto 0)=>XLXI_23_hexC_openSignal(3 downto 0),
-                hexD(3 downto 0)=>XLXI_23_hexD_openSignal(3 downto 0),
-                rb_in=>XLXN_59,
-                sel(0 to 1)=>XLXI_23_sel_openSignal(0 to 1),
+   XLXI_20 : mux4SSD
+      port map (dp_in(3 downto 0)=>XLXN_59(3 downto 0),
+                hexA(3 downto 0)=>Dout(3 downto 0),
+                hexB(3 downto 0)=>XLXI_20_hexB_openSignal(3 downto 0),
+                hexC(3 downto 0)=>XLXI_20_hexC_openSignal(3 downto 0),
+                hexD(3 downto 0)=>XLXI_20_hexD_openSignal(3 downto 0),
+                rb_in=>XLXN_58,
+                sel(0 to 1)=>XLXN_70(0 to 1),
                 anO(3 downto 0)=>anO(3 downto 0),
-                dpO=>open,
-                hexO=>open);
+                dpO=>XLXN_62,
+                hexO(3 downto 0)=>XLXN_65(3 downto 0));
+   
+   XLXI_23 : SSD_1dig
+      port map (dp_in=>XLXN_62,
+                hexD(3 downto 0)=>XLXN_65(3 downto 0),
+                sseg(7 downto 0)=>Data(7 downto 0));
    
 end BEHAVIORAL;
 

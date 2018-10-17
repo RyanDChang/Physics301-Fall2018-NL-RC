@@ -37,18 +37,80 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
 
 Data Sheet report:
 -----------------
-No constraints were found to generate data for the Data Sheet Report section.
-Use the Advanced Analysis (-a) option or generate global constraints for each
-clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+All values displayed in nanoseconds (ns)
 
-Analysis completed Tue Oct 16 19:50:00 2018 
+Setup/Hold to clock CLK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+Ain<0>      |    3.932(R)|   -0.259(R)|CLK_BUFGP         |   0.000|
+Ain<1>      |    3.226(R)|   -0.255(R)|CLK_BUFGP         |   0.000|
+Ain<2>      |    3.954(R)|   -0.839(R)|CLK_BUFGP         |   0.000|
+Din<0>      |    1.683(R)|    0.339(R)|CLK_BUFGP         |   0.000|
+Din<1>      |    1.682(R)|    0.054(R)|CLK_BUFGP         |   0.000|
+Din<2>      |    1.441(R)|    0.314(R)|CLK_BUFGP         |   0.000|
+Din<3>      |    1.757(R)|    0.544(R)|CLK_BUFGP         |   0.000|
+WriteData   |    2.779(R)|   -0.019(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+Data<0>     |   13.304(R)|CLK_BUFGP         |   0.000|
+Data<1>     |   13.244(R)|CLK_BUFGP         |   0.000|
+Data<2>     |   13.361(R)|CLK_BUFGP         |   0.000|
+Data<3>     |   13.024(R)|CLK_BUFGP         |   0.000|
+Data<4>     |   12.740(R)|CLK_BUFGP         |   0.000|
+Data<5>     |   12.746(R)|CLK_BUFGP         |   0.000|
+Data<6>     |   12.601(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Ain<0>         |Data<0>        |   11.701|
+Ain<0>         |Data<1>        |   11.641|
+Ain<0>         |Data<2>        |   11.758|
+Ain<0>         |Data<3>        |   11.421|
+Ain<0>         |Data<4>        |   11.707|
+Ain<0>         |Data<5>        |   11.755|
+Ain<0>         |Data<6>        |   11.165|
+Ain<1>         |Data<0>        |   12.634|
+Ain<1>         |Data<1>        |   12.574|
+Ain<1>         |Data<2>        |   12.691|
+Ain<1>         |Data<3>        |   12.354|
+Ain<1>         |Data<4>        |   12.070|
+Ain<1>         |Data<5>        |   12.076|
+Ain<1>         |Data<6>        |   11.931|
+Ain<2>         |Data<0>        |   10.785|
+Ain<2>         |Data<1>        |   10.711|
+Ain<2>         |Data<2>        |   10.842|
+Ain<2>         |Data<3>        |   10.652|
+Ain<2>         |Data<4>        |   11.295|
+Ain<2>         |Data<5>        |   11.316|
+Ain<2>         |Data<6>        |   10.814|
+ReadData       |Data<0>        |   11.523|
+ReadData       |Data<1>        |   11.463|
+ReadData       |Data<2>        |   11.580|
+ReadData       |Data<3>        |   11.243|
+ReadData       |Data<4>        |   11.468|
+ReadData       |Data<5>        |   11.451|
+ReadData       |Data<6>        |   11.202|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 17 13:41:04 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 332 MB
+Peak Memory Usage: 334 MB
 
 
 
