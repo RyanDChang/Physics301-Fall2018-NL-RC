@@ -1,0 +1,7 @@
+vhdl work "SSD_1dig.vhd"
+vhdl work "sel_strobeB.vhd"
+vhdl work "mux4SSD.vhd"
+vhdl work "DCM_50M.vhd"
+vhdl work "CRenc4bin.vhd"
+vhdl work "bin2BCD3en.vhd"
+verilog work "Lab6_Ex4_V2.vf"

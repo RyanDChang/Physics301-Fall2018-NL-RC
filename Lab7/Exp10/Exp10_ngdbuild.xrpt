@@ -1,39 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="lin64" product="ISE" version="14.6">
+<document OS="nt64" product="ISE" version="14.7">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Wed Oct 17 14:27:58 2018">
+  <application stringID="NgdBuild" timeStamp="Wed Oct 17 20:34:13 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.6/ISE_DS/ISE//bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"/>
+          <item stringID="variable" value="Path"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Common Files\Intuit\QBPOSSDKRuntime;C:\Program Files (x86)\Common Files\Adobe\AGL;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\ProgramData\Vason\GitHubDesktop\bin"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="/opt/Xilinx/14.6/ISE_DS/ISE/"/>
+          <item stringID="variable" value="PATHEXT"/>
+          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
         </row>
         <row stringID="row" value="2">
-          <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.6/ISE_DS/ISE//lib/lin64"/>
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE"/>
+        </row>
+        <row stringID="row" value="4">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\EDK"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Ubuntu"/>
-        <item stringID="User_EnvOsrelease" value="Ubuntu 18.04.1 LTS"/>
+        <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
+        <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
       </item>
-      <item stringID="User_EnvHost" value="Nick"/>
+      <item stringID="User_EnvHost" value="DrFinally"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz"/>
-          <item stringID="speed" value="1296.622 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz"/>
+          <item stringID="speed" value="3392 MHz"/>
         </row>
       </table>
     </section>
@@ -54,8 +66,8 @@
         <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
       </section>
       <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
-        <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="16"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_AND3B1" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="32"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND3B1" value="32"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND4" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND4B1" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND4B2" value="3"/>
@@ -77,16 +89,17 @@
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="27"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="147"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="4"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5_L" value="8"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF6" value="4"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="12"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5_L" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF6" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="32"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_PULLUP" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="128"/>
       </section>
       <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
-        <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="16"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_AND3B1" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="32"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND3B1" value="32"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND4" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND4B1" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND4B2" value="3"/>
@@ -108,10 +121,11 @@
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="27"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="147"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="4"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5_L" value="8"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF6" value="4"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="12"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5_L" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF6" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="32"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_PULLUP" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="128"/>
       </section>

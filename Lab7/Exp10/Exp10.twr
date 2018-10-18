@@ -1,13 +1,13 @@
 --------------------------------------------------------------------------------
-Release 14.6 Trace  (lin64)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
-3 -fastpaths -xml Exp10.twx Exp10.ncd -o Exp10.twr Exp10.pcf -ucf Exp10.ucf
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml Exp10.twx Exp10.ncd -o Exp10.twr Exp10.pcf -ucf Exp10.ucf
 
 Design file:              Exp10.ncd
 Physical constraint file: Exp10.pcf
-Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-06-08)
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -44,33 +44,62 @@ Setup/Hold to clock CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-Ain<0>      |    3.883(R)|   -0.457(R)|CLK_BUFGP         |   0.000|
-Ain<1>      |    3.773(R)|   -0.684(R)|CLK_BUFGP         |   0.000|
-Ain<2>      |    3.893(R)|   -0.191(R)|CLK_BUFGP         |   0.000|
-Din<0>      |    1.619(R)|    0.726(R)|CLK_BUFGP         |   0.000|
-Din<1>      |    1.067(R)|    1.025(R)|CLK_BUFGP         |   0.000|
-Din<2>      |    1.283(R)|    0.797(R)|CLK_BUFGP         |   0.000|
-Din<3>      |    1.374(R)|    0.597(R)|CLK_BUFGP         |   0.000|
-WriteData   |    4.261(R)|   -0.653(R)|CLK_BUFGP         |   0.000|
+Ain<0>      |    4.908(R)|   -1.331(R)|CLK_BUFGP         |   0.000|
+Ain<1>      |    2.929(R)|   -0.168(R)|CLK_BUFGP         |   0.000|
+Ain<2>      |    3.210(R)|   -0.330(R)|CLK_BUFGP         |   0.000|
+Din<0>      |    1.070(R)|    0.787(R)|CLK_BUFGP         |   0.000|
+Din<1>      |    0.698(R)|    0.948(R)|CLK_BUFGP         |   0.000|
+Din<2>      |    0.984(R)|    0.865(R)|CLK_BUFGP         |   0.000|
+Din<3>      |    1.159(R)|    0.646(R)|CLK_BUFGP         |   0.000|
+WriteData   |    3.787(R)|   -0.887(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+memData<0>  |    9.913(R)|CLK_BUFGP         |   0.000|
+memData<1>  |   11.334(R)|CLK_BUFGP         |   0.000|
+memData<2>  |   10.327(R)|CLK_BUFGP         |   0.000|
+memData<3>  |   10.467(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    8.919|         |         |         |
+CLK            |    9.015|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Ain<0>         |memData<0>     |   10.436|
+Ain<0>         |memData<1>     |   10.921|
+Ain<0>         |memData<2>     |    8.652|
+Ain<0>         |memData<3>     |    9.051|
+Ain<1>         |memData<0>     |    9.520|
+Ain<1>         |memData<1>     |   10.488|
+Ain<1>         |memData<2>     |    8.882|
+Ain<1>         |memData<3>     |    8.599|
+Ain<2>         |memData<0>     |    6.553|
+Ain<2>         |memData<1>     |    8.104|
+Ain<2>         |memData<2>     |    8.596|
+Ain<2>         |memData<3>     |    8.889|
+---------------+---------------+---------+
 
-Analysis completed Wed Oct 17 14:28:11 2018 
+
+Analysis completed Wed Oct 17 20:34:30 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 337 MB
+Peak Memory Usage: 169 MB
 
 
 

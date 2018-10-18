@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/Physics301-Fall2018-NL-RC-master_10_7/Physics301-Fall2018-NL-RC-master/Lab7/Lab7_Ex8/Lab7_Ex8.xst" -ofn "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/Physics301-Fall2018-NL-RC-master_10_7/Physics301-Fall2018-NL-RC-master/Lab7/Lab7_Ex8/Lab7_Ex8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab7_Ex8.ucf -p xc3s100e-cp132-4 "Lab7_Ex8.ngc" Lab7_Ex8.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab7_Ex8_map.ncd Lab7_Ex8.ngd Lab7_Ex8.pcf 
+xst -intstyle ise -ifn "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/Physics301-Fall2018-NL-RC-master_10_7/Physics301-Fall2018-NL-RC-master/Lab7/Lab7_Ex8/Lab7_Ex8.xst" -ofn "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/Physics301-Fall2018-NL-RC-master_10_7/Physics301-Fall2018-NL-RC-master/Lab7/Lab7_Ex8/Lab7_Ex8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab7_Ex8.ucf -p xc3s100e-cp132-4 "Lab7_Ex8.ngc" Lab7_Ex8.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab7_Ex8_map.ncd Lab7_Ex8.ngd Lab7_Ex8.pcf 
+par -w -intstyle ise -ol high -t 1 Lab7_Ex8_map.ncd Lab7_Ex8.ncd Lab7_Ex8.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab7_Ex8.ucf -p xc3s100e-cp132-4 "Lab7_Ex8.ngc" Lab7_Ex8.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab7_Ex8_map.ncd Lab7_Ex8.ngd Lab7_Ex8.pcf 
+par -w -intstyle ise -ol high -t 1 Lab7_Ex8_map.ncd Lab7_Ex8.ncd Lab7_Ex8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab7_Ex8.twx Lab7_Ex8.ncd -o Lab7_Ex8.twr Lab7_Ex8.pcf -ucf Lab7_Ex8.ucf 
+bitgen -intstyle ise -f Lab7_Ex8.ut Lab7_Ex8.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab7_Ex8.ucf -p xc3s100e-cp132-4 "Lab7_Ex8.ngc" Lab7_Ex8.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab7_Ex8_map.ncd Lab7_Ex8.ngd Lab7_Ex8.pcf 
+par -w -intstyle ise -ol high -t 1 Lab7_Ex8_map.ncd Lab7_Ex8.ncd Lab7_Ex8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab7_Ex8.twx Lab7_Ex8.ncd -o Lab7_Ex8.twr Lab7_Ex8.pcf -ucf Lab7_Ex8.ucf 
+bitgen -intstyle ise -f Lab7_Ex8.ut Lab7_Ex8.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab7_Ex8.ucf -p xc3s100e-cp132-4 "Lab7_Ex8.ngc" Lab7_Ex8.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab7_Ex8_map.ncd Lab7_Ex8.ngd Lab7_Ex8.pcf 
+par -w -intstyle ise -ol high -t 1 Lab7_Ex8_map.ncd Lab7_Ex8.ncd Lab7_Ex8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab7_Ex8.twx Lab7_Ex8.ncd -o Lab7_Ex8.twr Lab7_Ex8.pcf -ucf Lab7_Ex8.ucf 
+bitgen -intstyle ise -f Lab7_Ex8.ut Lab7_Ex8.ncd 
+xst -intstyle ise -ifn "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/Physics301-Fall2018-NL-RC-master_10_7/Physics301-Fall2018-NL-RC-master/Lab7/Lab7_Ex8/Lab7_Ex8.xst" -ofn "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/Physics301-Fall2018-NL-RC-master_10_7/Physics301-Fall2018-NL-RC-master/Lab7/Lab7_Ex8/Lab7_Ex8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab7_Ex8.ucf -p xc3s100e-cp132-4 "Lab7_Ex8.ngc" Lab7_Ex8.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab7_Ex8_map.ncd Lab7_Ex8.ngd Lab7_Ex8.pcf 
+par -w -intstyle ise -ol high -t 1 Lab7_Ex8_map.ncd Lab7_Ex8.ncd Lab7_Ex8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab7_Ex8.twx Lab7_Ex8.ncd -o Lab7_Ex8.twr Lab7_Ex8.pcf -ucf Lab7_Ex8.ucf 
+bitgen -intstyle ise -f Lab7_Ex8.ut Lab7_Ex8.ncd 

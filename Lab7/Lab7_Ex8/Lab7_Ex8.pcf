@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Oct 11 15:01:20 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Q<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "Q<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "Q<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "Q<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "CLK" LOCATE = SITE "C8" LEVEL 1;
+PIN CLK_pin<0> = BEL "CLK" PINNAME PAD;
+PIN "CLK_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "CLR" LOCATE = SITE "G12" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

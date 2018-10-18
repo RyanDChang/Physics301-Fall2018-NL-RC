@@ -4,14 +4,14 @@
 --   ____  ____ 
 --  /   /\/   / 
 -- /___/  \  /    Vendor: Xilinx 
--- \   \   \/     Version : 14.6
+-- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MUXLIFE.vhf
--- /___/   /\     Timestamp : 10/16/2018 18:52:32
+-- /___/   /\     Timestamp : 10/17/2018 20:11:12
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/MUXLIFE.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/MUXLIFE.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab7/Exp10/MUXLIFE.vhf -w C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab7/Exp10/MUXLIFE.sch
 --Design Name: MUXLIFE
 --Device: spartan3e
 --Purpose:
@@ -137,10 +137,10 @@ architecture BEHAVIORAL of M8_1E_MXILINX_MUXLIFE is
    end component;
    attribute BOX_TYPE of MUXF6 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_20";
-   attribute HU_SET of I_M23 : label is "I_M23_19";
-   attribute HU_SET of I_M45 : label is "I_M45_18";
-   attribute HU_SET of I_M67 : label is "I_M67_17";
+   attribute HU_SET of I_M01 : label is "I_M01_28";
+   attribute HU_SET of I_M23 : label is "I_M23_27";
+   attribute HU_SET of I_M45 : label is "I_M45_26";
+   attribute HU_SET of I_M67 : label is "I_M67_25";
 begin
    I_M01 : M2_1E_MXILINX_MUXLIFE
       port map (D0=>D0,
@@ -230,10 +230,10 @@ architecture BEHAVIORAL of MUXLIFE is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_21";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_22";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_23";
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_24";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_29";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_30";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_31";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_32";
 begin
    XLXI_1 : M8_1E_MXILINX_MUXLIFE
       port map (D0=>Q0(0),

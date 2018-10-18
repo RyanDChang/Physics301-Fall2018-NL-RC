@@ -1,7 +1,7 @@
 
 # PlanAhead Generated physical constraints 
 
-NET "CLK" LOC = C8;
+NET "CLK" LOC = B8;
 NET "WriteData" LOC = A7;
 NET "ReadData" LOC = G12;
 NET "Din[0]" LOC = P11;
@@ -26,3 +26,8 @@ NET "anO[0]" LOC = F12;
 NET "anO[1]" LOC = J12;
 NET "anO[2]" LOC = M13;
 NET "anO[3]" LOC = K14;
+
+NET "memData[0]" LOC = M5;
+NET "memData[1]" LOC = M11;
+NET "memData[2]" LOC = P7;
+NET "memData[3]" LOC = P6;
