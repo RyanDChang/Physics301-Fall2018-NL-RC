@@ -33,15 +33,15 @@
         <signal name="ReadData" />
         <signal name="Dout(3:0)" />
         <signal name="Dout(7:0)" />
-        <signal name="Data(7:0)" />
         <signal name="anO(3:0)" />
+        <signal name="Data(7:0)" />
         <port polarity="Input" name="Din(3:0)" />
         <port polarity="Input" name="Ain(2:0)" />
         <port polarity="Input" name="WriteData" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="ReadData" />
-        <port polarity="Output" name="Data(7:0)" />
         <port polarity="Output" name="anO(3:0)" />
+        <port polarity="Output" name="Data(7:0)" />
         <blockdef name="d3_8e">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-576" y2="-576" x1="0" />
@@ -109,7 +109,7 @@
             <line x2="384" y1="-608" y2="-608" x1="320" />
         </blockdef>
         <blockdef name="ADDisplay">
-            <timestamp>2018-10-17T21:24:55</timestamp>
+            <timestamp>2018-10-18T19:2:42</timestamp>
             <line x2="0" y1="224" y2="224" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="84" height="24" />
@@ -164,11 +164,11 @@
         </block>
         <block symbolname="ADDisplay" name="XLXI_31">
             <blockpin signalname="ReadData" name="ReadData" />
+            <blockpin signalname="CLK" name="CLK" />
             <blockpin signalname="Dout(7:0)" name="Dout(7:0)" />
             <blockpin signalname="Address(7:0)" name="Address(7:0)" />
             <blockpin signalname="Data(7:0)" name="Data(7:0)" />
             <blockpin signalname="anO(3:0)" name="anO(3:0)" />
-            <blockpin signalname="CLK" name="CLK" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -340,13 +340,13 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="208" y="1472" type="branch" />
             <wire x2="272" y1="1472" y2="1472" x1="208" />
         </branch>
-        <branch name="Data(7:0)">
-            <wire x2="784" y1="1152" y2="1152" x1="656" />
-        </branch>
         <branch name="anO(3:0)">
             <wire x2="784" y1="1216" y2="1216" x1="656" />
         </branch>
         <iomarker fontsize="28" x="784" y="1216" name="anO(3:0)" orien="R0" />
-        <iomarker fontsize="28" x="784" y="1152" name="Data(7:0)" orien="R0" />
+        <branch name="Data(7:0)">
+            <wire x2="736" y1="1152" y2="1152" x1="656" />
+        </branch>
+        <iomarker fontsize="28" x="736" y="1152" name="Data(7:0)" orien="R0" />
     </sheet>
 </drawing>

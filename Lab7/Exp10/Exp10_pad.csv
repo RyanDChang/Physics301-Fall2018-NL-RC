@@ -1,7 +1,7 @@
 #Release 14.6 - par P.68d (lin64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Wed Oct 17 14:28:09 2018
+#Thu Oct 18 12:08:54 2018
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -54,7 +54,7 @@ C4,,,NC,,,,,,,,,,,,
 C5,,DIFFS,IO_L09N_0,UNUSED,,0,,,,,,,,,
 C6,,DIFFS,IO_L08N_0/VREF_0,UNUSED,,0,,,,,,,,,
 C7,,,GND,,,,,,,,,,,,
-C8,CLK,IBUF,IP_L06N_0/GCLK9,INPUT,LVCMOS25*,0,,,,NONE,,LOCATED,NO,NONE,
+C8,CLK,IBUF,IP_L06N_0/GCLK9,INPUT,LVCMOS25*,0,,,,NONE,,UNLOCATED,NO,NONE,
 C9,,DIFFS,IO_L04N_0/GCLK5,UNUSED,,0,,,,,,,,,
 C10,,,GND,,,,,,,,,,,,
 C11,,IBUF,IP,UNUSED,,0,,,,,,,,,

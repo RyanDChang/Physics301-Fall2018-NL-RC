@@ -1,0 +1,7 @@
+select figure at 2365 1011 8 -branches -sn=1
+select figure at 2244 951 8 -branches -sn=1
+select figure at 1811 1106 8 -branches -sn=1
+delete selection -sn=1
+select figure at 1752 1209 8 -branches -sn=1
+add autowire 1648 1104 1776 1104 8 -sn=1
+select figure at 2940 857 8 -branches -sn=1

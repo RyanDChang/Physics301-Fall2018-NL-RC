@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ADDisplay_drc.vhf
--- /___/   /\     Timestamp : 10/17/2018 14:24:53
+-- /___/   /\     Timestamp : 10/18/2018 12:02:31
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ADDisplay_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sch
+--Command: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ADDisplay_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Lab7_update/Exp10/ADDisplay.sch
 --Design Name: ADDisplay
 --Device: spartan3e
 --Purpose:

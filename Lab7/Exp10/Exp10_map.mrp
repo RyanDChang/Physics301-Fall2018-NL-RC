@@ -9,22 +9,22 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Oct 17 14:28:00 2018
+Mapped Date    : Thu Oct 18 12:08:46 2018
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:           107 out of   1,920    5%
-  Number of 4 input LUTs:                79 out of   1,920    4%
+  Number of Slice Flip Flops:           102 out of   1,920    5%
+  Number of 4 input LUTs:                66 out of   1,920    3%
 Logic Distribution:
-  Number of occupied Slices:            127 out of     960   13%
-    Number of Slices containing only related logic:     127 out of     127 100%
-    Number of Slices containing unrelated logic:          0 out of     127   0%
+  Number of occupied Slices:            117 out of     960   12%
+    Number of Slices containing only related logic:     117 out of     117 100%
+    Number of Slices containing unrelated logic:          0 out of     117   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         206 out of   1,920   10%
-    Number used as logic:                79
+  Total Number of 4 input LUTs:         193 out of   1,920   10%
+    Number used as logic:                66
     Number used as a route-thru:        127
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -33,7 +33,7 @@ Logic Distribution:
   Number of bonded IOBs:                 22 out of      83   26%
   Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                2.09
+Average Fanout of Non-Clock Nets:                2.06
 
 Peak Memory Usage:  577 MB
 Total REAL time to MAP completion:  1 secs 
@@ -88,49 +88,13 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  11 block(s) removed
-   5 block(s) optimized away
-  11 signal(s) removed
+   2 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
 
-The trimmed logic reported below is either:
-   1. part of a cycle
-   2. part of disabled logic
-   3. a side-effect of other trimmed logic
-
-The signal "N12" is unused and has been removed.
- Unused block "XLXI_31/XLXI_31/Mrom_b8_mux00003_F" (ROM) removed.
-  The signal "XLXI_31/XLXI_31/Mrom_b4_mux0000" is unused and has been removed.
-   Unused block "XLXI_31/XLXI_31/Mrom_b4_mux000012" (ROM) removed.
-  The signal "XLXI_31/XLXI_31/Mrom_b4_mux00001" is unused and has been removed.
-   Unused block "XLXI_31/XLXI_31/Mrom_b4_mux0000111" (ROM) removed.
-The signal "N13" is unused and has been removed.
- Unused block "XLXI_31/XLXI_31/Mrom_b8_mux00003_G" (ROM) removed.
-The signal "XLXI_31/XLXI_31/Mrom_b11_mux00003" is unused and has been removed.
- Unused block "XLXI_31/XLXI_31/Mrom_b11_mux000031" (ROM) removed.
-  The signal "XLXI_31/XLXI_31/Mrom_b4_mux00003" is unused and has been removed.
-   Unused block "XLXI_31/XLXI_31/Mrom_b4_mux000031" (ROM) removed.
-  The signal "XLXI_31/XLXI_31/Mrom_b6_mux00003" is unused and has been removed.
-   Unused block "XLXI_31/XLXI_31/Mrom_b6_mux000031" (ROM) removed.
-    The signal "XLXI_31/XLXI_31/Mrom_b4_mux00002" is unused and has been removed.
-     Unused block "XLXI_31/XLXI_31/Mrom_b4_mux000021" (ROM) removed.
-  The signal "XLXI_31/XLXI_31/Mrom_b8_mux00003" is unused and has been removed.
-   Unused block "XLXI_31/XLXI_31/Mrom_b8_mux00003" (MUX) removed.
-  The signal "XLXI_31/XLXI_31/Mrom_b7_mux00001" is unused and has been removed.
-   Unused block "XLXI_31/XLXI_31/Mrom_b_mux000031" (ROM) removed.
-The signal "XLXI_31/XLXI_31/Mrom_b9_mux00003" is unused and has been removed.
- Unused block "XLXI_31/XLXI_31/Mrom_b9_mux000031" (ROM) removed.
-
 Optimized Block(s):
 TYPE 		BLOCK
-LUT3 		XLXI_31/XLXI_20/Mmux_hexO_3
-   optimized to 0
-FDC 		XLXI_31/XLXI_31/Dout2_0
-   optimized to 0
-FDC 		XLXI_31/XLXI_31/Dout2_1
-   optimized to 0
 GND 		XST_GND
 VCC 		XST_VCC
 

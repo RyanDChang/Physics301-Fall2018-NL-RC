@@ -89,9 +89,15 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1539117629" xil_pn:in_ck="-6108908949911469304" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3157747669798189397" xil_pn:start_ts="1539117628">
+    <transform xil_pn:end_ts="1539284304" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1539284304">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1539742058" xil_pn:in_ck="-6108908949911469304" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3157747669798189397" xil_pn:start_ts="1539742057">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Lab6_Ex4_V2.vf"/>
     </transform>
     <transform xil_pn:end_ts="1539116930" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4004375674561002974" xil_pn:start_ts="1539116930">
@@ -107,7 +113,7 @@
       <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1539116930" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1539116930">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
@@ -185,7 +191,7 @@
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
     <transform xil_pn:end_ts="1539117499" xil_pn:in_ck="-6108908949911474753" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1539117495">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Lab6_Ex4_V2.bgn"/>

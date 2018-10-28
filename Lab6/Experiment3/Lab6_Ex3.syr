@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -107,73 +107,69 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+WARNING:HDLParsers:3607 - Unit work/Lab6_Ex3 is now defined in a different file.  It was defined in "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.vhf", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.vhf".
+WARNING:HDLParsers:3607 - Unit work/Lab6_Ex3/BEHAVIORAL is now defined in a different file.  It was defined in "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.vhf", and is now defined in "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.vhf".
 Compiling vhdl file "/home/nick/Downloads/bin2BCD3en.vhd" in Library work.
-Entity <bin2BCD3en> compiled.
-Entity <bin2BCD3en> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity bin2bcd3en is up to date.
 Compiling vhdl file "/home/nick/Downloads/DCM_50M.vhd" in Library work.
-Entity <DCM_50M> compiled.
-Entity <DCM_50M> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity dcm_50m is up to date.
 Compiling vhdl file "/home/nick/Downloads/SSD_1dig.vhd" in Library work.
-Entity <SSD_1dig> compiled.
-Entity <SSD_1dig> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity ssd_1dig is up to date.
 Compiling vhdl file "/home/nick/Downloads/mux4SSD.vhd" in Library work.
-Entity <mux4SSD> compiled.
-Entity <mux4SSD> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity mux4ssd is up to date.
 Compiling vhdl file "/home/nick/Downloads/sel_strobeB.vhd" in Library work.
-Entity <sel_strobeB> compiled.
-Entity <sel_strobeB> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.vhf" in Library work.
-Entity <Lab6_Ex3> compiled.
-Entity <Lab6_Ex3> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity sel_strobeb is up to date.
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.vhf" in Library work.
+Architecture behavioral of Entity lab6_ex3 is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <Lab6_Ex3> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <Lab6_Ex3> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <bin2BCD3en> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <bin2BCD3en> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <DCM_50M> in library <work> (architecture <Behavioral>) with generics.
+Analyzing hierarchy for entity <DCM_50M> in library <work> (architecture <behavioral>) with generics.
 	DIV100 = 50
 	DIV1k = 500
 	DIV50 = 25
 
-Analyzing hierarchy for entity <SSD_1dig> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <SSD_1dig> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <mux4SSD> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <mux4SSD> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <sel_strobeB> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <sel_strobeB> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <Lab6_Ex3> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.vhf" line 101: Unconnected output port 'RBout' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.vhf" line 111: Unconnected output port 'CLK1M' of component 'DCM_50M'.
-WARNING:Xst:753 - "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.vhf" line 111: Unconnected output port 'CLK10k' of component 'DCM_50M'.
-WARNING:Xst:753 - "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.vhf" line 111: Unconnected output port 'CLK1' of component 'DCM_50M'.
+Analyzing Entity <Lab6_Ex3> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.vhf" line 101: Unconnected output port 'RBout' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.vhf" line 111: Unconnected output port 'CLK1M' of component 'DCM_50M'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.vhf" line 111: Unconnected output port 'CLK10k' of component 'DCM_50M'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.vhf" line 111: Unconnected output port 'CLK1' of component 'DCM_50M'.
 Entity <Lab6_Ex3> analyzed. Unit <Lab6_Ex3> generated.
 
-Analyzing Entity <bin2BCD3en> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <bin2BCD3en> in library <work> (Architecture <behavioral>).
 INFO:Xst:1561 - "/home/nick/Downloads/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
 INFO:Xst:1561 - "/home/nick/Downloads/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
 INFO:Xst:2679 - Register <Dout3> in unit <bin2BCD3en> has a constant value of 0000 during circuit operation. The register is replaced by logic.
 Entity <bin2BCD3en> analyzed. Unit <bin2BCD3en> generated.
 
-Analyzing generic Entity <DCM_50M> in library <work> (Architecture <Behavioral>).
+Analyzing generic Entity <DCM_50M> in library <work> (Architecture <behavioral>).
 	DIV100 = 50
 	DIV1k = 500
 	DIV50 = 25
 Entity <DCM_50M> analyzed. Unit <DCM_50M> generated.
 
-Analyzing Entity <SSD_1dig> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <SSD_1dig> in library <work> (Architecture <behavioral>).
 Entity <SSD_1dig> analyzed. Unit <SSD_1dig> generated.
 
-Analyzing Entity <mux4SSD> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <mux4SSD> in library <work> (Architecture <behavioral>).
 Entity <mux4SSD> analyzed. Unit <mux4SSD> generated.
 
-Analyzing Entity <sel_strobeB> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <sel_strobeB> in library <work> (Architecture <behavioral>).
 Entity <sel_strobeB> analyzed. Unit <sel_strobeB> generated.
 
 
@@ -254,7 +250,7 @@ Unit <sel_strobeB> synthesized.
 
 
 Synthesizing Unit <Lab6_Ex3>.
-    Related source file is "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.vhf".
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.vhf".
 Unit <Lab6_Ex3> synthesized.
 
 
@@ -717,14 +713,14 @@ Offset:              8.721ns (Levels of Logic = 4)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.47 secs
+Total CPU time to Xst completion: 4.43 secs
  
 --> 
 
 
-Total memory usage is 542176 kilobytes
+Total memory usage is 542332 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   75 (   0 filtered)
+Number of warnings :   77 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 

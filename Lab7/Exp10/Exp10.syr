@@ -118,8 +118,8 @@ Architecture behavioral of Entity dcm_50m is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd" in Library work.
 Architecture behavioral of Entity sel_strobeb is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" in Library work.
-Entity <ADDisplay_MUSER_Exp10> compiled.
-Entity <ADDisplay_MUSER_Exp10> (Architecture <BEHAVIORAL>) compiled.
+Entity <addisplay_muser_exp10> compiled.
+Entity <addisplay_muser_exp10> (Architecture <behavioral>) compiled.
 Entity <m2_1e_mxilinx_exp10> compiled.
 Entity <m2_1e_mxilinx_exp10> (Architecture <behavioral>) compiled.
 Entity <m8_1e_mxilinx_exp10> compiled.
@@ -134,9 +134,6 @@ Entity <d3_8e_mxilinx_exp10> compiled.
 Entity <d3_8e_mxilinx_exp10> (Architecture <behavioral>) compiled.
 Entity <exp10> compiled.
 Entity <exp10> (Architecture <behavioral>) compiled.
-Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.vhf" in Library work.
-Entity <ADDisplay> compiled.
-Entity <ADDisplay> (Architecture <BEHAVIORAL>) compiled.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.vhf" in Library work.
 Architecture behavioral of Entity fd4ce_mxilinx_memory is up to date.
 Architecture behavioral of Entity memory is up to date.
@@ -144,6 +141,8 @@ Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/M
 Architecture behavioral of Entity m2_1e_mxilinx_muxlife is up to date.
 Architecture behavioral of Entity m8_1e_mxilinx_muxlife is up to date.
 Architecture behavioral of Entity muxlife is up to date.
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.vhf" in Library work.
+Architecture behavioral of Entity addisplay is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -156,15 +155,13 @@ Analyzing hierarchy for entity <Memory_MUSER_Exp10> in library <work> (architect
 
 Analyzing hierarchy for entity <MUXLIFE_MUSER_Exp10> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <ADDisplay_MUSER_Exp10> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <ADDisplay_MUSER_Exp10> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <FD4CE_MXILINX_Exp10> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <M8_1E_MXILINX_Exp10> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <mux4SSD> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <SSD_1dig> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <bin2BCD3en> in library <work> (architecture <behavioral>).
 
@@ -173,7 +170,7 @@ Analyzing hierarchy for entity <DCM_50M> in library <work> (architecture <behavi
 	DIV1k = 500
 	DIV50 = 25
 
-Analyzing hierarchy for entity <sel_strobeB> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <SSD_1dig> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <M2_1E_MXILINX_Exp10> in library <work> (architecture <behavioral>).
 
@@ -182,21 +179,22 @@ Analyzing hierarchy for entity <M2_1E_MXILINX_Exp10> in library <work> (architec
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <Exp10> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_12_33" for instance <XLXI_12> in unit <Exp10>.
+    Set user-defined property "HU_SET =  XLXI_12_16" for instance <XLXI_12> in unit <Exp10>.
+WARNING:Xst:752 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 891: Unconnected input port 'ReadWrite' of component 'ADDisplay_MUSER_Exp10' is tied to default value.
 Entity <Exp10> analyzed. Unit <Exp10> generated.
 
 Analyzing Entity <D3_8E_MXILINX_Exp10> in library <work> (Architecture <behavioral>).
 Entity <D3_8E_MXILINX_Exp10> analyzed. Unit <D3_8E_MXILINX_Exp10> generated.
 
 Analyzing Entity <Memory_MUSER_Exp10> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_25" for instance <XLXI_1> in unit <Memory_MUSER_Exp10>.
-    Set user-defined property "HU_SET =  XLXI_35_26" for instance <XLXI_35> in unit <Memory_MUSER_Exp10>.
-    Set user-defined property "HU_SET =  XLXI_36_27" for instance <XLXI_36> in unit <Memory_MUSER_Exp10>.
-    Set user-defined property "HU_SET =  XLXI_37_28" for instance <XLXI_37> in unit <Memory_MUSER_Exp10>.
-    Set user-defined property "HU_SET =  XLXI_38_29" for instance <XLXI_38> in unit <Memory_MUSER_Exp10>.
-    Set user-defined property "HU_SET =  XLXI_39_30" for instance <XLXI_39> in unit <Memory_MUSER_Exp10>.
-    Set user-defined property "HU_SET =  XLXI_40_31" for instance <XLXI_40> in unit <Memory_MUSER_Exp10>.
-    Set user-defined property "HU_SET =  XLXI_41_32" for instance <XLXI_41> in unit <Memory_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_1_8" for instance <XLXI_1> in unit <Memory_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_35_9" for instance <XLXI_35> in unit <Memory_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_36_10" for instance <XLXI_36> in unit <Memory_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_37_11" for instance <XLXI_37> in unit <Memory_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_38_12" for instance <XLXI_38> in unit <Memory_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_39_13" for instance <XLXI_39> in unit <Memory_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_40_14" for instance <XLXI_40> in unit <Memory_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_41_15" for instance <XLXI_41> in unit <Memory_MUSER_Exp10>.
 Entity <Memory_MUSER_Exp10> analyzed. Unit <Memory_MUSER_Exp10> generated.
 
 Analyzing Entity <FD4CE_MXILINX_Exp10> in library <work> (Architecture <behavioral>).
@@ -207,39 +205,37 @@ Analyzing Entity <FD4CE_MXILINX_Exp10> in library <work> (Architecture <behavior
 Entity <FD4CE_MXILINX_Exp10> analyzed. Unit <FD4CE_MXILINX_Exp10> generated.
 
 Analyzing Entity <MUXLIFE_MUSER_Exp10> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_21" for instance <XLXI_1> in unit <MUXLIFE_MUSER_Exp10>.
-    Set user-defined property "HU_SET =  XLXI_5_22" for instance <XLXI_5> in unit <MUXLIFE_MUSER_Exp10>.
-    Set user-defined property "HU_SET =  XLXI_9_23" for instance <XLXI_9> in unit <MUXLIFE_MUSER_Exp10>.
-    Set user-defined property "HU_SET =  XLXI_10_24" for instance <XLXI_10> in unit <MUXLIFE_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_1_4" for instance <XLXI_1> in unit <MUXLIFE_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_5_5" for instance <XLXI_5> in unit <MUXLIFE_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_9_6" for instance <XLXI_9> in unit <MUXLIFE_MUSER_Exp10>.
+    Set user-defined property "HU_SET =  XLXI_10_7" for instance <XLXI_10> in unit <MUXLIFE_MUSER_Exp10>.
 Entity <MUXLIFE_MUSER_Exp10> analyzed. Unit <MUXLIFE_MUSER_Exp10> generated.
 
 Analyzing Entity <M8_1E_MXILINX_Exp10> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_M01_20" for instance <I_M01> in unit <M8_1E_MXILINX_Exp10>.
-    Set user-defined property "HU_SET =  I_M23_19" for instance <I_M23> in unit <M8_1E_MXILINX_Exp10>.
-    Set user-defined property "HU_SET =  I_M45_18" for instance <I_M45> in unit <M8_1E_MXILINX_Exp10>.
-    Set user-defined property "HU_SET =  I_M67_17" for instance <I_M67> in unit <M8_1E_MXILINX_Exp10>.
+    Set user-defined property "HU_SET =  I_M01_3" for instance <I_M01> in unit <M8_1E_MXILINX_Exp10>.
+    Set user-defined property "HU_SET =  I_M23_2" for instance <I_M23> in unit <M8_1E_MXILINX_Exp10>.
+    Set user-defined property "HU_SET =  I_M45_1" for instance <I_M45> in unit <M8_1E_MXILINX_Exp10>.
+    Set user-defined property "HU_SET =  I_M67_0" for instance <I_M67> in unit <M8_1E_MXILINX_Exp10>.
 Entity <M8_1E_MXILINX_Exp10> analyzed. Unit <M8_1E_MXILINX_Exp10> generated.
 
 Analyzing Entity <M2_1E_MXILINX_Exp10> in library <work> (Architecture <behavioral>).
 Entity <M2_1E_MXILINX_Exp10> analyzed. Unit <M2_1E_MXILINX_Exp10> generated.
 
-Analyzing Entity <ADDisplay_MUSER_Exp10> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 116: Unconnected output port 'Dout3' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 116: Unconnected output port 'Dout2' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 116: Unconnected output port 'RBout' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 126: Unconnected output port 'CLK1M' of component 'DCM_50M'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 126: Unconnected output port 'CLK10k' of component 'DCM_50M'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 126: Unconnected output port 'CLK1' of component 'DCM_50M'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 138: Unconnected output port 'Dout1' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 138: Unconnected output port 'Dout0' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 138: Unconnected output port 'RBout' of component 'bin2BCD3en'.
+Analyzing Entity <ADDisplay_MUSER_Exp10> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 94: Unconnected output port 'hexO' of component 'mux4SSD'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 106: Unconnected output port 'Dout3' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 106: Unconnected output port 'Dout2' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 106: Unconnected output port 'RBout' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 116: Unconnected output port 'CLK1M' of component 'DCM_50M'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 116: Unconnected output port 'CLK10k' of component 'DCM_50M'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 116: Unconnected output port 'CLK1' of component 'DCM_50M'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 124: Unconnected output port 'Dout1' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 124: Unconnected output port 'Dout0' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf" line 124: Unconnected output port 'RBout' of component 'bin2BCD3en'.
 Entity <ADDisplay_MUSER_Exp10> analyzed. Unit <ADDisplay_MUSER_Exp10> generated.
 
 Analyzing Entity <mux4SSD> in library <work> (Architecture <behavioral>).
 Entity <mux4SSD> analyzed. Unit <mux4SSD> generated.
-
-Analyzing Entity <SSD_1dig> in library <work> (Architecture <behavioral>).
-Entity <SSD_1dig> analyzed. Unit <SSD_1dig> generated.
 
 Analyzing Entity <bin2BCD3en> in library <work> (Architecture <behavioral>).
 INFO:Xst:1561 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
@@ -253,8 +249,8 @@ Analyzing generic Entity <DCM_50M> in library <work> (Architecture <behavioral>)
 	DIV50 = 25
 Entity <DCM_50M> analyzed. Unit <DCM_50M> generated.
 
-Analyzing Entity <sel_strobeB> in library <work> (Architecture <behavioral>).
-Entity <sel_strobeB> analyzed. Unit <sel_strobeB> generated.
+Analyzing Entity <SSD_1dig> in library <work> (Architecture <behavioral>).
+Entity <SSD_1dig> analyzed. Unit <SSD_1dig> generated.
 
 
 =========================================================================
@@ -265,21 +261,7 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <mux4SSD>.
     Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd".
-    Found 4-bit 4-to-1 multiplexer for signal <hexO>.
-    Found 1-bit 4-to-1 multiplexer for signal <dpO>.
-    Found 1-of-4 decoder for signal <anO>.
-    Summary:
-	inferred   5 Multiplexer(s).
-	inferred   1 Decoder(s).
 Unit <mux4SSD> synthesized.
-
-
-Synthesizing Unit <SSD_1dig>.
-    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd".
-    Found 16x7-bit ROM for signal <hexD$rom0000>.
-    Summary:
-	inferred   1 ROM(s).
-Unit <SSD_1dig> synthesized.
 
 
 Synthesizing Unit <bin2BCD3en>.
@@ -328,15 +310,12 @@ Synthesizing Unit <DCM_50M>.
 Unit <DCM_50M> synthesized.
 
 
-Synthesizing Unit <sel_strobeB>.
-    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd".
-    Found 4x2-bit ROM for signal <sel$mux0001> created at line 44.
-    Found 2-bit register for signal <sel>.
-    Found 2-bit register for signal <selx>.
+Synthesizing Unit <SSD_1dig>.
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd".
+    Found 16x7-bit ROM for signal <hexD$rom0000>.
     Summary:
 	inferred   1 ROM(s).
-	inferred   4 D-type flip-flop(s).
-Unit <sel_strobeB> synthesized.
+Unit <SSD_1dig> synthesized.
 
 
 Synthesizing Unit <D3_8E_MXILINX_Exp10>.
@@ -346,6 +325,7 @@ Unit <D3_8E_MXILINX_Exp10> synthesized.
 
 Synthesizing Unit <ADDisplay_MUSER_Exp10>.
     Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Exp10.vhf".
+WARNING:Xst:653 - Signal <XLXI_20_hexA_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 Unit <ADDisplay_MUSER_Exp10> synthesized.
 
 
@@ -392,27 +372,20 @@ Unit <Exp10> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 18
+# ROMs                                                 : 17
  16x4-bit ROM                                          : 14
  16x7-bit ROM                                          : 1
- 4x2-bit ROM                                           : 1
  8x4-bit ROM                                           : 2
 # Adders/Subtractors                                   : 4
  32-bit adder                                          : 4
 # Counters                                             : 4
  32-bit up counter                                     : 4
-# Registers                                            : 26
+# Registers                                            : 24
  1-bit register                                        : 20
- 2-bit register                                        : 2
  4-bit register                                        : 4
 # Comparators                                          : 4
  32-bit comparator greatequal                          : 1
  32-bit comparator greater                             : 3
-# Multiplexers                                         : 2
- 1-bit 4-to-1 multiplexer                              : 1
- 4-bit 4-to-1 multiplexer                              : 1
-# Decoders                                             : 1
- 1-of-4 decoder                                        : 1
 
 =========================================================================
 
@@ -420,37 +393,27 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-INFO:Xst:2261 - The FF/Latch <Dout2_2> in Unit <XLXI_31> is equivalent to the following FF/Latch, which will be removed : <Dout2_3> 
-WARNING:Xst:1710 - FF/Latch <Dout2_2> (without init value) has a constant value of 0 in block <XLXI_31>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <XLXI_31> is unconnected in block <XLXI_31>.
+   It will be removed from the design.
 WARNING:Xst:2404 -  FFs/Latches <Dout2<3:2>> (without init value) have a constant value of 0 in block <bin2BCD3en>.
-
-Synthesizing (advanced) Unit <sel_strobeB>.
-INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_sel_mux0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
-Unit <sel_strobeB> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 18
+# ROMs                                                 : 17
  16x4-bit ROM                                          : 14
  16x7-bit ROM                                          : 1
- 4x2-bit ROM                                           : 1
  8x4-bit ROM                                           : 2
 # Adders/Subtractors                                   : 4
  32-bit adder                                          : 4
 # Counters                                             : 4
  32-bit up counter                                     : 4
-# Registers                                            : 68
- Flip-Flops                                            : 68
+# Registers                                            : 64
+ Flip-Flops                                            : 64
 # Comparators                                          : 4
  32-bit comparator greatequal                          : 1
  32-bit comparator greater                             : 3
-# Multiplexers                                         : 2
- 1-bit 4-to-1 multiplexer                              : 1
- 4-bit 4-to-1 multiplexer                              : 1
-# Decoders                                             : 1
- 1-of-4 decoder                                        : 1
 
 =========================================================================
 
@@ -476,9 +439,6 @@ Optimizing unit <bin2BCD3en> ...
 Optimizing unit <Memory_MUSER_Exp10> ...
 
 Optimizing unit <M8_1E_MXILINX_Exp10> ...
-WARNING:Xst:1710 - FF/Latch <XLXI_31/XLXI_25/Dout1_1> (without init value) has a constant value of 0 in block <Exp10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_31/XLXI_25/Dout1_2> (without init value) has a constant value of 0 in block <Exp10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_31/XLXI_25/Dout1_3> (without init value) has a constant value of 0 in block <Exp10>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <XLXI_31/XLXI_26/cnt10k_31> of sequential type is unconnected in block <Exp10>.
 WARNING:Xst:2677 - Node <XLXI_31/XLXI_26/cnt10k_30> of sequential type is unconnected in block <Exp10>.
 WARNING:Xst:2677 - Node <XLXI_31/XLXI_26/cnt10k_29> of sequential type is unconnected in block <Exp10>.
@@ -548,7 +508,13 @@ WARNING:Xst:2677 - Node <XLXI_31/XLXI_26/clk_10k> of sequential type is unconnec
 WARNING:Xst:2677 - Node <XLXI_31/XLXI_25/RBout_2> of sequential type is unconnected in block <Exp10>.
 WARNING:Xst:2677 - Node <XLXI_31/XLXI_25/Dout2_1> of sequential type is unconnected in block <Exp10>.
 WARNING:Xst:2677 - Node <XLXI_31/XLXI_25/Dout2_0> of sequential type is unconnected in block <Exp10>.
+WARNING:Xst:2677 - Node <XLXI_31/XLXI_25/Dout1_0> of sequential type is unconnected in block <Exp10>.
+WARNING:Xst:2677 - Node <XLXI_31/XLXI_25/Dout1_1> of sequential type is unconnected in block <Exp10>.
+WARNING:Xst:2677 - Node <XLXI_31/XLXI_25/Dout1_2> of sequential type is unconnected in block <Exp10>.
+WARNING:Xst:2677 - Node <XLXI_31/XLXI_25/Dout1_3> of sequential type is unconnected in block <Exp10>.
 WARNING:Xst:2677 - Node <XLXI_31/XLXI_31/RBout_2> of sequential type is unconnected in block <Exp10>.
+WARNING:Xst:2677 - Node <XLXI_31/XLXI_31/Dout2_1> of sequential type is unconnected in block <Exp10>.
+WARNING:Xst:2677 - Node <XLXI_31/XLXI_31/Dout2_0> of sequential type is unconnected in block <Exp10>.
 WARNING:Xst:2677 - Node <XLXI_31/XLXI_31/Dout1_0> of sequential type is unconnected in block <Exp10>.
 WARNING:Xst:2677 - Node <XLXI_31/XLXI_31/Dout1_1> of sequential type is unconnected in block <Exp10>.
 WARNING:Xst:2677 - Node <XLXI_31/XLXI_31/Dout1_2> of sequential type is unconnected in block <Exp10>.
@@ -560,7 +526,7 @@ WARNING:Xst:2677 - Node <XLXI_31/XLXI_31/Dout0_0> of sequential type is unconnec
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Exp10, actual ratio is 14.
+Found area constraint ratio of 100 (+ 5) on block Exp10, actual ratio is 13.
 
 Final Macro Processing ...
 
@@ -568,8 +534,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 109
- Flip-Flops                                            : 109
+# Registers                                            : 102
+ Flip-Flops                                            : 102
 
 =========================================================================
 
@@ -598,7 +564,7 @@ Design Statistics
 # IOs                              : 22
 
 Cell Usage :
-# BELS                             : 543
+# BELS                             : 518
 #      AND3                        : 16
 #      AND3B1                      : 16
 #      AND4                        : 1
@@ -608,23 +574,20 @@ Cell Usage :
 #      GND                         : 1
 #      INV                         : 11
 #      LUT1                        : 127
-#      LUT2                        : 18
-#      LUT3                        : 11
-#      LUT4                        : 27
+#      LUT2                        : 13
+#      LUT3                        : 3
+#      LUT4                        : 19
 #      MUXCY                       : 147
-#      MUXF5                       : 4
 #      MUXF5_L                     : 8
 #      MUXF6                       : 4
 #      OR2                         : 16
 #      VCC                         : 1
 #      XORCY                       : 128
-# FlipFlops/Latches                : 109
-#      FD                          : 3
-#      FDC                         : 2
+# FlipFlops/Latches                : 102
 #      FDCE                        : 32
-#      FDCP                        : 5
+#      FDCP                        : 4
 #      FDE                         : 2
-#      FDR                         : 65
+#      FDR                         : 64
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
@@ -638,9 +601,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                       97  out of    960    10%  
- Number of Slice Flip Flops:            109  out of   1920     5%  
- Number of 4 input LUTs:                194  out of   1920    10%  
+ Number of Slices:                       87  out of    960     9%  
+ Number of Slice Flip Flops:            102  out of   1920     5%  
+ Number of 4 input LUTs:                173  out of   1920     9%  
  Number of IOs:                          22
  Number of bonded IOBs:                  22  out of     83    26%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -663,13 +626,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+-----------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)       | Load  |
------------------------------------+-----------------------------+-------+
-XLXI_31/XLXI_26/clk_1k             | NONE(XLXI_31/XLXI_27/selx_1)| 11    |
-XLXI_31/XLXI_26/clk_1m1            | BUFG                        | 33    |
-CLK                                | BUFGP                       | 65    |
------------------------------------+-----------------------------+-------+
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+XLXI_31/XLXI_26/clk_1m1            | BUFG                         | 33    |
+CLK                                | BUFGP                        | 65    |
+XLXI_31/XLXI_26/clk_1k             | NONE(XLXI_31/XLXI_25/Dout0_1)| 4     |
+-----------------------------------+------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -677,9 +640,7 @@ Asynchronous Control Signals Information:
 -------------------------------------------------------------------+------------------------------+-------+
 Control Signal                                                     | Buffer(FF name)              | Load  |
 -------------------------------------------------------------------+------------------------------+-------+
-Dout<4>(XST_GND:G)                                                 | NONE(XLXI_14/XLXI_1/I_Q0)    | 33    |
-Data_7_OBUF(XST_VCC:P)                                             | NONE(XLXI_31/XLXI_31/Dout2_0)| 2     |
-ReadData                                                           | IBUF                         | 1     |
+Data_7_OBUF(XST_GND:G)                                             | NONE(XLXI_14/XLXI_1/I_Q0)    | 32    |
 XLXI_31/XLXI_25/Dout0_0_and0000(XLXI_31/XLXI_25/Dout0_0_and00001:O)| NONE(XLXI_31/XLXI_25/Dout0_0)| 1     |
 XLXI_31/XLXI_25/Dout0_0_and0001(XLXI_31/XLXI_25/Dout0_0_and00011:O)| NONE(XLXI_31/XLXI_25/Dout0_0)| 1     |
 XLXI_31/XLXI_25/Dout0_1_and0000(XLXI_31/XLXI_25/Dout0_1_and00001:O)| NONE(XLXI_31/XLXI_25/Dout0_1)| 1     |
@@ -695,35 +656,13 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 10.324ns (Maximum Frequency: 96.860MHz)
-   Minimum input arrival time before clock: 8.021ns
-   Maximum output required time after clock: 7.952ns
+   Minimum input arrival time before clock: 6.973ns
+   Maximum output required time after clock: 5.870ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_31/XLXI_26/clk_1k'
-  Clock period: 2.225ns (frequency: 449.438MHz)
-  Total number of paths / destination ports: 5 / 4
--------------------------------------------------------------------------
-Delay:               2.225ns (Levels of Logic = 1)
-  Source:            XLXI_31/XLXI_27/selx_1 (FF)
-  Destination:       XLXI_31/XLXI_27/sel_0 (FF)
-  Source Clock:      XLXI_31/XLXI_26/clk_1k rising
-  Destination Clock: XLXI_31/XLXI_26/clk_1k rising
-
-  Data Path: XLXI_31/XLXI_27/selx_1 to XLXI_31/XLXI_27/sel_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.591   0.622  XLXI_31/XLXI_27/selx_1 (XLXI_31/XLXI_27/selx_1)
-     LUT2:I0->O            1   0.704   0.000  XLXI_31/XLXI_27/Mrom_sel_mux0001111 (XLXI_31/XLXI_27/Mrom_sel_mux00011)
-     FD:D                      0.308          XLXI_31/XLXI_27/sel_0
-    ----------------------------------------
-    Total                      2.225ns (1.603ns logic, 0.622ns route)
-                                       (72.0% logic, 28.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_31/XLXI_26/clk_1m1'
@@ -836,87 +775,87 @@ Delay:               9.046ns (Levels of Logic = 33)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_31/XLXI_26/clk_1k'
-  Total number of paths / destination ports: 499 / 7
+  Total number of paths / destination ports: 190 / 4
 -------------------------------------------------------------------------
-Offset:              8.021ns (Levels of Logic = 7)
-  Source:            Ain<0> (PAD)
-  Destination:       XLXI_31/XLXI_31/Dout2_0 (FF)
+Offset:              6.973ns (Levels of Logic = 8)
+  Source:            ReadData (PAD)
+  Destination:       XLXI_31/XLXI_25/Dout0_1 (FF)
   Destination Clock: XLXI_31/XLXI_26/clk_1k rising
 
-  Data Path: Ain<0> to XLXI_31/XLXI_31/Dout2_0
+  Data Path: ReadData to XLXI_31/XLXI_25/Dout0_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            40   1.218   1.265  Ain_0_IBUF (Ain_0_IBUF)
-     begin scope: 'XLXI_12'
-     AND4B2:I1->O          8   0.704   0.932  I_36_33 (D4)
-     end scope: 'XLXI_12'
-     LUT4:I0->O            3   0.704   0.706  XLXI_31/XLXI_31/Mrom_b4_mux000012 (XLXI_31/XLXI_31/Mrom_b4_mux0000)
-     LUT4:I0->O            1   0.704   0.000  XLXI_31/XLXI_31/Mrom_b8_mux00003_F (N12)
-     MUXF5:I0->O           1   0.321   0.455  XLXI_31/XLXI_31/Mrom_b8_mux00003 (XLXI_31/XLXI_31/Mrom_b8_mux00003)
-     LUT4:I2->O            1   0.704   0.000  XLXI_31/XLXI_31/Mrom_b11_mux000031 (XLXI_31/XLXI_31/Mrom_b11_mux00003)
-     FDC:D                     0.308          XLXI_31/XLXI_31/Dout2_0
+     IBUF:I->O            40   1.218   1.265  ReadData_IBUF (ReadData_IBUF)
+     begin scope: 'XLXI_19/XLXI_5'
+     begin scope: 'I_M67'
+     AND3:I1->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M67'
+     MUXF5_L:I1->LO        1   0.321   0.000  I_M47 (M47)
+     MUXF6:I1->O           5   0.521   0.808  I_O (O)
+     end scope: 'XLXI_19/XLXI_5'
+     LUT3:I0->O            1   0.704   0.000  XLXI_31/XLXI_25/Mrom_b10_mux000021 (XLXI_31/XLXI_25/Mrom_b10_mux00002)
+     FDCP:D                    0.308          XLXI_31/XLXI_25/Dout0_3
     ----------------------------------------
-    Total                      8.021ns (4.663ns logic, 3.358ns route)
-                                       (58.1% logic, 41.9% route)
+    Total                      6.973ns (4.480ns logic, 2.493ns route)
+                                       (64.3% logic, 35.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
   Total number of paths / destination ports: 160 / 64
 -------------------------------------------------------------------------
-Offset:              4.562ns (Levels of Logic = 4)
+Offset:              4.329ns (Levels of Logic = 4)
   Source:            Ain<0> (PAD)
-  Destination:       XLXI_14/XLXI_39/I_Q0 (FF)
+  Destination:       XLXI_14/XLXI_1/I_Q0 (FF)
   Destination Clock: CLK rising
 
-  Data Path: Ain<0> to XLXI_14/XLXI_39/I_Q0
+  Data Path: Ain<0> to XLXI_14/XLXI_1/I_Q0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            40   1.218   1.265  Ain_0_IBUF (Ain_0_IBUF)
      begin scope: 'XLXI_12'
-     AND4:I2->O            9   0.704   0.820  I_36_30 (D7)
+     AND4:I2->O            4   0.704   0.587  I_36_30 (D7)
      end scope: 'XLXI_12'
      begin scope: 'XLXI_14/XLXI_41'
      FDCE:CE                   0.555          I_Q0
     ----------------------------------------
-    Total                      4.562ns (2.477ns logic, 2.085ns route)
-                                       (54.3% logic, 45.7% route)
+    Total                      4.329ns (2.477ns logic, 1.852ns route)
+                                       (57.2% logic, 42.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_31/XLXI_26/clk_1k'
-  Total number of paths / destination ports: 120 / 11
+  Total number of paths / destination ports: 28 / 7
 -------------------------------------------------------------------------
-Offset:              7.952ns (Levels of Logic = 4)
-  Source:            XLXI_31/XLXI_27/sel_1 (FF)
+Offset:              5.870ns (Levels of Logic = 2)
+  Source:            XLXI_31/XLXI_25/Dout0_0 (FF)
   Destination:       Data<6> (PAD)
   Source Clock:      XLXI_31/XLXI_26/clk_1k rising
 
-  Data Path: XLXI_31/XLXI_27/sel_1 to Data<6>
+  Data Path: XLXI_31/XLXI_25/Dout0_0 to Data<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             10   0.591   1.057  XLXI_31/XLXI_27/sel_1 (XLXI_31/XLXI_27/sel_1)
-     LUT3:I0->O            1   0.704   0.000  XLXI_31/XLXI_20/Mmux_hexO_3 (XLXI_31/XLXI_20/Mmux_hexO_3)
-     MUXF5:I1->O           7   0.321   0.883  XLXI_31/XLXI_20/Mmux_hexO_2_f5 (XLXI_31/XLXN_65<0>)
-     LUT4:I0->O            1   0.704   0.420  XLXI_31/XLXI_23/Mrom_hexD_rom000031 (Data_3_OBUF)
+     FDCP:C->Q             7   0.591   0.883  XLXI_31/XLXI_25/Dout0_0 (XLXI_31/XLXI_25/Dout0_0)
+     LUT4:I0->O            1   0.704   0.420  XLXI_31/XLXI_33/Mrom_hexD_rom000031 (Data_3_OBUF)
      OBUF:I->O                 3.272          Data_3_OBUF (Data<3>)
     ----------------------------------------
-    Total                      7.952ns (5.592ns logic, 2.360ns route)
-                                       (70.3% logic, 29.7% route)
+    Total                      5.870ns (4.567ns logic, 1.303ns route)
+                                       (77.8% logic, 22.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.69 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.65 secs
  
 --> 
 
 
-Total memory usage is 542160 kilobytes
+Total memory usage is 541804 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  103 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :  109 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

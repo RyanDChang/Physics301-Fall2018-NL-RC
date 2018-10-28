@@ -7,3 +7,9 @@ map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab6_Ex
 par -w -intstyle ise -ol high -t 1 Lab6_Ex3_map.ncd Lab6_Ex3.ncd Lab6_Ex3.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab6_Ex3.twx Lab6_Ex3.ncd -o Lab6_Ex3.twr Lab6_Ex3.pcf -ucf Lab6_Ex3.ucf 
 bitgen -intstyle ise -f Lab6_Ex3.ut Lab6_Ex3.ncd 
+xst -intstyle ise -ifn "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.xst" -ofn "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6_Ex3.ucf -p xc3s100e-cp132-4 Lab6_Ex3.ngc Lab6_Ex3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Lab6_Ex3_map.ncd Lab6_Ex3.ngd Lab6_Ex3.pcf 
+par -w -intstyle ise -ol high -t 1 Lab6_Ex3_map.ncd Lab6_Ex3.ncd Lab6_Ex3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Lab6_Ex3.twx Lab6_Ex3.ncd -o Lab6_Ex3.twr Lab6_Ex3.pcf -ucf Lab6_Ex3.ucf 
+bitgen -intstyle ise -f Lab6_Ex3.ut Lab6_Ex3.ncd 

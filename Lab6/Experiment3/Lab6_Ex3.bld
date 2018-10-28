@@ -5,7 +5,8 @@ Command Line: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -nt timestamp -uc Lab6_Ex3.ucf -p xc3s100e-cp132-4 Lab6_Ex3.ngc
 Lab6_Ex3.ngd
 
-Reading NGO file "/home/nick/Documents/Physics/Lab 6/Experiment3/Lab6_Ex3.ngc"
+Reading NGO file
+"/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Experiment3/Lab6_Ex3.ngc"
 ...
 Gathering constraint information from source properties...
 Done.

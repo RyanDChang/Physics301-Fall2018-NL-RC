@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/impact.xsl
+OUTFILE=/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6
+LICENSE=iMPACT
+USER_INFO=iMPACT

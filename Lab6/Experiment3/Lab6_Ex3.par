@@ -1,7 +1,7 @@
 Release 14.6 par P.68d (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Nick::  Thu Oct 04 14:49:39 2018
+Nick::  Tue Oct 16 19:09:42 2018
 
 par -w -intstyle ise -ol high -t 1 Lab6_Ex3_map.ncd Lab6_Ex3.ncd Lab6_Ex3.pcf 
 
@@ -57,7 +57,7 @@ Finished initial Timing Analysis.  REAL time: 0 secs
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 0 secs 
+Total REAL time at the beginning of Placer: 1 secs 
 Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
@@ -119,21 +119,21 @@ Updating file: Lab6_Ex3.ncd with current fully routed design.
 
 Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 WARNING:Route:455 - CLK Net:XLXI_2/clk_1k may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 5 secs 
+Total REAL time to Router completion: 4 secs 
 Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status

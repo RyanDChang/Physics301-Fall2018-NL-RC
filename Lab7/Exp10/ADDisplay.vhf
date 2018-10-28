@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ADDisplay.vhf
--- /___/   /\     Timestamp : 10/17/2018 14:27:47
+-- /___/   /\     Timestamp : 10/18/2018 12:04:25
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Lab7_update/Exp10/ADDisplay.sch
 --Design Name: ADDisplay
 --Device: spartan3e
 --Purpose:

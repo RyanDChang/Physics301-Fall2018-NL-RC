@@ -26,7 +26,6 @@
         <signal name="Din(7:0)" />
         <signal name="XLXN_46" />
         <signal name="XLXN_47" />
-        <signal name="XLXN_48" />
         <port polarity="Input" name="row(3:0)" />
         <port polarity="Input" name="En" />
         <port polarity="Input" name="SYS_CLK" />
@@ -270,19 +269,17 @@
         <iomarker fontsize="28" x="2720" y="960" name="sseg(7:0)" orien="R0" />
         <branch name="Din(7:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="1280" type="branch" />
+            <wire x2="1024" y1="1280" y2="1296" x1="1024" />
             <wire x2="1040" y1="1280" y2="1280" x1="1024" />
             <wire x2="1104" y1="1280" y2="1280" x1="1040" />
-            <wire x2="1024" y1="1280" y2="1296" x1="1024" />
         </branch>
         <bustap x2="928" y1="1296" y2="1296" x1="1024" />
         <branch name="row(3:0)">
-            <wire x2="688" y1="672" y2="672" x1="608" />
-            <wire x2="896" y1="672" y2="672" x1="688" />
+            <wire x2="896" y1="672" y2="672" x1="608" />
             <wire x2="896" y1="672" y2="816" x1="896" />
             <wire x2="1024" y1="816" y2="816" x1="896" />
             <wire x2="1024" y1="816" y2="864" x1="1024" />
-            <wire x2="1088" y1="864" y2="864" x1="1024" />
-            <wire x2="1104" y1="864" y2="864" x1="1088" />
+            <wire x2="1104" y1="864" y2="864" x1="1024" />
             <wire x2="1024" y1="864" y2="864" x1="928" />
         </branch>
         <iomarker fontsize="28" x="1744" y="736" name="keyO" orien="R0" />

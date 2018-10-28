@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Wed Oct 17 14:28:01 2018
+// Written by: Map P.68d on Thu Oct 18 12:08:47 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -12,7 +12,6 @@ COMP "Data<4>" LOCATE = SITE "N14" LEVEL 1;
 COMP "Data<5>" LOCATE = SITE "H12" LEVEL 1;
 COMP "Data<6>" LOCATE = SITE "L14" LEVEL 1;
 COMP "Data<7>" LOCATE = SITE "N13" LEVEL 1;
-COMP "CLK" LOCATE = SITE "C8" LEVEL 1;
 COMP "ReadData" LOCATE = SITE "G12" LEVEL 1;
 COMP "Ain<0>" LOCATE = SITE "F3" LEVEL 1;
 COMP "Ain<1>" LOCATE = SITE "E2" LEVEL 1;
