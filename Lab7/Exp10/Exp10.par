@@ -1,13 +1,17 @@
-Release 14.6 par P.68d (lin64)
+Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
+<<<<<<< HEAD
 Nick::  Thu Oct 18 12:08:49 2018
+=======
+DRFINALLY::  Wed Oct 17 20:34:21 2018
+>>>>>>> e1b5f3295b4046289d86f926e89c736339674fac
 
 par -w -intstyle ise -ol high -t 1 Exp10_map.ncd Exp10.ncd Exp10.pcf 
 
 
 Constraints file: Exp10.pcf.
-Loading device for application Rf_Device from file '3s100e.nph' in environment /opt/Xilinx/14.6/ISE_DS/ISE/.
+Loading device for application Rf_Device from file '3s100e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
    "Exp10" is an NCD, version 3.2, device xc3s100e, package cp132, speed -4
 
 Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
@@ -19,12 +23,12 @@ INFO:Par:282 - No user timing constraints were detected or you have set the opti
    reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
    Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
 
-Device speed data version:  "PRODUCTION 1.27 2013-06-08".
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
 
 
 Design Summary Report:
 
- Number of External IOBs                          22 out of 83     26%
+ Number of External IOBs                          26 out of 83     31%
 
    Number of External Input IOBs                 10
 
@@ -32,17 +36,21 @@ Design Summary Report:
         Number of LOCed External Input IBUFs      9 out of 10     90%
 
 
-   Number of External Output IOBs                12
+   Number of External Output IOBs                16
 
-      Number of External Output IOBs             12
-        Number of LOCed External Output IOBs     12 out of 12    100%
+      Number of External Output IOBs             16
+        Number of LOCed External Output IOBs     16 out of 16    100%
 
 
    Number of External Bidir IOBs                  0
 
 
    Number of BUFGMUXs                        2 out of 24      8%
+<<<<<<< HEAD
    Number of Slices                        117 out of 960    12%
+=======
+   Number of Slices                        133 out of 960    13%
+>>>>>>> e1b5f3295b4046289d86f926e89c736339674fac
       Number of SLICEMs                      0 out of 480     0%
 
 
@@ -52,15 +60,16 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 0 secs 
-Finished initial Timing Analysis.  REAL time: 0 secs 
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
 
 
 Starting Placer
 Total REAL time at the beginning of Placer: 1 secs 
-Total CPU  time at the beginning of Placer: 0 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
+<<<<<<< HEAD
 Phase 1.1  Initial Placement Analysis (Checksum:10494d3b) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
@@ -95,6 +104,42 @@ Phase 9.18  Placement Optimization (Checksum:b584dc26) REAL time: 2 secs
 
 Phase 10.5  Local Placement Optimization
 Phase 10.5  Local Placement Optimization (Checksum:b584dc26) REAL time: 2 secs 
+=======
+Phase 1.1  Initial Placement Analysis (Checksum:475d6a9c) REAL time: 1 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:475d6a9c) REAL time: 1 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:475d6a9c) REAL time: 1 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:4ab3a4b4) REAL time: 1 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:4ab3a4b4) REAL time: 1 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:4ab3a4b4) REAL time: 1 secs 
+
+Phase 7.8  Global Placement
+............................
+.........
+....................................................
+.........
+..........
+Phase 7.8  Global Placement (Checksum:d2d231ee) REAL time: 2 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:d2d231ee) REAL time: 2 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:ba66748b) REAL time: 2 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:ba66748b) REAL time: 2 secs 
+>>>>>>> e1b5f3295b4046289d86f926e89c736339674fac
 
 Total REAL time to Placer completion: 2 secs 
 Total CPU  time to Placer completion: 2 secs 
@@ -105,6 +150,7 @@ Writing design to file Exp10.ncd
 Starting Router
 
 
+<<<<<<< HEAD
 Phase  1  : 592 unrouted;      REAL time: 3 secs 
 
 Phase  2  : 525 unrouted;      REAL time: 3 secs 
@@ -112,16 +158,31 @@ Phase  2  : 525 unrouted;      REAL time: 3 secs
 Phase  3  : 119 unrouted;      REAL time: 3 secs 
 
 Phase  4  : 123 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+=======
+Phase  1  : 691 unrouted;      REAL time: 3 secs 
+
+Phase  2  : 626 unrouted;      REAL time: 3 secs 
+
+Phase  3  : 150 unrouted;      REAL time: 3 secs 
+
+Phase  4  : 154 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+>>>>>>> e1b5f3295b4046289d86f926e89c736339674fac
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: Exp10.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
 Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
+<<<<<<< HEAD
 Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+=======
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+>>>>>>> e1b5f3295b4046289d86f926e89c736339674fac
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
@@ -129,7 +190,11 @@ Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4
 WARNING:Route:455 - CLK Net:XLXI_31/XLXI_26/clk_1k may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
+<<<<<<< HEAD
 Total REAL time to Router completion: 4 secs 
+=======
+Total REAL time to Router completion: 5 secs 
+>>>>>>> e1b5f3295b4046289d86f926e89c736339674fac
 Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
@@ -148,6 +213,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
+<<<<<<< HEAD
 |XLXI_31/XLXI_26/clk_ |              |      |      |            |             |
 |                  1m | BUFGMUX_X1Y10| No   |   17 |  0.004     |  0.042      |
 +---------------------+--------------+------+------+------------+-------------+
@@ -155,6 +221,15 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_31/XLXI_26/clk_ |              |      |      |            |             |
 |                  1k |         Local|      |    5 |  0.013     |  1.708      |
+=======
+|           CLK_BUFGP | BUFGMUX_X2Y11| No   |   33 |  0.032     |  0.072      |
++---------------------+--------------+------+------+------------+-------------+
+|XLXI_31/XLXI_26/clk_ |              |      |      |            |             |
+|                  1m | BUFGMUX_X1Y10| No   |   17 |  0.004     |  0.044      |
++---------------------+--------------+------+------+------------+-------------+
+|XLXI_31/XLXI_26/clk_ |              |      |      |            |             |
+|                  1k |         Local|      |    9 |  0.092     |  1.826      |
+>>>>>>> e1b5f3295b4046289d86f926e89c736339674fac
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -174,11 +249,22 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
   Autotimespec constraint for clock net XLX | SETUP       |         N/A|     8.559ns|     N/A|           0
   I_31/XLXI_26/clk_1m                       | HOLD        |     1.097ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net CLK | SETUP       |         N/A|     8.599ns|     N/A|           0
   _BUFGP                                    | HOLD        |     1.035ns|            |       0|           0
+=======
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     9.015ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     1.035ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     9.485ns|     N/A|           0
+  I_31/XLXI_26/clk_1m                       | HOLD        |     1.102ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.342ns|     N/A|           0
+  I_31/XLXI_26/clk_1k                       | HOLD        |     1.158ns|            |       0|           0
+>>>>>>> e1b5f3295b4046289d86f926e89c736339674fac
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -197,7 +283,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 5 secs 
 Total CPU time to PAR completion: 4 secs 
 
-Peak Memory Usage:  568 MB
+Peak Memory Usage:  257 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

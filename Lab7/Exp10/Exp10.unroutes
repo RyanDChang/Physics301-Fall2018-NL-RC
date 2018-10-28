@@ -1,7 +1,11 @@
-Release 14.6 - par P.68d (lin64)
+Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
+<<<<<<< HEAD
 Thu Oct 18 12:08:54 2018
+=======
+Wed Oct 17 20:34:27 2018
+>>>>>>> e1b5f3295b4046289d86f926e89c736339674fac
 
 All signals are completely routed.
 

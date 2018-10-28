@@ -4,14 +4,14 @@
 --   ____  ____ 
 --  /   /\/   / 
 -- /___/  \  /    Vendor: Xilinx 
--- \   \   \/     Version : 14.6
+-- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Memory.vhf
--- /___/   /\     Timestamp : 10/16/2018 18:11:16
+-- /___/   /\     Timestamp : 10/17/2018 20:11:11
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.vhf -w C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab7/Exp10/Memory.sch
 --Design Name: Memory
 --Device: spartan3e
 --Purpose:
@@ -128,14 +128,14 @@ architecture BEHAVIORAL of Memory is
              Q3  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_1";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_2";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_3";
-   attribute HU_SET of XLXI_38 : label is "XLXI_38_4";
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_5";
-   attribute HU_SET of XLXI_40 : label is "XLXI_40_6";
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_17";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_18";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_19";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_20";
+   attribute HU_SET of XLXI_38 : label is "XLXI_38_21";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_22";
+   attribute HU_SET of XLXI_40 : label is "XLXI_40_23";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_24";
 begin
    XLXI_1 : FD4CE_MXILINX_Memory
       port map (C=>CLK,

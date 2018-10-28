@@ -1,0 +1,28 @@
+
+NET "En" LOC = G12;
+NET "keyO" LOC = M5;
+NET "SYS_CLK" LOC = B8;
+
+NET "anO[0]" LOC = K14;
+NET "anO[1]" LOC = M13;
+NET "anO[2]" LOC = J12;
+NET "anO[3]" LOC = F12;
+
+NET "sseg[0]" LOC = M12;
+NET "sseg[1]" LOC = L13;
+NET "sseg[2]" LOC = P12;
+NET "sseg[3]" LOC = N11;
+NET "sseg[4]" LOC = N14;
+NET "sseg[5]" LOC = H12;
+NET "sseg[6]" LOC = L14;
+NET "sseg[7]" LOC = N13;
+
+NET "colO[0]" LOC = C6;
+NET "colO[1]" LOC = B6;
+NET "colO[2]" LOC = C5;
+NET "colO[3]" LOC = B7;
+
+NET "row[0]" LOC = B5;
+NET "row[1]" LOC = J3;
+NET "row[2]" LOC = A3;
+NET "row[3]" LOC = B2;

@@ -4,14 +4,22 @@
 --   ____  ____ 
 --  /   /\/   / 
 -- /___/  \  /    Vendor: Xilinx 
--- \   \   \/     Version : 14.6
+-- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ADDisplay.vhf
+<<<<<<< HEAD
 -- /___/   /\     Timestamp : 10/18/2018 12:04:25
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
 --Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Lab7_update/Exp10/ADDisplay.sch
+=======
+-- /___/   /\     Timestamp : 10/17/2018 20:11:12
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.vhf -w C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab7/Exp10/ADDisplay.sch
+>>>>>>> e1b5f3295b4046289d86f926e89c736339674fac
 --Design Name: ADDisplay
 --Device: spartan3e
 --Purpose:
