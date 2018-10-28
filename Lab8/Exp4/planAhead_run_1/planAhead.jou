@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:07:37 MDT 2013
+# Start of session at: Tue Oct 23 15:11:59 2018
+# Process ID: 28864
+# Log file: /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp4/planAhead_run_1/planAhead.log
+# Journal file: /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp4/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp4/pa.fromNetlist.tcl
+startgroup
+set_property package_pin M5 [get_ports {Dout[0]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {Dout[1]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {Dout[2]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports Enable]
+endgroup
+save_constraints

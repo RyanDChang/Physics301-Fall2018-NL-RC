@@ -1,0 +1,16 @@
+V3 10
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd 2018/10/06.21:00:18 P.68d
+EN work/DCM_50M 1540327597 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/DCM_50M/Behavioral 1540327598 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd \
+      EN work/DCM_50M 1540327597
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Experiment1.vhf 2018/10/23.12:27:18 P.68d
+EN work/Experiment1 1540327599 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Experiment1.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/Experiment1/BEHAVIORAL 1540327600 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Experiment1.vhf \
+      EN work/Experiment1 1540327599 CP FD CP INV CP DCM_50M

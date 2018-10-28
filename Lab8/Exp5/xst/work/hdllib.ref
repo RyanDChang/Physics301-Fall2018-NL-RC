@@ -1,0 +1,6 @@
+EN dcm_50m NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd sub00/vhpl04 1540497331
+AR fjkc_mxilinx_exp5 behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf sub00/vhpl01 1540497334
+EN exp5 NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf sub00/vhpl02 1540497335
+AR exp5 behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf sub00/vhpl03 1540497336
+EN fjkc_mxilinx_exp5 NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf sub00/vhpl00 1540497333
+AR dcm_50m behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd sub00/vhpl05 1540497332

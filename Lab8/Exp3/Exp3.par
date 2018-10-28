@@ -1,0 +1,267 @@
+Release 14.6 par P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Nick::  Tue Oct 23 14:48:39 2018
+
+par -w -intstyle ise -ol high -t 1 Exp3_map.ncd Exp3.ncd Exp3.pcf 
+
+
+Constraints file: Exp3.pcf.
+Loading device for application Rf_Device from file '3s100e.nph' in environment /opt/Xilinx/14.6/ISE_DS/ISE/.
+   "Exp3" is an NCD, version 3.2, device xc3s100e, package cp132, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2013-06-08".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          20 out of 83     24%
+
+   Number of External Input IOBs                  1
+
+      Number of External Input IBUFs              1
+        Number of LOCed External Input IBUFs      1 out of 1     100%
+
+
+   Number of External Output IOBs                19
+
+      Number of External Output IOBs             19
+        Number of LOCed External Output IOBs     15 out of 19     78%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        5 out of 24     20%
+   Number of Slices                        212 out of 960    22%
+      Number of SLICEMs                      0 out of 480     0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:1b7b7d14) REAL time: 1 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: Dout<7>
+   	 Comp: Dout<6>
+   	 Comp: Dout<5>
+   	 Comp: Dout<4>
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 19 IOs, 15 are locked and 4 are not locked. If you would like
+   to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:1b7b7d14) REAL time: 1 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:1b7b7d14) REAL time: 1 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+........
+Phase 4.2  Initial Clock and IO Placement (Checksum:4b3f39b9) REAL time: 1 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:4b3f39b9) REAL time: 1 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:4b3f39b9) REAL time: 1 secs 
+
+Phase 7.3  Local Placement Optimization
+........
+Phase 7.3  Local Placement Optimization (Checksum:54043eb3) REAL time: 1 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:54043eb3) REAL time: 1 secs 
+
+Phase 9.8  Global Placement
+.........................................
+..........................
+...........................................................
+.....
+..
+Phase 9.8  Global Placement (Checksum:c691097a) REAL time: 2 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:c691097a) REAL time: 2 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:7a16ee25) REAL time: 3 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:7a16ee25) REAL time: 3 secs 
+
+Total REAL time to Placer completion: 3 secs 
+Total CPU  time to Placer completion: 3 secs 
+Writing design to file Exp3.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 1022 unrouted;      REAL time: 3 secs 
+
+Phase  2  : 913 unrouted;      REAL time: 3 secs 
+
+Phase  3  : 50 unrouted;      REAL time: 3 secs 
+
+Phase  4  : 61 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+
+Updating file: Exp3.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+
+Updating file: Exp3.ncd with current fully routed design.
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+WARNING:Route:455 - CLK Net:XLXI_12/XLXI_10/clk_1k may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Dout_0_OBUF may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Dout_1_OBUF may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 6 secs 
+Total CPU time to Router completion: 6 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|        XLXI_7/clk_1 | BUFGMUX_X1Y11| No   |   18 |  0.034     |  0.071      |
++---------------------+--------------+------+------+------------+-------------+
+|       XLXI_7/clk_1k |  BUFGMUX_X2Y1| No   |   17 |  0.025     |  0.065      |
++---------------------+--------------+------+------+------------+-------------+
+|           CLK_BUFGP | BUFGMUX_X2Y11| No   |   17 |  0.026     |  0.070      |
++---------------------+--------------+------+------+------------+-------------+
+|XLXI_12/XLXI_10/clk_ |              |      |      |            |             |
+|                  1m | BUFGMUX_X1Y10| No   |   17 |  0.018     |  0.057      |
++---------------------+--------------+------+------+------------+-------------+
+|       XLXI_7/clk_1m |  BUFGMUX_X1Y0| No   |   17 |  0.033     |  0.071      |
++---------------------+--------------+------+------+------------+-------------+
+|         Dout_0_OBUF |         Local|      |    6 |  0.000     |  2.028      |
++---------------------+--------------+------+------+------------+-------------+
+|         Dout_1_OBUF |         Local|      |    6 |  0.000     |  1.530      |
++---------------------+--------------+------+------+------------+-------------+
+|XLXI_12/XLXI_10/clk_ |              |      |      |            |             |
+|                  1k |         Local|      |    7 |  0.042     |  1.776      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Dou | SETUP       |         N/A|     1.505ns|     N/A|           0
+  t_0_OBUF                                  | HOLD        |     1.050ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     3.193ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|    11.830ns|     N/A|           0
+  I_7/clk_1                                 | HOLD        |     1.104ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Dou | SETUP       |         N/A|     1.474ns|     N/A|           0
+  t_1_OBUF                                  | HOLD        |     1.025ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     3.193ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|    11.268ns|     N/A|           0
+  I_7/clk_1k                                | HOLD        |     1.235ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|    11.921ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     1.033ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|    11.471ns|     N/A|           0
+  I_12/XLXI_10/clk_1m                       | HOLD        |     1.102ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|    11.177ns|     N/A|           0
+  I_7/clk_1m                                | HOLD        |     1.212ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.324ns|     N/A|           0
+  I_12/XLXI_10/clk_1k                       | HOLD        |     1.004ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 7 secs 
+Total CPU time to PAR completion: 6 secs 
+
+Peak Memory Usage:  572 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 4
+Number of info messages: 2
+
+Writing design to file Exp3.ncd
+
+
+
+PAR done!

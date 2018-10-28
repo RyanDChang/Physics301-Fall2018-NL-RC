@@ -1,0 +1,25 @@
+V3 19
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd 2018/10/06.21:00:18 P.68d
+EN work/DCM_50M 1540497331 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/DCM_50M/Behavioral 1540497332 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd \
+      EN work/DCM_50M 1540497331
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf 2018/10/25.12:55:28 P.68d
+EN work/FJKC_MXILINX_Exp5 1540497333 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/FJKC_MXILINX_Exp5/BEHAVIORAL 1540497334 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf \
+      EN work/FJKC_MXILINX_Exp5 1540497333 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      CP AND2B1
+EN work/Exp5 1540497335 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/Exp5/BEHAVIORAL 1540497336 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf \
+      EN work/Exp5 1540497335 CP FJKC_MXILINX_Exp5 CP PULLUP CP GND CP DCM_50M \
+      CP AND2

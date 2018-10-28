@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym seven_seg /home/nick/git-repos/Physics301-Fall2018-NL-RC/seven_seg/seven_seg/seven_seg.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/seven_seg.sym 

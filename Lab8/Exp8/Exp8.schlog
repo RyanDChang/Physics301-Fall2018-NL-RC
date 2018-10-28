@@ -1,0 +1,28 @@
+add instance cb4cled 1040 1536 R0 -sn=1
+add instance cb4cled 2080 1552 R0 -sn=1
+select figure at 3293 1171 8 -wires -sn=1
+select figure at 2190 1149 8 -wires -sn=1
+move instance at 2080 1552 to 2032 1520 R0 -keepConn -sn=1
+move instance at 2032 1520 to 2016 1552 R0 -keepConn -sn=1
+move instance at 2016 1552 to 2000 1536 R0 -keepConn -sn=1
+select figure at 2587 1295 8 -wires -sn=1
+select figure at 1260 1068 8 -wires -sn=1
+select figure at 2244 1053 8 -wires -sn=1
+BeginGroup
+add wire 1424 1408 1456 1408 -sn=1
+add wire 1424 1344 1456 1344 -sn=1
+add wire 1424 896 1456 896 -sn=1
+add wire 1424 960 1456 960 -sn=1
+add wire 1424 1024 1456 1024 -sn=1
+add wire 1424 1088 1456 1088 -sn=1
+move instance at 2000 1536 to 1456 1536 R0 -keepConn -sn=1
+EndGroup
+move instance at 1456 1536 to 2064 1536 R0 -keepConn -sn=1
+select figure at 1907 1341 8 -wires -sn=1
+delete selection -sn=1
+select figure at 1878 1410 8 -wires -sn=1
+delete selection -sn=1
+add txwin 1180 752 Macro 40 -sn=1
+add txwin 2212 764 Micro 40 -sn=1
+select figure at 2744 876 8 -wires -sn=1
+select figure at 433 733 8 -wires -sn=1

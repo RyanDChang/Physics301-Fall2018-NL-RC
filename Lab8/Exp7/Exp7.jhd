@@ -1,0 +1,3 @@
+MODULE Exp7
+	SUBMODULE seven_seg
+		INSTANCE XLXI_11

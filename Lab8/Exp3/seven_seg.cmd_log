@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl seven_seg_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/seven_seg/seven_seg/seven_seg.sch 
+sch2sym -intstyle ise -family spartan3e -refsym seven_seg /home/nick/git-repos/Physics301-Fall2018-NL-RC/seven_seg/seven_seg/seven_seg.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp3/seven_seg.sym 

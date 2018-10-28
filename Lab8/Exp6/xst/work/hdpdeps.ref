@@ -1,0 +1,88 @@
+V3 54
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd 2018/10/06.21:00:18 P.68d
+EN work/bin2BCD3en 1540500625 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/bin2BCD3en/Behavioral 1540500626 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd \
+      EN work/bin2BCD3en 1540500625
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd 2018/10/06.21:00:18 P.68d
+EN work/DCM_50M 1540500619 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/DCM_50M/Behavioral 1540500620 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd \
+      EN work/DCM_50M 1540500619
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd 2018/10/06.21:00:18 P.68d
+EN work/mux4SSD 1540500627 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/mux4SSD/Behavioral 1540500628 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd \
+      EN work/mux4SSD 1540500627
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd 2018/10/06.21:00:18 P.68d
+EN work/sel_strobeB 1540500623 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/sel_strobeB/Behavioral 1540500624 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd \
+      EN work/sel_strobeB 1540500623
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd 2018/10/06.21:00:18 P.68d
+EN work/SSD_1dig 1540500621 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/SSD_1dig/Behavioral 1540500622 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd \
+      EN work/SSD_1dig 1540500621
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf 2018/10/25.13:50:16 P.68d
+EN work/M2_1B1_MXILINX_Exp6 1540500631 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/M2_1B1_MXILINX_Exp6/BEHAVIORAL 1540500632 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf \
+      EN work/M2_1B1_MXILINX_Exp6 1540500631 CP AND2B2 CP OR2 CP AND2
+EN work/M2_1_MXILINX_Exp6 1540500633 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/M2_1_MXILINX_Exp6/BEHAVIORAL 1540500634 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf \
+      EN work/M2_1_MXILINX_Exp6 1540500633 CP AND2B1 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_Exp6 1540500635 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/FTCLEX_MXILINX_Exp6/BEHAVIORAL 1540500636 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf \
+      EN work/FTCLEX_MXILINX_Exp6 1540500635 CP M2_1_MXILINX_Exp6 CP XOR2 CP FDCE
+EN work/CB4CLED_MXILINX_Exp6 1540500637 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/CB4CLED_MXILINX_Exp6/BEHAVIORAL 1540500638 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf \
+      EN work/CB4CLED_MXILINX_Exp6 1540500637 CP FTCLEX_MXILINX_Exp6 \
+      CP M2_1_MXILINX_Exp6 CP M2_1B1_MXILINX_Exp6 CP VCC CP AND2B2 CP AND4 CP AND4B4 \
+      CP AND3 CP AND3B3 CP AND2 CP OR2
+EN work/Exp6 1540500639 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/Exp6/BEHAVIORAL 1540500640 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/Exp6.vhf \
+      EN work/Exp6 1540500639 CP CB4CLED_MXILINX_Exp6 CP PULLDOWN CP PULLUP CP NOR2 \
+      CP AND2 CP seven_seg
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/seven_seg.vhf 2018/10/25.13:33:57 P.68d
+EN work/seven_seg 1540500629 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/seven_seg.vhf \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/seven_seg/BEHAVIORAL 1540500630 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp6/seven_seg.vhf \
+      EN work/seven_seg 1540500629 CP DCM_50M CP SSD_1dig CP sel_strobeB \
+      CP bin2BCD3en CP mux4SSD CP PULLUP

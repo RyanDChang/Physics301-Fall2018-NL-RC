@@ -1,0 +1,731 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: Exp5.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Exp5.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Exp5"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : Exp5
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd" in Library work.
+Architecture behavioral of Entity dcm_50m is up to date.
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf" in Library work.
+Entity <fjkc_mxilinx_exp5> compiled.
+Entity <fjkc_mxilinx_exp5> (Architecture <behavioral>) compiled.
+Entity <exp5> compiled.
+Entity <exp5> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Exp5> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FJKC_MXILINX_Exp5> in library <work> (architecture <behavioral>) with generics.
+	INIT = '0'
+
+Analyzing hierarchy for entity <DCM_50M> in library <work> (architecture <behavioral>) with generics.
+	DIV100 = 50
+	DIV1k = 500
+	DIV50 = 25
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Exp5> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <Exp5>.
+    Set user-defined property "HU_SET =  XLXI_2_1" for instance <XLXI_2> in unit <Exp5>.
+    Set user-defined property "HU_SET =  XLXI_6_2" for instance <XLXI_6> in unit <Exp5>.
+    Set user-defined property "HU_SET =  XLXI_7_3" for instance <XLXI_7> in unit <Exp5>.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf" line 230: Unconnected output port 'CLK1M' of component 'DCM_50M'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf" line 230: Unconnected output port 'CLK10k' of component 'DCM_50M'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf" line 230: Unconnected output port 'CLK1k' of component 'DCM_50M'.
+Entity <Exp5> analyzed. Unit <Exp5> generated.
+
+Analyzing generic Entity <FJKC_MXILINX_Exp5> in library <work> (Architecture <behavioral>).
+	INIT = '0'
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKC_MXILINX_Exp5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKC_MXILINX_Exp5>.
+Entity <FJKC_MXILINX_Exp5> analyzed. Unit <FJKC_MXILINX_Exp5> generated.
+
+Analyzing generic Entity <DCM_50M> in library <work> (Architecture <behavioral>).
+	DIV100 = 50
+	DIV1k = 500
+	DIV50 = 25
+Entity <DCM_50M> analyzed. Unit <DCM_50M> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DCM_50M>.
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd".
+    Found 1-bit register for signal <clk_1>.
+    Found 32-bit adder for signal <clk_1$add0000> created at line 121.
+    Found 1-bit register for signal <clk_10k>.
+    Found 1-bit register for signal <clk_1k>.
+    Found 32-bit adder for signal <clk_1k$add0000> created at line 101.
+    Found 1-bit register for signal <clk_1m>.
+    Found 32-bit adder for signal <clk_1m$add0000> created at line 61.
+    Found 32-bit up counter for signal <cnt1>.
+    Found 32-bit comparator greater for signal <cnt1$cmp_gt0000> created at line 122.
+    Found 32-bit up counter for signal <cnt10k>.
+    Found 32-bit adder for signal <cnt10k$add0000> created at line 81.
+    Found 32-bit comparator greater for signal <cnt10k$cmp_gt0000> created at line 82.
+    Found 32-bit up counter for signal <cnt1k>.
+    Found 32-bit comparator greater for signal <cnt1k$cmp_gt0000> created at line 102.
+    Found 32-bit up counter for signal <cnt1M>.
+    Found 32-bit comparator greatequal for signal <cnt1M$cmp_ge0000> created at line 62.
+    Summary:
+	inferred   4 Counter(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <DCM_50M> synthesized.
+
+
+Synthesizing Unit <FJKC_MXILINX_Exp5>.
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf".
+Unit <FJKC_MXILINX_Exp5> synthesized.
+
+
+Synthesizing Unit <Exp5>.
+    Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp5/Exp5.vhf".
+WARNING:Xst:653 - Signal <XLXI_10_RST_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <Exp5> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 4
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 4
+ 1-bit register                                        : 4
+# Comparators                                          : 4
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator greater                             : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 4
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Comparators                                          : 4
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator greater                             : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Exp5> ...
+
+Optimizing unit <DCM_50M> ...
+
+Optimizing unit <FJKC_MXILINX_Exp5> ...
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_31> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_30> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_29> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_28> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_27> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_26> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_25> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_24> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_23> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_22> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_21> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_20> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_19> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_18> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_17> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_16> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_15> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_14> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_13> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_12> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_11> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_10> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_9> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_8> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_7> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_6> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_5> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_4> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_3> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_2> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_1> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/cnt10k_0> of sequential type is unconnected in block <Exp5>.
+WARNING:Xst:2677 - Node <XLXI_10/clk_10k> of sequential type is unconnected in block <Exp5>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Exp5, actual ratio is 12.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 103
+ Flip-Flops                                            : 103
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Exp5.ngr
+Top Level Output File Name         : Exp5
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 666
+#      AND2                        : 2
+#      AND2B1                      : 4
+#      AND3B1                      : 4
+#      AND3B2                      : 4
+#      GND                         : 1
+#      INV                         : 14
+#      LUT1                        : 98
+#      LUT2                        : 71
+#      LUT3                        : 32
+#      LUT4                        : 18
+#      MUXCY                       : 221
+#      OR3                         : 4
+#      VCC                         : 1
+#      XORCY                       : 192
+# FlipFlops/Latches                : 103
+#      FDC                         : 4
+#      FDE                         : 99
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      OBUF                        : 4
+# Others                           : 1
+#      PULLUP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      121  out of    960    12%  
+ Number of Slice Flip Flops:            103  out of   1920     5%  
+ Number of 4 input LUTs:                233  out of   1920    12%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of     83     6%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 33    |
+XLXI_10/clk_1m1                    | BUFG                   | 33    |
+XLXI_10/clk_1k1                    | BUFG                   | 33    |
+XLXI_10/clk_1                      | NONE(XLXI_7/I_36_32)   | 4     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+XLXN_20(XLXI_9:G)                  | NONE(XLXI_1/I_36_32)   | 4     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.220ns (Maximum Frequency: 81.834MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.745ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.220ns (frequency: 81.834MHz)
+  Total number of paths / destination ports: 296737 / 34
+-------------------------------------------------------------------------
+Delay:               12.220ns (Levels of Logic = 66)
+  Source:            XLXI_10/cnt1M_1 (FF)
+  Destination:       XLXI_10/cnt1M_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_10/cnt1M_1 to XLXI_10/cnt1M_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.622  XLXI_10/cnt1M_1 (XLXI_10/cnt1M_1)
+     LUT1:I0->O            1   0.704   0.000  XLXI_10/Madd_clk_1m_add0000_cy<1>_rt (XLXI_10/Madd_clk_1m_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_10/Madd_clk_1m_add0000_cy<1> (XLXI_10/Madd_clk_1m_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<2> (XLXI_10/Madd_clk_1m_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<3> (XLXI_10/Madd_clk_1m_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<4> (XLXI_10/Madd_clk_1m_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<5> (XLXI_10/Madd_clk_1m_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<6> (XLXI_10/Madd_clk_1m_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<7> (XLXI_10/Madd_clk_1m_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<8> (XLXI_10/Madd_clk_1m_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<9> (XLXI_10/Madd_clk_1m_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<10> (XLXI_10/Madd_clk_1m_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<11> (XLXI_10/Madd_clk_1m_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<12> (XLXI_10/Madd_clk_1m_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<13> (XLXI_10/Madd_clk_1m_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<14> (XLXI_10/Madd_clk_1m_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<15> (XLXI_10/Madd_clk_1m_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<16> (XLXI_10/Madd_clk_1m_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<17> (XLXI_10/Madd_clk_1m_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<18> (XLXI_10/Madd_clk_1m_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<19> (XLXI_10/Madd_clk_1m_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<20> (XLXI_10/Madd_clk_1m_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<21> (XLXI_10/Madd_clk_1m_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<22> (XLXI_10/Madd_clk_1m_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<23> (XLXI_10/Madd_clk_1m_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<24> (XLXI_10/Madd_clk_1m_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<25> (XLXI_10/Madd_clk_1m_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<26> (XLXI_10/Madd_clk_1m_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<27> (XLXI_10/Madd_clk_1m_add0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1m_add0000_cy<28> (XLXI_10/Madd_clk_1m_add0000_cy<28>)
+     XORCY:CI->O           1   0.804   0.595  XLXI_10/Madd_clk_1m_add0000_xor<29> (XLXI_10/clk_1m_add0000<29>)
+     LUT2:I0->O            1   0.704   0.000  XLXI_10/Mcompar_cnt1M_cmp_ge0000_lut<9> (XLXI_10/Mcompar_cnt1M_cmp_ge0000_lut<9>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_10/Mcompar_cnt1M_cmp_ge0000_cy<9> (XLXI_10/Mcompar_cnt1M_cmp_ge0000_cy<9>)
+     MUXCY:CI->O          34   0.331   1.298  XLXI_10/Mcompar_cnt1M_cmp_ge0000_cy<10> (XLXI_10/cnt1M_cmp_ge0000)
+     LUT3:I2->O            1   0.704   0.000  XLXI_10/Mcount_cnt1M_lut<0> (XLXI_10/Mcount_cnt1M_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_10/Mcount_cnt1M_cy<0> (XLXI_10/Mcount_cnt1M_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<1> (XLXI_10/Mcount_cnt1M_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<2> (XLXI_10/Mcount_cnt1M_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<3> (XLXI_10/Mcount_cnt1M_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<4> (XLXI_10/Mcount_cnt1M_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<5> (XLXI_10/Mcount_cnt1M_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<6> (XLXI_10/Mcount_cnt1M_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<7> (XLXI_10/Mcount_cnt1M_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<8> (XLXI_10/Mcount_cnt1M_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<9> (XLXI_10/Mcount_cnt1M_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<10> (XLXI_10/Mcount_cnt1M_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<11> (XLXI_10/Mcount_cnt1M_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<12> (XLXI_10/Mcount_cnt1M_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<13> (XLXI_10/Mcount_cnt1M_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<14> (XLXI_10/Mcount_cnt1M_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<15> (XLXI_10/Mcount_cnt1M_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<16> (XLXI_10/Mcount_cnt1M_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<17> (XLXI_10/Mcount_cnt1M_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<18> (XLXI_10/Mcount_cnt1M_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<19> (XLXI_10/Mcount_cnt1M_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<20> (XLXI_10/Mcount_cnt1M_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<21> (XLXI_10/Mcount_cnt1M_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<22> (XLXI_10/Mcount_cnt1M_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<23> (XLXI_10/Mcount_cnt1M_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<24> (XLXI_10/Mcount_cnt1M_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<25> (XLXI_10/Mcount_cnt1M_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<26> (XLXI_10/Mcount_cnt1M_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<27> (XLXI_10/Mcount_cnt1M_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<28> (XLXI_10/Mcount_cnt1M_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<29> (XLXI_10/Mcount_cnt1M_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_10/Mcount_cnt1M_cy<30> (XLXI_10/Mcount_cnt1M_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  XLXI_10/Mcount_cnt1M_xor<31> (XLXI_10/Mcount_cnt1M31)
+     FDE:D                     0.308          XLXI_10/cnt1M_31
+    ----------------------------------------
+    Total                     12.220ns (9.705ns logic, 2.515ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_10/clk_1m1'
+  Clock period: 11.992ns (frequency: 83.390MHz)
+  Total number of paths / destination ports: 314689 / 34
+-------------------------------------------------------------------------
+Delay:               11.992ns (Levels of Logic = 66)
+  Source:            XLXI_10/cnt1k_1 (FF)
+  Destination:       XLXI_10/cnt1k_31 (FF)
+  Source Clock:      XLXI_10/clk_1m1 rising
+  Destination Clock: XLXI_10/clk_1m1 rising
+
+  Data Path: XLXI_10/cnt1k_1 to XLXI_10/cnt1k_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.622  XLXI_10/cnt1k_1 (XLXI_10/cnt1k_1)
+     LUT1:I0->O            1   0.704   0.000  XLXI_10/Madd_clk_1k_add0000_cy<1>_rt (XLXI_10/Madd_clk_1k_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_10/Madd_clk_1k_add0000_cy<1> (XLXI_10/Madd_clk_1k_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<2> (XLXI_10/Madd_clk_1k_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<3> (XLXI_10/Madd_clk_1k_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<4> (XLXI_10/Madd_clk_1k_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<5> (XLXI_10/Madd_clk_1k_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<6> (XLXI_10/Madd_clk_1k_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<7> (XLXI_10/Madd_clk_1k_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<8> (XLXI_10/Madd_clk_1k_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<9> (XLXI_10/Madd_clk_1k_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<10> (XLXI_10/Madd_clk_1k_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<11> (XLXI_10/Madd_clk_1k_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<12> (XLXI_10/Madd_clk_1k_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<13> (XLXI_10/Madd_clk_1k_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<14> (XLXI_10/Madd_clk_1k_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<15> (XLXI_10/Madd_clk_1k_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<16> (XLXI_10/Madd_clk_1k_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<17> (XLXI_10/Madd_clk_1k_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<18> (XLXI_10/Madd_clk_1k_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<19> (XLXI_10/Madd_clk_1k_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<20> (XLXI_10/Madd_clk_1k_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<21> (XLXI_10/Madd_clk_1k_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<22> (XLXI_10/Madd_clk_1k_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<23> (XLXI_10/Madd_clk_1k_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<24> (XLXI_10/Madd_clk_1k_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<25> (XLXI_10/Madd_clk_1k_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<26> (XLXI_10/Madd_clk_1k_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<27> (XLXI_10/Madd_clk_1k_add0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1k_add0000_cy<28> (XLXI_10/Madd_clk_1k_add0000_cy<28>)
+     XORCY:CI->O           1   0.804   0.595  XLXI_10/Madd_clk_1k_add0000_xor<29> (XLXI_10/clk_1k_add0000<29>)
+     LUT2:I0->O            1   0.704   0.000  XLXI_10/Mcompar_cnt1k_cmp_gt0000_lut<10> (XLXI_10/Mcompar_cnt1k_cmp_gt0000_lut<10>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_10/Mcompar_cnt1k_cmp_gt0000_cy<10> (XLXI_10/Mcompar_cnt1k_cmp_gt0000_cy<10>)
+     MUXCY:CI->O          34   0.059   1.342  XLXI_10/Mcompar_cnt1k_cmp_gt0000_cy<11> (XLXI_10/Mcompar_cnt1k_cmp_gt0000_cy<11>)
+     LUT2:I1->O            1   0.704   0.000  XLXI_10/Mcount_cnt1k_lut<0> (XLXI_10/Mcount_cnt1k_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_10/Mcount_cnt1k_cy<0> (XLXI_10/Mcount_cnt1k_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<1> (XLXI_10/Mcount_cnt1k_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<2> (XLXI_10/Mcount_cnt1k_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<3> (XLXI_10/Mcount_cnt1k_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<4> (XLXI_10/Mcount_cnt1k_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<5> (XLXI_10/Mcount_cnt1k_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<6> (XLXI_10/Mcount_cnt1k_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<7> (XLXI_10/Mcount_cnt1k_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<8> (XLXI_10/Mcount_cnt1k_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<9> (XLXI_10/Mcount_cnt1k_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<10> (XLXI_10/Mcount_cnt1k_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<11> (XLXI_10/Mcount_cnt1k_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<12> (XLXI_10/Mcount_cnt1k_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<13> (XLXI_10/Mcount_cnt1k_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<14> (XLXI_10/Mcount_cnt1k_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<15> (XLXI_10/Mcount_cnt1k_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<16> (XLXI_10/Mcount_cnt1k_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<17> (XLXI_10/Mcount_cnt1k_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<18> (XLXI_10/Mcount_cnt1k_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<19> (XLXI_10/Mcount_cnt1k_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<20> (XLXI_10/Mcount_cnt1k_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<21> (XLXI_10/Mcount_cnt1k_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<22> (XLXI_10/Mcount_cnt1k_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<23> (XLXI_10/Mcount_cnt1k_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<24> (XLXI_10/Mcount_cnt1k_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<25> (XLXI_10/Mcount_cnt1k_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<26> (XLXI_10/Mcount_cnt1k_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<27> (XLXI_10/Mcount_cnt1k_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<28> (XLXI_10/Mcount_cnt1k_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<29> (XLXI_10/Mcount_cnt1k_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_10/Mcount_cnt1k_cy<30> (XLXI_10/Mcount_cnt1k_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  XLXI_10/Mcount_cnt1k_xor<31> (XLXI_10/Mcount_cnt1k31)
+     FDE:D                     0.308          XLXI_10/cnt1k_31
+    ----------------------------------------
+    Total                     11.992ns (9.433ns logic, 2.559ns route)
+                                       (78.7% logic, 21.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_10/clk_1k1'
+  Clock period: 11.992ns (frequency: 83.390MHz)
+  Total number of paths / destination ports: 314689 / 34
+-------------------------------------------------------------------------
+Delay:               11.992ns (Levels of Logic = 66)
+  Source:            XLXI_10/cnt1_1 (FF)
+  Destination:       XLXI_10/cnt1_31 (FF)
+  Source Clock:      XLXI_10/clk_1k1 rising
+  Destination Clock: XLXI_10/clk_1k1 rising
+
+  Data Path: XLXI_10/cnt1_1 to XLXI_10/cnt1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.622  XLXI_10/cnt1_1 (XLXI_10/cnt1_1)
+     LUT1:I0->O            1   0.704   0.000  XLXI_10/Madd_clk_1_add0000_cy<1>_rt (XLXI_10/Madd_clk_1_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_10/Madd_clk_1_add0000_cy<1> (XLXI_10/Madd_clk_1_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<2> (XLXI_10/Madd_clk_1_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<3> (XLXI_10/Madd_clk_1_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<4> (XLXI_10/Madd_clk_1_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<5> (XLXI_10/Madd_clk_1_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<6> (XLXI_10/Madd_clk_1_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<7> (XLXI_10/Madd_clk_1_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<8> (XLXI_10/Madd_clk_1_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<9> (XLXI_10/Madd_clk_1_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<10> (XLXI_10/Madd_clk_1_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<11> (XLXI_10/Madd_clk_1_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<12> (XLXI_10/Madd_clk_1_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<13> (XLXI_10/Madd_clk_1_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<14> (XLXI_10/Madd_clk_1_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<15> (XLXI_10/Madd_clk_1_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<16> (XLXI_10/Madd_clk_1_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<17> (XLXI_10/Madd_clk_1_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<18> (XLXI_10/Madd_clk_1_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<19> (XLXI_10/Madd_clk_1_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<20> (XLXI_10/Madd_clk_1_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<21> (XLXI_10/Madd_clk_1_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<22> (XLXI_10/Madd_clk_1_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<23> (XLXI_10/Madd_clk_1_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<24> (XLXI_10/Madd_clk_1_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<25> (XLXI_10/Madd_clk_1_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<26> (XLXI_10/Madd_clk_1_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<27> (XLXI_10/Madd_clk_1_add0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Madd_clk_1_add0000_cy<28> (XLXI_10/Madd_clk_1_add0000_cy<28>)
+     XORCY:CI->O           1   0.804   0.595  XLXI_10/Madd_clk_1_add0000_xor<29> (XLXI_10/clk_1_add0000<29>)
+     LUT2:I0->O            1   0.704   0.000  XLXI_10/Mcompar_cnt1_cmp_gt0000_lut<10> (XLXI_10/Mcompar_cnt1_cmp_gt0000_lut<10>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_10/Mcompar_cnt1_cmp_gt0000_cy<10> (XLXI_10/Mcompar_cnt1_cmp_gt0000_cy<10>)
+     MUXCY:CI->O          34   0.059   1.342  XLXI_10/Mcompar_cnt1_cmp_gt0000_cy<11> (XLXI_10/Mcompar_cnt1_cmp_gt0000_cy<11>)
+     LUT2:I1->O            1   0.704   0.000  XLXI_10/Mcount_cnt1_lut<0> (XLXI_10/Mcount_cnt1_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_10/Mcount_cnt1_cy<0> (XLXI_10/Mcount_cnt1_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<1> (XLXI_10/Mcount_cnt1_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<2> (XLXI_10/Mcount_cnt1_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<3> (XLXI_10/Mcount_cnt1_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<4> (XLXI_10/Mcount_cnt1_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<5> (XLXI_10/Mcount_cnt1_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<6> (XLXI_10/Mcount_cnt1_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<7> (XLXI_10/Mcount_cnt1_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<8> (XLXI_10/Mcount_cnt1_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<9> (XLXI_10/Mcount_cnt1_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<10> (XLXI_10/Mcount_cnt1_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<11> (XLXI_10/Mcount_cnt1_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<12> (XLXI_10/Mcount_cnt1_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<13> (XLXI_10/Mcount_cnt1_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<14> (XLXI_10/Mcount_cnt1_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<15> (XLXI_10/Mcount_cnt1_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<16> (XLXI_10/Mcount_cnt1_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<17> (XLXI_10/Mcount_cnt1_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<18> (XLXI_10/Mcount_cnt1_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<19> (XLXI_10/Mcount_cnt1_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<20> (XLXI_10/Mcount_cnt1_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<21> (XLXI_10/Mcount_cnt1_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<22> (XLXI_10/Mcount_cnt1_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<23> (XLXI_10/Mcount_cnt1_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<24> (XLXI_10/Mcount_cnt1_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<25> (XLXI_10/Mcount_cnt1_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<26> (XLXI_10/Mcount_cnt1_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<27> (XLXI_10/Mcount_cnt1_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<28> (XLXI_10/Mcount_cnt1_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_10/Mcount_cnt1_cy<29> (XLXI_10/Mcount_cnt1_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_10/Mcount_cnt1_cy<30> (XLXI_10/Mcount_cnt1_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  XLXI_10/Mcount_cnt1_xor<31> (XLXI_10/Mcount_cnt131)
+     FDE:D                     0.308          XLXI_10/cnt1_31
+    ----------------------------------------
+    Total                     11.992ns (9.433ns logic, 2.559ns route)
+                                       (78.7% logic, 21.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_10/clk_1'
+  Clock period: 6.814ns (frequency: 146.757MHz)
+  Total number of paths / destination ports: 44 / 4
+-------------------------------------------------------------------------
+Delay:               6.814ns (Levels of Logic = 5)
+  Source:            XLXI_1/I_36_32 (FF)
+  Destination:       XLXI_7/I_36_32 (FF)
+  Source Clock:      XLXI_10/clk_1 rising
+  Destination Clock: XLXI_10/clk_1 rising
+
+  Data Path: XLXI_1/I_36_32 to XLXI_7/I_36_32
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.591   0.882  I_36_32 (Q)
+     end scope: 'XLXI_1'
+     AND2:I1->O            7   0.704   0.708  XLXI_18 (XLXN_61)
+     AND2:I1->O            6   0.704   0.669  XLXI_19 (XLXN_62)
+     begin scope: 'XLXI_7'
+     AND3B2:I0->O          1   0.704   0.420  I_36_37 (A0)
+     OR3:I2->O             1   0.704   0.420  I_36_41 (AD)
+     FDC:D                     0.308          I_36_32
+    ----------------------------------------
+    Total                      6.814ns (3.715ns logic, 3.099ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_10/clk_1'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.745ns (Levels of Logic = 2)
+  Source:            XLXI_1/I_36_32 (FF)
+  Destination:       Q<0> (PAD)
+  Source Clock:      XLXI_10/clk_1 rising
+
+  Data Path: XLXI_1/I_36_32 to Q<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.591   0.882  I_36_32 (Q)
+     end scope: 'XLXI_1'
+     OBUF:I->O                 3.272          Q_0_OBUF (Q<0>)
+    ----------------------------------------
+    Total                      4.745ns (3.863ns logic, 0.882ns route)
+                                       (81.4% logic, 18.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.18 secs
+ 
+--> 
+
+
+Total memory usage is 540584 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   37 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
