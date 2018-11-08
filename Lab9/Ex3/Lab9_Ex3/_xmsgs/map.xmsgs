@@ -19,6 +19,16 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
+<msg type="warning" file="Pack" num="249" delta="old" >The following adjacent carry multiplexers occupy different slice components.  The resulting carry chain will have suboptimal timing.
+	<arg fmt="%s" index="1">XLXI_70/XLXI_10/Mcompar_cnt1M_cmp_ge0000_cy&lt;10&gt;</arg>
+	<arg fmt="%s" index="2">XLXI_70/XLXI_10/Mcount_cnt1M_cy&lt;0&gt;</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="249" delta="old" >The following adjacent carry multiplexers occupy different slice components.  The resulting carry chain will have suboptimal timing.
+	<arg fmt="%s" index="1">XLXI_71/Mcompar_cnt1M_cmp_ge0000_cy&lt;10&gt;</arg>
+	<arg fmt="%s" index="2">XLXI_71/Mcount_cnt1M_cy&lt;0&gt;</arg>
+</msg>
+
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">Tick_Up</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 

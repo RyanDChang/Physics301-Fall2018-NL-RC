@@ -6,70 +6,31 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_3">
-        </signal>
-        <signal name="XLXN_7">
-        </signal>
-        <signal name="XLXN_8">
-        </signal>
-        <signal name="XLXN_9">
-        </signal>
+        <signal name="XLXN_3" />
+        <signal name="XLXN_7" />
+        <signal name="XLXN_8" />
+        <signal name="XLXN_9" />
         <signal name="PULL_UP" />
         <signal name="PULL_DOWN" />
-        <signal name="XLXN_28" />
-        <signal name="XLXN_29" />
-        <signal name="XLXN_30" />
-        <signal name="XLXN_31" />
-        <signal name="XLXN_32" />
-        <signal name="XLXN_33" />
-        <signal name="XLXN_38" />
-        <signal name="XLXN_40" />
-        <signal name="XLXN_39" />
-        <signal name="Count_Q(3)">
-        </signal>
-        <signal name="Count_Q(2)">
-        </signal>
-        <signal name="Count_Q(0)">
-        </signal>
+        <signal name="Count_Q(3)" />
+        <signal name="Count_Q(2)" />
+        <signal name="Count_Q(0)" />
         <signal name="Count_5" />
         <signal name="Count_9" />
         <signal name="Count_13" />
-        <signal name="Count_Q(1)">
-        </signal>
-        <signal name="XLXN_56" />
-        <signal name="XLXN_57" />
-        <signal name="XLXN_58" />
-        <signal name="XLXN_59" />
+        <signal name="Count_Q(1)" />
         <signal name="XLXN_60" />
         <signal name="XLXN_61" />
-        <signal name="XLXN_62" />
-        <signal name="XLXN_63" />
         <signal name="Count_3" />
-        <signal name="XLXN_68" />
-        <signal name="XLXN_72" />
-        <signal name="XLXN_73" />
-        <signal name="XLXN_74" />
-        <signal name="XLXN_75" />
-        <signal name="XLXN_77" />
-        <signal name="XLXN_79" />
-        <signal name="XLXN_80" />
         <signal name="XLXN_81" />
         <signal name="XLXN_82" />
         <signal name="CLK" />
         <signal name="Timer_Q(0)" />
         <signal name="Timer_Q(1)" />
-        <signal name="XLXN_109" />
-        <signal name="XLXN_110" />
-        <signal name="XLXN_111" />
-        <signal name="XLXN_112" />
-        <signal name="XLXN_113" />
         <signal name="Timer_0" />
         <signal name="Timer_1" />
         <signal name="Timer_2" />
         <signal name="Timer_3" />
-        <signal name="XLXN_119" />
-        <signal name="XLXN_121" />
-        <signal name="XLXN_122" />
         <signal name="Timer_Q(1:0)" />
         <signal name="Count_Q(3:0)" />
         <signal name="Tick_Up" />
@@ -77,33 +38,39 @@
         <signal name="XLXN_136" />
         <signal name="SYS_CLK" />
         <signal name="XLXN_148" />
-        <signal name="XLXN_149" />
         <signal name="XLXN_152" />
-        <signal name="XLXN_153" />
         <signal name="XLXN_156" />
-        <signal name="XLXN_157" />
         <signal name="XLXN_160" />
-        <signal name="XLXN_161" />
-        <signal name="Yogi_ST">
+        <signal name="Din(0)" />
+        <signal name="Din(1)" />
+        <signal name="Din(2)">
         </signal>
-        <signal name="Yogi_ET">
+        <signal name="Din(3)">
         </signal>
-        <signal name="Booboo_EN" />
-        <signal name="Booboo_ST" />
-        <signal name="Snaggle_RX" />
-        <signal name="Snaggle_TX" />
-        <signal name="Ranger_RD" />
-        <signal name="Ranger_EN" />
+        <signal name="Din(7)">
+        </signal>
+        <signal name="Din(6)">
+        </signal>
+        <signal name="Din(5)">
+        </signal>
+        <signal name="Din(4)">
+        </signal>
         <signal name="XLXN_144" />
         <signal name="XLXN_178" />
         <signal name="XLXN_179" />
         <signal name="Booboo_EN_J" />
+        <signal name="XLXN_184" />
+        <signal name="Din(7:0)" />
+        <signal name="sseg(7:0)" />
+        <signal name="anO(3:0)" />
+        <signal name="CLK1" />
+        <signal name="CLK10k" />
         <port polarity="Input" name="CLK" />
         <port polarity="Output" name="Timer_Q(1:0)" />
         <port polarity="Output" name="Count_Q(3:0)" />
         <port polarity="Input" name="SYS_CLK" />
-        <port polarity="Output" name="Booboo_EN" />
-        <port polarity="Output" name="Booboo_ST" />
+        <port polarity="Output" name="sseg(7:0)" />
+        <port polarity="Output" name="anO(3:0)" />
         <blockdef name="cb4cled">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <rect width="256" x="64" y="-704" height="640" />
@@ -245,6 +212,28 @@
             <line x2="144" y1="-144" y2="-144" x1="64" />
             <line x2="64" y1="-48" y2="-144" x1="64" />
         </blockdef>
+        <blockdef name="seven_seg">
+            <timestamp>2018-11-8T18:47:48</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-172" height="24" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="DCM_50M">
+            <timestamp>2018-11-8T19:2:0</timestamp>
+            <rect width="256" x="64" y="-256" height="256" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="pullup" name="XLXI_3">
             <blockpin signalname="PULL_UP" name="O" />
         </block>
@@ -291,8 +280,8 @@
         </block>
         <block symbolname="and4" name="XLXI_11">
             <blockpin signalname="Count_Q(3)" name="I0" />
-            <blockpin signalname="XLXN_113" name="I1" />
-            <blockpin signalname="Count_Q(1)" name="I2" />
+            <blockpin signalname="Count_Q(2)" name="I1" />
+            <blockpin signalname="XLXN_184" name="I2" />
             <blockpin signalname="Count_Q(0)" name="I3" />
             <blockpin signalname="Count_13" name="O" />
         </block>
@@ -328,15 +317,11 @@
         <block symbolname="d2_4e" name="XLXI_28">
             <blockpin signalname="Timer_Q(0)" name="A0" />
             <blockpin signalname="Timer_Q(1)" name="A1" />
-            <blockpin signalname="CLK" name="E" />
+            <blockpin signalname="CLK1" name="E" />
             <blockpin signalname="Timer_0" name="D0" />
             <blockpin signalname="Timer_1" name="D1" />
             <blockpin signalname="Timer_2" name="D2" />
             <blockpin signalname="Timer_3" name="D3" />
-        </block>
-        <block symbolname="inv" name="XLXI_35">
-            <blockpin signalname="Count_Q(2)" name="I" />
-            <blockpin signalname="XLXN_113" name="O" />
         </block>
         <block symbolname="fjkce" name="XLXI_39">
             <blockpin signalname="SYS_CLK" name="C" />
@@ -344,7 +329,7 @@
             <blockpin name="CLR" />
             <blockpin signalname="XLXN_136" name="J" />
             <blockpin signalname="Timer_3" name="K" />
-            <blockpin signalname="Yogi_ET" name="Q" />
+            <blockpin signalname="Din(1)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_37">
             <blockpin signalname="SYS_CLK" name="C" />
@@ -352,7 +337,7 @@
             <blockpin name="CLR" />
             <blockpin signalname="XLXN_131" name="J" />
             <blockpin signalname="Timer_0" name="K" />
-            <blockpin signalname="Yogi_ST" name="Q" />
+            <blockpin signalname="Din(0)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_45">
             <blockpin signalname="SYS_CLK" name="C" />
@@ -360,7 +345,7 @@
             <blockpin name="CLR" />
             <blockpin signalname="Booboo_EN_J" name="J" />
             <blockpin signalname="Timer_3" name="K" />
-            <blockpin signalname="Booboo_EN" name="Q" />
+            <blockpin signalname="Din(2)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_46">
             <blockpin signalname="SYS_CLK" name="C" />
@@ -368,39 +353,15 @@
             <blockpin name="CLR" />
             <blockpin signalname="XLXN_144" name="J" />
             <blockpin signalname="Timer_3" name="K" />
-            <blockpin signalname="Booboo_ST" name="Q" />
+            <blockpin signalname="Din(3)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_47">
             <blockpin signalname="SYS_CLK" name="C" />
             <blockpin signalname="PULL_UP" name="CE" />
             <blockpin name="CLR" />
             <blockpin signalname="XLXN_160" name="J" />
-            <blockpin signalname="XLXN_161" name="K" />
-            <blockpin signalname="Ranger_EN" name="Q" />
-        </block>
-        <block symbolname="fjkce" name="XLXI_48">
-            <blockpin signalname="SYS_CLK" name="C" />
-            <blockpin signalname="PULL_UP" name="CE" />
-            <blockpin name="CLR" />
-            <blockpin signalname="XLXN_156" name="J" />
-            <blockpin signalname="XLXN_157" name="K" />
-            <blockpin signalname="Ranger_RD" name="Q" />
-        </block>
-        <block symbolname="fjkce" name="XLXI_49">
-            <blockpin signalname="SYS_CLK" name="C" />
-            <blockpin signalname="PULL_UP" name="CE" />
-            <blockpin name="CLR" />
-            <blockpin signalname="XLXN_152" name="J" />
-            <blockpin signalname="XLXN_153" name="K" />
-            <blockpin signalname="Snaggle_TX" name="Q" />
-        </block>
-        <block symbolname="fjkce" name="XLXI_50">
-            <blockpin signalname="SYS_CLK" name="C" />
-            <blockpin signalname="PULL_UP" name="CE" />
-            <blockpin name="CLR" />
-            <blockpin signalname="XLXN_148" name="J" />
-            <blockpin signalname="XLXN_149" name="K" />
-            <blockpin signalname="Snaggle_RX" name="Q" />
+            <blockpin signalname="Timer_3" name="K" />
+            <blockpin signalname="Din(4)" name="Q" />
         </block>
         <block symbolname="and3b1" name="XLXI_51">
             <blockpin signalname="CLK" name="I0" />
@@ -435,6 +396,69 @@
             <blockpin signalname="Timer_0" name="I0" />
             <blockpin signalname="Count_5" name="I1" />
             <blockpin signalname="Booboo_EN_J" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_62">
+            <blockpin signalname="Timer_0" name="I0" />
+            <blockpin signalname="Count_9" name="I1" />
+            <blockpin signalname="XLXN_160" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_63">
+            <blockpin signalname="Timer_1" name="I0" />
+            <blockpin signalname="Count_9" name="I1" />
+            <blockpin signalname="XLXN_156" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_64">
+            <blockpin signalname="Count_Q(1)" name="I" />
+            <blockpin signalname="XLXN_184" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_65">
+            <blockpin signalname="Timer_0" name="I0" />
+            <blockpin signalname="Count_13" name="I1" />
+            <blockpin signalname="XLXN_152" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_66">
+            <blockpin signalname="Timer_1" name="I0" />
+            <blockpin signalname="Count_13" name="I1" />
+            <blockpin signalname="XLXN_148" name="O" />
+        </block>
+        <block symbolname="fjkce" name="XLXI_49">
+            <blockpin signalname="SYS_CLK" name="C" />
+            <blockpin signalname="PULL_UP" name="CE" />
+            <blockpin name="CLR" />
+            <blockpin signalname="XLXN_152" name="J" />
+            <blockpin signalname="Timer_2" name="K" />
+            <blockpin signalname="Din(6)" name="Q" />
+        </block>
+        <block symbolname="fjkce" name="XLXI_50">
+            <blockpin signalname="SYS_CLK" name="C" />
+            <blockpin signalname="PULL_UP" name="CE" />
+            <blockpin name="CLR" />
+            <blockpin signalname="XLXN_148" name="J" />
+            <blockpin signalname="Timer_3" name="K" />
+            <blockpin signalname="Din(7)" name="Q" />
+        </block>
+        <block symbolname="fjkce" name="XLXI_48">
+            <blockpin signalname="SYS_CLK" name="C" />
+            <blockpin signalname="PULL_UP" name="CE" />
+            <blockpin name="CLR" />
+            <blockpin signalname="XLXN_156" name="J" />
+            <blockpin signalname="Timer_2" name="K" />
+            <blockpin signalname="Din(5)" name="Q" />
+        </block>
+        <block symbolname="seven_seg" name="XLXI_70">
+            <blockpin signalname="SYS_CLK" name="SYS_CLK" />
+            <blockpin signalname="PULL_UP" name="En" />
+            <blockpin signalname="Din(7:0)" name="Din(7:0)" />
+            <blockpin signalname="anO(3:0)" name="anO(3:0)" />
+            <blockpin signalname="sseg(7:0)" name="sseg(7:0)" />
+        </block>
+        <block symbolname="DCM_50M" name="XLXI_71">
+            <blockpin signalname="CLK" name="CLK" />
+            <blockpin signalname="PULL_DOWN" name="RST" />
+            <blockpin name="CLK1M" />
+            <blockpin signalname="CLK10k" name="CLK10k" />
+            <blockpin name="CLK1k" />
+            <blockpin signalname="CLK1" name="CLK1" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -508,7 +532,6 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1168" y="624" type="branch" />
             <wire x2="1168" y1="624" y2="624" x1="1152" />
         </branch>
-        <instance x="896" y="784" name="XLXI_9" orien="R0" />
         <instance x="624" y="752" name="XLXI_22" orien="R0" />
         <instance x="624" y="688" name="XLXI_16" orien="R0" />
         <branch name="XLXN_81">
@@ -516,19 +539,6 @@
         </branch>
         <branch name="XLXN_82">
             <wire x2="896" y1="720" y2="720" x1="848" />
-        </branch>
-        <branch name="Count_Q(1)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="640" y="432" type="branch" />
-            <wire x2="576" y1="848" y2="848" x1="544" />
-            <wire x2="624" y1="848" y2="848" x1="576" />
-            <wire x2="576" y1="848" y2="1104" x1="576" />
-            <wire x2="576" y1="1104" y2="1360" x1="576" />
-            <wire x2="896" y1="1360" y2="1360" x1="576" />
-            <wire x2="624" y1="1104" y2="1104" x1="576" />
-            <wire x2="640" y1="432" y2="432" x1="576" />
-            <wire x2="576" y1="432" y2="592" x1="576" />
-            <wire x2="576" y1="592" y2="848" x1="576" />
-            <wire x2="896" y1="592" y2="592" x1="576" />
         </branch>
         <branch name="Count_Q(0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="640" y="400" type="branch" />
@@ -539,8 +549,8 @@
             <wire x2="896" y1="1296" y2="1296" x1="560" />
             <wire x2="896" y1="1040" y2="1040" x1="560" />
             <wire x2="560" y1="400" y2="528" x1="560" />
-            <wire x2="896" y1="528" y2="528" x1="560" />
             <wire x2="560" y1="528" y2="784" x1="560" />
+            <wire x2="896" y1="528" y2="528" x1="560" />
             <wire x2="640" y1="400" y2="400" x1="560" />
         </branch>
         <instance x="896" y="1296" name="XLXI_10" orien="R0" />
@@ -583,11 +593,7 @@
         <text style="fontsize:30;fontname:Arial" x="244" y="1504">Micro Timer</text>
         <instance x="160" y="2160" name="XLXI_27" orien="R0" />
         <instance x="576" y="1968" name="XLXI_28" orien="R0" />
-        <branch name="XLXN_113">
-            <wire x2="896" y1="1424" y2="1424" x1="848" />
-        </branch>
-        <instance x="624" y="1456" name="XLXI_35" orien="R0" />
-        <branch name="CLK">
+        <branch name="CLK1">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="560" y="1840" type="branch" />
             <wire x2="576" y1="1840" y2="1840" x1="560" />
         </branch>
@@ -613,7 +619,7 @@
             <wire x2="896" y1="912" y2="912" x1="592" />
             <wire x2="592" y1="912" y2="1168" x1="592" />
             <wire x2="592" y1="1168" y2="1424" x1="592" />
-            <wire x2="624" y1="1424" y2="1424" x1="592" />
+            <wire x2="896" y1="1424" y2="1424" x1="592" />
             <wire x2="624" y1="1168" y2="1168" x1="592" />
             <wire x2="640" y1="464" y2="464" x1="592" />
             <wire x2="592" y1="464" y2="656" x1="592" />
@@ -641,21 +647,9 @@
             <wire x2="992" y1="2000" y2="2000" x1="976" />
         </branch>
         <instance x="1616" y="464" name="XLXI_37" orien="R0" />
-        <text style="fontsize:30;fontname:Arial" x="1952" y="176">Yogi_ST</text>
         <instance x="1616" y="896" name="XLXI_39" orien="R0" />
-        <text style="fontsize:30;fontname:Arial" x="1952" y="608">Yogi_ET</text>
         <instance x="1616" y="1328" name="XLXI_45" orien="R0" />
-        <text style="fontsize:30;fontname:Arial" x="1952" y="1040">Booboo_EN</text>
         <instance x="1616" y="1760" name="XLXI_46" orien="R0" />
-        <text style="fontsize:30;fontname:Arial" x="1952" y="1472">Booboo_ST</text>
-        <instance x="2448" y="464" name="XLXI_47" orien="R0" />
-        <text style="fontsize:30;fontname:Arial" x="2784" y="176">Ranger_EN</text>
-        <instance x="2448" y="896" name="XLXI_48" orien="R0" />
-        <text style="fontsize:30;fontname:Arial" x="2784" y="608">Ranger_RD</text>
-        <instance x="2448" y="1328" name="XLXI_49" orien="R0" />
-        <text style="fontsize:30;fontname:Arial" x="2784" y="1040">Snaggle_TX</text>
-        <instance x="2448" y="1760" name="XLXI_50" orien="R0" />
-        <text style="fontsize:30;fontname:Arial" x="2784" y="1472">Snaggle_RX</text>
         <branch name="CLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="704" y="2064" type="branch" />
             <wire x2="720" y1="2064" y2="2064" x1="704" />
@@ -723,62 +717,65 @@
             <wire x2="1616" y1="1632" y2="1632" x1="1584" />
         </branch>
         <branch name="XLXN_148">
-            <wire x2="2448" y1="1440" y2="1440" x1="2416" />
+            <wire x2="2784" y1="1440" y2="1440" x1="2752" />
         </branch>
-        <branch name="XLXN_149">
-            <wire x2="2448" y1="1504" y2="1504" x1="2416" />
+        <branch name="Timer_3">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="1504" type="branch" />
+            <wire x2="2784" y1="1504" y2="1504" x1="2768" />
         </branch>
         <branch name="PULL_UP">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="1568" type="branch" />
-            <wire x2="2448" y1="1568" y2="1568" x1="2416" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="1568" type="branch" />
+            <wire x2="2784" y1="1568" y2="1568" x1="2768" />
         </branch>
         <branch name="SYS_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="1632" type="branch" />
-            <wire x2="2448" y1="1632" y2="1632" x1="2416" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="1632" type="branch" />
+            <wire x2="2784" y1="1632" y2="1632" x1="2768" />
         </branch>
         <branch name="XLXN_152">
-            <wire x2="2448" y1="1008" y2="1008" x1="2416" />
+            <wire x2="2784" y1="1008" y2="1008" x1="2752" />
         </branch>
-        <branch name="XLXN_153">
-            <wire x2="2448" y1="1072" y2="1072" x1="2416" />
+        <branch name="Timer_2">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="1072" type="branch" />
+            <wire x2="2784" y1="1072" y2="1072" x1="2768" />
         </branch>
         <branch name="PULL_UP">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="1136" type="branch" />
-            <wire x2="2448" y1="1136" y2="1136" x1="2416" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="1136" type="branch" />
+            <wire x2="2784" y1="1136" y2="1136" x1="2768" />
         </branch>
         <branch name="SYS_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="1200" type="branch" />
-            <wire x2="2448" y1="1200" y2="1200" x1="2416" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="1200" type="branch" />
+            <wire x2="2784" y1="1200" y2="1200" x1="2768" />
         </branch>
         <branch name="XLXN_156">
-            <wire x2="2448" y1="576" y2="576" x1="2416" />
+            <wire x2="2784" y1="576" y2="576" x1="2752" />
         </branch>
-        <branch name="XLXN_157">
-            <wire x2="2448" y1="640" y2="640" x1="2416" />
+        <branch name="Timer_2">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2752" y="640" type="branch" />
+            <wire x2="2784" y1="640" y2="640" x1="2752" />
         </branch>
         <branch name="PULL_UP">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="704" type="branch" />
-            <wire x2="2448" y1="704" y2="704" x1="2416" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2752" y="704" type="branch" />
+            <wire x2="2784" y1="704" y2="704" x1="2752" />
         </branch>
         <branch name="SYS_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="768" type="branch" />
-            <wire x2="2448" y1="768" y2="768" x1="2416" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2752" y="768" type="branch" />
+            <wire x2="2784" y1="768" y2="768" x1="2752" />
         </branch>
         <branch name="XLXN_160">
-            <wire x2="2448" y1="144" y2="144" x1="2416" />
+            <wire x2="2784" y1="144" y2="144" x1="2752" />
         </branch>
-        <branch name="XLXN_161">
-            <wire x2="2448" y1="208" y2="208" x1="2416" />
+        <branch name="Timer_3">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="208" type="branch" />
+            <wire x2="2784" y1="208" y2="208" x1="2768" />
         </branch>
         <branch name="PULL_UP">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="272" type="branch" />
-            <wire x2="2448" y1="272" y2="272" x1="2416" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="272" type="branch" />
+            <wire x2="2784" y1="272" y2="272" x1="2768" />
         </branch>
         <branch name="SYS_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="336" type="branch" />
-            <wire x2="2448" y1="336" y2="336" x1="2416" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="336" type="branch" />
+            <wire x2="2784" y1="336" y2="336" x1="2768" />
         </branch>
-        <iomarker fontsize="28" x="160" y="80" name="SYS_CLK" orien="R180" />
         <branch name="Count_3">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="112" type="branch" />
             <wire x2="1328" y1="112" y2="112" x1="1296" />
@@ -796,35 +793,37 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="608" type="branch" />
             <wire x2="1328" y1="608" y2="608" x1="1296" />
         </branch>
-        <branch name="Yogi_ST">
+        <branch name="Din(0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="208" type="branch" />
             <wire x2="2016" y1="208" y2="208" x1="2000" />
         </branch>
-        <branch name="Yogi_ET">
+        <branch name="Din(1)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="640" type="branch" />
             <wire x2="2016" y1="640" y2="640" x1="2000" />
         </branch>
-        <branch name="Booboo_EN">
+        <branch name="Din(2)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="1072" type="branch" />
             <wire x2="2016" y1="1072" y2="1072" x1="2000" />
         </branch>
-        <branch name="Booboo_ST">
+        <branch name="Din(3)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="1504" type="branch" />
             <wire x2="2016" y1="1504" y2="1504" x1="2000" />
         </branch>
-        <branch name="Snaggle_RX">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2848" y="1504" type="branch" />
-            <wire x2="2848" y1="1504" y2="1504" x1="2832" />
+        <branch name="Din(7)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3200" y="1504" type="branch" />
+            <wire x2="3200" y1="1504" y2="1504" x1="3168" />
         </branch>
-        <branch name="Snaggle_TX">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2848" y="1072" type="branch" />
-            <wire x2="2848" y1="1072" y2="1072" x1="2832" />
+        <branch name="Din(6)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3200" y="1072" type="branch" />
+            <wire x2="3200" y1="1072" y2="1072" x1="3168" />
         </branch>
-        <branch name="Ranger_RD">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2848" y="640" type="branch" />
-            <wire x2="2848" y1="640" y2="640" x1="2832" />
+        <branch name="Din(5)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3200" y="640" type="branch" />
+            <wire x2="3200" y1="640" y2="640" x1="3168" />
         </branch>
-        <branch name="Ranger_EN">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2848" y="208" type="branch" />
-            <wire x2="2848" y1="208" y2="208" x1="2832" />
+        <branch name="Din(4)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3200" y="208" type="branch" />
+            <wire x2="3200" y1="208" y2="208" x1="3168" />
         </branch>
         <branch name="Timer_1">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="1472" type="branch" />
@@ -835,8 +834,6 @@
             <wire x2="1328" y1="1408" y2="1408" x1="1296" />
         </branch>
         <instance x="1328" y="1536" name="XLXI_58" orien="R0" />
-        <iomarker fontsize="28" x="2016" y="1072" name="Booboo_EN" orien="R0" />
-        <iomarker fontsize="28" x="2016" y="1504" name="Booboo_ST" orien="R0" />
         <instance x="624" y="1200" name="XLXI_60" orien="R0" />
         <instance x="624" y="1136" name="XLXI_59" orien="R0" />
         <branch name="XLXN_178">
@@ -858,5 +855,112 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="144" y="2032" type="branch" />
             <wire x2="160" y1="2032" y2="2032" x1="144" />
         </branch>
+        <branch name="Count_9">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2464" y="112" type="branch" />
+            <wire x2="2496" y1="112" y2="112" x1="2464" />
+        </branch>
+        <branch name="Timer_0">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2464" y="176" type="branch" />
+            <wire x2="2496" y1="176" y2="176" x1="2464" />
+        </branch>
+        <branch name="Count_9">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="544" type="branch" />
+            <wire x2="2496" y1="544" y2="544" x1="2480" />
+        </branch>
+        <branch name="Timer_1">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="608" type="branch" />
+            <wire x2="2496" y1="608" y2="608" x1="2480" />
+        </branch>
+        <branch name="Count_Q(1)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="640" y="432" type="branch" />
+            <wire x2="576" y1="848" y2="848" x1="544" />
+            <wire x2="624" y1="848" y2="848" x1="576" />
+            <wire x2="576" y1="848" y2="1104" x1="576" />
+            <wire x2="624" y1="1104" y2="1104" x1="576" />
+            <wire x2="576" y1="1104" y2="1360" x1="576" />
+            <wire x2="624" y1="1360" y2="1360" x1="576" />
+            <wire x2="640" y1="432" y2="432" x1="576" />
+            <wire x2="576" y1="432" y2="592" x1="576" />
+            <wire x2="576" y1="592" y2="848" x1="576" />
+            <wire x2="896" y1="592" y2="592" x1="576" />
+        </branch>
+        <instance x="624" y="1392" name="XLXI_64" orien="R0" />
+        <branch name="XLXN_184">
+            <wire x2="896" y1="1360" y2="1360" x1="848" />
+        </branch>
+        <branch name="Timer_0">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="1040" type="branch" />
+            <wire x2="2496" y1="1040" y2="1040" x1="2480" />
+        </branch>
+        <branch name="Count_13">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="976" type="branch" />
+            <wire x2="2496" y1="976" y2="976" x1="2480" />
+        </branch>
+        <branch name="Timer_1">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="1472" type="branch" />
+            <wire x2="2496" y1="1472" y2="1472" x1="2480" />
+        </branch>
+        <branch name="Count_13">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="1408" type="branch" />
+            <wire x2="2496" y1="1408" y2="1408" x1="2480" />
+        </branch>
+        <text style="fontsize:30;fontname:Arial" x="2020" y="244">Yogi_ST</text>
+        <text style="fontsize:30;fontname:Arial" x="2016" y="680">Yogi_ET</text>
+        <text style="fontsize:30;fontname:Arial" x="2012" y="1112">Booboo_EN</text>
+        <text style="fontsize:30;fontname:Arial" x="2020" y="1536">Booboo_ST</text>
+        <instance x="2784" y="464" name="XLXI_47" orien="R0" />
+        <instance x="2496" y="240" name="XLXI_62" orien="R0" />
+        <instance x="2784" y="1328" name="XLXI_49" orien="R0" />
+        <instance x="2784" y="1760" name="XLXI_50" orien="R0" />
+        <instance x="2784" y="896" name="XLXI_48" orien="R0" />
+        <instance x="2496" y="1536" name="XLXI_66" orien="R0" />
+        <instance x="2496" y="1104" name="XLXI_65" orien="R0" />
+        <instance x="2496" y="672" name="XLXI_63" orien="R0" />
+        <instance x="896" y="784" name="XLXI_9" orien="R0" />
+        <text style="fontsize:30;fontname:Arial" x="3204" y="1104">Snaggle_TX</text>
+        <text style="fontsize:30;fontname:Arial" x="3208" y="672">Ranger_RD</text>
+        <text style="fontsize:30;fontname:Arial" x="3204" y="244">Ranger_EN</text>
+        <text style="fontsize:30;fontname:Arial" x="3212" y="1536">Snaggle_RX</text>
+        <instance x="1840" y="2240" name="XLXI_70" orien="R0">
+        </instance>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="2080" type="branch" />
+            <wire x2="1840" y1="2080" y2="2080" x1="1824" />
+        </branch>
+        <branch name="PULL_UP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="2144" type="branch" />
+            <wire x2="1840" y1="2144" y2="2144" x1="1824" />
+        </branch>
+        <branch name="Din(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="2208" type="branch" />
+            <wire x2="1840" y1="2208" y2="2208" x1="1824" />
+        </branch>
+        <branch name="sseg(7:0)">
+            <wire x2="2240" y1="2208" y2="2208" x1="2224" />
+        </branch>
+        <branch name="anO(3:0)">
+            <wire x2="2240" y1="2080" y2="2080" x1="2224" />
+        </branch>
+        <instance x="320" y="2544" name="XLXI_71" orien="R0">
+        </instance>
+        <branch name="PULL_DOWN">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="304" y="2512" type="branch" />
+            <wire x2="320" y1="2512" y2="2512" x1="304" />
+        </branch>
+        <branch name="CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="304" y="2320" type="branch" />
+            <wire x2="320" y1="2320" y2="2320" x1="304" />
+        </branch>
+        <branch name="CLK1">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="720" y="2512" type="branch" />
+            <wire x2="720" y1="2512" y2="2512" x1="704" />
+        </branch>
+        <branch name="CLK10k">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="720" y="2384" type="branch" />
+            <wire x2="720" y1="2384" y2="2384" x1="704" />
+        </branch>
+        <iomarker fontsize="28" x="2240" y="2080" name="anO(3:0)" orien="R0" />
+        <iomarker fontsize="28" x="2240" y="2208" name="sseg(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="160" y="80" name="SYS_CLK" orien="R180" />
     </sheet>
 </drawing>

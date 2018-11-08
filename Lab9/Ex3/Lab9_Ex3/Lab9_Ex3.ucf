@@ -2,7 +2,7 @@
 # Clocks
 
 NET "CLK" LOC = C8;
-NET "SYS_CLK" LOC = B8;
+#NET "SYS_CLK" LOC = B8;
 
 # Timing
 
@@ -16,23 +16,32 @@ NET "Timer_Q[0]" LOC = M5;
 
 # anO
 
-#NET "anO[0]" LOC = F12;
-#NET "anO[1]" LOC = J12;
-#NET "anO[2]" LOC = M13;
-#NET "anO[3]" LOC = K14;
+NET "anO[0]" LOC = F12;
+NET "anO[1]" LOC = J12;
+NET "anO[2]" LOC = M13;
+NET "anO[3]" LOC = K14;
 
 # sseg
 
-#NET "sseg[0]" LOC = m12;
-#NET "sseg[1]" LOC = l13;
-#NET "sseg[2]" LOC = p12;
-#NET "sseg[3]" LOC = n11;
-#NET "sseg[4]" LOC = n14;
-#NET "sseg[5]" LOC = h12;
-#NET "sseg[6]" LOC = l14;
-#NET "sseg[7]" LOC = n13;
+NET "sseg[0]" LOC = m12;
+NET "sseg[1]" LOC = l13;
+NET "sseg[2]" LOC = p12;
+NET "sseg[3]" LOC = n11;
+NET "sseg[4]" LOC = n14;
+NET "sseg[5]" LOC = h12;
+NET "sseg[6]" LOC = l14;
+NET "sseg[7]" LOC = n13;
 
 # Debug
 
-NET "Booboo_EN" LOC = P7;
-NET "Booboo_ST" LOC = P6;
+#NET "Yogi_ST" LOC = P7; # Yogi_ST / Din[0]
+#NET "Yogi_ET" LOC = P6; # Yogi_ET / Din[1]
+
+#NET "Booboo_EN" LOC = P7; # Booboo_EN / Din[2]
+#NET "Booboo_ST" LOC = P6; # Booboo_ST / Din[3]
+
+#NET "Snaggle_TX" LOC = P7; # Ranger_EN / Din[4]
+#NET "Snaggle_RX" LOC = P6; # Ranger_RD / Din[5]
+
+#NET "Snaggle_TX" LOC = P7; # Snaggle_TX / Din[6]
+#NET "Snaggle_RX" LOC = P6; # Snaggle_RX / Din[7]

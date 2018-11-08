@@ -45,21 +45,12 @@ Clock CLK to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-Count_Q<0>  |    8.931(R)|Tick_Up           |   0.000|
-Count_Q<1>  |    9.403(R)|Tick_Up           |   0.000|
-Count_Q<2>  |    9.779(R)|Tick_Up           |   0.000|
-Count_Q<3>  |    8.972(R)|Tick_Up           |   0.000|
-Timer_Q<0>  |    9.203(R)|CLK_IBUF          |   0.000|
-Timer_Q<1>  |    8.588(R)|CLK_IBUF          |   0.000|
-------------+------------+------------------+--------+
-
-Clock SYS_CLK to Pad
-------------+------------+------------------+--------+
-            | clk (edge) |                  | Clock  |
-Destination |   to PAD   |Internal Clock(s) | Phase  |
-------------+------------+------------------+--------+
-Booboo_EN   |    8.284(R)|SYS_CLK_BUFGP     |   0.000|
-Booboo_ST   |    8.085(R)|SYS_CLK_BUFGP     |   0.000|
+Count_Q<0>  |    8.987(R)|Tick_Up           |   0.000|
+Count_Q<1>  |    9.466(R)|Tick_Up           |   0.000|
+Count_Q<2>  |    9.695(R)|Tick_Up           |   0.000|
+Count_Q<3>  |   10.545(R)|Tick_Up           |   0.000|
+Timer_Q<0>  |    7.935(R)|CLK_IBUF          |   0.000|
+Timer_Q<1>  |    9.006(R)|CLK_IBUF          |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -67,7 +58,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    2.315|         |         |         |
+CLK            |   11.484|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SYS_CLK
@@ -75,12 +66,12 @@ Clock to Setup on destination clock SYS_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    5.553|    2.330|         |         |
-SYS_CLK        |    1.974|         |         |         |
+CLK            |    5.796|         |         |         |
+SYS_CLK        |   11.711|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Nov 07 21:44:53 2018 
+Analysis completed Thu Nov 08 11:14:11 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

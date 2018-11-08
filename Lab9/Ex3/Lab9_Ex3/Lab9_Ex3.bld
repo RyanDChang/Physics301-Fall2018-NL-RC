@@ -14,6 +14,15 @@ Done.
 Annotating constraints to design from ucf file "Lab9_Ex3.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem:119 - Constraint <NET "sseg[7]" LOC = n13;>
+   [Lab9_Ex3.ucf(33)]: This constraint cannot be distributed from the design
+   objects matching 'NET "sseg[7]"' because those design objects do not contain
+   or drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sseg[7]" LOC = n13;> [Lab9_Ex3.ucf(33)]' could not be found and so the
+   Locate constraint will be removed.
+
 Done...
 
 Checking expanded design ...
@@ -27,9 +36,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   0
+  Number of warnings:   2
 
-Total memory usage is 179496 kilobytes
+Total memory usage is 179468 kilobytes
 
 Writing NGD file "Lab9_Ex3.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

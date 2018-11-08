@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Lab9_Ex3.vf
-// /___/   /\     Timestamp : 11/07/2018 21:44:29
+// /___/   /\     Timestamp : 11/08/2018 11:13:42
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -413,29 +413,28 @@ endmodule
 
 module Lab9_Ex3(CLK, 
                 SYS_CLK, 
-                Booboo_EN, 
-                Booboo_ST, 
+                anO, 
                 Count_Q, 
+                sseg, 
                 Timer_Q);
 
     input CLK;
     input SYS_CLK;
-   output Booboo_EN;
-   output Booboo_ST;
+   output [3:0] anO;
    output [3:0] Count_Q;
+   output [7:0] sseg;
    output [1:0] Timer_Q;
    
    wire Booboo_EN_J;
+   wire CLK1;
+   wire CLK10k;
    wire Count_3;
    wire Count_5;
    wire Count_9;
    wire Count_13;
+   wire [7:0] Din;
    wire PULL_DOWN;
    wire PULL_UP;
-   wire Ranger_EN;
-   wire Ranger_RD;
-   wire Snaggle_RX;
-   wire Snaggle_TX;
    wire Tick_Up;
    wire Timer_0;
    wire Timer_1;
@@ -449,22 +448,16 @@ module Lab9_Ex3(CLK,
    wire XLXN_61;
    wire XLXN_81;
    wire XLXN_82;
-   wire XLXN_113;
    wire XLXN_131;
    wire XLXN_136;
    wire XLXN_144;
    wire XLXN_148;
-   wire XLXN_149;
    wire XLXN_152;
-   wire XLXN_153;
    wire XLXN_156;
-   wire XLXN_157;
    wire XLXN_160;
-   wire XLXN_161;
    wire XLXN_178;
    wire XLXN_179;
-   wire Yogi_ET;
-   wire Yogi_ST;
+   wire XLXN_184;
    wire [3:0] Count_Q_DUMMY;
    wire [1:0] Timer_Q_DUMMY;
    
@@ -504,8 +497,8 @@ module Lab9_Ex3(CLK,
                  .I3(Count_Q_DUMMY[0]), 
                  .O(Count_9));
    AND4  XLXI_11 (.I0(Count_Q_DUMMY[3]), 
-                 .I1(XLXN_113), 
-                 .I2(Count_Q_DUMMY[1]), 
+                 .I1(Count_Q_DUMMY[2]), 
+                 .I2(XLXN_184), 
                  .I3(Count_Q_DUMMY[0]), 
                  .O(Count_13));
    INV  XLXI_16 (.I(Count_Q_DUMMY[2]), 
@@ -531,69 +524,67 @@ module Lab9_Ex3(CLK,
    (* HU_SET = "XLXI_28_15" *) 
    D2_4E_MXILINX_Lab9_Ex3  XLXI_28 (.A0(Timer_Q_DUMMY[0]), 
                                    .A1(Timer_Q_DUMMY[1]), 
-                                   .E(CLK), 
+                                   .E(CLK1), 
                                    .D0(Timer_0), 
                                    .D1(Timer_1), 
                                    .D2(Timer_2), 
                                    .D3(Timer_3));
-   INV  XLXI_35 (.I(Count_Q_DUMMY[2]), 
-                .O(XLXN_113));
    (* HU_SET = "XLXI_37_17" *) 
    FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_37 (.C(SYS_CLK), 
                                    .CE(PULL_UP), 
                                    .CLR(), 
                                    .J(XLXN_131), 
                                    .K(Timer_0), 
-                                   .Q(Yogi_ST));
+                                   .Q(Din[0]));
    (* HU_SET = "XLXI_39_16" *) 
    FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_39 (.C(SYS_CLK), 
                                    .CE(PULL_UP), 
                                    .CLR(), 
                                    .J(XLXN_136), 
                                    .K(Timer_3), 
-                                   .Q(Yogi_ET));
+                                   .Q(Din[1]));
    (* HU_SET = "XLXI_45_18" *) 
    FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_45 (.C(SYS_CLK), 
                                    .CE(PULL_UP), 
                                    .CLR(), 
                                    .J(Booboo_EN_J), 
                                    .K(Timer_3), 
-                                   .Q(Booboo_EN));
+                                   .Q(Din[2]));
    (* HU_SET = "XLXI_46_19" *) 
    FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_46 (.C(SYS_CLK), 
                                    .CE(PULL_UP), 
                                    .CLR(), 
                                    .J(XLXN_144), 
                                    .K(Timer_3), 
-                                   .Q(Booboo_ST));
+                                   .Q(Din[3]));
    (* HU_SET = "XLXI_47_20" *) 
    FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_47 (.C(SYS_CLK), 
                                    .CE(PULL_UP), 
                                    .CLR(), 
                                    .J(XLXN_160), 
-                                   .K(XLXN_161), 
-                                   .Q(Ranger_EN));
-   (* HU_SET = "XLXI_48_21" *) 
+                                   .K(Timer_3), 
+                                   .Q(Din[4]));
+   (* HU_SET = "XLXI_48_23" *) 
    FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_48 (.C(SYS_CLK), 
                                    .CE(PULL_UP), 
                                    .CLR(), 
                                    .J(XLXN_156), 
-                                   .K(XLXN_157), 
-                                   .Q(Ranger_RD));
-   (* HU_SET = "XLXI_49_22" *) 
+                                   .K(Timer_2), 
+                                   .Q(Din[5]));
+   (* HU_SET = "XLXI_49_21" *) 
    FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_49 (.C(SYS_CLK), 
                                    .CE(PULL_UP), 
                                    .CLR(), 
                                    .J(XLXN_152), 
-                                   .K(XLXN_153), 
-                                   .Q(Snaggle_TX));
-   (* HU_SET = "XLXI_50_23" *) 
+                                   .K(Timer_2), 
+                                   .Q(Din[6]));
+   (* HU_SET = "XLXI_50_22" *) 
    FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_50 (.C(SYS_CLK), 
                                    .CE(PULL_UP), 
                                    .CLR(), 
                                    .J(XLXN_148), 
-                                   .K(XLXN_149), 
-                                   .Q(Snaggle_RX));
+                                   .K(Timer_3), 
+                                   .Q(Din[7]));
    AND3B1  XLXI_51 (.I0(CLK), 
                    .I1(Timer_Q_DUMMY[1]), 
                    .I2(Timer_Q_DUMMY[0]), 
@@ -614,4 +605,29 @@ module Lab9_Ex3(CLK,
    AND2  XLXI_61 (.I0(Timer_0), 
                  .I1(Count_5), 
                  .O(Booboo_EN_J));
+   AND2  XLXI_62 (.I0(Timer_0), 
+                 .I1(Count_9), 
+                 .O(XLXN_160));
+   AND2  XLXI_63 (.I0(Timer_1), 
+                 .I1(Count_9), 
+                 .O(XLXN_156));
+   INV  XLXI_64 (.I(Count_Q_DUMMY[1]), 
+                .O(XLXN_184));
+   AND2  XLXI_65 (.I0(Timer_0), 
+                 .I1(Count_13), 
+                 .O(XLXN_152));
+   AND2  XLXI_66 (.I0(Timer_1), 
+                 .I1(Count_13), 
+                 .O(XLXN_148));
+   seven_seg  XLXI_70 (.Din(Din[7:0]), 
+                      .En(PULL_UP), 
+                      .SYS_CLK(SYS_CLK), 
+                      .anO(anO[3:0]), 
+                      .sseg(sseg[7:0]));
+   DCM_50M  XLXI_71 (.CLK(CLK), 
+                    .RST(PULL_DOWN), 
+                    .CLK1(CLK1), 
+                    .CLK1k(), 
+                    .CLK1M(), 
+                    .CLK10k(CLK10k));
 endmodule
