@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">474</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_1</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">474</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">D0</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_1</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">474</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">D1</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_1</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">474</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">D2</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_1</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">474</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">D3</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_1</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">474</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">L</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_1</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">520</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_27</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">520</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">D0</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_27</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">520</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">D1</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_27</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">520</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">L</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_27</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">542</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_37</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">549</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_39</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">556</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_45</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">563</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_46</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">570</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_47</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">577</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_48</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">584</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_49</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Lab9_Ex3.vf</arg>&quot; line <arg fmt="%d" index="2">591</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_50</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">Yogi_ST</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">Yogi_ET</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_9</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_8</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_7</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_3</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_161</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_160</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_157</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_156</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_153</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_152</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_149</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_148</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">Snaggle_TX</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">Snaggle_RX</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">Ranger_RD</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">Ranger_EN</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">PULL_DOWN</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">Count_9</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">Count_13</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

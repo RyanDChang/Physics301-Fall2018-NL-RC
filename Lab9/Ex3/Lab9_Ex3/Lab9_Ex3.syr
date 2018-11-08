@@ -1,0 +1,905 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Lab9_Ex3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Lab9_Ex3.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Lab9_Ex3"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : Lab9_Ex3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Lab9_Ex3.vf" in library work
+Module <FJKCE_MXILINX_Lab9_Ex3> compiled
+Module <D2_4E_MXILINX_Lab9_Ex3> compiled
+Module <M2_1B1_MXILINX_Lab9_Ex3> compiled
+Module <M2_1_MXILINX_Lab9_Ex3> compiled
+Module <FTCLEX_MXILINX_Lab9_Ex3> compiled
+Module <CB2CLED_MXILINX_Lab9_Ex3> compiled
+Module <CB4CLED_MXILINX_Lab9_Ex3> compiled
+Module <Lab9_Ex3> compiled
+No errors in compilation
+Analysis of file <"Lab9_Ex3.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Lab9_Ex3> in library <work>.
+
+Analyzing hierarchy for module <CB4CLED_MXILINX_Lab9_Ex3> in library <work>.
+
+Analyzing hierarchy for module <CB2CLED_MXILINX_Lab9_Ex3> in library <work>.
+
+Analyzing hierarchy for module <D2_4E_MXILINX_Lab9_Ex3> in library <work>.
+
+Analyzing hierarchy for module <FJKCE_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FJKCE_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FJKCE_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FJKCE_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FJKCE_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FJKCE_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FJKCE_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FJKCE_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <M2_1_MXILINX_Lab9_Ex3> in library <work>.
+
+Analyzing hierarchy for module <M2_1B1_MXILINX_Lab9_Ex3> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Lab9_Ex3> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Lab9_Ex3> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Lab9_Ex3> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <M2_1_MXILINX_Lab9_Ex3> in library <work>.
+
+Analyzing hierarchy for module <M2_1B1_MXILINX_Lab9_Ex3> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Lab9_Ex3> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Lab9_Ex3>.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 474: Unconnected input port 'CLR' of instance 'XLXI_1' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 474: Unconnected input port 'D0' of instance 'XLXI_1' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 474: Unconnected input port 'D1' of instance 'XLXI_1' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 474: Unconnected input port 'D2' of instance 'XLXI_1' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 474: Unconnected input port 'D3' of instance 'XLXI_1' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 474: Unconnected input port 'L' of instance 'XLXI_1' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 520: Unconnected input port 'CLR' of instance 'XLXI_27' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 520: Unconnected input port 'D0' of instance 'XLXI_27' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 520: Unconnected input port 'D1' of instance 'XLXI_27' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 520: Unconnected input port 'L' of instance 'XLXI_27' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 542: Unconnected input port 'CLR' of instance 'XLXI_37' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 549: Unconnected input port 'CLR' of instance 'XLXI_39' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 556: Unconnected input port 'CLR' of instance 'XLXI_45' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 563: Unconnected input port 'CLR' of instance 'XLXI_46' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 570: Unconnected input port 'CLR' of instance 'XLXI_47' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 577: Unconnected input port 'CLR' of instance 'XLXI_48' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 584: Unconnected input port 'CLR' of instance 'XLXI_49' is tied to GND.
+WARNING:Xst:852 - "Lab9_Ex3.vf" line 591: Unconnected input port 'CLR' of instance 'XLXI_50' is tied to GND.
+Module <Lab9_Ex3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_13" for instance <XLXI_1> in unit <Lab9_Ex3>.
+    Set user-defined property "HU_SET =  XLXI_27_14" for instance <XLXI_27> in unit <Lab9_Ex3>.
+    Set user-defined property "HU_SET =  XLXI_28_15" for instance <XLXI_28> in unit <Lab9_Ex3>.
+    Set user-defined property "HU_SET =  XLXI_37_17" for instance <XLXI_37> in unit <Lab9_Ex3>.
+    Set user-defined property "HU_SET =  XLXI_39_16" for instance <XLXI_39> in unit <Lab9_Ex3>.
+    Set user-defined property "HU_SET =  XLXI_45_18" for instance <XLXI_45> in unit <Lab9_Ex3>.
+    Set user-defined property "HU_SET =  XLXI_46_19" for instance <XLXI_46> in unit <Lab9_Ex3>.
+    Set user-defined property "HU_SET =  XLXI_47_20" for instance <XLXI_47> in unit <Lab9_Ex3>.
+    Set user-defined property "HU_SET =  XLXI_48_21" for instance <XLXI_48> in unit <Lab9_Ex3>.
+    Set user-defined property "HU_SET =  XLXI_49_22" for instance <XLXI_49> in unit <Lab9_Ex3>.
+    Set user-defined property "HU_SET =  XLXI_50_23" for instance <XLXI_50> in unit <Lab9_Ex3>.
+Analyzing module <CB4CLED_MXILINX_Lab9_Ex3> in library <work>.
+Module <CB4CLED_MXILINX_Lab9_Ex3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_8" for instance <I_Q0> in unit <CB4CLED_MXILINX_Lab9_Ex3>.
+    Set user-defined property "HU_SET =  I_Q1_7" for instance <I_Q1> in unit <CB4CLED_MXILINX_Lab9_Ex3>.
+    Set user-defined property "HU_SET =  I_Q2_6" for instance <I_Q2> in unit <CB4CLED_MXILINX_Lab9_Ex3>.
+    Set user-defined property "HU_SET =  I_Q3_5" for instance <I_Q3> in unit <CB4CLED_MXILINX_Lab9_Ex3>.
+    Set user-defined property "HU_SET =  I_T1_12" for instance <I_T1> in unit <CB4CLED_MXILINX_Lab9_Ex3>.
+    Set user-defined property "HU_SET =  I_T2_9" for instance <I_T2> in unit <CB4CLED_MXILINX_Lab9_Ex3>.
+    Set user-defined property "HU_SET =  I_T3_10" for instance <I_T3> in unit <CB4CLED_MXILINX_Lab9_Ex3>.
+    Set user-defined property "HU_SET =  I_TC_11" for instance <I_TC> in unit <CB4CLED_MXILINX_Lab9_Ex3>.
+Analyzing module <FTCLEX_MXILINX_Lab9_Ex3.1> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Lab9_Ex3.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.1>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_Lab9_Ex3.1>.
+Analyzing module <M2_1_MXILINX_Lab9_Ex3.5> in library <work>.
+Module <M2_1_MXILINX_Lab9_Ex3.5> is correct for synthesis.
+ 
+Analyzing module <FTCLEX_MXILINX_Lab9_Ex3.2> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Lab9_Ex3.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.2>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_Lab9_Ex3.2>.
+Analyzing module <FTCLEX_MXILINX_Lab9_Ex3.3> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Lab9_Ex3.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.3>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_Lab9_Ex3.3>.
+Analyzing module <FTCLEX_MXILINX_Lab9_Ex3.4> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Lab9_Ex3.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.4>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_Lab9_Ex3.4>.
+Analyzing module <M2_1_MXILINX_Lab9_Ex3.1> in library <work>.
+Module <M2_1_MXILINX_Lab9_Ex3.1> is correct for synthesis.
+ 
+Analyzing module <M2_1B1_MXILINX_Lab9_Ex3.1> in library <work>.
+Module <M2_1B1_MXILINX_Lab9_Ex3.1> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Lab9_Ex3.2> in library <work>.
+Module <M2_1_MXILINX_Lab9_Ex3.2> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Lab9_Ex3.3> in library <work>.
+Module <M2_1_MXILINX_Lab9_Ex3.3> is correct for synthesis.
+ 
+Analyzing module <CB2CLED_MXILINX_Lab9_Ex3> in library <work>.
+Module <CB2CLED_MXILINX_Lab9_Ex3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_2" for instance <I_Q0> in unit <CB2CLED_MXILINX_Lab9_Ex3>.
+    Set user-defined property "HU_SET =  I_Q1_1" for instance <I_Q1> in unit <CB2CLED_MXILINX_Lab9_Ex3>.
+    Set user-defined property "HU_SET =  I_T1_4" for instance <I_T1> in unit <CB2CLED_MXILINX_Lab9_Ex3>.
+    Set user-defined property "HU_SET =  I_TC_3" for instance <I_TC> in unit <CB2CLED_MXILINX_Lab9_Ex3>.
+Analyzing module <FTCLEX_MXILINX_Lab9_Ex3.5> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Lab9_Ex3.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.5>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_Lab9_Ex3.5>.
+Analyzing module <FTCLEX_MXILINX_Lab9_Ex3.6> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Lab9_Ex3.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Lab9_Ex3.6>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_Lab9_Ex3.6>.
+Analyzing module <M2_1_MXILINX_Lab9_Ex3.4> in library <work>.
+Module <M2_1_MXILINX_Lab9_Ex3.4> is correct for synthesis.
+ 
+Analyzing module <M2_1B1_MXILINX_Lab9_Ex3.2> in library <work>.
+Module <M2_1B1_MXILINX_Lab9_Ex3.2> is correct for synthesis.
+ 
+Analyzing module <D2_4E_MXILINX_Lab9_Ex3> in library <work>.
+Module <D2_4E_MXILINX_Lab9_Ex3> is correct for synthesis.
+ 
+Analyzing module <FJKCE_MXILINX_Lab9_Ex3.1> in library <work>.
+	INIT = 1'b0
+Module <FJKCE_MXILINX_Lab9_Ex3.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.1>.
+Analyzing module <FJKCE_MXILINX_Lab9_Ex3.2> in library <work>.
+	INIT = 1'b0
+Module <FJKCE_MXILINX_Lab9_Ex3.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.2>.
+Analyzing module <FJKCE_MXILINX_Lab9_Ex3.3> in library <work>.
+	INIT = 1'b0
+Module <FJKCE_MXILINX_Lab9_Ex3.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.3>.
+Analyzing module <FJKCE_MXILINX_Lab9_Ex3.4> in library <work>.
+	INIT = 1'b0
+Module <FJKCE_MXILINX_Lab9_Ex3.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.4>.
+Analyzing module <FJKCE_MXILINX_Lab9_Ex3.5> in library <work>.
+	INIT = 1'b0
+Module <FJKCE_MXILINX_Lab9_Ex3.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.5>.
+Analyzing module <FJKCE_MXILINX_Lab9_Ex3.6> in library <work>.
+	INIT = 1'b0
+Module <FJKCE_MXILINX_Lab9_Ex3.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.6>.
+Analyzing module <FJKCE_MXILINX_Lab9_Ex3.7> in library <work>.
+	INIT = 1'b0
+Module <FJKCE_MXILINX_Lab9_Ex3.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.7>.
+Analyzing module <FJKCE_MXILINX_Lab9_Ex3.8> in library <work>.
+	INIT = 1'b0
+Module <FJKCE_MXILINX_Lab9_Ex3.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKCE_MXILINX_Lab9_Ex3.8>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <D2_4E_MXILINX_Lab9_Ex3>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <D2_4E_MXILINX_Lab9_Ex3> synthesized.
+
+
+Synthesizing Unit <FJKCE_MXILINX_Lab9_Ex3_1>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FJKCE_MXILINX_Lab9_Ex3_1> synthesized.
+
+
+Synthesizing Unit <FJKCE_MXILINX_Lab9_Ex3_2>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FJKCE_MXILINX_Lab9_Ex3_2> synthesized.
+
+
+Synthesizing Unit <FJKCE_MXILINX_Lab9_Ex3_3>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FJKCE_MXILINX_Lab9_Ex3_3> synthesized.
+
+
+Synthesizing Unit <FJKCE_MXILINX_Lab9_Ex3_4>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FJKCE_MXILINX_Lab9_Ex3_4> synthesized.
+
+
+Synthesizing Unit <FJKCE_MXILINX_Lab9_Ex3_5>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FJKCE_MXILINX_Lab9_Ex3_5> synthesized.
+
+
+Synthesizing Unit <FJKCE_MXILINX_Lab9_Ex3_6>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FJKCE_MXILINX_Lab9_Ex3_6> synthesized.
+
+
+Synthesizing Unit <FJKCE_MXILINX_Lab9_Ex3_7>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FJKCE_MXILINX_Lab9_Ex3_7> synthesized.
+
+
+Synthesizing Unit <FJKCE_MXILINX_Lab9_Ex3_8>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FJKCE_MXILINX_Lab9_Ex3_8> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Lab9_Ex3_1>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <M2_1_MXILINX_Lab9_Ex3_1> synthesized.
+
+
+Synthesizing Unit <M2_1B1_MXILINX_Lab9_Ex3_1>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <M2_1B1_MXILINX_Lab9_Ex3_1> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Lab9_Ex3_2>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <M2_1_MXILINX_Lab9_Ex3_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Lab9_Ex3_3>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <M2_1_MXILINX_Lab9_Ex3_3> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Lab9_Ex3_5>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <M2_1_MXILINX_Lab9_Ex3_5> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Lab9_Ex3_4>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <M2_1_MXILINX_Lab9_Ex3_4> synthesized.
+
+
+Synthesizing Unit <M2_1B1_MXILINX_Lab9_Ex3_2>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <M2_1B1_MXILINX_Lab9_Ex3_2> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Lab9_Ex3_1>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FTCLEX_MXILINX_Lab9_Ex3_1> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Lab9_Ex3_2>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FTCLEX_MXILINX_Lab9_Ex3_2> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Lab9_Ex3_3>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FTCLEX_MXILINX_Lab9_Ex3_3> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Lab9_Ex3_4>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FTCLEX_MXILINX_Lab9_Ex3_4> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Lab9_Ex3_5>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FTCLEX_MXILINX_Lab9_Ex3_5> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Lab9_Ex3_6>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <FTCLEX_MXILINX_Lab9_Ex3_6> synthesized.
+
+
+Synthesizing Unit <CB4CLED_MXILINX_Lab9_Ex3>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <CB4CLED_MXILINX_Lab9_Ex3> synthesized.
+
+
+Synthesizing Unit <CB2CLED_MXILINX_Lab9_Ex3>.
+    Related source file is "Lab9_Ex3.vf".
+Unit <CB2CLED_MXILINX_Lab9_Ex3> synthesized.
+
+
+Synthesizing Unit <Lab9_Ex3>.
+    Related source file is "Lab9_Ex3.vf".
+WARNING:Xst:646 - Signal <Yogi_ST> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Yogi_ET> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <XLXN_9> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <XLXN_8> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <XLXN_7> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <XLXN_3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <XLXN_161> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXN_160> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXN_157> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXN_156> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXN_153> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXN_152> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXN_149> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXN_148> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <Snaggle_TX> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Snaggle_RX> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ranger_RD> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ranger_EN> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PULL_DOWN> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Count_9> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Count_13> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Lab9_Ex3> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Lab9_Ex3> ...
+
+Optimizing unit <D2_4E_MXILINX_Lab9_Ex3> ...
+
+Optimizing unit <FJKCE_MXILINX_Lab9_Ex3_1> ...
+
+Optimizing unit <FJKCE_MXILINX_Lab9_Ex3_2> ...
+
+Optimizing unit <FJKCE_MXILINX_Lab9_Ex3_3> ...
+
+Optimizing unit <FJKCE_MXILINX_Lab9_Ex3_4> ...
+
+Optimizing unit <FJKCE_MXILINX_Lab9_Ex3_5> ...
+
+Optimizing unit <FJKCE_MXILINX_Lab9_Ex3_6> ...
+
+Optimizing unit <FJKCE_MXILINX_Lab9_Ex3_7> ...
+
+Optimizing unit <FJKCE_MXILINX_Lab9_Ex3_8> ...
+
+Optimizing unit <M2_1_MXILINX_Lab9_Ex3_1> ...
+
+Optimizing unit <M2_1B1_MXILINX_Lab9_Ex3_1> ...
+
+Optimizing unit <M2_1_MXILINX_Lab9_Ex3_2> ...
+
+Optimizing unit <M2_1_MXILINX_Lab9_Ex3_3> ...
+
+Optimizing unit <M2_1_MXILINX_Lab9_Ex3_5> ...
+
+Optimizing unit <M2_1_MXILINX_Lab9_Ex3_4> ...
+
+Optimizing unit <M2_1B1_MXILINX_Lab9_Ex3_2> ...
+
+Optimizing unit <FTCLEX_MXILINX_Lab9_Ex3_1> ...
+
+Optimizing unit <FTCLEX_MXILINX_Lab9_Ex3_2> ...
+
+Optimizing unit <FTCLEX_MXILINX_Lab9_Ex3_3> ...
+
+Optimizing unit <FTCLEX_MXILINX_Lab9_Ex3_4> ...
+
+Optimizing unit <FTCLEX_MXILINX_Lab9_Ex3_5> ...
+
+Optimizing unit <FTCLEX_MXILINX_Lab9_Ex3_6> ...
+
+Optimizing unit <CB4CLED_MXILINX_Lab9_Ex3> ...
+
+Optimizing unit <CB2CLED_MXILINX_Lab9_Ex3> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Lab9_Ex3, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Lab9_Ex3.ngr
+Top Level Output File Name         : Lab9_Ex3
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 117
+#      AND2                        : 20
+#      AND2B1                      : 18
+#      AND2B2                      : 4
+#      AND3                        : 2
+#      AND3B1                      : 11
+#      AND3B2                      : 9
+#      AND3B3                      : 1
+#      AND4                        : 5
+#      AND4B4                      : 1
+#      GND                         : 9
+#      INV                         : 7
+#      OR2                         : 14
+#      OR3                         : 8
+#      VCC                         : 2
+#      XOR2                        : 6
+# FlipFlops/Latches                : 14
+#      FDCE                        : 14
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+# Others                           : 2
+#      PULLDOWN                    : 1
+#      PULLUP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                        7  out of    960     0%  
+ Number of Slice Flip Flops:             14  out of   1920     0%  
+ Number of 4 input LUTs:                  7  out of   1920     0%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of     83    12%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)       | Load  |
+-----------------------------------+-----------------------------+-------+
+SYS_CLK                            | BUFGP                       | 8     |
+Tick_Up(XLXI_51:O)                 | NONE(*)(XLXI_1/I_Q0/I_36_35)| 4     |
+CLK                                | IBUF+BUFG                   | 2     |
+-----------------------------------+-----------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+---------------------------+-------+
+Control Signal                     | Buffer(FF name)           | Load  |
+-----------------------------------+---------------------------+-------+
+N0(XST_GND:G)                      | NONE(XLXI_37/I_36_32)     | 8     |
+XLXI_1/N0(XLXI_1/XST_GND:G)        | NONE(XLXI_1/I_Q0/I_36_35) | 4     |
+XLXI_27/N0(XLXI_27/XST_GND:G)      | NONE(XLXI_27/I_Q0/I_36_35)| 2     |
+-----------------------------------+---------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.643ns (Maximum Frequency: 115.701MHz)
+   Minimum input arrival time before clock: 6.969ns
+   Maximum output required time after clock: 4.863ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYS_CLK'
+  Clock period: 3.678ns (frequency: 271.887MHz)
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Delay:               3.678ns (Levels of Logic = 2)
+  Source:            XLXI_45/I_36_32 (FF)
+  Destination:       XLXI_45/I_36_32 (FF)
+  Source Clock:      SYS_CLK rising
+  Destination Clock: SYS_CLK rising
+
+  Data Path: XLXI_45/I_36_32 to XLXI_45/I_36_32
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.531  I_36_32 (Q)
+     AND3B2:I2->O          1   0.704   0.420  I_36_37 (A0)
+     OR3:I2->O             1   0.704   0.420  I_36_41 (AD)
+     FDCE:D                    0.308          I_36_32
+    ----------------------------------------
+    Total                      3.678ns (2.307ns logic, 1.371ns route)
+                                       (62.7% logic, 37.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Tick_Up'
+  Clock period: 8.643ns (frequency: 115.701MHz)
+  Total number of paths / destination ports: 16 / 4
+-------------------------------------------------------------------------
+Delay:               8.643ns (Levels of Logic = 9)
+  Source:            XLXI_1/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_1/I_Q2/I_36_35 (FF)
+  Source Clock:      Tick_Up rising
+  Destination Clock: Tick_Up rising
+
+  Data Path: XLXI_1/I_Q0/I_36_35 to XLXI_1/I_Q2/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            14   0.591   1.000  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND2B2:I1->O          1   0.704   0.420  I_36_3 (T2_DN)
+     begin scope: 'I_T2'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'I_T2'
+     begin scope: 'I_Q2'
+     XOR2:I0->O            1   0.704   0.420  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.308          I_36_35
+    ----------------------------------------
+    Total                      8.643ns (5.123ns logic, 3.520ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 7.452ns (frequency: 134.192MHz)
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Delay:               7.452ns (Levels of Logic = 8)
+  Source:            XLXI_27/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_27/I_Q1/I_36_35 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_27/I_Q0/I_36_35 to XLXI_27/I_Q1/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.591   0.933  I_36_35 (Q)
+     end scope: 'I_Q0'
+     begin scope: 'I_T1'
+     AND2B2:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'I_T1'
+     begin scope: 'I_Q1'
+     XOR2:I0->O            1   0.704   0.420  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.308          I_36_35
+    ----------------------------------------
+    Total                      7.452ns (4.419ns logic, 3.033ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 24 / 4
+-------------------------------------------------------------------------
+Offset:              6.969ns (Levels of Logic = 7)
+  Source:            CLK (PAD)
+  Destination:       XLXI_45/I_36_32 (FF)
+  Destination Clock: SYS_CLK rising
+
+  Data Path: CLK to XLXI_45/I_36_32
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.218   0.669  CLK_IBUF (CLK_IBUF1)
+     begin scope: 'XLXI_28'
+     AND3B2:I2->O          4   0.704   0.587  I_36_33 (D0)
+     end scope: 'XLXI_28'
+     AND2:I0->O            3   0.704   0.531  XLXI_61 (Booboo_EN_J)
+     begin scope: 'XLXI_45'
+     AND3B2:I0->O          1   0.704   0.420  I_36_37 (A0)
+     OR3:I2->O             1   0.704   0.420  I_36_41 (AD)
+     FDCE:D                    0.308          I_36_32
+    ----------------------------------------
+    Total                      6.969ns (4.342ns logic, 2.627ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 2)
+  Source:            XLXI_45/I_36_32 (FF)
+  Destination:       Booboo_EN (PAD)
+  Source Clock:      SYS_CLK rising
+
+  Data Path: XLXI_45/I_36_32 to Booboo_EN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.531  I_36_32 (Q)
+     end scope: 'XLXI_45'
+     OBUF:I->O                 3.272          Booboo_EN_OBUF (Booboo_EN)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.796ns (Levels of Logic = 2)
+  Source:            XLXI_27/I_Q0/I_36_35 (FF)
+  Destination:       Timer_Q<0> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_27/I_Q0/I_36_35 to Timer_Q<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.591   0.933  I_36_35 (Q)
+     end scope: 'I_Q0'
+     end scope: 'XLXI_27'
+     OBUF:I->O                 3.272          Timer_Q_0_OBUF (Timer_Q<0>)
+    ----------------------------------------
+    Total                      4.796ns (3.863ns logic, 0.933ns route)
+                                       (80.5% logic, 19.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Tick_Up'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.863ns (Levels of Logic = 2)
+  Source:            XLXI_1/I_Q0/I_36_35 (FF)
+  Destination:       Count_Q<0> (PAD)
+  Source Clock:      Tick_Up rising
+
+  Data Path: XLXI_1/I_Q0/I_36_35 to Count_Q<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            14   0.591   1.000  I_36_35 (Q)
+     end scope: 'I_Q0'
+     end scope: 'XLXI_1'
+     OBUF:I->O                 3.272          Count_Q_0_OBUF (Count_Q<0>)
+    ----------------------------------------
+    Total                      4.863ns (3.863ns logic, 1.000ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.87 secs
+ 
+--> 
+
+Total memory usage is 251768 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

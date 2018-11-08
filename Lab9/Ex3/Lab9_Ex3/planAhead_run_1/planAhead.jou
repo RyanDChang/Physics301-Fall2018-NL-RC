@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Nov 07 20:35:20 2018
+# Process ID: 5492
+# Log file: C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab9/Ex3/Lab9_Ex3/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab9/Ex3/Lab9_Ex3/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab9/Ex3/Lab9_Ex3/pa.fromNetlist.tcl
+startgroup
+set_property package_pin M11 [get_ports {Timer_Q[1]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {Timer_Q[0]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {Count_Q[0]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {Count_Q[1]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {Count_Q[2]}]
+endgroup
+startgroup
+set_property package_pin G1 [get_ports {Count_Q[3]}]
+endgroup
+startgroup
+set_property package_pin C8 [get_ports CLK]
+endgroup
+save_constraints
