@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.68d on Thu Nov 08 12:52:30 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CloseButton" LOCATE = SITE "G12" LEVEL 1;
+COMP "OpenButton" LOCATE = SITE "C11" LEVEL 1;
+COMP "Timer_0" LOCATE = SITE "N5" LEVEL 1;
+COMP "Timer_1" LOCATE = SITE "N4" LEVEL 1;
+COMP "Timer_2" LOCATE = SITE "P4" LEVEL 1;
+COMP "Timer_3" LOCATE = SITE "G1" LEVEL 1;
+COMP "Blocked" LOCATE = SITE "A7" LEVEL 1;
+COMP "State<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "State<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "State<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "State<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "CLK" LOCATE = SITE "B8" LEVEL 1;
+COMP "Time_CLK" LOCATE = SITE "C8" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "Time_CLK_BUFGP/IBUFG" BEL "Time_CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

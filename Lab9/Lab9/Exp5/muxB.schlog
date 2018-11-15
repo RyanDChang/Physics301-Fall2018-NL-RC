@@ -1,0 +1,10 @@
+select figure at 666 1012 8 -wires -sn=1
+select figure at 651 963 8 -wires -sn=1
+select figure at 645 455 8 -wires -sn=1
+select figure at 662 939 8 -wires -sn=1
+select figure at 655 1427 8 -wires -sn=1
+select figure at 656 1435 8 -wires -sn=1
+select figure at 664 1939 8 -wires -sn=1
+select figure at 706 1505 8 -wires -sn=1
+select figure at 715 1557 8 -wires -sn=1
+select figure at 1313 1182 8 -wires -sn=1

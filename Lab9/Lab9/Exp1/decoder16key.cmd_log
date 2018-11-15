@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../goodies/decoder16key.vhd -prj Exp1 -o decoder16key.spl -module decoder16key -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e decoder16key.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp1/decoder16key.sym 

@@ -1,0 +1,14 @@
+EN d2_4e_mxilinx_exp2 NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl00 1541710341
+EN m2_1_mxilinx_exp2 NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl04 1541710345
+AR m2_1_mxilinx_exp2 behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl05 1541710346
+EN exp2 NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl12 1541710353
+EN m2_1b1_mxilinx_exp2 NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl02 1541710343
+AR exp2 behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl13 1541710354
+AR m2_1b1_mxilinx_exp2 behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl03 1541710344
+AR cb4cled_mxilinx_exp2 behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl09 1541710350
+EN ftclex_mxilinx_exp2 NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl06 1541710347
+AR ftclex_mxilinx_exp2 behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl07 1541710348
+EN cb4cled_mxilinx_exp2 NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl08 1541710349
+EN fjkce_mxilinx_exp2 NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl10 1541710351
+AR d2_4e_mxilinx_exp2 behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl01 1541710342
+AR fjkce_mxilinx_exp2 behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Exp2/Exp2.vhf sub00/vhpl11 1541710352

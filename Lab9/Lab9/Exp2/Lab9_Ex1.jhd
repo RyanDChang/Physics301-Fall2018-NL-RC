@@ -1,0 +1,3 @@
+MODULE Lab9_Ex1
+	SUBMODULE seven_seg
+		INSTANCE XLXI_134

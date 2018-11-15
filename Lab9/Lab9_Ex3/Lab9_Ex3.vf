@@ -1,0 +1,641 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.6
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab9_Ex3.vf
+// /___/   /\     Timestamp : 11/13/2018 13:13:41
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9_Ex3/Lab9_Ex3.vf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9_Ex3/Lab9_Ex3.sch
+//Design Name: Lab9_Ex3
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FJKCE_MXILINX_Lab9_Ex3(C, 
+                              CE, 
+                              CLR, 
+                              J, 
+                              K, 
+                              Q);
+
+   parameter INIT = 1'b0;
+   
+    input C;
+    input CE;
+    input CLR;
+    input J;
+    input K;
+   output Q;
+   
+   wire AD;
+   wire A0;
+   wire A1;
+   wire A2;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   (* RLOC = "X0Y0" *) 
+   FDCE  I_36_32 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(AD), 
+                 .Q(Q_DUMMY));
+   AND3B2  I_36_37 (.I0(J), 
+                   .I1(K), 
+                   .I2(Q_DUMMY), 
+                   .O(A0));
+   AND3B1  I_36_40 (.I0(Q_DUMMY), 
+                   .I1(K), 
+                   .I2(J), 
+                   .O(A1));
+   OR3  I_36_41 (.I0(A2), 
+                .I1(A1), 
+                .I2(A0), 
+                .O(AD));
+   AND2B1  I_36_43 (.I0(K), 
+                   .I1(J), 
+                   .O(A2));
+endmodule
+`timescale 1ns / 1ps
+
+module D2_4E_MXILINX_Lab9_Ex3(A0, 
+                              A1, 
+                              E, 
+                              D0, 
+                              D1, 
+                              D2, 
+                              D3);
+
+    input A0;
+    input A1;
+    input E;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   
+   
+   AND3  I_36_30 (.I0(A1), 
+                 .I1(A0), 
+                 .I2(E), 
+                 .O(D3));
+   AND3B1  I_36_31 (.I0(A0), 
+                   .I1(A1), 
+                   .I2(E), 
+                   .O(D2));
+   AND3B1  I_36_32 (.I0(A1), 
+                   .I1(A0), 
+                   .I2(E), 
+                   .O(D1));
+   AND3B2  I_36_33 (.I0(A0), 
+                   .I1(A1), 
+                   .I2(E), 
+                   .O(D0));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1B1_MXILINX_Lab9_Ex3(D0, 
+                               D1, 
+                               S0, 
+                               O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B2  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_Lab9_Ex3(D0, 
+                             D1, 
+                             S0, 
+                             O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module FTCLEX_MXILINX_Lab9_Ex3(C, 
+                               CE, 
+                               CLR, 
+                               D, 
+                               L, 
+                               T, 
+                               Q);
+
+   parameter INIT = 1'b0;
+   
+    input C;
+    input CE;
+    input CLR;
+    input D;
+    input L;
+    input T;
+   output Q;
+   
+   wire MD;
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   (* HU_SET = "I_36_30_0" *) 
+   M2_1_MXILINX_Lab9_Ex3  I_36_30 (.D0(TQ), 
+                                  .D1(D), 
+                                  .S0(L), 
+                                  .O(MD));
+   XOR2  I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   (* RLOC = "X0Y0" *) 
+   FDCE  I_36_35 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(MD), 
+                 .Q(Q_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module CB2CLED_MXILINX_Lab9_Ex3(C, 
+                                CE, 
+                                CLR, 
+                                D0, 
+                                D1, 
+                                L, 
+                                UP, 
+                                CEO, 
+                                Q0, 
+                                Q1, 
+                                TC);
+
+    input C;
+    input CE;
+    input CLR;
+    input D0;
+    input D1;
+    input L;
+    input UP;
+   output CEO;
+   output Q0;
+   output Q1;
+   output TC;
+   
+   wire OR_CE_L;
+   wire TC_DN;
+   wire TC_UP;
+   wire T1;
+   wire XLXN_1;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign TC = TC_DUMMY;
+   (* HU_SET = "I_Q0_2" *) 
+   FTCLEX_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) I_Q0 (.C(C), 
+                                 .CE(OR_CE_L), 
+                                 .CLR(CLR), 
+                                 .D(D0), 
+                                 .L(L), 
+                                 .T(XLXN_1), 
+                                 .Q(Q0_DUMMY));
+   (* HU_SET = "I_Q1_1" *) 
+   FTCLEX_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) I_Q1 (.C(C), 
+                                 .CE(OR_CE_L), 
+                                 .CLR(CLR), 
+                                 .D(D1), 
+                                 .L(L), 
+                                 .T(T1), 
+                                 .Q(Q1_DUMMY));
+   (* HU_SET = "I_TC_3" *) 
+   M2_1_MXILINX_Lab9_Ex3  I_TC (.D0(TC_DN), 
+                               .D1(TC_UP), 
+                               .S0(UP), 
+                               .O(TC_DUMMY));
+   (* HU_SET = "I_T1_4" *) 
+   M2_1B1_MXILINX_Lab9_Ex3  I_T1 (.D0(Q0_DUMMY), 
+                                 .D1(Q0_DUMMY), 
+                                 .S0(UP), 
+                                 .O(T1));
+   VCC  I_36_7 (.P(XLXN_1));
+   AND2B2  I_36_33 (.I0(Q1_DUMMY), 
+                   .I1(Q0_DUMMY), 
+                   .O(TC_DN));
+   AND2  I_36_36 (.I0(Q1_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .O(TC_UP));
+   AND2  I_36_39 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+   OR2  I_36_47 (.I0(CE), 
+                .I1(L), 
+                .O(OR_CE_L));
+endmodule
+`timescale 1ns / 1ps
+
+module CB4CLED_MXILINX_Lab9_Ex3(C, 
+                                CE, 
+                                CLR, 
+                                D0, 
+                                D1, 
+                                D2, 
+                                D3, 
+                                L, 
+                                UP, 
+                                CEO, 
+                                Q0, 
+                                Q1, 
+                                Q2, 
+                                Q3, 
+                                TC);
+
+    input C;
+    input CE;
+    input CLR;
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input L;
+    input UP;
+   output CEO;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   output TC;
+   
+   wire OR_CE_L;
+   wire TC_DN;
+   wire TC_UP;
+   wire T1;
+   wire T2;
+   wire T2_DN;
+   wire T2_UP;
+   wire T3;
+   wire T3_DN;
+   wire T3_UP;
+   wire XLXN_1;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   assign TC = TC_DUMMY;
+   (* HU_SET = "I_Q0_8" *) 
+   FTCLEX_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) I_Q0 (.C(C), 
+                                 .CE(OR_CE_L), 
+                                 .CLR(CLR), 
+                                 .D(D0), 
+                                 .L(L), 
+                                 .T(XLXN_1), 
+                                 .Q(Q0_DUMMY));
+   (* HU_SET = "I_Q1_7" *) 
+   FTCLEX_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) I_Q1 (.C(C), 
+                                 .CE(OR_CE_L), 
+                                 .CLR(CLR), 
+                                 .D(D1), 
+                                 .L(L), 
+                                 .T(T1), 
+                                 .Q(Q1_DUMMY));
+   (* HU_SET = "I_Q2_6" *) 
+   FTCLEX_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) I_Q2 (.C(C), 
+                                 .CE(OR_CE_L), 
+                                 .CLR(CLR), 
+                                 .D(D2), 
+                                 .L(L), 
+                                 .T(T2), 
+                                 .Q(Q2_DUMMY));
+   (* HU_SET = "I_Q3_5" *) 
+   FTCLEX_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) I_Q3 (.C(C), 
+                                 .CE(OR_CE_L), 
+                                 .CLR(CLR), 
+                                 .D(D3), 
+                                 .L(L), 
+                                 .T(T3), 
+                                 .Q(Q3_DUMMY));
+   (* HU_SET = "I_TC_11" *) 
+   M2_1_MXILINX_Lab9_Ex3  I_TC (.D0(TC_DN), 
+                               .D1(TC_UP), 
+                               .S0(UP), 
+                               .O(TC_DUMMY));
+   (* HU_SET = "I_T1_12" *) 
+   M2_1B1_MXILINX_Lab9_Ex3  I_T1 (.D0(Q0_DUMMY), 
+                                 .D1(Q0_DUMMY), 
+                                 .S0(UP), 
+                                 .O(T1));
+   (* HU_SET = "I_T2_9" *) 
+   M2_1_MXILINX_Lab9_Ex3  I_T2 (.D0(T2_DN), 
+                               .D1(T2_UP), 
+                               .S0(UP), 
+                               .O(T2));
+   (* HU_SET = "I_T3_10" *) 
+   M2_1_MXILINX_Lab9_Ex3  I_T3 (.D0(T3_DN), 
+                               .D1(T3_UP), 
+                               .S0(UP), 
+                               .O(T3));
+   VCC  I_36_1 (.P(XLXN_1));
+   AND2B2  I_36_3 (.I0(Q1_DUMMY), 
+                  .I1(Q0_DUMMY), 
+                  .O(T2_DN));
+   AND4  I_36_10 (.I0(Q3_DUMMY), 
+                 .I1(Q2_DUMMY), 
+                 .I2(Q1_DUMMY), 
+                 .I3(Q0_DUMMY), 
+                 .O(TC_UP));
+   AND4B4  I_36_11 (.I0(Q3_DUMMY), 
+                   .I1(Q2_DUMMY), 
+                   .I2(Q1_DUMMY), 
+                   .I3(Q0_DUMMY), 
+                   .O(TC_DN));
+   AND3  I_36_15 (.I0(Q2_DUMMY), 
+                 .I1(Q1_DUMMY), 
+                 .I2(Q0_DUMMY), 
+                 .O(T3_UP));
+   AND3B3  I_36_16 (.I0(Q2_DUMMY), 
+                   .I1(Q1_DUMMY), 
+                   .I2(Q0_DUMMY), 
+                   .O(T3_DN));
+   AND2  I_36_37 (.I0(Q1_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .O(T2_UP));
+   AND2  I_36_50 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+   OR2  I_36_60 (.I0(CE), 
+                .I1(L), 
+                .O(OR_CE_L));
+endmodule
+`timescale 1ns / 1ps
+
+module Lab9_Ex3(CLK, 
+                SYS_CLK, 
+                anO, 
+                Count_Q, 
+                sseg, 
+                Timer_Q, 
+                Yogi_ET, 
+                Yogi_ST);
+
+    input CLK;
+    input SYS_CLK;
+   output [3:0] anO;
+   output [3:0] Count_Q;
+   output [7:0] sseg;
+   output [1:0] Timer_Q;
+   output Yogi_ET;
+   output Yogi_ST;
+   
+   wire Booboo_EN_J;
+   wire CLK1;
+   wire CLK10k;
+   wire Count_3;
+   wire Count_5;
+   wire Count_9;
+   wire Count_13;
+   wire [7:0] Din;
+   wire PULL_DOWN;
+   wire PULL_UP;
+   wire Tick_Up;
+   wire Timer_0;
+   wire Timer_1;
+   wire Timer_2;
+   wire Timer_3;
+   wire XLXN_3;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_60;
+   wire XLXN_61;
+   wire XLXN_81;
+   wire XLXN_82;
+   wire XLXN_131;
+   wire XLXN_136;
+   wire XLXN_144;
+   wire XLXN_148;
+   wire XLXN_152;
+   wire XLXN_156;
+   wire XLXN_160;
+   wire XLXN_178;
+   wire XLXN_179;
+   wire XLXN_184;
+   wire [3:0] Count_Q_DUMMY;
+   wire [1:0] Timer_Q_DUMMY;
+   
+   assign Count_Q[3:0] = Count_Q_DUMMY[3:0];
+   assign Timer_Q[1:0] = Timer_Q_DUMMY[1:0];
+   (* HU_SET = "XLXI_1_13" *) 
+   CB4CLED_MXILINX_Lab9_Ex3  XLXI_1 (.C(Tick_Up), 
+                                    .CE(PULL_UP), 
+                                    .CLR(), 
+                                    .D0(), 
+                                    .D1(), 
+                                    .D2(), 
+                                    .D3(), 
+                                    .L(), 
+                                    .UP(PULL_UP), 
+                                    .CEO(), 
+                                    .Q0(Count_Q_DUMMY[0]), 
+                                    .Q1(Count_Q_DUMMY[1]), 
+                                    .Q2(Count_Q_DUMMY[2]), 
+                                    .Q3(Count_Q_DUMMY[3]), 
+                                    .TC());
+   PULLDOWN  XLXI_2 (.O(PULL_DOWN));
+   PULLUP  XLXI_3 (.O(PULL_UP));
+   AND4  XLXI_7 (.I0(XLXN_60), 
+                .I1(Count_Q_DUMMY[2]), 
+                .I2(XLXN_61), 
+                .I3(Count_Q_DUMMY[0]), 
+                .O(Count_5));
+   AND4  XLXI_9 (.I0(XLXN_82), 
+                .I1(XLXN_81), 
+                .I2(Count_Q_DUMMY[1]), 
+                .I3(Count_Q_DUMMY[0]), 
+                .O(Count_3));
+   AND4  XLXI_10 (.I0(Count_Q_DUMMY[3]), 
+                 .I1(XLXN_178), 
+                 .I2(XLXN_179), 
+                 .I3(Count_Q_DUMMY[0]), 
+                 .O(Count_9));
+   AND4  XLXI_11 (.I0(Count_Q_DUMMY[3]), 
+                 .I1(Count_Q_DUMMY[2]), 
+                 .I2(XLXN_184), 
+                 .I3(Count_Q_DUMMY[0]), 
+                 .O(Count_13));
+   INV  XLXI_16 (.I(Count_Q_DUMMY[2]), 
+                .O(XLXN_81));
+   INV  XLXI_22 (.I(Count_Q_DUMMY[3]), 
+                .O(XLXN_82));
+   INV  XLXI_25 (.I(Count_Q_DUMMY[1]), 
+                .O(XLXN_61));
+   INV  XLXI_26 (.I(Count_Q_DUMMY[3]), 
+                .O(XLXN_60));
+   (* HU_SET = "XLXI_27_14" *) 
+   CB2CLED_MXILINX_Lab9_Ex3  XLXI_27 (.C(CLK), 
+                                     .CE(PULL_UP), 
+                                     .CLR(), 
+                                     .D0(), 
+                                     .D1(), 
+                                     .L(), 
+                                     .UP(PULL_UP), 
+                                     .CEO(), 
+                                     .Q0(Timer_Q_DUMMY[0]), 
+                                     .Q1(Timer_Q_DUMMY[1]), 
+                                     .TC());
+   (* HU_SET = "XLXI_28_15" *) 
+   D2_4E_MXILINX_Lab9_Ex3  XLXI_28 (.A0(Timer_Q_DUMMY[0]), 
+                                   .A1(Timer_Q_DUMMY[1]), 
+                                   .E(CLK), 
+                                   .D0(Timer_0), 
+                                   .D1(Timer_1), 
+                                   .D2(Timer_2), 
+                                   .D3(Timer_3));
+   (* HU_SET = "XLXI_37_17" *) 
+   FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_37 (.C(SYS_CLK), 
+                                   .CE(PULL_UP), 
+                                   .CLR(), 
+                                   .J(XLXN_131), 
+                                   .K(Timer_0), 
+                                   .Q(Din[0]));
+   (* HU_SET = "XLXI_39_16" *) 
+   FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_39 (.C(SYS_CLK), 
+                                   .CE(PULL_UP), 
+                                   .CLR(), 
+                                   .J(XLXN_136), 
+                                   .K(Timer_3), 
+                                   .Q(Din[1]));
+   (* HU_SET = "XLXI_45_18" *) 
+   FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_45 (.C(SYS_CLK), 
+                                   .CE(PULL_UP), 
+                                   .CLR(), 
+                                   .J(Booboo_EN_J), 
+                                   .K(Timer_3), 
+                                   .Q(Din[2]));
+   (* HU_SET = "XLXI_46_19" *) 
+   FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_46 (.C(SYS_CLK), 
+                                   .CE(PULL_UP), 
+                                   .CLR(), 
+                                   .J(XLXN_144), 
+                                   .K(Timer_3), 
+                                   .Q(Din[3]));
+   (* HU_SET = "XLXI_47_20" *) 
+   FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_47 (.C(SYS_CLK), 
+                                   .CE(PULL_UP), 
+                                   .CLR(), 
+                                   .J(XLXN_160), 
+                                   .K(Timer_3), 
+                                   .Q(Din[4]));
+   (* HU_SET = "XLXI_48_23" *) 
+   FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_48 (.C(SYS_CLK), 
+                                   .CE(PULL_UP), 
+                                   .CLR(), 
+                                   .J(XLXN_156), 
+                                   .K(Timer_2), 
+                                   .Q(Din[5]));
+   (* HU_SET = "XLXI_49_21" *) 
+   FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_49 (.C(SYS_CLK), 
+                                   .CE(PULL_UP), 
+                                   .CLR(), 
+                                   .J(XLXN_152), 
+                                   .K(Timer_2), 
+                                   .Q(Din[6]));
+   (* HU_SET = "XLXI_50_22" *) 
+   FJKCE_MXILINX_Lab9_Ex3 #( .INIT(1'b0) ) XLXI_50 (.C(SYS_CLK), 
+                                   .CE(PULL_UP), 
+                                   .CLR(), 
+                                   .J(XLXN_148), 
+                                   .K(Timer_3), 
+                                   .Q(Din[7]));
+   AND3B1  XLXI_51 (.I0(CLK), 
+                   .I1(Timer_Q_DUMMY[1]), 
+                   .I2(Timer_Q_DUMMY[0]), 
+                   .O(Tick_Up));
+   AND2  XLXI_56 (.I0(Timer_1), 
+                 .I1(Count_3), 
+                 .O(XLXN_131));
+   AND2  XLXI_57 (.I0(Timer_2), 
+                 .I1(Count_3), 
+                 .O(XLXN_136));
+   AND2  XLXI_58 (.I0(Timer_1), 
+                 .I1(Count_5), 
+                 .O(XLXN_144));
+   INV  XLXI_59 (.I(Count_Q_DUMMY[1]), 
+                .O(XLXN_179));
+   INV  XLXI_60 (.I(Count_Q_DUMMY[2]), 
+                .O(XLXN_178));
+   AND2  XLXI_61 (.I0(Timer_0), 
+                 .I1(Count_5), 
+                 .O(Booboo_EN_J));
+   AND2  XLXI_62 (.I0(Timer_0), 
+                 .I1(Count_9), 
+                 .O(XLXN_160));
+   AND2  XLXI_63 (.I0(Timer_1), 
+                 .I1(Count_9), 
+                 .O(XLXN_156));
+   INV  XLXI_64 (.I(Count_Q_DUMMY[1]), 
+                .O(XLXN_184));
+   AND2  XLXI_65 (.I0(Timer_0), 
+                 .I1(Count_13), 
+                 .O(XLXN_152));
+   AND2  XLXI_66 (.I0(Timer_1), 
+                 .I1(Count_13), 
+                 .O(XLXN_148));
+   seven_seg  XLXI_70 (.Din(Din[7:0]), 
+                      .En(PULL_UP), 
+                      .SYS_CLK(SYS_CLK), 
+                      .anO(anO[3:0]), 
+                      .sseg(sseg[7:0]));
+   DCM_50M  XLXI_71 (.CLK(CLK), 
+                    .RST(PULL_DOWN), 
+                    .CLK1(CLK1), 
+                    .CLK1k(), 
+                    .CLK1M(), 
+                    .CLK10k(CLK10k));
+   BUF  XLXI_72 (.I(Din[0]), 
+                .O(Yogi_ST));
+   BUF  XLXI_73 (.I(Din[1]), 
+                .O(Yogi_ET));
+endmodule

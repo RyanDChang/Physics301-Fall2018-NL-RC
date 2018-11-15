@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym muxB /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/muxB.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/muxB.sym 
