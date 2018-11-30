@@ -1,0 +1,259 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml ComputerMain.twx ComputerMain.ncd -o ComputerMain.twr
+ComputerMain.pcf -ucf ComputerMain.ucf
+
+Design file:              ComputerMain.ncd
+Physical constraint file: ComputerMain.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock SYS_CLK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+Address<0>  |    7.456(R)|   -1.591(R)|SYS_CLK_BUFGP     |   0.000|
+Address<1>  |    6.517(R)|   -0.064(R)|SYS_CLK_BUFGP     |   0.000|
+Address<2>  |    6.820(R)|   -0.287(R)|SYS_CLK_BUFGP     |   0.000|
+Address<3>  |    7.128(R)|   -0.380(R)|SYS_CLK_BUFGP     |   0.000|
+Address<4>  |    7.556(R)|   -1.057(R)|SYS_CLK_BUFGP     |   0.000|
+ShowMM      |    6.758(R)|   -1.364(R)|SYS_CLK_BUFGP     |   0.000|
+TempToMM    |    6.681(R)|   -0.561(R)|SYS_CLK_BUFGP     |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock SYS_CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+Data<0>     |   11.605(R)|SYS_CLK_BUFGP     |   0.000|
+Data<1>     |   11.524(R)|SYS_CLK_BUFGP     |   0.000|
+Data<2>     |   11.474(R)|SYS_CLK_BUFGP     |   0.000|
+Data<3>     |   11.296(R)|SYS_CLK_BUFGP     |   0.000|
+Data<4>     |   11.097(R)|SYS_CLK_BUFGP     |   0.000|
+Data<5>     |   10.653(R)|SYS_CLK_BUFGP     |   0.000|
+Data<6>     |   11.572(R)|SYS_CLK_BUFGP     |   0.000|
+Data<7>     |   11.473(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<0>     |   10.698(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<1>     |   11.365(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<2>     |   10.931(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<3>     |   10.715(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<4>     |   11.073(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<5>     |   11.140(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<6>     |   11.650(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<7>     |   12.595(R)|SYS_CLK_BUFGP     |   0.000|
+anO<0>      |   11.292(R)|SYS_CLK_BUFGP     |   0.000|
+anO<1>      |   11.138(R)|SYS_CLK_BUFGP     |   0.000|
+anO<2>      |    9.639(R)|SYS_CLK_BUFGP     |   0.000|
+anO<3>      |    9.932(R)|SYS_CLK_BUFGP     |   0.000|
+sseg<0>     |   15.799(R)|SYS_CLK_BUFGP     |   0.000|
+sseg<1>     |   15.795(R)|SYS_CLK_BUFGP     |   0.000|
+sseg<2>     |   16.697(R)|SYS_CLK_BUFGP     |   0.000|
+sseg<3>     |   15.897(R)|SYS_CLK_BUFGP     |   0.000|
+sseg<4>     |   16.931(R)|SYS_CLK_BUFGP     |   0.000|
+sseg<5>     |   16.058(R)|SYS_CLK_BUFGP     |   0.000|
+sseg<6>     |   16.201(R)|SYS_CLK_BUFGP     |   0.000|
+sseg<7>     |   10.879(R)|SYS_CLK_BUFGP     |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock SYS_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SYS_CLK        |   11.952|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Address<0>     |Data<0>        |   10.521|
+Address<0>     |Data<1>        |   10.492|
+Address<0>     |Data<2>        |   11.141|
+Address<0>     |Data<3>        |   10.328|
+Address<0>     |Data<4>        |   10.492|
+Address<0>     |Data<5>        |    9.693|
+Address<0>     |Data<6>        |   10.369|
+Address<0>     |Data<7>        |   10.642|
+Address<0>     |Inst<0>        |   10.372|
+Address<0>     |Inst<1>        |   10.755|
+Address<0>     |Inst<2>        |   10.166|
+Address<0>     |Inst<3>        |    9.629|
+Address<0>     |Inst<4>        |   10.249|
+Address<0>     |Inst<5>        |   10.674|
+Address<0>     |Inst<6>        |   12.022|
+Address<0>     |Inst<7>        |   11.947|
+Address<0>     |sseg<0>        |   15.559|
+Address<0>     |sseg<1>        |   15.524|
+Address<0>     |sseg<2>        |   16.049|
+Address<0>     |sseg<3>        |   15.704|
+Address<0>     |sseg<4>        |   16.283|
+Address<0>     |sseg<5>        |   16.227|
+Address<0>     |sseg<6>        |   15.973|
+Address<1>     |Data<0>        |    9.385|
+Address<1>     |Data<1>        |   10.290|
+Address<1>     |Data<2>        |   10.437|
+Address<1>     |Data<3>        |    9.811|
+Address<1>     |Data<4>        |   10.058|
+Address<1>     |Data<5>        |    9.452|
+Address<1>     |Data<6>        |   10.060|
+Address<1>     |Data<7>        |   10.912|
+Address<1>     |Inst<0>        |   10.418|
+Address<1>     |Inst<1>        |   10.370|
+Address<1>     |Inst<2>        |   10.912|
+Address<1>     |Inst<3>        |    9.621|
+Address<1>     |Inst<4>        |   10.054|
+Address<1>     |Inst<5>        |   10.080|
+Address<1>     |Inst<6>        |   10.771|
+Address<1>     |Inst<7>        |   10.441|
+Address<1>     |sseg<0>        |   15.091|
+Address<1>     |sseg<1>        |   15.056|
+Address<1>     |sseg<2>        |   15.295|
+Address<1>     |sseg<3>        |   15.236|
+Address<1>     |sseg<4>        |   15.529|
+Address<1>     |sseg<5>        |   15.759|
+Address<1>     |sseg<6>        |   15.505|
+Address<2>     |Data<0>        |    9.579|
+Address<2>     |Data<1>        |    9.978|
+Address<2>     |Data<2>        |   10.027|
+Address<2>     |Data<3>        |    9.759|
+Address<2>     |Data<4>        |    9.731|
+Address<2>     |Data<5>        |    9.435|
+Address<2>     |Data<6>        |    9.845|
+Address<2>     |Data<7>        |   10.649|
+Address<2>     |Inst<0>        |   10.334|
+Address<2>     |Inst<1>        |   10.303|
+Address<2>     |Inst<2>        |    9.759|
+Address<2>     |Inst<3>        |   10.406|
+Address<2>     |Inst<4>        |    9.910|
+Address<2>     |Inst<5>        |   10.536|
+Address<2>     |Inst<6>        |   10.730|
+Address<2>     |Inst<7>        |   10.724|
+Address<2>     |sseg<0>        |   15.005|
+Address<2>     |sseg<1>        |   14.943|
+Address<2>     |sseg<2>        |   15.489|
+Address<2>     |sseg<3>        |   14.976|
+Address<2>     |sseg<4>        |   15.723|
+Address<2>     |sseg<5>        |   15.644|
+Address<2>     |sseg<6>        |   15.240|
+Address<3>     |Data<0>        |    9.363|
+Address<3>     |Data<1>        |   10.276|
+Address<3>     |Data<2>        |    9.909|
+Address<3>     |Data<3>        |    9.533|
+Address<3>     |Data<4>        |    9.010|
+Address<3>     |Data<5>        |    8.989|
+Address<3>     |Data<6>        |    9.686|
+Address<3>     |Data<7>        |    9.957|
+Address<3>     |Inst<0>        |   10.140|
+Address<3>     |Inst<1>        |   10.644|
+Address<3>     |Inst<2>        |    8.875|
+Address<3>     |Inst<3>        |    8.327|
+Address<3>     |Inst<4>        |    8.491|
+Address<3>     |Inst<5>        |    8.374|
+Address<3>     |Inst<6>        |   10.044|
+Address<3>     |Inst<7>        |    9.449|
+Address<3>     |sseg<0>        |   14.811|
+Address<3>     |sseg<1>        |   14.749|
+Address<3>     |sseg<2>        |   14.823|
+Address<3>     |sseg<3>        |   14.782|
+Address<3>     |sseg<4>        |   15.057|
+Address<3>     |sseg<5>        |   15.450|
+Address<3>     |sseg<6>        |   15.046|
+Address<4>     |Data<0>        |    8.275|
+Address<4>     |Data<1>        |    8.072|
+Address<4>     |Data<2>        |    9.103|
+Address<4>     |Data<3>        |    8.468|
+Address<4>     |Data<4>        |   10.028|
+Address<4>     |Data<5>        |    8.705|
+Address<4>     |Data<6>        |    9.915|
+Address<4>     |Data<7>        |   10.186|
+Address<4>     |Inst<0>        |    9.784|
+Address<4>     |Inst<1>        |   10.295|
+Address<4>     |Inst<2>        |    9.534|
+Address<4>     |Inst<3>        |    9.516|
+Address<4>     |Inst<4>        |    9.410|
+Address<4>     |Inst<5>        |    8.995|
+Address<4>     |Inst<6>        |    9.565|
+Address<4>     |Inst<7>        |    9.785|
+Address<4>     |sseg<0>        |   14.455|
+Address<4>     |sseg<1>        |   14.393|
+Address<4>     |sseg<2>        |   14.599|
+Address<4>     |sseg<3>        |   14.426|
+Address<4>     |sseg<4>        |   14.833|
+Address<4>     |sseg<5>        |   15.094|
+Address<4>     |sseg<6>        |   14.690|
+ShowMM         |Data<0>        |    6.547|
+ShowMM         |Data<1>        |    6.409|
+ShowMM         |Data<2>        |    6.822|
+ShowMM         |Data<3>        |    7.074|
+ShowMM         |Data<4>        |    5.910|
+ShowMM         |Data<5>        |    6.415|
+ShowMM         |Data<6>        |    6.157|
+ShowMM         |Data<7>        |    5.811|
+ShowMM         |Inst<0>        |    6.071|
+ShowMM         |Inst<1>        |    4.868|
+ShowMM         |Inst<2>        |    5.711|
+ShowMM         |Inst<3>        |    5.434|
+ShowMM         |Inst<4>        |    5.234|
+ShowMM         |Inst<5>        |    6.567|
+ShowMM         |Inst<6>        |    7.455|
+ShowMM         |Inst<7>        |    6.314|
+ShowMM         |sseg<0>        |    9.652|
+ShowMM         |sseg<1>        |    9.648|
+ShowMM         |sseg<2>        |   10.550|
+ShowMM         |sseg<3>        |    9.750|
+ShowMM         |sseg<4>        |   10.784|
+ShowMM         |sseg<5>        |   10.262|
+ShowMM         |sseg<6>        |   10.054|
+WriteTemp      |Update<0>      |    7.339|
+WriteTemp      |Update<1>      |    8.093|
+WriteTemp      |Update<2>      |    8.259|
+WriteTemp      |Update<3>      |    8.078|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Nov 29 17:16:44 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 171 MB
+
+
+

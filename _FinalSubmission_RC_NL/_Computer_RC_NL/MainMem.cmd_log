@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym MainMem {C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/CustomParts/MainMemory/MainMem.sch} {C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/MainMem.sym} 

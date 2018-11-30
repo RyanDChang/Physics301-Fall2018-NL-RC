@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../Parts/sseg_mux4D.vhd -prj Computer_RC_NL -o sseg_mux4D.spl -module sseg_mux4D -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e sseg_mux4D.spl {C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/sseg_mux4D.sym} 

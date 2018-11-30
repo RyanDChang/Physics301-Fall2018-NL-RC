@@ -1,0 +1,68 @@
+
+# - misc
+
+NET "SYS_CLK" LOC = B8;
+
+# - switches
+
+# Address in main memory
+NET "Address[4]" LOC = N3;
+NET "Address[3]" LOC = E2;
+NET "Address[2]" LOC = F3;
+NET "Address[1]" LOC = G3;
+NET "Address[0]" LOC = B4;
+# What byte are you programming from the input
+NET "Byte_Switch[1]" LOC = K3;
+NET "Byte_Switch[0]" LOC = L3;
+# Are you in read or write mode? Aka: Running(Read) vs Programming(Write) modes
+#NET "ReadWrite" LOC = P11;
+
+# - buttons
+
+NET "WriteTemp" LOC = A7; # Write current keypad input into a byte specified by ByteSwitch[1:0]
+#NET "?" LOC = M4; # Currently unused
+NET "ShowMM" LOC = C11; # Display what's in Main Memory at Address[4:0] instead of what will be written there
+NET "TempToMM" LOC = G12; # Write temporary programming memory into Main Memory
+
+# - lights
+
+#NET "CLK10k" LOC = G1;
+#NET "CLK1k" LOC = P4;
+#NET "CLK100" LOC = N4;
+#NET "keyValid" LOC = N5;
+NET "Update[3]" LOC = P6;
+NET "Update[2]" LOC = P7;
+NET "Update[1]" LOC = M11;
+NET "Update[0]" LOC = M5;
+
+# - anO
+
+NET "anO[0]" LOC = F12;
+NET "anO[1]" LOC = J12;
+NET "anO[2]" LOC = M13;
+NET "anO[3]" LOC = K14;
+
+# - sseg
+
+NET "sseg[0]" LOC = m12;
+NET "sseg[1]" LOC = l13;
+NET "sseg[2]" LOC = p12;
+NET "sseg[3]" LOC = n11;
+NET "sseg[4]" LOC = n14;
+NET "sseg[5]" LOC = h12;
+NET "sseg[6]" LOC = l14;
+NET "sseg[7]" LOC = n13;
+
+# - col
+
+NET "col[0]" LOC = C6;
+NET "col[1]" LOC = B6;
+NET "col[2]" LOC = C5;
+NET "col[3]" LOC = B7;
+
+# - row
+
+NET "row[0]" LOC = B5;
+NET "row[1]" LOC = J3;
+NET "row[2]" LOC = A3;
+NET "row[3]" LOC = B2;

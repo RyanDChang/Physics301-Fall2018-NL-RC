@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../Parts/sRAM32x8_generic.vhd -prj MainMemory -o sRAM32x8_generic.spl -module sRAM32x8_generic -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e sRAM32x8_generic.spl {C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/CustomParts/MainMemory/sRAM32x8_generic.sym} 
