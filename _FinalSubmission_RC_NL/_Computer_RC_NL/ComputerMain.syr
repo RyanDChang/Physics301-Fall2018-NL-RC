@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: ComputerMain.prj
 
@@ -130,6 +130,9 @@ Compiling vhdl file "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Fi
 Architecture behavioral of Entity sseg_mux4d is up to date.
 Compiling vhdl file "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/sel_strobeB.vhd" in Library work.
 Architecture behavioral of Entity sel_strobeb is up to date.
+Compiling vhdl file "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf" in Library work.
+Architecture behavioral of Entity adsu8_mxilinx_alu_module is up to date.
+Architecture behavioral of Entity alu_module is up to date.
 Compiling vhdl file "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" in Library work.
 Entity <computermain> compiled.
 Entity <computermain> (Architecture <behavioral>) compiled.
@@ -146,6 +149,8 @@ Analyzing hierarchy for entity <KeypadInput> in library <work> (architecture <be
 Analyzing hierarchy for entity <sseg_mux4D> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <sel_strobeB> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU_Module> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <sRAM32x8_generic> in library <work> (architecture <behavioral>).
 
@@ -173,6 +178,8 @@ Analyzing hierarchy for entity <D2_4E_MXILINX_KeypadInput> in library <work> (ar
 
 Analyzing hierarchy for entity <FD4CE_MXILINX_KeypadInput> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <ADSU8_MXILINX_ALU_Module> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <switch_debounce> in library <work> (architecture <behavioral>).
 
 
@@ -180,6 +187,10 @@ Analyzing hierarchy for entity <switch_debounce> in library <work> (architecture
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <ComputerMain> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 129: Unconnected output port 'keyValid' of component 'KeypadInput'.
+WARNING:Xst:753 - "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 173: Unconnected output port 'CO' of component 'ALU_Module'.
+WARNING:Xst:753 - "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 173: Unconnected output port 'ALU_Out' of component 'ALU_Module'.
+WARNING:Xst:753 - "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 173: Unconnected output port 'OFL' of component 'ALU_Module'.
 Entity <ComputerMain> analyzed. Unit <ComputerMain> generated.
 
 Analyzing Entity <MainMem> in library <work> (Architecture <behavioral>).
@@ -189,7 +200,7 @@ Analyzing Entity <sRAM32x8_generic> in library <work> (Architecture <behavioral>
 Entity <sRAM32x8_generic> analyzed. Unit <sRAM32x8_generic> generated.
 
 Analyzing Entity <KeypadInput> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" line 371: Unconnected output port 'CLK100' of component 'DCM_50M'.
+WARNING:Xst:753 - "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" line 373: Unconnected output port 'CLK100' of component 'DCM_50M'.
     Set user-defined property "HU_SET =  XLXI_108_0" for instance <XLXI_108> in unit <KeypadInput>.
     Set user-defined property "HU_SET =  XLXI_110_1" for instance <XLXI_110> in unit <KeypadInput>.
     Set user-defined property "HU_SET =  XLXI_111_2" for instance <XLXI_111> in unit <KeypadInput>.
@@ -241,6 +252,32 @@ Entity <sseg_mux4D> analyzed. Unit <sseg_mux4D> generated.
 
 Analyzing Entity <sel_strobeB> in library <work> (Architecture <behavioral>).
 Entity <sel_strobeB> analyzed. Unit <sel_strobeB> generated.
+
+Analyzing Entity <ALU_Module> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_8" for instance <XLXI_1> in unit <ALU_Module>.
+WARNING:Xst:753 - "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf" line 465: Unconnected output port 'CO' of component 'ADSU8_MXILINX_ALU_Module'.
+WARNING:Xst:753 - "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf" line 465: Unconnected output port 'OFL' of component 'ADSU8_MXILINX_ALU_Module'.
+    Set user-defined property "HU_SET =  XLXI_2_9" for instance <XLXI_2> in unit <ALU_Module>.
+Entity <ALU_Module> analyzed. Unit <ALU_Module> generated.
+
+Analyzing Entity <ADSU8_MXILINX_ALU_Module> in library <work> (Architecture <behavioral>).
+    Set user-defined property "RLOC =  X1Y0" for instance <I_36_16> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y0" for instance <I_36_17> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y1" for instance <I_36_18> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y1" for instance <I_36_19> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y2" for instance <I_36_20> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y2" for instance <I_36_21> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y3" for instance <I_36_22> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y3" for instance <I_36_23> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y0" for instance <I_36_55> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y1" for instance <I_36_58> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y1" for instance <I_36_62> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y2" for instance <I_36_63> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y3" for instance <I_36_64> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y3" for instance <I_36_107> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y2" for instance <I_36_110> in unit <ADSU8_MXILINX_ALU_Module>.
+    Set user-defined property "RLOC =  X1Y0" for instance <I_36_111> in unit <ADSU8_MXILINX_ALU_Module>.
+Entity <ADSU8_MXILINX_ALU_Module> analyzed. Unit <ADSU8_MXILINX_ALU_Module> generated.
 
 
 =========================================================================
@@ -401,6 +438,12 @@ Synthesizing Unit <FD4CE_MXILINX_KeypadInput>.
 Unit <FD4CE_MXILINX_KeypadInput> synthesized.
 
 
+Synthesizing Unit <ADSU8_MXILINX_ALU_Module>.
+    Related source file is "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <ADSU8_MXILINX_ALU_Module> synthesized.
+
+
 Synthesizing Unit <KeypadInput>.
     Related source file is "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf".
 WARNING:Xst:1780 - Signal <sseg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -424,8 +467,18 @@ WARNING:Xst:653 - Signal <AorD> is used but never assigned. This sourceless sign
 Unit <KeypadInput> synthesized.
 
 
+Synthesizing Unit <ALU_Module>.
+    Related source file is "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf".
+WARNING:Xst:653 - Signal <XLXI_2_CI_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_2_ADD_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <ALU_Module> synthesized.
+
+
 Synthesizing Unit <ComputerMain>.
     Related source file is "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf".
+WARNING:Xst:653 - Signal <XLXI_18_OP_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
+WARNING:Xst:653 - Signal <XLXI_18_Bin_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <XLXI_18_Ain_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 Unit <ComputerMain> synthesized.
 
 WARNING:Xst:524 - All outputs of the instance <XLXI_6> of the block <oneshot> are unconnected in block <KeypadInput>.
@@ -521,6 +574,10 @@ Optimizing unit <switch_debounce> ...
 Optimizing unit <D2_4E_MXILINX_KeypadInput> ...
 
 Optimizing unit <FD4CE_MXILINX_KeypadInput> ...
+
+Optimizing unit <ADSU8_MXILINX_ALU_Module> ...
+
+Optimizing unit <ALU_Module> ...
 WARNING:Xst:2677 - Node <XLXI_2/XLXI_82/cnt1k_31> of sequential type is unconnected in block <ComputerMain>.
 WARNING:Xst:2677 - Node <XLXI_2/XLXI_82/cnt1k_30> of sequential type is unconnected in block <ComputerMain>.
 WARNING:Xst:2677 - Node <XLXI_2/XLXI_82/cnt1k_29> of sequential type is unconnected in block <ComputerMain>.
@@ -596,7 +653,7 @@ WARNING:Xst:2677 - Node <XLXI_2/XLXI_82/clk_1m> of sequential type is unconnecte
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ComputerMain, actual ratio is 86.
+Found area constraint ratio of 100 (+ 5) on block ComputerMain, actual ratio is 87.
 
 Final Macro Processing ...
 
@@ -634,13 +691,13 @@ Design Statistics
 # IOs                              : 54
 
 Cell Usage :
-# BELS                             : 1900
-#      AND2                        : 4
+# BELS                             : 1980
+#      AND2                        : 5
 #      AND3                        : 1
 #      AND3B1                      : 2
 #      AND3B2                      : 1
-#      GND                         : 1
-#      INV                         : 14
+#      GND                         : 3
+#      INV                         : 30
 #      LUT1                        : 68
 #      LUT2                        : 72
 #      LUT3                        : 404
@@ -648,13 +705,19 @@ Cell Usage :
 #      LUT4                        : 331
 #      LUT4_D                      : 112
 #      LUT4_L                      : 12
-#      MUXCY                       : 374
+#      MUXCY                       : 376
+#      MUXCY_D                     : 2
+#      MUXCY_L                     : 12
 #      MUXF5                       : 131
 #      MUXF6                       : 64
 #      MUXF7                       : 32
 #      MUXF8                       : 16
+#      OR3                         : 2
+#      OR4                         : 1
 #      VCC                         : 1
-#      XORCY                       : 256
+#      XOR2                        : 10
+#      XOR3                        : 16
+#      XORCY                       : 272
 # FlipFlops/Latches                : 755
 #      FD                          : 139
 #      FDCE                        : 25
@@ -667,8 +730,9 @@ Cell Usage :
 #      IBUF                        : 14
 #      OBUF                        : 20
 #      OBUFT                       : 16
-# Others                           : 17
-#      PULLDOWN                    : 17
+# Others                           : 40
+#      FMAP                        : 16
+#      PULLDOWN                    : 24
 =========================================================================
 
 Device utilization summary:
@@ -676,9 +740,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      845  out of    960    88%  
+ Number of Slices:                      853  out of    960    88%  
  Number of Slice Flip Flops:            755  out of   1920    39%  
- Number of 4 input LUTs:               1017  out of   1920    52%  
+ Number of 4 input LUTs:               1033  out of   1920    53%  
  Number of IOs:                          54
  Number of bonded IOBs:                  51  out of     83    61%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -1074,14 +1138,14 @@ Delay:               13.079ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 18.00 secs
-Total CPU time to Xst completion: 17.80 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.72 secs
  
 --> 
 
-Total memory usage is 296336 kilobytes
+Total memory usage is 297168 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  103 (   0 filtered)
+Number of warnings :  115 (   0 filtered)
 Number of infos    :    4 (   0 filtered)
 

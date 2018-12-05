@@ -20,21 +20,17 @@
         <signal name="Data(7:0)" />
         <signal name="anO(3:0)" />
         <signal name="sseg(7:0)" />
-        <signal name="Inst(7:4)">
-        </signal>
-        <signal name="Inst(3:0)">
-        </signal>
-        <signal name="Data(7:4)">
-        </signal>
-        <signal name="Data(3:0)">
-        </signal>
+        <signal name="Inst(7:4)" />
+        <signal name="Inst(3:0)" />
+        <signal name="Data(7:4)" />
+        <signal name="Data(3:0)" />
         <signal name="XLXN_34(0:1)" />
         <signal name="XLXN_35(3:0)" />
         <signal name="XLXN_36" />
         <signal name="Update(3:0)" />
-        <signal name="XLXN_39" />
-        <signal name="XLXN_40" />
         <signal name="XLXN_41" />
+        <signal name="XLXN_42" />
+        <signal name="XLXN_43" />
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Input" name="ROW(3:0)" />
         <port polarity="Input" name="WriteTemp" />
@@ -134,6 +130,20 @@
             <line x2="64" y1="0" y2="-64" x1="64" />
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
+        <blockdef name="ALU_Module">
+            <timestamp>2018-12-4T23:27:25</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="MainMem" name="XLXI_1">
             <blockpin signalname="ShowMM" name="nCS" />
             <blockpin signalname="XLXN_41" name="nWE" />
@@ -179,9 +189,16 @@
             <blockpin signalname="TempToMM" name="I" />
             <blockpin signalname="XLXN_41" name="O" />
         </block>
+        <block symbolname="ALU_Module" name="XLXI_18">
+            <blockpin name="Ain(7:0)" />
+            <blockpin name="Bin(7:0)" />
+            <blockpin name="OP(5:0)" />
+            <blockpin name="CO" />
+            <blockpin name="ALU_Out(7:0)" />
+            <blockpin name="OFL" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <text style="fontsize:64;fontname:Arial" x="1428" y="1376">Meow</text>
         <instance x="1280" y="560" name="XLXI_1" orien="R0">
         </instance>
         <branch name="XLXN_1(7:0)">
@@ -222,20 +239,16 @@
             <wire x2="1280" y1="336" y2="336" x1="1248" />
         </branch>
         <iomarker fontsize="28" x="1248" y="336" name="SYS_CLK" orien="R180" />
-        <branch name="ShowMM">
-            <wire x2="944" y1="208" y2="208" x1="864" />
-            <wire x2="1280" y1="208" y2="208" x1="944" />
-            <wire x2="960" y1="176" y2="176" x1="944" />
-            <wire x2="944" y1="176" y2="208" x1="944" />
-        </branch>
         <branch name="Inst(7:0)">
-            <wire x2="1728" y1="208" y2="208" x1="1696" />
+            <wire x2="1712" y1="208" y2="208" x1="1696" />
+            <wire x2="1712" y1="208" y2="256" x1="1712" />
+            <wire x2="1968" y1="256" y2="256" x1="1712" />
         </branch>
-        <iomarker fontsize="28" x="1728" y="208" name="Inst(7:0)" orien="R0" />
         <branch name="Data(7:0)">
-            <wire x2="1728" y1="528" y2="528" x1="1696" />
+            <wire x2="1712" y1="528" y2="528" x1="1696" />
+            <wire x2="1968" y1="320" y2="320" x1="1712" />
+            <wire x2="1712" y1="320" y2="528" x1="1712" />
         </branch>
-        <iomarker fontsize="28" x="1728" y="528" name="Data(7:0)" orien="R0" />
         <instance x="2752" y="2448" name="XLXI_3" orien="R0">
         </instance>
         <branch name="anO(3:0)">
@@ -294,8 +307,15 @@
         </branch>
         <instance x="976" y="304" name="XLXI_12" orien="R0" />
         <branch name="TempToMM">
-            <wire x2="944" y1="272" y2="272" x1="864" />
-            <wire x2="976" y1="272" y2="272" x1="944" />
+            <wire x2="976" y1="272" y2="272" x1="864" />
         </branch>
+        <iomarker fontsize="28" x="1968" y="256" name="Inst(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="1968" y="320" name="Data(7:0)" orien="R0" />
+        <branch name="ShowMM">
+            <wire x2="1280" y1="208" y2="208" x1="864" />
+        </branch>
+        <text style="fontsize:64;fontname:Arial" x="1492" y="916">Meow</text>
+        <instance x="1760" y="1520" name="XLXI_18" orien="R0">
+        </instance>
     </sheet>
 </drawing>

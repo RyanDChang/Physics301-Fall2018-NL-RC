@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ComputerMain.vhf
--- /___/   /\     Timestamp : 11/29/2018 17:15:34
+-- /___/   /\     Timestamp : 12/04/2018 15:57:38
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -43,14 +43,17 @@ end ComputerMain;
 
 architecture BEHAVIORAL of ComputerMain is
    attribute BOX_TYPE   : string ;
-   signal XLXN_1      : std_logic_vector (7 downto 0);
-   signal XLXN_2      : std_logic_vector (7 downto 0);
-   signal XLXN_34     : std_logic_vector (0 to 1);
-   signal XLXN_35     : std_logic_vector (3 downto 0);
-   signal XLXN_36     : std_logic;
-   signal XLXN_41     : std_logic;
-   signal Data_DUMMY  : std_logic_vector (7 downto 0);
-   signal Inst_DUMMY  : std_logic_vector (7 downto 0);
+   signal XLXN_1                 : std_logic_vector (7 downto 0);
+   signal XLXN_2                 : std_logic_vector (7 downto 0);
+   signal XLXN_34                : std_logic_vector (0 to 1);
+   signal XLXN_35                : std_logic_vector (3 downto 0);
+   signal XLXN_36                : std_logic;
+   signal XLXN_41                : std_logic;
+   signal Data_DUMMY             : std_logic_vector (7 downto 0);
+   signal Inst_DUMMY             : std_logic_vector (7 downto 0);
+   signal XLXI_18_Ain_openSignal : std_logic_vector (7 downto 0);
+   signal XLXI_18_Bin_openSignal : std_logic_vector (7 downto 0);
+   signal XLXI_18_OP_openSignal  : std_logic_vector (5 downto 0);
    component MainMem
       port ( nCS      : in    std_logic; 
              nWE      : in    std_logic; 
@@ -100,6 +103,15 @@ architecture BEHAVIORAL of ComputerMain is
              O : out   std_logic);
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+   component ALU_Module
+      port ( Ain     : in    std_logic_vector (7 downto 0); 
+             Bin     : in    std_logic_vector (7 downto 0); 
+             OP      : in    std_logic_vector (5 downto 0); 
+             CO      : out   std_logic; 
+             ALU_Out : out   std_logic_vector (7 downto 0); 
+             OFL     : out   std_logic);
+   end component;
    
 begin
    Data(7 downto 0) <= Data_DUMMY(7 downto 0);
@@ -157,6 +169,14 @@ begin
    XLXI_12 : INV
       port map (I=>TempToMM,
                 O=>XLXN_41);
+   
+   XLXI_18 : ALU_Module
+      port map (Ain(7 downto 0)=>XLXI_18_Ain_openSignal(7 downto 0),
+                Bin(7 downto 0)=>XLXI_18_Bin_openSignal(7 downto 0),
+                OP(5 downto 0)=>XLXI_18_OP_openSignal(5 downto 0),
+                ALU_Out=>open,
+                CO=>open,
+                OFL=>open);
    
 end BEHAVIORAL;
 

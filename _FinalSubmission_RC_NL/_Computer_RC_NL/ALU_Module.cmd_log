@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym ALU_Module {C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/CustomParts/ALU/ALU_Module.sch} {C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.sym} 

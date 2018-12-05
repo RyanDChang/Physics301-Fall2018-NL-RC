@@ -8,22 +8,14 @@
     <netlist>
         <signal name="XLXN_5(3:0)" />
         <signal name="XLXN_6(3:0)" />
-        <signal name="keyValid">
-        </signal>
-        <signal name="P">
-        </signal>
-        <signal name="buster(3:0)">
-        </signal>
-        <signal name="sseg(7:0)">
-        </signal>
-        <signal name="anO(3:0)">
-        </signal>
-        <signal name="CLK10k">
-        </signal>
-        <signal name="CLK1k">
-        </signal>
-        <signal name="CLK100">
-        </signal>
+        <signal name="keyValid" />
+        <signal name="P" />
+        <signal name="buster(3:0)" />
+        <signal name="sseg(7:0)" />
+        <signal name="anO(3:0)" />
+        <signal name="CLK10k" />
+        <signal name="CLK1k" />
+        <signal name="CLK100" />
         <signal name="SYS_CLK" />
         <signal name="XLXN_132" />
         <signal name="XLXN_147(3:0)" />
@@ -68,29 +60,19 @@
         <signal name="TempData(3:0)" />
         <signal name="XLXN_227(0:1)" />
         <signal name="CLK1M" />
-        <signal name="XLXN_231" />
         <signal name="XLXN_115" />
-        <signal name="AorD">
-        </signal>
+        <signal name="AorD" />
         <signal name="XLXN_114" />
         <signal name="XLXN_81(3:0)" />
         <signal name="XLXN_82(3:0)" />
         <signal name="XLXN_83(3:0)" />
         <signal name="XLXN_235(3:0)" />
-        <signal name="XLXN_249" />
-        <signal name="XLXN_250" />
-        <signal name="XLXN_251" />
-        <signal name="XLXN_252" />
-        <signal name="XLXN_253" />
-        <signal name="XLXN_254" />
-        <signal name="displayUpdate(1)">
-        </signal>
-        <signal name="displayUpdate(2)">
-        </signal>
-        <signal name="displayUpdate(3)">
-        </signal>
+        <signal name="displayUpdate(1)" />
+        <signal name="displayUpdate(2)" />
+        <signal name="displayUpdate(3)" />
         <signal name="displayUpdate(3:0)" />
         <signal name="displayUpdate(0)" />
+        <port polarity="Output" name="keyValid" />
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Input" name="row(3:0)" />
         <port polarity="BiDirectional" name="col(3:0)" />
@@ -376,7 +358,6 @@
         <instance x="1328" y="976" name="XLXI_6" orien="R0">
         </instance>
         <branch name="keyValid">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="672" type="branch" />
             <wire x2="1264" y1="1024" y2="1024" x1="1216" />
             <wire x2="1264" y1="672" y2="944" x1="1264" />
             <wire x2="1264" y1="944" y2="1024" x1="1264" />
@@ -812,5 +793,6 @@
             <wire x2="720" y1="2672" y2="2672" x1="640" />
         </branch>
         <iomarker fontsize="28" x="720" y="2672" name="displayUpdate(3:0)" orien="R0" />
+        <iomarker fontsize="28" x="1360" y="672" name="keyValid" orien="R0" />
     </sheet>
 </drawing>

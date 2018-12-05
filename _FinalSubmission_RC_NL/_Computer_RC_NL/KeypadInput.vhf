@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : KeypadInput.vhf
--- /___/   /\     Timestamp : 11/29/2018 17:10:24
+-- /___/   /\     Timestamp : 12/04/2018 15:52:18
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -167,6 +167,7 @@ entity KeypadInput is
           SYS_CLK       : in    std_logic; 
           WriteTemp     : in    std_logic; 
           displayUpdate : out   std_logic_vector (3 downto 0); 
+          keyValid      : out   std_logic; 
           TempData      : out   std_logic_vector (7 downto 0); 
           TempInst      : out   std_logic_vector (7 downto 0); 
           col           : inout std_logic_vector (3 downto 0));
@@ -182,7 +183,6 @@ architecture BEHAVIORAL of KeypadInput is
    signal CLK1M                   : std_logic;
    signal CLK10k                  : std_logic;
    signal CLK100                  : std_logic;
-   signal keyValid                : std_logic;
    signal P                       : std_logic;
    signal sseg                    : std_logic_vector (7 downto 0);
    signal TDH                     : std_logic;
@@ -203,6 +203,7 @@ architecture BEHAVIORAL of KeypadInput is
    signal XLXN_170                : std_logic_vector (3 downto 0);
    signal XLXN_227                : std_logic_vector (0 to 1);
    signal XLXN_235                : std_logic_vector (3 downto 0);
+   signal keyValid_DUMMY          : std_logic;
    signal row_DUMMY               : std_logic_vector (3 downto 0);
    signal XLXI_110_CLR_openSignal : std_logic;
    signal XLXI_111_CLR_openSignal : std_logic;
@@ -299,6 +300,7 @@ architecture BEHAVIORAL of KeypadInput is
    attribute HU_SET of XLXI_112 : label is "XLXI_112_3";
    attribute HU_SET of XLXI_113 : label is "XLXI_113_4";
 begin
+   keyValid <= keyValid_DUMMY;
    row_DUMMY(3 downto 0) <= row(3 downto 0);
    XLXI_2 : col_strobe
       port map (clk=>CLK100,
@@ -313,13 +315,13 @@ begin
       port map (clk=>CLK1k,
                 col(3 downto 0)=>col(3 downto 0),
                 row(3 downto 0)=>XLXN_170(3 downto 0),
-                keyL=>keyValid,
+                keyL=>keyValid_DUMMY,
                 Lcol(3 downto 0)=>XLXN_6(3 downto 0),
                 Lrow(3 downto 0)=>XLXN_5(3 downto 0));
    
    XLXI_6 : oneshot
       port map (CLK=>CLK10k,
-                En=>keyValid,
+                En=>keyValid_DUMMY,
                 P=>P);
    
    XLXI_11 : decoder16keyEn
