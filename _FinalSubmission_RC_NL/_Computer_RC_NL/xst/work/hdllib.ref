@@ -1,46 +1,48 @@
-EN dcm_50m NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/DCM_50M.vhd" sub00/vhpl12 1543967873
-AR sram32x8_generic behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/sRAM32x8_generic.vhd" sub00/vhpl15 1543967876
+EN dcm_50m NULL /home/nick/Desktop/Goodies/goodies-20181206/DCM_50M.vhd sub00/vhpl12 1544134328
+AR sram32x8_generic behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sRAM32x8_generic.vhd sub00/vhpl15 1544134331
 EN d4_16e_mxilinx_computermain NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" sub00/vhpl34 1543967847
+EN shiftreg_hex2d NULL /home/nick/Desktop/Goodies/goodies-20181206/shiftreg_hex2D.vhd sub00/vhpl46 1544134324
 EN fd8ce_mxilinx_controlunit NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ControlUnit.vhf" sub00/vhpl40 1543967853
-AR computermain behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" sub00/vhpl39 1543967894
-AR key_detect behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/key_detect.vhd" sub00/vhpl07 1543967868
-EN fd4ce_mxilinx_keypadinput NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" sub00/vhpl18 1543967879
-AR d4_16e_mxilinx_computermain behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" sub00/vhpl35 1543967848
+AR computermain behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf sub00/vhpl39 1544134345
+AR key_detect behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/key_detect.vhd sub00/vhpl07 1544134317
+EN fd4ce_mxilinx_keypadinput NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf sub00/vhpl18 1544134334
 AR d4_16e_mxilinx_controlunit behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ControlUnit.vhf" sub00/vhpl43 1543967856
-AR sseg_mux4d behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/sseg_mux4D.vhd" sub00/vhpl25 1543967886
-AR key4_dbnc behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/key4_dbnc.vhd" sub00/vhpl05 1543967866
-AR d2_4e_mxilinx_keypadinput behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" sub00/vhpl21 1543967882
+AR d4_16e_mxilinx_computermain behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" sub00/vhpl35 1543967848
+AR sseg_mux4d behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sseg_mux4D.vhd sub00/vhpl25 1544134323
+AR key4_dbnc behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/key4_dbnc.vhd sub00/vhpl05 1544134315
+AR d2_4e_mxilinx_keypadinput behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf sub00/vhpl21 1544134337
 EN d4_16e_mxilinx_controlunit NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ControlUnit.vhf" sub00/vhpl42 1543967855
-EN sseg_mux4d NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/sseg_mux4D.vhd" sub00/vhpl24 1543967885
-EN sel_strobeb NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/sel_strobeB.vhd" sub00/vhpl26 1543967887
+EN sseg_mux4d NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sseg_mux4D.vhd sub00/vhpl24 1544134322
+EN sel_strobeb NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd sub00/vhpl26 1544134326
 EN controlunit_muser_computermain NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" sub00/vhpl36 1543967849
-AR adsu8_mxilinx_alu_module behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf" sub00/vhpl29 1543967890
+AR adsu8_mxilinx_alu_module behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf sub00/vhpl29 1544134341
 AR fd8ce_mxilinx_controlunit behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ControlUnit.vhf" sub00/vhpl41 1543967854
 EN fd8ce_mxilinx_computermain NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" sub00/vhpl32 1543967845
-EN decoder16keyen NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/decoder16keyEn.vhd" sub00/vhpl10 1543967871
-EN adsu8_mxilinx_alu_module NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf" sub00/vhpl28 1543967889
+EN decoder16keyen NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/decoder16keyEn.vhd sub00/vhpl10 1544134320
+EN adsu8_mxilinx_alu_module NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf sub00/vhpl28 1544134340
 AR controlunit_muser_computermain behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" sub00/vhpl37 1543967850
-AR keypadinput behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" sub00/vhpl23 1543967884
-EN key_detect NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/key_detect.vhd" sub00/vhpl06 1543967867
-EN d2_4e_mxilinx_keypadinput NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" sub00/vhpl20 1543967881
-AR sel_strobeb behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/sel_strobeB.vhd" sub00/vhpl27 1543967888
-EN sram32x8_generic NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/sRAM32x8_generic.vhd" sub00/vhpl14 1543967875
-EN key4_dbnc NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/key4_dbnc.vhd" sub00/vhpl04 1543967865
-EN computermain NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" sub00/vhpl38 1543967893
-EN keypadinput NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" sub00/vhpl22 1543967883
-AR oneshot behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/oneshot.vhd" sub00/vhpl09 1543967870
-EN mainmem NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/MainMem.vhf" sub00/vhpl16 1543967877
-AR fd4ce_mxilinx_keypadinput behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" sub00/vhpl19 1543967880
-EN col_strobe NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/col_strobe.vhd" sub00/vhpl02 1543967863
-AR decoder16keyen doric "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/decoder16keyEn.vhd" sub00/vhpl11 1543967872
-AR alu_module behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf" sub00/vhpl31 1543967892
+AR keypadinput behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf sub00/vhpl23 1544134339
+EN key_detect NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/key_detect.vhd sub00/vhpl06 1544134316
+EN d2_4e_mxilinx_keypadinput NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf sub00/vhpl20 1544134336
+AR sel_strobeb behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd sub00/vhpl27 1544134327
+EN sram32x8_generic NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sRAM32x8_generic.vhd sub00/vhpl14 1544134330
+EN key4_dbnc NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/key4_dbnc.vhd sub00/vhpl04 1544134314
+EN computermain NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf sub00/vhpl38 1544134344
+EN keypadinput NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf sub00/vhpl22 1544134338
+AR oneshot behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/oneshot.vhd sub00/vhpl09 1544134319
+EN mainmem NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/MainMem.vhf sub00/vhpl16 1544134332
+AR fd4ce_mxilinx_keypadinput behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf sub00/vhpl19 1544134335
+EN col_strobe NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/col_strobe.vhd sub00/vhpl02 1544134312
+AR decoder16keyen doric /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/decoder16keyEn.vhd sub00/vhpl11 1544134321
+AR alu_module behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf sub00/vhpl31 1544134343
 EN controlunit NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ControlUnit.vhf" sub00/vhpl44 1543967857
-AR col_strobe behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/col_strobe.vhd" sub00/vhpl03 1543967864
-AR mainmem behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/MainMem.vhf" sub00/vhpl17 1543967878
-EN alu_module NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf" sub00/vhpl30 1543967891
+AR col_strobe behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/col_strobe.vhd sub00/vhpl03 1544134313
+AR shiftreg_hex2d behavioral /home/nick/Desktop/Goodies/goodies-20181206/shiftreg_hex2D.vhd sub00/vhpl47 1544134325
+AR mainmem behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/MainMem.vhf sub00/vhpl17 1544134333
+EN alu_module NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf sub00/vhpl30 1544134342
 AR controlunit behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ControlUnit.vhf" sub00/vhpl45 1543967858
-EN switch_debounce NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/debounce.vhd" sub00/vhpl00 1543967861
-AR switch_debounce behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/debounce.vhd" sub00/vhpl01 1543967862
-AR dcm_50m behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/DCM_50M.vhd" sub00/vhpl13 1543967874
+EN switch_debounce NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/debounce.vhd sub00/vhpl00 1544134310
+AR switch_debounce behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/debounce.vhd sub00/vhpl01 1544134311
+AR dcm_50m behavioral /home/nick/Desktop/Goodies/goodies-20181206/DCM_50M.vhd sub00/vhpl13 1544134329
 AR fd8ce_mxilinx_computermain behavioral "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" sub00/vhpl33 1543967846
-EN oneshot NULL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/Parts/oneshot.vhd" sub00/vhpl08 1543967869
+EN oneshot NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/oneshot.vhd sub00/vhpl08 1544134318

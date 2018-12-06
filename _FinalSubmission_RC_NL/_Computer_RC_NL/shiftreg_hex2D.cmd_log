@@ -1,0 +1,4 @@
+vhdtdtfi -lib work ../../../../Downloads/shiftreg_hex2D.vhd -prj Computer_RC_NL -o shiftreg_hex2D.spl -module shiftreg_hex2D -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w shiftreg_hex2D.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/shiftreg_hex2D.sym 
+vhdtdtfi -lib work ../../../../Desktop/Goodies/goodies-20181206/shiftreg_hex2D.vhd -prj Computer_RC_NL -o shiftreg_hex2D.spl -module shiftreg_hex2D -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w shiftreg_hex2D.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/shiftreg_hex2D.sym 

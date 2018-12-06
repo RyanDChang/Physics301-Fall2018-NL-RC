@@ -4,14 +4,14 @@
 --   ____  ____ 
 --  /   /\/   / 
 -- /___/  \  /    Vendor: Xilinx 
--- \   \   \/     Version : 14.7
+-- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ComputerMain.vhf
--- /___/   /\     Timestamp : 12/04/2018 15:57:38
+-- /___/   /\     Timestamp : 12/06/2018 14:11:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" -w "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.sch
 --Design Name: ComputerMain
 --Device: spartan3e
 --Purpose:
@@ -27,8 +27,9 @@ use UNISIM.Vcomponents.ALL;
 
 entity ComputerMain is
    port ( Address     : in    std_logic_vector (7 downto 0); 
+          AorD        : in    std_logic; 
           Byte_Switch : in    std_logic_vector (1 downto 0); 
-          ROW         : in    std_logic_vector (3 downto 0); 
+          row         : in    std_logic_vector (3 downto 0); 
           ShowMM      : in    std_logic; 
           SYS_CLK     : in    std_logic; 
           TempToMM    : in    std_logic; 
@@ -38,7 +39,7 @@ entity ComputerMain is
           Inst        : out   std_logic_vector (7 downto 0); 
           sseg        : out   std_logic_vector (7 downto 0); 
           Update      : out   std_logic_vector (3 downto 0); 
-          COL         : inout std_logic_vector (3 downto 0));
+          col         : inout std_logic_vector (3 downto 0));
 end ComputerMain;
 
 architecture BEHAVIORAL of ComputerMain is
@@ -70,7 +71,11 @@ architecture BEHAVIORAL of ComputerMain is
              row           : in    std_logic_vector (3 downto 0); 
              WriteTemp     : in    std_logic; 
              Byte          : in    std_logic_vector (1 downto 0); 
+             AorD          : in    std_logic; 
              col           : inout std_logic_vector (3 downto 0); 
+             keyValid      : out   std_logic; 
+             sseg          : out   std_logic_vector (7 downto 0); 
+             anO           : out   std_logic_vector (3 downto 0); 
              TempInst      : out   std_logic_vector (7 downto 0); 
              TempData      : out   std_logic_vector (7 downto 0); 
              displayUpdate : out   std_logic_vector (3 downto 0));
@@ -127,14 +132,18 @@ begin
                 Inst_out(7 downto 0)=>Inst_DUMMY(7 downto 0));
    
    XLXI_2 : KeypadInput
-      port map (Byte(1 downto 0)=>Byte_Switch(1 downto 0),
-                row(3 downto 0)=>ROW(3 downto 0),
+      port map (AorD=>AorD,
+                Byte(1 downto 0)=>Byte_Switch(1 downto 0),
+                row(3 downto 0)=>row(3 downto 0),
                 SYS_CLK=>SYS_CLK,
                 WriteTemp=>WriteTemp,
+                anO(3 downto 0)=>anO(3 downto 0),
                 displayUpdate(3 downto 0)=>Update(3 downto 0),
+                keyValid=>open,
+                sseg(7 downto 0)=>sseg(7 downto 0),
                 TempData(7 downto 0)=>XLXN_2(7 downto 0),
                 TempInst(7 downto 0)=>XLXN_1(7 downto 0),
-                col(3 downto 0)=>COL(3 downto 0));
+                col(3 downto 0)=>col(3 downto 0));
    
    XLXI_3 : sseg_mux4D
       port map (dp_in(3 downto 0)=>XLXN_35(3 downto 0),
@@ -144,8 +153,8 @@ begin
                 hexD(3 downto 0)=>Inst_DUMMY(7 downto 4),
                 rb_in=>XLXN_36,
                 sel(0 to 1)=>XLXN_34(0 to 1),
-                anO(3 downto 0)=>anO(3 downto 0),
-                ssegO(7 downto 0)=>sseg(7 downto 0));
+                anO=>open,
+                ssegO=>open);
    
    XLXI_9 : sel_strobeB
       port map (clk=>SYS_CLK,

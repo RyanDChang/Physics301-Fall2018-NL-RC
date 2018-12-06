@@ -12,8 +12,7 @@
         <signal name="A(7:0)" />
         <signal name="Inst_in(7:0)" />
         <signal name="Data_in(7:0)" />
-        <signal name="A(4:0)">
-        </signal>
+        <signal name="A(4:0)" />
         <signal name="Inst_out(7:0)" />
         <signal name="Data_out(7:0)" />
         <port polarity="Input" name="nCS" />

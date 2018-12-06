@@ -4,14 +4,14 @@
 --   ____  ____ 
 --  /   /\/   / 
 -- /___/  \  /    Vendor: Xilinx 
--- \   \   \/     Version : 14.7
+-- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU_Module.vhf
--- /___/   /\     Timestamp : 12/04/2018 15:52:20
+-- /___/   /\     Timestamp : 12/06/2018 13:59:19
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf" -w "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/CustomParts/ALU/ALU_Module.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/CustomParts/ALU/ALU_Module.sch
 --Design Name: ALU_Module
 --Device: spartan3e
 --Purpose:
@@ -450,8 +450,8 @@ architecture BEHAVIORAL of ALU_Module is
    end component;
    attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_8";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_9";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_5";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_6";
 begin
    XLXI_1 : ADSU8_MXILINX_ALU_Module
       port map (A(7 downto 0)=>Ain(7 downto 0),

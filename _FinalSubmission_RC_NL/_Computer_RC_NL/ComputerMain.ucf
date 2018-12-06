@@ -16,7 +16,7 @@ NET "Byte_Switch[1]" LOC = K3;
 NET "Byte_Switch[0]" LOC = L3;
 # Are you in read or write mode? Aka: Running(Read) vs Programming(Write) modes
 #NET "ReadWrite" LOC = P11;
-
+NET "AorD" LOC = P11; #address or data 
 # - buttons
 
 NET "WriteTemp" LOC = A7; # Write current keypad input into a byte specified by ByteSwitch[1:0]

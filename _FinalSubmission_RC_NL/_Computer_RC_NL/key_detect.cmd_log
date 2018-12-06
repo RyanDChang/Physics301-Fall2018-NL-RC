@@ -1,0 +1,10 @@
+vhdtdtfi -lib work {../../../../Desktop/phys stash/_FinalSubmission_RC_NL/Parts/key_detect.vhd} -prj Computer_RC_NL -o key_detect.spl -module key_detect -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w key_detect.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/key_detect.sym 
+vhdtdtfi -lib work {../../../../Desktop/phys stash/_FinalSubmission_RC_NL/Parts/key_detect.vhd} -prj Computer_RC_NL -o key_detect.spl -module key_detect -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w key_detect.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/key_detect.sym 
+vhdtdtfi -lib work {../../../../Desktop/phys stash/_FinalSubmission_RC_NL/Parts/key_detect.vhd} -prj Computer_RC_NL -o key_detect.spl -module key_detect -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w key_detect.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/key_detect.sym 
+vhdtdtfi -lib work ../Parts/key_detect.vhd -prj Computer_RC_NL -o key_detect.spl -module key_detect -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w key_detect.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/key_detect.sym 
+vhdtdtfi -lib work ../Parts/key_detect.vhd -prj Computer_RC_NL -o key_detect.spl -module key_detect -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w key_detect.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/key_detect.sym 

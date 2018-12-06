@@ -4,14 +4,14 @@
 --   ____  ____ 
 --  /   /\/   / 
 -- /___/  \  /    Vendor: Xilinx 
--- \   \   \/     Version : 14.7
+-- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : KeypadInput.vhf
--- /___/   /\     Timestamp : 12/04/2018 15:52:18
+-- /___/   /\     Timestamp : 12/06/2018 14:10:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" -w "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/RC_NL_Final/_FinalSubmission_RC_NL/CustomParts/InputModule/KeypadInput.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/CustomParts/InputModule/KeypadInput.sch
 --Design Name: KeypadInput
 --Device: spartan3e
 --Purpose:
@@ -162,12 +162,15 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity KeypadInput is
-   port ( Byte          : in    std_logic_vector (1 downto 0); 
+   port ( AorD          : in    std_logic; 
+          Byte          : in    std_logic_vector (1 downto 0); 
           row           : in    std_logic_vector (3 downto 0); 
           SYS_CLK       : in    std_logic; 
           WriteTemp     : in    std_logic; 
+          anO           : out   std_logic_vector (3 downto 0); 
           displayUpdate : out   std_logic_vector (3 downto 0); 
           keyValid      : out   std_logic; 
+          sseg          : out   std_logic_vector (7 downto 0); 
           TempData      : out   std_logic_vector (7 downto 0); 
           TempInst      : out   std_logic_vector (7 downto 0); 
           col           : inout std_logic_vector (3 downto 0));
@@ -176,24 +179,18 @@ end KeypadInput;
 architecture BEHAVIORAL of KeypadInput is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
-   signal anO                     : std_logic_vector (3 downto 0);
-   signal AorD                    : std_logic;
    signal buster                  : std_logic_vector (3 downto 0);
    signal CLK1k                   : std_logic;
    signal CLK1M                   : std_logic;
    signal CLK10k                  : std_logic;
    signal CLK100                  : std_logic;
    signal P                       : std_logic;
-   signal sseg                    : std_logic_vector (7 downto 0);
    signal TDH                     : std_logic;
    signal TDL                     : std_logic;
    signal TIH                     : std_logic;
    signal TIL                     : std_logic;
    signal XLXN_5                  : std_logic_vector (3 downto 0);
    signal XLXN_6                  : std_logic_vector (3 downto 0);
-   signal XLXN_81                 : std_logic_vector (3 downto 0);
-   signal XLXN_82                 : std_logic_vector (3 downto 0);
-   signal XLXN_83                 : std_logic_vector (3 downto 0);
    signal XLXN_114                : std_logic;
    signal XLXN_115                : std_logic;
    signal XLXN_128                : std_logic;
@@ -202,7 +199,10 @@ architecture BEHAVIORAL of KeypadInput is
    signal XLXN_150                : std_logic;
    signal XLXN_170                : std_logic_vector (3 downto 0);
    signal XLXN_227                : std_logic_vector (0 to 1);
-   signal XLXN_235                : std_logic_vector (3 downto 0);
+   signal XLXN_241                : std_logic_vector (3 downto 0);
+   signal XLXN_242                : std_logic_vector (3 downto 0);
+   signal XLXN_243                : std_logic_vector (3 downto 0);
+   signal XLXN_244                : std_logic_vector (3 downto 0);
    signal keyValid_DUMMY          : std_logic;
    signal row_DUMMY               : std_logic_vector (3 downto 0);
    signal XLXI_110_CLR_openSignal : std_logic;
@@ -253,16 +253,6 @@ architecture BEHAVIORAL of KeypadInput is
    end component;
    attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
    
-   component DCM_50M
-      port ( CLK    : in    std_logic; 
-             RST    : in    std_logic; 
-             CLK1M  : out   std_logic; 
-             CLK10k : out   std_logic; 
-             CLK1k  : out   std_logic; 
-             CLK1   : out   std_logic; 
-             CLK100 : out   std_logic);
-   end component;
-   
    component D2_4E_MXILINX_KeypadInput
       port ( A0 : in    std_logic; 
              A1 : in    std_logic; 
@@ -293,6 +283,42 @@ architecture BEHAVIORAL of KeypadInput is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component sseg_mux4D
+      port ( rb_in : in    std_logic; 
+             hexD  : in    std_logic_vector (3 downto 0); 
+             hexC  : in    std_logic_vector (3 downto 0); 
+             hexB  : in    std_logic_vector (3 downto 0); 
+             hexA  : in    std_logic_vector (3 downto 0); 
+             sel   : in    std_logic_vector (0 to 1); 
+             dp_in : in    std_logic_vector (3 downto 0); 
+             anO   : out   std_logic_vector (3 downto 0); 
+             ssegO : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component shiftreg_hex2D
+      port ( CE    : in    std_logic; 
+             RST   : in    std_logic; 
+             CLK   : in    std_logic; 
+             bIN   : in    std_logic_vector (3 downto 0); 
+             bOUT2 : out   std_logic_vector (3 downto 0); 
+             bOUT1 : inout std_logic_vector (3 downto 0));
+   end component;
+   
+   component sel_strobeB
+      port ( clk : in    std_logic; 
+             sel : inout std_logic_vector (0 to 1));
+   end component;
+   
+   component DCM_50M
+      port ( CLK    : in    std_logic; 
+             RST    : in    std_logic; 
+             CLK1M  : out   std_logic; 
+             CLK10k : out   std_logic; 
+             CLK1k  : out   std_logic; 
+             CLK1   : out   std_logic; 
+             CLK100 : out   std_logic);
+   end component;
    
    attribute HU_SET of XLXI_108 : label is "XLXI_108_0";
    attribute HU_SET of XLXI_110 : label is "XLXI_110_1";
@@ -369,15 +395,6 @@ begin
    
    XLXI_77 : PULLDOWN
       port map (O=>XLXN_150);
-   
-   XLXI_82 : DCM_50M
-      port map (CLK=>SYS_CLK,
-                RST=>XLXN_128,
-                CLK1=>CLK100,
-                CLK1k=>CLK1k,
-                CLK1M=>CLK1M,
-                CLK10k=>CLK10k,
-                CLK100=>open);
    
    XLXI_108 : D2_4E_MXILINX_KeypadInput
       port map (A0=>Byte(0),
@@ -459,6 +476,46 @@ begin
       port map (I0=>WriteTemp,
                 I1=>buster(3),
                 O=>displayUpdate(3));
+   
+   XLXI_120 : sseg_mux4D
+      port map (dp_in(3 downto 0)=>XLXN_147(3 downto 0),
+                hexA(3 downto 0)=>XLXN_241(3 downto 0),
+                hexB(3 downto 0)=>XLXN_242(3 downto 0),
+                hexC(3 downto 0)=>XLXN_243(3 downto 0),
+                hexD(3 downto 0)=>XLXN_244(3 downto 0),
+                rb_in=>XLXN_150,
+                sel(0 to 1)=>XLXN_227(0 to 1),
+                anO(3 downto 0)=>anO(3 downto 0),
+                ssegO(7 downto 0)=>sseg(7 downto 0));
+   
+   XLXI_121 : shiftreg_hex2D
+      port map (bIN(3 downto 0)=>buster(3 downto 0),
+                CE=>XLXN_114,
+                CLK=>P,
+                RST=>XLXN_115,
+                bOUT2(3 downto 0)=>XLXN_244(3 downto 0),
+                bOUT1(3 downto 0)=>XLXN_243(3 downto 0));
+   
+   XLXI_122 : shiftreg_hex2D
+      port map (bIN(3 downto 0)=>buster(3 downto 0),
+                CE=>AorD,
+                CLK=>P,
+                RST=>XLXN_115,
+                bOUT2(3 downto 0)=>XLXN_242(3 downto 0),
+                bOUT1(3 downto 0)=>XLXN_241(3 downto 0));
+   
+   XLXI_124 : sel_strobeB
+      port map (clk=>CLK1M,
+                sel(0 to 1)=>XLXN_227(0 to 1));
+   
+   XLXI_125 : DCM_50M
+      port map (CLK=>SYS_CLK,
+                RST=>XLXN_128,
+                CLK1=>open,
+                CLK1k=>CLK1k,
+                CLK1M=>CLK1M,
+                CLK10k=>CLK10k,
+                CLK100=>CLK100);
    
 end BEHAVIORAL;
 

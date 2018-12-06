@@ -1,0 +1,6 @@
+vhdtdtfi -lib work {../../../../Desktop/phys stash/_FinalSubmission_RC_NL/Parts/debounce.vhd} -prj Computer_RC_NL -o switch_debounce.spl -module switch_debounce -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w switch_debounce.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/switch_debounce.sym 
+vhdtdtfi -lib work ../Parts/debounce.vhd -prj Computer_RC_NL -o switch_debounce.spl -module switch_debounce -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w switch_debounce.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/switch_debounce.sym 
+vhdtdtfi -lib work ../Parts/debounce.vhd -prj Computer_RC_NL -o switch_debounce.spl -module switch_debounce -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w switch_debounce.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/switch_debounce.sym 

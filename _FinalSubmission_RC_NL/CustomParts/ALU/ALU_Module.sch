@@ -8,38 +8,25 @@
     <netlist>
         <signal name="XLXN_1" />
         <signal name="XLXN_2" />
-        <signal name="OP(3)">
-        </signal>
-        <signal name="OP(4)">
-        </signal>
-        <signal name="OP(5)">
-        </signal>
-        <signal name="OP(0)">
-        </signal>
-        <signal name="OP(2)">
-        </signal>
+        <signal name="OP(3)" />
+        <signal name="OP(4)" />
+        <signal name="OP(5)" />
+        <signal name="OP(0)" />
+        <signal name="OP(2)" />
         <signal name="Ain(7:0)" />
         <signal name="Bin(7:0)" />
         <signal name="CO" />
-        <signal name="Result(7:0)">
-        </signal>
-        <signal name="OP(1)">
-        </signal>
-        <signal name="En(7:0)">
-        </signal>
+        <signal name="Result(7:0)" />
+        <signal name="OP(1)" />
+        <signal name="En(7:0)" />
         <signal name="En(7:1)" />
-        <signal name="En(0)">
-        </signal>
-        <signal name="Result(7)">
-        </signal>
+        <signal name="En(0)" />
+        <signal name="Result(7)" />
         <signal name="Signed_OP" />
         <signal name="ALU_Out(7:0)" />
-        <signal name="TWOS(7:0)">
-        </signal>
-        <signal name="Result(0)">
-        </signal>
-        <signal name="TWOS(0)">
-        </signal>
+        <signal name="TWOS(7:0)" />
+        <signal name="Result(0)" />
+        <signal name="TWOS(0)" />
         <signal name="Result(1)" />
         <signal name="TWOS(1)" />
         <signal name="Result(2)" />

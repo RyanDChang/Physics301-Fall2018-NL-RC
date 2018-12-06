@@ -1,10 +1,11 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Dec 04 15:58:03 2018
+// Written by: Map P.68d on Thu Dec 06 14:13:13 2018
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "WriteTemp" LOCATE = SITE "A7" LEVEL 1;
 COMP "SYS_CLK" LOCATE = SITE "B8" LEVEL 1;
+COMP "AorD" LOCATE = SITE "P11" LEVEL 1;
 COMP "TempToMM" LOCATE = SITE "G12" LEVEL 1;
 COMP "sseg<0>" LOCATE = SITE "M12" LEVEL 1;
 COMP "sseg<1>" LOCATE = SITE "L13" LEVEL 1;
@@ -14,16 +15,8 @@ COMP "sseg<4>" LOCATE = SITE "N14" LEVEL 1;
 COMP "sseg<5>" LOCATE = SITE "H12" LEVEL 1;
 COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
 COMP "sseg<7>" LOCATE = SITE "N13" LEVEL 1;
-COMP "COL<0>" LOCATE = SITE "C6" LEVEL 1;
-COMP "COL<1>" LOCATE = SITE "B6" LEVEL 1;
-COMP "COL<2>" LOCATE = SITE "C5" LEVEL 1;
-COMP "COL<3>" LOCATE = SITE "B7" LEVEL 1;
 COMP "Byte_Switch<0>" LOCATE = SITE "L3" LEVEL 1;
 COMP "Byte_Switch<1>" LOCATE = SITE "K3" LEVEL 1;
-COMP "ROW<0>" LOCATE = SITE "B5" LEVEL 1;
-COMP "ROW<1>" LOCATE = SITE "J3" LEVEL 1;
-COMP "ROW<2>" LOCATE = SITE "A3" LEVEL 1;
-COMP "ROW<3>" LOCATE = SITE "B2" LEVEL 1;
 COMP "Address<0>" LOCATE = SITE "B4" LEVEL 1;
 COMP "Address<1>" LOCATE = SITE "G3" LEVEL 1;
 COMP "Address<2>" LOCATE = SITE "F3" LEVEL 1;
@@ -34,6 +27,14 @@ COMP "anO<1>" LOCATE = SITE "J12" LEVEL 1;
 COMP "anO<2>" LOCATE = SITE "M13" LEVEL 1;
 COMP "anO<3>" LOCATE = SITE "K14" LEVEL 1;
 COMP "ShowMM" LOCATE = SITE "C11" LEVEL 1;
+COMP "col<0>" LOCATE = SITE "C6" LEVEL 1;
+COMP "col<1>" LOCATE = SITE "B6" LEVEL 1;
+COMP "col<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "col<3>" LOCATE = SITE "B7" LEVEL 1;
+COMP "row<0>" LOCATE = SITE "B5" LEVEL 1;
+COMP "row<1>" LOCATE = SITE "J3" LEVEL 1;
+COMP "row<2>" LOCATE = SITE "A3" LEVEL 1;
+COMP "row<3>" LOCATE = SITE "B2" LEVEL 1;
 COMP "Update<0>" LOCATE = SITE "M5" LEVEL 1;
 COMP "Update<1>" LOCATE = SITE "M11" LEVEL 1;
 COMP "Update<2>" LOCATE = SITE "P7" LEVEL 1;

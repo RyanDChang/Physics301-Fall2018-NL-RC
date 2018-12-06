@@ -1,0 +1,10 @@
+vhdtdtfi -lib work {../../../../Desktop/phys stash/_FinalSubmission_RC_NL/Parts/debounce.vhd} -lib work {../../../../Desktop/phys stash/_FinalSubmission_RC_NL/Parts/key4_dbnc.vhd} -prj Computer_RC_NL -o key4_dbnc.spl -module key4_dbnc -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w key4_dbnc.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/key4_dbnc.sym 
+vhdtdtfi -lib work {../../../../Desktop/phys stash/_FinalSubmission_RC_NL/Parts/debounce.vhd} -lib work {../../../../Desktop/phys stash/_FinalSubmission_RC_NL/Parts/key4_dbnc.vhd} -prj Computer_RC_NL -o key4_dbnc.spl -module key4_dbnc -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w key4_dbnc.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/key4_dbnc.sym 
+vhdtdtfi -lib work {../../../../Desktop/phys stash/_FinalSubmission_RC_NL/Parts/debounce.vhd} -lib work {../../../../Desktop/phys stash/_FinalSubmission_RC_NL/Parts/key4_dbnc.vhd} -prj Computer_RC_NL -o key4_dbnc.spl -module key4_dbnc -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w key4_dbnc.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/key4_dbnc.sym 
+vhdtdtfi -lib work ../Parts/debounce.vhd -lib work ../Parts/key4_dbnc.vhd -prj Computer_RC_NL -o key4_dbnc.spl -module key4_dbnc -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w key4_dbnc.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/key4_dbnc.sym 
+vhdtdtfi -lib work ../Parts/debounce.vhd -lib work ../Parts/key4_dbnc.vhd -prj Computer_RC_NL -o key4_dbnc.spl -module key4_dbnc -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w key4_dbnc.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/key4_dbnc.sym 
