@@ -1,0 +1,40 @@
+V3 16
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd 2018/10/06.21:00:18 P.68d
+EN work/bin2BCD3en 1539888417 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/bin2BCD3en/Behavioral 1539888418 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd \
+      EN work/bin2BCD3en 1539888417
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd 2018/10/06.21:00:18 P.68d
+EN work/DCM_50M 1539888419 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/DCM_50M/Behavioral 1539888420 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd \
+      EN work/DCM_50M 1539888419
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd 2018/10/06.21:00:18 P.68d
+EN work/mux4SSD 1539888421 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/mux4SSD/Behavioral 1539888422 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd \
+      EN work/mux4SSD 1539888421
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd 2018/10/06.21:00:18 P.68d
+EN work/sel_strobeB 1539888423 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/sel_strobeB/Behavioral 1539888424 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd \
+      EN work/sel_strobeB 1539888423
+FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd 2018/10/06.21:00:18 P.68d
+EN work/SSD_1dig 1539888425 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/SSD_1dig/Behavioral 1539888426 \
+      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd \
+      EN work/SSD_1dig 1539888425

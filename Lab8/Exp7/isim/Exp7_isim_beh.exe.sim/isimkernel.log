@@ -1,0 +1,29 @@
+Command line:
+   Exp7_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53811
+
+Mon Oct 29 18:36:06 2018
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 205.836 Meg
+
+ Total Signals          : 417
+ Total Nets             : 163
+ Total Signal Drivers   : 96
+ Total Blocks           : 85
+ Total Primitive Blocks : 69
+ Total Processes        : 85
+ Total Traceable Variables  : 28
+ Total Scalar Nets and Variables : 677
+Total Line Count : 181
+
+ Total Simulation Time: 0.07 sec
+
+ Current Memory Usage: 281.338 Meg
+
+Mon Oct 29 18:36:51 2018
+

@@ -1,2 +1,0 @@
-vhdtdtfi -lib work ../../../../Downloads/SSD_1dig.vhd -prj Experiment3 -o SSD_1dig.spl -module SSD_1dig -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e SSD_1dig.spl {/home/nick/Documents/Physics/Lab 6/Experiment3/SSD_1dig.sym} 

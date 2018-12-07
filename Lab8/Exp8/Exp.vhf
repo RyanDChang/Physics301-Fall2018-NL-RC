@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Exp.vhf
--- /___/   /\     Timestamp : 10/25/2018 15:19:11
+-- /___/   /\     Timestamp : 10/30/2018 14:38:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -476,23 +476,27 @@ entity Exp is
           EN       : in    std_logic; 
           SysClock : in    std_logic; 
           anO      : out   std_logic_vector (3 downto 0); 
-          sseg     : out   std_logic_vector (7 downto 0));
+          sseg     : out   std_logic_vector (7 downto 0); 
+          TC       : out   std_logic);
 end Exp;
 
 architecture BEHAVIORAL of Exp is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
+   signal CE                    : std_logic;
+   signal Load                  : std_logic;
    signal Q                     : std_logic_vector (7 downto 0);
-   signal XLXN_1                : std_logic;
+   signal TCMicro               : std_logic;
    signal XLXN_2                : std_logic;
-   signal XLXN_3                : std_logic;
-   signal XLXN_4                : std_logic;
-   signal XLXN_6                : std_logic;
    signal XLXN_7                : std_logic;
    signal XLXN_9                : std_logic;
    signal XLXN_10               : std_logic;
-   signal XLXN_25               : std_logic;
    signal XLXN_26               : std_logic;
+   signal XLXN_28               : std_logic;
+   signal XLXN_62               : std_logic;
+   signal XLXN_64               : std_logic;
+   signal XLXN_65               : std_logic;
+   signal TC_DUMMY              : std_logic;
    signal XLXI_1_CLR_openSignal : std_logic;
    signal XLXI_2_CLR_openSignal : std_logic;
    component CB4CLED_MXILINX_Exp
@@ -531,42 +535,59 @@ architecture BEHAVIORAL of Exp is
              sseg    : out   std_logic_vector (7 downto 0));
    end component;
    
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component AND4B4
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND4B4 : component is "BLACK_BOX";
+   
    attribute HU_SET of XLXI_1 : label is "XLXI_1_9";
    attribute HU_SET of XLXI_2 : label is "XLXI_2_10";
 begin
+   TC <= TC_DUMMY;
    XLXI_1 : CB4CLED_MXILINX_Exp
       port map (C=>CLK,
-                CE=>XLXN_6,
+                CE=>CE,
                 CLR=>XLXI_1_CLR_openSignal,
                 D0=>XLXN_7,
                 D1=>XLXN_9,
                 D2=>XLXN_9,
                 D3=>XLXN_9,
-                L=>XLXN_25,
+                L=>Load,
                 UP=>XLXN_10,
                 CEO=>open,
-                Q0=>XLXN_1,
+                Q0=>XLXN_62,
                 Q1=>XLXN_2,
-                Q2=>XLXN_3,
-                Q3=>XLXN_4,
-                TC=>XLXN_25);
+                Q2=>XLXN_64,
+                Q3=>XLXN_65,
+                TC=>TC_DUMMY);
    
    XLXI_2 : CB4CLED_MXILINX_Exp
       port map (C=>CLK,
                 CE=>XLXN_26,
                 CLR=>XLXI_2_CLR_openSignal,
-                D0=>XLXN_1,
+                D0=>XLXN_62,
                 D1=>XLXN_2,
-                D2=>XLXN_3,
-                D3=>XLXN_4,
-                L=>XLXN_6,
+                D2=>XLXN_64,
+                D3=>XLXN_65,
+                L=>TCMicro,
                 UP=>XLXN_26,
                 CEO=>open,
                 Q0=>Q(0),
                 Q1=>Q(1),
                 Q2=>Q(2),
                 Q3=>Q(3),
-                TC=>XLXN_6);
+                TC=>TCMicro);
    
    XLXI_3 : PULLDOWN
       port map (O=>XLXN_9);
@@ -586,6 +607,23 @@ begin
                 SYS_CLK=>SysClock,
                 anO(3 downto 0)=>anO(3 downto 0),
                 sseg(7 downto 0)=>sseg(7 downto 0));
+   
+   XLXI_8 : OR2
+      port map (I0=>TC_DUMMY,
+                I1=>XLXN_28,
+                O=>Load);
+   
+   XLXI_22 : AND4B4
+      port map (I0=>XLXN_62,
+                I1=>XLXN_2,
+                I2=>XLXN_64,
+                I3=>XLXN_65,
+                O=>XLXN_28);
+   
+   XLXI_34 : OR2
+      port map (I0=>TCMicro,
+                I1=>Load,
+                O=>CE);
    
 end BEHAVIORAL;
 

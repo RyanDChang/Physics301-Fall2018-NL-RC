@@ -120,30 +120,18 @@ Architecture behavioral of Entity sel_strobeb is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/DisplayModule.vhf" in Library work.
 Architecture behavioral of Entity displaymodule is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" in Library work.
-Entity <adsu8_mxilinx_exp5> compiled.
-Entity <adsu8_mxilinx_exp5> (Architecture <behavioral>) compiled.
-Entity <fd8ce_mxilinx_exp5> compiled.
-Entity <fd8ce_mxilinx_exp5> (Architecture <behavioral>) compiled.
-Entity <m2_1e_mxilinx_exp5> compiled.
-Entity <m2_1e_mxilinx_exp5> (Architecture <behavioral>) compiled.
-Entity <m4_1e_mxilinx_exp5> compiled.
-Entity <m4_1e_mxilinx_exp5> (Architecture <behavioral>) compiled.
-Entity <muxb_muser_exp5> compiled.
-Entity <muxb_muser_exp5> (Architecture <behavioral>) compiled.
-Entity <m2_1_mxilinx_exp5> compiled.
-Entity <m2_1_mxilinx_exp5> (Architecture <behavioral>) compiled.
-Entity <muxa_muser_exp5> compiled.
-Entity <muxa_muser_exp5> (Architecture <behavioral>) compiled.
-Entity <m2_1b1_mxilinx_exp5> compiled.
-Entity <m2_1b1_mxilinx_exp5> (Architecture <behavioral>) compiled.
-Entity <ftclex_mxilinx_exp5> compiled.
-Entity <ftclex_mxilinx_exp5> (Architecture <behavioral>) compiled.
-Entity <cb4cled_mxilinx_exp5> compiled.
-Entity <cb4cled_mxilinx_exp5> (Architecture <behavioral>) compiled.
-Entity <d4_16e_mxilinx_exp5> compiled.
-Entity <d4_16e_mxilinx_exp5> (Architecture <behavioral>) compiled.
-Entity <exp5> compiled.
-Entity <exp5> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity fd8ce_mxilinx_exp5 is up to date.
+Architecture behavioral of Entity adsu8_mxilinx_exp5 is up to date.
+Architecture behavioral of Entity m2_1e_mxilinx_exp5 is up to date.
+Architecture behavioral of Entity m4_1e_mxilinx_exp5 is up to date.
+Architecture behavioral of Entity muxb_muser_exp5 is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_exp5 is up to date.
+Architecture behavioral of Entity muxa_muser_exp5 is up to date.
+Architecture behavioral of Entity m2_1b1_mxilinx_exp5 is up to date.
+Architecture behavioral of Entity ftclex_mxilinx_exp5 is up to date.
+Architecture behavioral of Entity cb4cled_mxilinx_exp5 is up to date.
+Architecture behavioral of Entity d4_16e_mxilinx_exp5 is up to date.
+Architecture behavioral of Entity exp5 is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/muxA.vhf" in Library work.
 Architecture behavioral of Entity m2_1_mxilinx_muxa is up to date.
 Architecture behavioral of Entity muxa is up to date.
@@ -200,17 +188,19 @@ Analyzing hierarchy for entity <M2_1E_MXILINX_Exp5> in library <work> (architect
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <Exp5> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1732: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_Exp5'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1732: Unconnected output port 'TC' of component 'CB4CLED_MXILINX_Exp5'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1734: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_Exp5'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1734: Unconnected output port 'TC' of component 'CB4CLED_MXILINX_Exp5'.
     Set user-defined property "HU_SET =  XLXI_3_28" for instance <XLXI_3> in unit <Exp5>.
     Set user-defined property "HU_SET =  XLXI_4_27" for instance <XLXI_4> in unit <Exp5>.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1800: Unconnected output port 'CO' of component 'ADSU8_MXILINX_Exp5'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1800: Unconnected output port 'OFL' of component 'ADSU8_MXILINX_Exp5'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1802: Unconnected output port 'CO' of component 'ADSU8_MXILINX_Exp5'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1802: Unconnected output port 'OFL' of component 'ADSU8_MXILINX_Exp5'.
     Set user-defined property "HU_SET =  XLXI_79_29" for instance <XLXI_79> in unit <Exp5>.
     Set user-defined property "HU_SET =  XLXI_90_30" for instance <XLXI_90> in unit <Exp5>.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1845: Unconnected output port 'CO' of component 'ADSU8_MXILINX_Exp5'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1845: Unconnected output port 'OFL' of component 'ADSU8_MXILINX_Exp5'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1847: Unconnected output port 'CO' of component 'ADSU8_MXILINX_Exp5'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1847: Unconnected output port 'OFL' of component 'ADSU8_MXILINX_Exp5'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf" line 1847: Unconnected output port 'S' of component 'ADSU8_MXILINX_Exp5'.
     Set user-defined property "HU_SET =  XLXI_97_31" for instance <XLXI_97> in unit <Exp5>.
+    Set user-defined property "HU_SET =  XLXI_98_32" for instance <XLXI_98> in unit <Exp5>.
 Entity <Exp5> analyzed. Unit <Exp5> generated.
 
 Analyzing Entity <CB4CLED_MXILINX_Exp5> in library <work> (Architecture <behavioral>).
@@ -513,13 +503,14 @@ Unit <muxB_MUSER_Exp5> synthesized.
 
 Synthesizing Unit <Exp5>.
     Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf".
+WARNING:Xst:653 - Signal <XLXI_97_A_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <XLXI_3_L_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_3_D3_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_3_D2_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_3_D1_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_3_D0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:1780 - Signal <Timer_Q> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <J<7:1>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000.
+WARNING:Xst:653 - Signal <J> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <Count_Q<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 Unit <Exp5> synthesized.
 
@@ -575,8 +566,8 @@ Macro Statistics
  32-bit adder                                          : 4
 # Counters                                             : 4
  32-bit up counter                                     : 4
-# Registers                                            : 48
- Flip-Flops                                            : 48
+# Registers                                            : 56
+ Flip-Flops                                            : 56
 # Comparators                                          : 4
  32-bit comparator greatequal                          : 1
  32-bit comparator greater                             : 3
@@ -697,7 +688,7 @@ WARNING:Xst:2677 - Node <XLXI_89/XLXI_2/Dout2_0> of sequential type is unconnect
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Exp5, actual ratio is 14.
+Found area constraint ratio of 100 (+ 5) on block Exp5, actual ratio is 15.
 
 Final Macro Processing ...
 
@@ -705,8 +696,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 98
- Flip-Flops                                            : 98
+# Registers                                            : 106
+ Flip-Flops                                            : 106
 
 =========================================================================
 
@@ -766,9 +757,9 @@ Cell Usage :
 #      XOR2                        : 6
 #      XOR3                        : 16
 #      XORCY                       : 144
-# FlipFlops/Latches                : 98
+# FlipFlops/Latches                : 106
 #      FD                          : 3
-#      FDCE                        : 12
+#      FDCE                        : 20
 #      FDCP                        : 16
 #      FDE                         : 2
 #      FDR                         : 65
@@ -778,10 +769,10 @@ Cell Usage :
 # IO Buffers                       : 13
 #      IBUF                        : 1
 #      OBUF                        : 12
-# Others                           : 23
+# Others                           : 22
 #      FMAP                        : 16
 #      PULLDOWN                    : 3
-#      PULLUP                      : 4
+#      PULLUP                      : 3
 =========================================================================
 
 Device utilization summary:
@@ -790,7 +781,7 @@ Device utilization summary:
 Selected Device : 3s100ecp132-4 
 
  Number of Slices:                      119  out of    960    12%  
- Number of Slice Flip Flops:             98  out of   1920     5%  
+ Number of Slice Flip Flops:            106  out of   1920     5%  
  Number of 4 input LUTs:                238  out of   1920    12%  
  Number of IOs:                          15
  Number of bonded IOBs:                  15  out of     83    18%  
@@ -820,7 +811,7 @@ Clock Signal                       | Clock buffer(FF name)  | Load  |
 XLXI_89/XLXI_5/clk_1k1             | BUFG                   | 20    |
 XLXI_89/XLXI_5/clk_1m1             | BUFG                   | 33    |
 SYS_CLK                            | BUFGP                  | 33    |
-CLK                                | BUFGP                  | 12    |
+CLK                                | BUFGP                  | 20    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -828,8 +819,8 @@ Asynchronous Control Signals Information:
 -----------------------------------------------------------------------+-----------------------------+-------+
 Control Signal                                                         | Buffer(FF name)             | Load  |
 -----------------------------------------------------------------------+-----------------------------+-------+
+CLR                                                                    | IBUF                        | 20    |
 Count_Q<4>(XST_GND:G)                                                  | NONE(XLXI_89/XLXI_1/Dout0_0)| 16    |
-CLR                                                                    | IBUF                        | 12    |
 XLXI_89/XLXI_2/Dout0_0_and0000(XLXI_89/XLXI_2/Dout0_0_and00001_INV_0:O)| NONE(XLXI_89/XLXI_2/Dout0_0)| 1     |
 XLXI_89/XLXI_2/Dout0_1_and0000(XLXI_89/XLXI_2/Dout0_1_and00001_INV_0:O)| NONE(XLXI_89/XLXI_2/Dout0_1)| 1     |
 XLXI_89/XLXI_2/Dout0_2_and0000(XLXI_89/XLXI_2/Dout0_2_and00001_INV_0:O)| NONE(XLXI_89/XLXI_2/Dout0_2)| 1     |
@@ -995,7 +986,7 @@ Delay:               9.046ns (Levels of Logic = 33)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 11.551ns (frequency: 86.570MHz)
-  Total number of paths / destination ports: 7288 / 12
+  Total number of paths / destination ports: 7292 / 16
 -------------------------------------------------------------------------
 Delay:               11.551ns (Levels of Logic = 21)
   Source:            XLXI_3/I_Q0/I_36_35 (FF)
@@ -1065,14 +1056,14 @@ Offset:              8.053ns (Levels of Logic = 4)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.08 secs
+Total CPU time to Xst completion: 5.03 secs
  
 --> 
 
 
-Total memory usage is 548920 kilobytes
+Total memory usage is 549048 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  133 (   0 filtered)
+Number of warnings :  135 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

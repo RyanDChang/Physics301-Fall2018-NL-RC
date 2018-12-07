@@ -198,23 +198,20 @@
     <transform xil_pn:end_ts="1539833679" xil_pn:in_ck="102303028563121" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1539833671">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="Exp10.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="exp10.bgn"/>
       <outfile xil_pn:name="exp10.bit"/>
       <outfile xil_pn:name="exp10.drc"/>
       <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1539831673" xil_pn:in_ck="102303028550267" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="2182533642587968765" xil_pn:start_ts="1539831671">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1542144518" xil_pn:in_ck="147308104333979" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="2182533642587968765" xil_pn:start_ts="1542144513">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForced"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1539833671" xil_pn:in_ck="-7966172409497743797" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1539833668">
       <status xil_pn:value="SuccessfullyRun"/>

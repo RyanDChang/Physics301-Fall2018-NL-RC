@@ -1,7 +1,7 @@
 Release 14.6 - par P.68d (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Nov 13 15:31:37 2018
+Thu Nov 15 13:45:05 2018
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -54,7 +54,7 @@ C4|||NC||||||||||||
 C5||DIFFS|IO_L09N_0|UNUSED||0|||||||||
 C6||DIFFS|IO_L08N_0/VREF_0|UNUSED||0|||||||||
 C7|||GND||||||||||||
-C8||DIFFSI|IP_L06N_0/GCLK9|UNUSED||0|||||||||
+C8|CLK|IBUF|IP_L06N_0/GCLK9|INPUT|LVCMOS25*|0||||NONE||LOCATED|NO|NONE|
 C9||DIFFS|IO_L04N_0/GCLK5|UNUSED||0|||||||||
 C10|||GND||||||||||||
 C11||IBUF|IP|UNUSED||0|||||||||
@@ -82,7 +82,7 @@ F14||DIFFM|IO_L08P_1/A2|UNUSED||1|||||||||
 G1||DIFFS|IO_L05N_3/LHCLK3/IRDY2|UNUSED||3|||||||||
 G2|||GND||||||||||||
 G3||DIFFM|IO_L06P_3/LHCLK4/TRDY2|UNUSED||3|||||||||
-G12|CLK|IBUF|IP/VREF_1|INPUT|LVCMOS25*|1||||NONE||LOCATED|NO|NONE|
+G12||IBUF|IP/VREF_1|UNUSED||1|||||||||
 G13||DIFFS|IO_L07N_1/A3/RHCLK7|UNUSED||1|||||||||
 G14||DIFFM|IO_L07P_1/A4/RHCLK6|UNUSED||1|||||||||
 H1||DIFFS|IO_L06N_3/LHCLK5|UNUSED||3|||||||||

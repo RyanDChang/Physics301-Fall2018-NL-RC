@@ -82,7 +82,7 @@
         </block>
         <block symbolname="m2_1" name="XLXI_1">
             <blockpin signalname="Basket_in(0)" name="D0" />
-            <blockpin signalname="one" name="D1" />
+            <blockpin signalname="zero" name="D1" />
             <blockpin signalname="Ranger_in" name="S0" />
             <blockpin signalname="QA(0)" name="O" />
         </block>
@@ -94,7 +94,7 @@
         </block>
         <block symbolname="m2_1" name="XLXI_3">
             <blockpin signalname="Basket_in(2)" name="D0" />
-            <blockpin signalname="one" name="D1" />
+            <blockpin signalname="zero" name="D1" />
             <blockpin signalname="Ranger_in" name="S0" />
             <blockpin signalname="QA(2)" name="O" />
         </block>
@@ -138,7 +138,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="880" y="608" type="branch" />
             <wire x2="928" y1="608" y2="608" x1="880" />
         </branch>
-        <branch name="one">
+        <branch name="zero">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="880" y="672" type="branch" />
             <wire x2="928" y1="672" y2="672" x1="880" />
         </branch>
@@ -181,7 +181,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="880" y="1056" type="branch" />
             <wire x2="928" y1="1056" y2="1056" x1="880" />
         </branch>
-        <branch name="one">
+        <branch name="zero">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="880" y="1120" type="branch" />
             <wire x2="928" y1="1120" y2="1120" x1="880" />
         </branch>

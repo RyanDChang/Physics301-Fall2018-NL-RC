@@ -1,6 +1,0 @@
-EN ssd_1dig NULL /home/nick/Downloads/SSD_1dig.vhd sub00/vhpl00 1538686700
-EN lab6_ex2 NULL "/home/nick/Documents/Physics/Lab 6/Experiment2/Lab6_Ex2.vhf" sub00/vhpl04 1538686704
-AR mux4ssd behavioral /home/nick/Downloads/mux4SSD.vhd sub00/vhpl03 1538686703
-AR lab6_ex2 behavioral "/home/nick/Documents/Physics/Lab 6/Experiment2/Lab6_Ex2.vhf" sub00/vhpl05 1538686705
-AR ssd_1dig behavioral /home/nick/Downloads/SSD_1dig.vhd sub00/vhpl01 1538686701
-EN mux4ssd NULL /home/nick/Downloads/mux4SSD.vhd sub00/vhpl02 1538686702

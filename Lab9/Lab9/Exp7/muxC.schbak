@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan3e" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <blockdef name="Bytex4MUX">
+            <timestamp>2018-11-15T23:4:48</timestamp>
+            <rect width="256" x="64" y="-384" height="384" />
+            <rect width="64" x="0" y="-364" height="24" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+            <rect width="64" x="0" y="-300" height="24" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <rect width="64" x="0" y="-236" height="24" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-364" height="24" />
+            <line x2="384" y1="-352" y2="-352" x1="320" />
+        </blockdef>
+        <block symbolname="Bytex4MUX" name="XLXI_148">
+            <blockpin name="bn(7:0)" />
+            <blockpin name="an(7:0)" />
+            <blockpin name="cn(7:0)" />
+            <blockpin name="dn(7:0)" />
+            <blockpin name="en" />
+            <blockpin name="s(1:0)" />
+            <blockpin name="Q(7:0)" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <instance x="1280" y="1200" name="XLXI_148" orien="R0">
+        </instance>
+    </sheet>
+</drawing>

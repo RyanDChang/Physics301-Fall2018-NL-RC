@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Robert\Desktop\phys301\ISE projects\_Ryan\Physics301-Fall2018-NL-RC-master_10_7\Physics301-Fall2018-NL-RC-master\Lab7\Lab7_Ex8\Lab7_Ex8.ncd
-OUTFILE=C:\Users\Robert\Desktop\phys301\ISE projects\_Ryan\Physics301-Fall2018-NL-RC-master_10_7\Physics301-Fall2018-NL-RC-master\Lab7\Lab7_Ex8\Lab7_Ex8.bit
-FAMILY=Spartan3E
-PART=xc3s100e-4cp132
-WORKINGDIR=C:\Users\Robert\Desktop\phys301\ISE projects\_Ryan\Physics301-Fall2018-NL-RC-master_10_7\Physics301-Fall2018-NL-RC-master\Lab7\Lab7_Ex8
-LICENSE=WebPack
-USER_INFO=211594250_0_0_673

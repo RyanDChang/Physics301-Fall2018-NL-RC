@@ -1,11 +1,9 @@
 //! **************************************************************************
-// Written by: Map P.68d on Tue Nov 13 15:31:30 2018
+// Written by: Map P.68d on Thu Nov 15 13:44:58 2018
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "CLK" LOCATE = SITE "G12" LEVEL 1;
-PIN CLK_pin<0> = BEL "CLK" PINNAME PAD;
-PIN "CLK_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "CLK" LOCATE = SITE "C8" LEVEL 1;
 COMP "CLR" LOCATE = SITE "A7" LEVEL 1;
 COMP "SYS_CLK" LOCATE = SITE "B8" LEVEL 1;
 COMP "sseg<0>" LOCATE = SITE "M12" LEVEL 1;

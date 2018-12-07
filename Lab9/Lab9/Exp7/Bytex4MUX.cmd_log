@@ -1,0 +1,5 @@
+sch2sym -intstyle ise -family spartan3e -refsym Bytex4MUX /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/Bytex4MUX.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/Bytex4MUX.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Bytex4MUX.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/Bytex4MUX.sch 
+sch2vhdl -intstyle ise -family spartan3e -tionly -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/Bytex4MUX.sch Bytex4MUX.vhi 
+sch2sym -intstyle ise -family spartan3e -refsym Bytex4MUX /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/Bytex4MUX.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/Bytex4MUX.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Bytex4MUX /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/Bytex4MUX.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/Bytex4MUX.sym 

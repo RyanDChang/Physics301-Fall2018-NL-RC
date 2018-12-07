@@ -5,22 +5,25 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1732</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp5</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1734</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp5</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1732</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp5</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1734</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp5</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1800</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_Exp5</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_Exp5</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1800</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_Exp5</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_Exp5</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1845</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_Exp5</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1847</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_Exp5</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1845</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_Exp5</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1847</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_Exp5</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.vhf</arg>&quot; line <arg fmt="%d" index="2">1847</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_Exp5</arg>&apos;.
 </msg>
 
 <msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/DisplayModule.vhf</arg>&quot; line <arg fmt="%d" index="2">100</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Dout3</arg>&apos; of component &apos;<arg fmt="%s" index="4">bin2BCD3en</arg>&apos;.
@@ -164,6 +167,9 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_100</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_97_A_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_3_L_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
@@ -182,7 +188,7 @@
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">Timer_Q</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">J&lt;7:1&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">J</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">Count_Q&lt;7:4&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.

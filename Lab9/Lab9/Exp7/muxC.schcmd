@@ -1,0 +1,85 @@
+select figure at 1557 1004 8 -branches -sn=1
+BeginGroup
+ADD INSTANCE Bytex4MUX 1280 704 R0 -sn=1
+PASTE NAME INSTANCE AT 1472 512 XLXI_148 -NoDuplicateNetNames -sn=1
+EndGroup
+select figure at 1089 149 8 -branches -sn=1
+select all in 1089 149 2236 1950 -branches -enclosed -sn=1
+BeginGroup
+ADD INSTANCE Bytex4MUX 1280 2160 R0 -sn=1
+ADD INSTANCE Bytex4MUX 1280 1664 R0 -sn=1
+PASTE NAME INSTANCE AT 1472 1968 XLXI_148 -NoDuplicateNetNames -sn=1
+PASTE NAME INSTANCE AT 1472 1472 XLXI_149 -NoDuplicateNetNames -sn=1
+EndGroup
+select figure at 2717 894 8 -branches -sn=1
+select figure at 1444 374 8 -branches -sn=1
+move instance at 1280 704 to 1296 720 R0 -keepConn -sn=1
+BeginGroup
+ADD INSTANCE Bytex4MUX 1680 736 R0 -sn=1
+PASTE NAME INSTANCE AT 1872 544 XLXI_149 -NoDuplicateNetNames -sn=1
+EndGroup
+select figure at 1884 506 8 -branches -sn=1
+move instance at 1680 736 to 2672 1232 R0 -keepConn -sn=1
+select figure at 2860 1009 8 -branches -sn=1
+select figure at 2167 437 8 -branches -sn=1
+add autowire 416 320 544 320 8 -sn=1
+add instance constant 112 672 R0 -sn=1
+add instance constant 112 544 R0 -sn=1
+add instance constant 112 432 R0 -sn=1
+add instance constant 112 320 R0 -sn=1
+select figure at 202 722 8 -branches -sn=1
+move instance at 112 672 to 112 656 R0 -keepConn -sn=1
+select figure at 34 197 8 -branches -sn=1
+select all in 34 197 383 898 -branches -enclosed -sn=1
+BeginGroup
+ADD INSTANCE constant 112 992 R0 -sn=1
+ADD INSTANCE constant 112 880 R0 -sn=1
+ADD INSTANCE constant 112 768 R0 -sn=1
+ADD INSTANCE constant 112 1104 R0 -sn=1
+PASTE NAME INSTANCE AT 184 1024 XLXI_154 -NoDuplicateNetNames -sn=1
+PASTE NAME INSTANCE AT 184 912 XLXI_155 -NoDuplicateNetNames -sn=1
+PASTE NAME INSTANCE AT 184 800 XLXI_156 -NoDuplicateNetNames -sn=1
+PASTE NAME INSTANCE AT 184 1136 XLXI_153 -NoDuplicateNetNames -sn=1
+EndGroup
+select figure at 456 726 8 -branches -sn=1
+select figure at 486 330 8 -branches -sn=1
+select figure at 495 330 8 -branches -sn=1
+select figure at 543 316 8 -branches -sn=1
+select figure at 2688 369 8 -branches -sn=1
+select figure at 500 323 8 -branches -sn=1
+move selection by -128 -272 -keepConn -sn=1
+add autowire 288 112 416 112 8 -sn=1
+add iomarker 288 48 0 Input Unknown -sn=1
+add iomarker 288 112 0 Input Unknown -sn=1
+add autowire 864 64 992 64 8 -sn=1
+add autowire 864 128 992 128 8 -sn=1
+add autowire 1120 64 1280 64 8 -sn=1
+add autowire 1120 144 1280 144 8 -sn=1
+select figure at 1226 154 8 -branches -sn=1
+select figure at 1208 149 8 -branches -sn=1
+move selection by -16 -32 -keepConn -sn=1
+move selection by 16 32 -keepConn -sn=1
+select figure at 1215 149 8 -branches -sn=1
+move selection by -16 0 -keepConn -sn=1
+move selection by 0 -16 -keepConn -sn=1
+select figure at 1148 270 8 -branches -sn=1
+select figure at 1192 133 8 -branches -sn=1
+select figure at 1192 133 8 -branches -all -sn=1
+move selection by 32 0 -keepConn -sn=1
+add iomarker 864 64 0 Input Unknown -sn=1
+add iomarker 864 128 0 Input Unknown -sn=1
+add iomarker 1120 64 0 Input Unknown -sn=1
+add iomarker 1136 128 0 Input Unknown -sn=1
+select figure at 671 23 8 -branches -sn=1
+select all in 671 23 1054 282 -branches -enclosed -sn=1
+move selection by -64 0 -keepConn -sn=1
+select figure at 940 248 8 -branches -sn=1
+add autowire 3056 880 3264 880 8 -sn=1
+name branch at 3264 880 8 QQ(7:0) -sn=1
+name branch at 816 64 8 Yogi -sn=1
+name branch at 816 128 8 Booboo -sn=1
+name branch at 1152 64 8 Ranger -sn=1
+name branch at 1152 128 8 Snaggle -sn=1
+select figure at 215 351 8 -branches -sn=1
+add attr BA|XLXI_156|CValue 5 "EditName|all:1 sch:0|EditValue|all:1|EditTrait|all:1|View|all:1|Delete|all:1 sym:0|Verilog|all:0|Vhdl|all:0|ValueType|BitVector:32:Hexadecimal" -addInstWindow -sn=1
+select figure at 183 461 8 -branches -sn=1

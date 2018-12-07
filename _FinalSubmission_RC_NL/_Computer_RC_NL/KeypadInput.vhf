@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : KeypadInput.vhf
--- /___/   /\     Timestamp : 12/06/2018 14:10:39
+-- /___/   /\     Timestamp : 12/06/2018 15:26:05
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,71 +18,6 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity FD4CE_MXILINX_KeypadInput is
-   port ( C   : in    std_logic; 
-          CE  : in    std_logic; 
-          CLR : in    std_logic; 
-          D0  : in    std_logic; 
-          D1  : in    std_logic; 
-          D2  : in    std_logic; 
-          D3  : in    std_logic; 
-          Q0  : out   std_logic; 
-          Q1  : out   std_logic; 
-          Q2  : out   std_logic; 
-          Q3  : out   std_logic);
-end FD4CE_MXILINX_KeypadInput;
-
-architecture BEHAVIORAL of FD4CE_MXILINX_KeypadInput is
-   attribute BOX_TYPE   : string ;
-   component FDCE
-      generic( INIT : bit :=  '0');
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
-   
-begin
-   I_Q0 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D0,
-                Q=>Q0);
-   
-   I_Q1 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D1,
-                Q=>Q1);
-   
-   I_Q2 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D2,
-                Q=>Q2);
-   
-   I_Q3 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D3,
-                Q=>Q3);
-   
-end BEHAVIORAL;
-
-
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -161,16 +96,65 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
+entity LD4_MXILINX_KeypadInput is
+   port ( D0 : in    std_logic; 
+          D1 : in    std_logic; 
+          D2 : in    std_logic; 
+          D3 : in    std_logic; 
+          G  : in    std_logic; 
+          Q0 : out   std_logic; 
+          Q1 : out   std_logic; 
+          Q2 : out   std_logic; 
+          Q3 : out   std_logic);
+end LD4_MXILINX_KeypadInput;
+
+architecture BEHAVIORAL of LD4_MXILINX_KeypadInput is
+   attribute BOX_TYPE   : string ;
+   component LD
+      generic( INIT : bit :=  '0');
+      port ( D : in    std_logic; 
+             G : in    std_logic; 
+             Q : out   std_logic);
+   end component;
+   attribute BOX_TYPE of LD : component is "BLACK_BOX";
+   
+begin
+   I_Q0 : LD
+      port map (D=>D0,
+                G=>G,
+                Q=>Q0);
+   
+   I_Q1 : LD
+      port map (D=>D1,
+                G=>G,
+                Q=>Q1);
+   
+   I_Q2 : LD
+      port map (D=>D2,
+                G=>G,
+                Q=>Q2);
+   
+   I_Q3 : LD
+      port map (D=>D3,
+                G=>G,
+                Q=>Q3);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
 entity KeypadInput is
    port ( AorD          : in    std_logic; 
-          Byte          : in    std_logic_vector (1 downto 0); 
           row           : in    std_logic_vector (3 downto 0); 
           SYS_CLK       : in    std_logic; 
-          WriteTemp     : in    std_logic; 
-          anO           : out   std_logic_vector (3 downto 0); 
           displayUpdate : out   std_logic_vector (3 downto 0); 
           keyValid      : out   std_logic; 
-          sseg          : out   std_logic_vector (7 downto 0); 
           TempData      : out   std_logic_vector (7 downto 0); 
           TempInst      : out   std_logic_vector (7 downto 0); 
           col           : inout std_logic_vector (3 downto 0));
@@ -179,36 +163,31 @@ end KeypadInput;
 architecture BEHAVIORAL of KeypadInput is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
-   signal buster                  : std_logic_vector (3 downto 0);
-   signal CLK1k                   : std_logic;
-   signal CLK1M                   : std_logic;
-   signal CLK10k                  : std_logic;
-   signal CLK100                  : std_logic;
-   signal P                       : std_logic;
-   signal TDH                     : std_logic;
-   signal TDL                     : std_logic;
-   signal TIH                     : std_logic;
-   signal TIL                     : std_logic;
-   signal XLXN_5                  : std_logic_vector (3 downto 0);
-   signal XLXN_6                  : std_logic_vector (3 downto 0);
-   signal XLXN_114                : std_logic;
-   signal XLXN_115                : std_logic;
-   signal XLXN_128                : std_logic;
-   signal XLXN_132                : std_logic;
-   signal XLXN_147                : std_logic_vector (3 downto 0);
-   signal XLXN_150                : std_logic;
-   signal XLXN_170                : std_logic_vector (3 downto 0);
-   signal XLXN_227                : std_logic_vector (0 to 1);
-   signal XLXN_241                : std_logic_vector (3 downto 0);
-   signal XLXN_242                : std_logic_vector (3 downto 0);
-   signal XLXN_243                : std_logic_vector (3 downto 0);
-   signal XLXN_244                : std_logic_vector (3 downto 0);
-   signal keyValid_DUMMY          : std_logic;
-   signal row_DUMMY               : std_logic_vector (3 downto 0);
-   signal XLXI_110_CLR_openSignal : std_logic;
-   signal XLXI_111_CLR_openSignal : std_logic;
-   signal XLXI_112_CLR_openSignal : std_logic;
-   signal XLXI_113_CLR_openSignal : std_logic;
+   signal buster         : std_logic_vector (3 downto 0);
+   signal CLK1k          : std_logic;
+   signal CLK1M          : std_logic;
+   signal CLK10k         : std_logic;
+   signal CLK100         : std_logic;
+   signal P              : std_logic;
+   signal TDH            : std_logic;
+   signal TDhigh         : std_logic_vector (3 downto 0);
+   signal TDL            : std_logic;
+   signal TDlow          : std_logic_vector (3 downto 0);
+   signal TIH            : std_logic;
+   signal TIhigh         : std_logic_vector (3 downto 0);
+   signal TIL            : std_logic;
+   signal TIlow          : std_logic_vector (3 downto 0);
+   signal XLXN_5         : std_logic_vector (3 downto 0);
+   signal XLXN_6         : std_logic_vector (3 downto 0);
+   signal XLXN_114       : std_logic;
+   signal XLXN_115       : std_logic;
+   signal XLXN_128       : std_logic;
+   signal XLXN_132       : std_logic;
+   signal XLXN_170       : std_logic_vector (3 downto 0);
+   signal XLXN_259       : std_logic;
+   signal XLXN_346       : std_logic;
+   signal keyValid_DUMMY : std_logic;
+   signal row_DUMMY      : std_logic_vector (3 downto 0);
    component col_strobe
       port ( clk : in    std_logic; 
              col : inout std_logic_vector (3 downto 0));
@@ -263,39 +242,6 @@ architecture BEHAVIORAL of KeypadInput is
              D3 : out   std_logic);
    end component;
    
-   component FD4CE_MXILINX_KeypadInput
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D0  : in    std_logic; 
-             D1  : in    std_logic; 
-             D2  : in    std_logic; 
-             D3  : in    std_logic; 
-             Q0  : out   std_logic; 
-             Q1  : out   std_logic; 
-             Q2  : out   std_logic; 
-             Q3  : out   std_logic);
-   end component;
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-   component sseg_mux4D
-      port ( rb_in : in    std_logic; 
-             hexD  : in    std_logic_vector (3 downto 0); 
-             hexC  : in    std_logic_vector (3 downto 0); 
-             hexB  : in    std_logic_vector (3 downto 0); 
-             hexA  : in    std_logic_vector (3 downto 0); 
-             sel   : in    std_logic_vector (0 to 1); 
-             dp_in : in    std_logic_vector (3 downto 0); 
-             anO   : out   std_logic_vector (3 downto 0); 
-             ssegO : out   std_logic_vector (7 downto 0));
-   end component;
-   
    component shiftreg_hex2D
       port ( CE    : in    std_logic; 
              RST   : in    std_logic; 
@@ -303,11 +249,6 @@ architecture BEHAVIORAL of KeypadInput is
              bIN   : in    std_logic_vector (3 downto 0); 
              bOUT2 : out   std_logic_vector (3 downto 0); 
              bOUT1 : inout std_logic_vector (3 downto 0));
-   end component;
-   
-   component sel_strobeB
-      port ( clk : in    std_logic; 
-             sel : inout std_logic_vector (0 to 1));
    end component;
    
    component DCM_50M
@@ -320,11 +261,34 @@ architecture BEHAVIORAL of KeypadInput is
              CLK100 : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_108 : label is "XLXI_108_0";
-   attribute HU_SET of XLXI_110 : label is "XLXI_110_1";
-   attribute HU_SET of XLXI_111 : label is "XLXI_111_2";
-   attribute HU_SET of XLXI_112 : label is "XLXI_112_3";
-   attribute HU_SET of XLXI_113 : label is "XLXI_113_4";
+   component LD4_MXILINX_KeypadInput
+      port ( D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             D2 : in    std_logic; 
+             D3 : in    std_logic; 
+             G  : in    std_logic; 
+             Q0 : out   std_logic; 
+             Q1 : out   std_logic; 
+             Q2 : out   std_logic; 
+             Q3 : out   std_logic);
+   end component;
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component PULLUP
+      port ( O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_108 : label is "XLXI_108_4";
+   attribute HU_SET of XLXI_127 : label is "XLXI_127_0";
+   attribute HU_SET of XLXI_128 : label is "XLXI_128_2";
+   attribute HU_SET of XLXI_130 : label is "XLXI_130_1";
+   attribute HU_SET of XLXI_131 : label is "XLXI_131_3";
 begin
    keyValid <= keyValid_DUMMY;
    row_DUMMY(3 downto 0) <= row(3 downto 0);
@@ -369,18 +333,6 @@ begin
    XLXI_74 : PULLDOWN
       port map (O=>XLXN_132);
    
-   XLXI_75_0 : PULLDOWN
-      port map (O=>XLXN_147(0));
-   
-   XLXI_75_1 : PULLDOWN
-      port map (O=>XLXN_147(1));
-   
-   XLXI_75_2 : PULLDOWN
-      port map (O=>XLXN_147(2));
-   
-   XLXI_75_3 : PULLDOWN
-      port map (O=>XLXN_147(3));
-   
    XLXI_76_0 : PULLDOWN
       port map (O=>row_DUMMY(0));
    
@@ -393,120 +345,30 @@ begin
    XLXI_76_3 : PULLDOWN
       port map (O=>row_DUMMY(3));
    
-   XLXI_77 : PULLDOWN
-      port map (O=>XLXN_150);
-   
    XLXI_108 : D2_4E_MXILINX_KeypadInput
-      port map (A0=>Byte(0),
-                A1=>Byte(1),
-                E=>WriteTemp,
+      port map (A0=>P,
+                A1=>XLXN_259,
+                E=>XLXN_346,
                 D0=>TDL,
                 D1=>TDH,
                 D2=>TIL,
                 D3=>TIH);
-   
-   XLXI_110 : FD4CE_MXILINX_KeypadInput
-      port map (C=>CLK10k,
-                CE=>TDL,
-                CLR=>XLXI_110_CLR_openSignal,
-                D0=>buster(0),
-                D1=>buster(1),
-                D2=>buster(2),
-                D3=>buster(3),
-                Q0=>TempData(0),
-                Q1=>TempData(1),
-                Q2=>TempData(2),
-                Q3=>TempData(3));
-   
-   XLXI_111 : FD4CE_MXILINX_KeypadInput
-      port map (C=>CLK10k,
-                CE=>TDH,
-                CLR=>XLXI_111_CLR_openSignal,
-                D0=>buster(0),
-                D1=>buster(1),
-                D2=>buster(2),
-                D3=>buster(3),
-                Q0=>TempData(4),
-                Q1=>TempData(5),
-                Q2=>TempData(6),
-                Q3=>TempData(7));
-   
-   XLXI_112 : FD4CE_MXILINX_KeypadInput
-      port map (C=>CLK10k,
-                CE=>TIL,
-                CLR=>XLXI_112_CLR_openSignal,
-                D0=>buster(0),
-                D1=>buster(1),
-                D2=>buster(2),
-                D3=>buster(3),
-                Q0=>TempInst(0),
-                Q1=>TempInst(1),
-                Q2=>TempInst(2),
-                Q3=>TempInst(3));
-   
-   XLXI_113 : FD4CE_MXILINX_KeypadInput
-      port map (C=>CLK10k,
-                CE=>TIH,
-                CLR=>XLXI_113_CLR_openSignal,
-                D0=>buster(0),
-                D1=>buster(1),
-                D2=>buster(2),
-                D3=>buster(3),
-                Q0=>TempInst(4),
-                Q1=>TempInst(5),
-                Q2=>TempInst(6),
-                Q3=>TempInst(7));
-   
-   XLXI_115 : AND2
-      port map (I0=>WriteTemp,
-                I1=>buster(0),
-                O=>displayUpdate(0));
-   
-   XLXI_116 : AND2
-      port map (I0=>WriteTemp,
-                I1=>buster(1),
-                O=>displayUpdate(1));
-   
-   XLXI_117 : AND2
-      port map (I0=>WriteTemp,
-                I1=>buster(2),
-                O=>displayUpdate(2));
-   
-   XLXI_118 : AND2
-      port map (I0=>WriteTemp,
-                I1=>buster(3),
-                O=>displayUpdate(3));
-   
-   XLXI_120 : sseg_mux4D
-      port map (dp_in(3 downto 0)=>XLXN_147(3 downto 0),
-                hexA(3 downto 0)=>XLXN_241(3 downto 0),
-                hexB(3 downto 0)=>XLXN_242(3 downto 0),
-                hexC(3 downto 0)=>XLXN_243(3 downto 0),
-                hexD(3 downto 0)=>XLXN_244(3 downto 0),
-                rb_in=>XLXN_150,
-                sel(0 to 1)=>XLXN_227(0 to 1),
-                anO(3 downto 0)=>anO(3 downto 0),
-                ssegO(7 downto 0)=>sseg(7 downto 0));
    
    XLXI_121 : shiftreg_hex2D
       port map (bIN(3 downto 0)=>buster(3 downto 0),
                 CE=>XLXN_114,
                 CLK=>P,
                 RST=>XLXN_115,
-                bOUT2(3 downto 0)=>XLXN_244(3 downto 0),
-                bOUT1(3 downto 0)=>XLXN_243(3 downto 0));
+                bOUT2(3 downto 0)=>TIhigh(3 downto 0),
+                bOUT1(3 downto 0)=>TIlow(3 downto 0));
    
    XLXI_122 : shiftreg_hex2D
       port map (bIN(3 downto 0)=>buster(3 downto 0),
                 CE=>AorD,
                 CLK=>P,
                 RST=>XLXN_115,
-                bOUT2(3 downto 0)=>XLXN_242(3 downto 0),
-                bOUT1(3 downto 0)=>XLXN_241(3 downto 0));
-   
-   XLXI_124 : sel_strobeB
-      port map (clk=>CLK1M,
-                sel(0 to 1)=>XLXN_227(0 to 1));
+                bOUT2(3 downto 0)=>TDhigh(3 downto 0),
+                bOUT1(3 downto 0)=>TDlow(3 downto 0));
    
    XLXI_125 : DCM_50M
       port map (CLK=>SYS_CLK,
@@ -516,6 +378,73 @@ begin
                 CLK1M=>CLK1M,
                 CLK10k=>CLK10k,
                 CLK100=>CLK100);
+   
+   XLXI_127 : LD4_MXILINX_KeypadInput
+      port map (D0=>TIlow(0),
+                D1=>TIlow(1),
+                D2=>TIlow(2),
+                D3=>TIlow(3),
+                G=>TIL,
+                Q0=>TempInst(0),
+                Q1=>TempInst(1),
+                Q2=>TempInst(2),
+                Q3=>TempInst(3));
+   
+   XLXI_128 : LD4_MXILINX_KeypadInput
+      port map (D0=>TDhigh(0),
+                D1=>TDhigh(1),
+                D2=>TDhigh(2),
+                D3=>TDhigh(3),
+                G=>TDH,
+                Q0=>TempData(4),
+                Q1=>TempData(5),
+                Q2=>TempData(6),
+                Q3=>TempData(7));
+   
+   XLXI_130 : LD4_MXILINX_KeypadInput
+      port map (D0=>TIhigh(0),
+                D1=>TIhigh(1),
+                D2=>TIhigh(2),
+                D3=>TIhigh(3),
+                G=>TIH,
+                Q0=>TempInst(4),
+                Q1=>TempInst(5),
+                Q2=>TempInst(6),
+                Q3=>TempInst(7));
+   
+   XLXI_131 : LD4_MXILINX_KeypadInput
+      port map (D0=>TDlow(0),
+                D1=>TDlow(1),
+                D2=>TDlow(2),
+                D3=>TDlow(3),
+                G=>TDL,
+                Q0=>TempData(0),
+                Q1=>TempData(1),
+                Q2=>TempData(2),
+                Q3=>TempData(3));
+   
+   XLXI_143 : INV
+      port map (I=>AorD,
+                O=>XLXN_259);
+   
+   XLXI_144 : BUF
+      port map (I=>buster(0),
+                O=>displayUpdate(0));
+   
+   XLXI_145 : BUF
+      port map (I=>buster(1),
+                O=>displayUpdate(1));
+   
+   XLXI_146 : BUF
+      port map (I=>buster(2),
+                O=>displayUpdate(2));
+   
+   XLXI_147 : BUF
+      port map (I=>buster(3),
+                O=>displayUpdate(3));
+   
+   XLXI_148 : PULLUP
+      port map (O=>XLXN_346);
    
 end BEHAVIORAL;
 

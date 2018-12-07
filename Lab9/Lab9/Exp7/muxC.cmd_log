@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl muxC_drc.vhf -w /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/muxC.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym muxC /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/muxC.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/muxC.sym 

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Thu Oct 25 14:56:23 2018
+// Written by: Map P.68d on Tue Oct 30 13:53:04 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -17,6 +17,8 @@ COMP "sseg<4>" LOCATE = SITE "N14" LEVEL 1;
 COMP "sseg<5>" LOCATE = SITE "H12" LEVEL 1;
 COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
 COMP "start" LOCATE = SITE "G12" LEVEL 1;
+COMP "QNot" LOCATE = SITE "P7" LEVEL 1;
+COMP "UpDown" LOCATE = SITE "M5" LEVEL 1;
 COMP "CLK" LOCATE = SITE "C8" LEVEL 1;
 NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 NET "SYS_CLK_BUFGP/IBUFG" BEL "SYS_CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;

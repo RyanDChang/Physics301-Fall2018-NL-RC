@@ -12,14 +12,14 @@ NET "Address[2]" LOC = F3;
 NET "Address[1]" LOC = G3;
 NET "Address[0]" LOC = B4;
 # What byte are you programming from the input
-NET "Byte_Switch[1]" LOC = K3;
-NET "Byte_Switch[0]" LOC = L3;
+#NET "Byte_Switch[1]" LOC = K3;
+#NET "Byte_Switch[0]" LOC = L3;
 # Are you in read or write mode? Aka: Running(Read) vs Programming(Write) modes
 #NET "ReadWrite" LOC = P11;
 NET "AorD" LOC = P11; #address or data 
 # - buttons
 
-NET "WriteTemp" LOC = A7; # Write current keypad input into a byte specified by ByteSwitch[1:0]
+#NET "WriteTemp" LOC = A7; # Write current keypad input into a byte specified by ByteSwitch[1:0]
 #NET "?" LOC = M4; # Currently unused
 NET "ShowMM" LOC = C11; # Display what's in Main Memory at Address[4:0] instead of what will be written there
 NET "TempToMM" LOC = G12; # Write temporary programming memory into Main Memory

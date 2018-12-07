@@ -1,0 +1,41 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd" in Library work.
+ERROR:HDLParsers:3278 - Can't write file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/xst/work/sub00/vhpl06.vho": No such file or directory
+ERROR:HDLParsers:309 - Can not overwrite the object file in library work.
+ERROR:HDLParsers:3278 - Can't write file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/xst/work/sub00/vhpl07.vho": No such file or directory
+ERROR:HDLParsers:309 - Can not overwrite the object file in library work.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+
+
+Total memory usage is 478732 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

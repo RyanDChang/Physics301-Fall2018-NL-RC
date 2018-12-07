@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Exp7.vhf
--- /___/   /\     Timestamp : 10/25/2018 14:56:08
+-- /___/   /\     Timestamp : 10/30/2018 13:52:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -577,7 +577,9 @@ entity Exp7 is
           start   : in    std_logic; 
           SYS_CLK : in    std_logic; 
           anO     : out   std_logic_vector (3 downto 0); 
-          sseg    : out   std_logic_vector (7 downto 0));
+          QNot    : out   std_logic; 
+          sseg    : out   std_logic_vector (7 downto 0); 
+          UpDown  : out   std_logic);
 end Exp7;
 
 architecture BEHAVIORAL of Exp7 is
@@ -586,14 +588,12 @@ architecture BEHAVIORAL of Exp7 is
    signal data7                  : std_logic;
    signal data12                 : std_logic;
    signal Q                      : std_logic_vector (7 downto 0);
-   signal XLXN_3                 : std_logic;
    signal XLXN_5                 : std_logic;
-   signal XLXN_6                 : std_logic;
-   signal XLXN_88                : std_logic;
-   signal XLXN_99                : std_logic;
-   signal XLXN_100               : std_logic;
-   signal XLXN_101               : std_logic;
-   signal XLXN_102               : std_logic;
+   signal XLXN_229               : std_logic;
+   signal XLXN_240               : std_logic;
+   signal XLXN_241               : std_logic;
+   signal UpDown_DUMMY           : std_logic;
+   signal QNot_DUMMY             : std_logic;
    signal XLXI_27_CLR_openSignal : std_logic;
    component CB4CLED_MXILINX_Exp7
       port ( C   : in    std_logic; 
@@ -618,20 +618,6 @@ architecture BEHAVIORAL of Exp7 is
    end component;
    attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
    
-   component PULLDOWN
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
-   
-   component AND4
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
-   
    component seven_seg
       port ( SYS_CLK : in    std_logic; 
              En      : in    std_logic; 
@@ -649,25 +635,33 @@ architecture BEHAVIORAL of Exp7 is
              Q   : out   std_logic);
    end component;
    
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
+   component NAND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
    end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   attribute BOX_TYPE of NAND2 : component is "BLACK_BOX";
+   
+   component PULLDOWN
+      port ( O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
    
    attribute HU_SET of XLXI_1 : label is "XLXI_1_9";
    attribute HU_SET of XLXI_27 : label is "XLXI_27_10";
 begin
+   QNot <= QNot_DUMMY;
+   UpDown <= UpDown_DUMMY;
    XLXI_1 : CB4CLED_MXILINX_Exp7
       port map (C=>CLK,
-                CE=>XLXN_3,
+                CE=>XLXN_240,
                 CLR=>XLXN_5,
-                D0=>XLXN_3,
-                D1=>XLXN_3,
-                D2=>XLXN_3,
-                D3=>XLXN_6,
+                D0=>XLXN_241,
+                D1=>XLXN_241,
+                D2=>XLXN_241,
+                D3=>XLXN_240,
                 L=>start,
-                UP=>XLXN_88,
+                UP=>UpDown_DUMMY,
                 CEO=>open,
                 Q0=>Q(0),
                 Q1=>Q(1),
@@ -676,24 +670,7 @@ begin
                 TC=>open);
    
    XLXI_2 : PULLUP
-      port map (O=>XLXN_3);
-   
-   XLXI_3 : PULLDOWN
-      port map (O=>XLXN_6);
-   
-   XLXI_4 : AND4
-      port map (I0=>Q(3),
-                I1=>XLXN_99,
-                I2=>XLXN_100,
-                I3=>XLXN_101,
-                O=>data7);
-   
-   XLXI_5 : AND4
-      port map (I0=>Q(3),
-                I1=>XLXN_102,
-                I2=>Q(1),
-                I3=>Q(0),
-                O=>data12);
+      port map (O=>XLXN_240);
    
    XLXI_11 : seven_seg
       port map (Din(7 downto 0)=>Q(7 downto 0),
@@ -707,23 +684,25 @@ begin
                 CLR=>XLXI_27_CLR_openSignal,
                 J=>data7,
                 K=>data12,
-                Q=>XLXN_88);
+                Q=>open);
    
-   XLXI_28 : INV
-      port map (I=>Q(2),
-                O=>XLXN_99);
+   XLXI_44 : NAND2
+      port map (I0=>QNot_DUMMY,
+                I1=>Q(3),
+                O=>UpDown_DUMMY);
    
-   XLXI_29 : INV
-      port map (I=>Q(1),
-                O=>XLXN_100);
+   XLXI_45 : NAND2
+      port map (I0=>XLXN_229,
+                I1=>UpDown_DUMMY,
+                O=>QNot_DUMMY);
    
-   XLXI_30 : INV
-      port map (I=>Q(0),
-                O=>XLXN_101);
+   XLXI_57 : NAND2
+      port map (I0=>Q(2),
+                I1=>Q(2),
+                O=>XLXN_229);
    
-   XLXI_31 : INV
-      port map (I=>Q(2),
-                O=>XLXN_102);
+   XLXI_61 : PULLDOWN
+      port map (O=>XLXN_241);
    
 end BEHAVIORAL;
 

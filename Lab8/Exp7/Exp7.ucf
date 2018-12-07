@@ -17,3 +17,5 @@ NET "En" LOC = P11;
 NET "SYS_CLK" LOC = B8;
 NET "CLK" LOC = C8;
 NET "start" LOC = G12;
+NET "UpDown" LOC = M5;
+NET "QNot" LOC = P7;

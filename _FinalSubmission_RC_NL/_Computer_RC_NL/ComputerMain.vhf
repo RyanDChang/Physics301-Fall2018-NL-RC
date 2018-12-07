@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ComputerMain.vhf
--- /___/   /\     Timestamp : 12/06/2018 14:11:47
+-- /___/   /\     Timestamp : 12/06/2018 15:28:52
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -26,35 +26,34 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity ComputerMain is
-   port ( Address     : in    std_logic_vector (7 downto 0); 
-          AorD        : in    std_logic; 
-          Byte_Switch : in    std_logic_vector (1 downto 0); 
-          row         : in    std_logic_vector (3 downto 0); 
-          ShowMM      : in    std_logic; 
-          SYS_CLK     : in    std_logic; 
-          TempToMM    : in    std_logic; 
-          WriteTemp   : in    std_logic; 
-          anO         : out   std_logic_vector (3 downto 0); 
-          Data        : out   std_logic_vector (7 downto 0); 
-          Inst        : out   std_logic_vector (7 downto 0); 
-          sseg        : out   std_logic_vector (7 downto 0); 
-          Update      : out   std_logic_vector (3 downto 0); 
-          col         : inout std_logic_vector (3 downto 0));
+   port ( Address   : in    std_logic_vector (7 downto 0); 
+          AorD      : in    std_logic; 
+          row       : in    std_logic_vector (3 downto 0); 
+          ShowMM    : in    std_logic; 
+          SYS_CLK   : in    std_logic; 
+          TempToMM  : in    std_logic; 
+          WriteTemp : in    std_logic; 
+          anO       : out   std_logic_vector (3 downto 0); 
+          Data      : out   std_logic_vector (7 downto 0); 
+          Inst      : out   std_logic_vector (7 downto 0); 
+          sseg      : out   std_logic_vector (7 downto 0); 
+          Update    : out   std_logic_vector (3 downto 0); 
+          col       : inout std_logic_vector (3 downto 0));
 end ComputerMain;
 
 architecture BEHAVIORAL of ComputerMain is
    attribute BOX_TYPE   : string ;
-   signal XLXN_1                 : std_logic_vector (7 downto 0);
-   signal XLXN_2                 : std_logic_vector (7 downto 0);
+   signal Clk1k                  : std_logic;
+   signal TempData               : std_logic_vector (7 downto 0);
+   signal TempInst               : std_logic_vector (7 downto 0);
    signal XLXN_34                : std_logic_vector (0 to 1);
    signal XLXN_35                : std_logic_vector (3 downto 0);
    signal XLXN_36                : std_logic;
    signal XLXN_41                : std_logic;
-   signal Data_DUMMY             : std_logic_vector (7 downto 0);
-   signal Inst_DUMMY             : std_logic_vector (7 downto 0);
    signal XLXI_18_Ain_openSignal : std_logic_vector (7 downto 0);
    signal XLXI_18_Bin_openSignal : std_logic_vector (7 downto 0);
    signal XLXI_18_OP_openSignal  : std_logic_vector (5 downto 0);
+   signal XLXI_19_RST_openSignal : std_logic;
    component MainMem
       port ( nCS      : in    std_logic; 
              nWE      : in    std_logic; 
@@ -69,13 +68,9 @@ architecture BEHAVIORAL of ComputerMain is
    component KeypadInput
       port ( SYS_CLK       : in    std_logic; 
              row           : in    std_logic_vector (3 downto 0); 
-             WriteTemp     : in    std_logic; 
-             Byte          : in    std_logic_vector (1 downto 0); 
              AorD          : in    std_logic; 
              col           : inout std_logic_vector (3 downto 0); 
              keyValid      : out   std_logic; 
-             sseg          : out   std_logic_vector (7 downto 0); 
-             anO           : out   std_logic_vector (3 downto 0); 
              TempInst      : out   std_logic_vector (7 downto 0); 
              TempData      : out   std_logic_vector (7 downto 0); 
              displayUpdate : out   std_logic_vector (3 downto 0));
@@ -118,46 +113,50 @@ architecture BEHAVIORAL of ComputerMain is
              OFL     : out   std_logic);
    end component;
    
+   component DCM_50M
+      port ( CLK    : in    std_logic; 
+             RST    : in    std_logic; 
+             CLK1M  : out   std_logic; 
+             CLK10k : out   std_logic; 
+             CLK1k  : out   std_logic; 
+             CLK1   : out   std_logic; 
+             CLK100 : out   std_logic);
+   end component;
+   
 begin
-   Data(7 downto 0) <= Data_DUMMY(7 downto 0);
-   Inst(7 downto 0) <= Inst_DUMMY(7 downto 0);
    XLXI_1 : MainMem
       port map (A(7 downto 0)=>Address(7 downto 0),
-                Data_in(7 downto 0)=>XLXN_2(7 downto 0),
-                Inst_in(7 downto 0)=>XLXN_1(7 downto 0),
+                Data_in(7 downto 0)=>TempData(7 downto 0),
+                Inst_in(7 downto 0)=>TempInst(7 downto 0),
                 nCS=>ShowMM,
                 nWE=>XLXN_41,
                 WCLK=>SYS_CLK,
-                Data_out(7 downto 0)=>Data_DUMMY(7 downto 0),
-                Inst_out(7 downto 0)=>Inst_DUMMY(7 downto 0));
+                Data_out(7 downto 0)=>Data(7 downto 0),
+                Inst_out(7 downto 0)=>Inst(7 downto 0));
    
    XLXI_2 : KeypadInput
       port map (AorD=>AorD,
-                Byte(1 downto 0)=>Byte_Switch(1 downto 0),
                 row(3 downto 0)=>row(3 downto 0),
                 SYS_CLK=>SYS_CLK,
-                WriteTemp=>WriteTemp,
-                anO(3 downto 0)=>anO(3 downto 0),
                 displayUpdate(3 downto 0)=>Update(3 downto 0),
                 keyValid=>open,
-                sseg(7 downto 0)=>sseg(7 downto 0),
-                TempData(7 downto 0)=>XLXN_2(7 downto 0),
-                TempInst(7 downto 0)=>XLXN_1(7 downto 0),
+                TempData(7 downto 0)=>TempData(7 downto 0),
+                TempInst(7 downto 0)=>TempInst(7 downto 0),
                 col(3 downto 0)=>col(3 downto 0));
    
    XLXI_3 : sseg_mux4D
       port map (dp_in(3 downto 0)=>XLXN_35(3 downto 0),
-                hexA(3 downto 0)=>Data_DUMMY(3 downto 0),
-                hexB(3 downto 0)=>Data_DUMMY(7 downto 4),
-                hexC(3 downto 0)=>Inst_DUMMY(3 downto 0),
-                hexD(3 downto 0)=>Inst_DUMMY(7 downto 4),
+                hexA(3 downto 0)=>TempData(3 downto 0),
+                hexB(3 downto 0)=>TempData(7 downto 4),
+                hexC(3 downto 0)=>TempInst(3 downto 0),
+                hexD(3 downto 0)=>TempInst(7 downto 4),
                 rb_in=>XLXN_36,
                 sel(0 to 1)=>XLXN_34(0 to 1),
-                anO=>open,
-                ssegO=>open);
+                anO(3 downto 0)=>anO(3 downto 0),
+                ssegO(7 downto 0)=>sseg(7 downto 0));
    
    XLXI_9 : sel_strobeB
-      port map (clk=>SYS_CLK,
+      port map (clk=>Clk1k,
                 sel(0 to 1)=>XLXN_34(0 to 1));
    
    XLXI_10_0 : PULLDOWN
@@ -186,6 +185,15 @@ begin
                 ALU_Out=>open,
                 CO=>open,
                 OFL=>open);
+   
+   XLXI_19 : DCM_50M
+      port map (CLK=>SYS_CLK,
+                RST=>XLXI_19_RST_openSignal,
+                CLK1=>open,
+                CLK1k=>Clk1k,
+                CLK1M=>open,
+                CLK10k=>open,
+                CLK100=>open);
    
 end BEHAVIORAL;
 

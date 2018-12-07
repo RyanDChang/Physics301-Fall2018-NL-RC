@@ -11,12 +11,20 @@
 <msg type="info" file="Place" num="834" delta="new" >Only a subset of IOs are locked. Out of <arg fmt="%d" index="1">36</arg> IOs, <arg fmt="%d" index="2">20</arg> are locked and <arg fmt="%d" index="3">16</arg> are not locked. <arg fmt="%s" index="4">If you would like to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1.</arg> 
 </msg>
 
-<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">XLXI_2/XLXI_125/clk_1m</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">3</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
+<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">XLXI_2/TDL</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">2</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">XLXI_2/TDH</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">2</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">XLXI_19/clk_1k&lt;0&gt;</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
 <msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">XLXI_2/XLXI_125/clk_100&lt;0&gt;</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
+   <arg fmt="%d" index="2">4</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
 <msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">XLXI_2/XLXI_4/lobster</arg> may have excessive skew because 

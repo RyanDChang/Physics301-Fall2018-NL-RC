@@ -1,0 +1,60 @@
+Running: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7_isim_beh.exe -prj /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7_beh.prj work.Exp7 
+ISim P.68d (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/../../goodies/SSD_1dig.vhd" into library work
+Parsing VHDL file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/../../goodies/sel_strobeB.vhd" into library work
+Parsing VHDL file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/../../goodies/mux4SSD.vhd" into library work
+Parsing VHDL file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/../../goodies/DCM_50M.vhd" into library work
+Parsing VHDL file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/../../goodies/bin2BCD3en.vhd" into library work
+Parsing VHDL file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/seven_seg.vhf" into library work
+Parsing VHDL file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 114752 KB
+Fuse CPU Usage: 1040 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture behavioral of entity M2_1_MXILINX_Exp7 [m2_1_mxilinx_exp7_default]
+Compiling architecture xor2_v of entity XOR2 [xor2_default]
+Compiling architecture fdce_v of entity FDCE [\FDCE('0')\]
+Compiling architecture behavioral of entity FTCLEX_MXILINX_Exp7 [\FTCLEX_MXILINX_Exp7('0')\]
+Compiling architecture and2b2_v of entity AND2B2 [and2b2_default]
+Compiling architecture behavioral of entity M2_1B1_MXILINX_Exp7 [m2_1b1_mxilinx_exp7_default]
+Compiling architecture vcc_v of entity VCC [vcc_default]
+Compiling architecture and4_v of entity AND4 [and4_default]
+Compiling architecture and4b4_v of entity AND4B4 [and4b4_default]
+Compiling architecture and3_v of entity AND3 [and3_default]
+Compiling architecture and3b3_v of entity AND3B3 [and3b3_default]
+Compiling architecture behavioral of entity CB4CLED_MXILINX_Exp7 [cb4cled_mxilinx_exp7_default]
+Compiling architecture pullup_v of entity PULLUP [pullup_default]
+Compiling architecture pulldown_v of entity PULLDOWN [pulldown_default]
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity DCM_50M [\DCM_50M(25,50,500)\]
+Compiling architecture behavioral of entity SSD_1dig [ssd_1dig_default]
+Compiling architecture behavioral of entity sel_strobeB [sel_strobeb_default]
+Compiling architecture behavioral of entity bin2BCD3en [bin2bcd3en_default]
+Compiling architecture behavioral of entity mux4SSD [mux4ssd_default]
+Compiling architecture behavioral of entity seven_seg [seven_seg_default]
+Compiling architecture fdc_v of entity FDC [\FDC('0')\]
+Compiling architecture and3b2_v of entity AND3B2 [and3b2_default]
+Compiling architecture and3b1_v of entity AND3B1 [and3b1_default]
+Compiling architecture or3_v of entity OR3 [or3_default]
+Compiling architecture behavioral of entity FJKC_MXILINX_Exp7 [\FJKC_MXILINX_Exp7('0')\]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture nand2_v of entity NAND2 [nand2_default]
+Compiling architecture behavioral of entity exp7
+Time Resolution for simulation is 1ps.
+Waiting for 29 sub-compilation(s) to finish...
+Compiled 67 VHDL Units
+Built simulation executable /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7_isim_beh.exe
+Fuse Memory Usage: 692316 KB
+Fuse CPU Usage: 1220 ms
+GCC CPU Usage: 5270 ms

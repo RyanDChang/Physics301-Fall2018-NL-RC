@@ -1,0 +1,5 @@
+set -tmpdir "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/xst/projnav.tmp"
+set -xsthdpdir "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab6/Lab6_Ex6/Lab6_Ex6/xst"
+elaborate
+-ifn SSD_1dig.prj
+-ifmt mixed

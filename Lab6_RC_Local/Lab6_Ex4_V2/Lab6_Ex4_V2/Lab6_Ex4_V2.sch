@@ -24,7 +24,6 @@
         <signal name="XLXN_37" />
         <signal name="sseg(7:0)" />
         <signal name="Din(7:0)" />
-        <signal name="XLXN_45" />
         <signal name="XLXN_46" />
         <signal name="XLXN_47" />
         <port polarity="Input" name="row(3:0)" />
@@ -278,10 +277,11 @@
         </branch>
         <iomarker fontsize="28" x="2720" y="960" name="sseg(7:0)" orien="R0" />
         <branch name="Din(7:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="1280" type="branch" />
-            <wire x2="1040" y1="1280" y2="1280" x1="1024" />
-            <wire x2="1104" y1="1280" y2="1280" x1="1040" />
-            <wire x2="1024" y1="1280" y2="1296" x1="1024" />
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1104" y="1264" type="branch" />
+            <wire x2="1088" y1="1296" y2="1296" x1="1024" />
+            <wire x2="1104" y1="1280" y2="1280" x1="1088" />
+            <wire x2="1088" y1="1280" y2="1296" x1="1088" />
+            <wire x2="1104" y1="1264" y2="1280" x1="1104" />
         </branch>
         <bustap x2="928" y1="1296" y2="1296" x1="1024" />
         <branch name="row(3:0)">

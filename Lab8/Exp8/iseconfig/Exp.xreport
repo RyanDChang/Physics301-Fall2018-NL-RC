@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-10-25T15:17:51</DateModified>
+  <DateModified>2018-11-06T12:05:40</DateModified>
   <ModuleName>Exp</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/iseconfig/Exp.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/</ImplementationReportsDirectory>
   <DateInitialized>2018-10-25T15:15:54</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

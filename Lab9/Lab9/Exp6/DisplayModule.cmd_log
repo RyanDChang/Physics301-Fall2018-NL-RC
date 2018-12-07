@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan3e -refsym DisplayModule {/home/nick/Desktop/Extra Lab FIles/Lab7_update/Exp10/DisplayModule.sch} /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/DisplayModule.sym 
+sch2sym -intstyle ise -family spartan3e -refsym DisplayModule {/home/nick/Desktop/Extra Lab FIles/Lab7_update/Exp10/DisplayModule.sch} /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/DisplayModule.sym 
+sch2sym -intstyle ise -family spartan3e -refsym DisplayModule {/home/nick/Desktop/Extra Lab FIles/Lab7_update/Exp10/DisplayModule.sch} /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/DisplayModule.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym DisplayModule {/home/nick/Desktop/Extra Lab FIles/Lab7_update/Exp10/DisplayModule.sch} /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/DisplayModule.sym 

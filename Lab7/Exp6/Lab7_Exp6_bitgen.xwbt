@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp6/Lab7_Exp6.ncd
-OUTFILE=/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp6/Lab7_Exp6.bit
-FAMILY=Spartan3E
-PART=xc3s100e-4cp132
-WORKINGDIR=/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp6
-LICENSE=WebPack
-USER_INFO=211602393_0_0_819

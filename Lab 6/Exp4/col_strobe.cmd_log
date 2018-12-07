@@ -1,2 +1,0 @@
-vhdtdtfi -lib work ../../../../Downloads/col_strobe.vhd -prj Exp4 -o col_strobe.spl -module col_strobe -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e col_strobe.spl {/home/nick/Documents/Physics/Lab 6/Exp4/col_strobe.sym} 

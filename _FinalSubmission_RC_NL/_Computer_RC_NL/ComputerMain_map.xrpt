@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Thu Dec  6 14:13:13 2018">
+  <application stringID="Map" timeStamp="Thu Dec  6 15:29:17 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -33,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz"/>
-          <item stringID="speed" value="3392.298 MHz"/>
+          <item stringID="speed" value="2029.188 MHz"/>
         </row>
       </table>
     </section>
@@ -56,23 +56,26 @@
       <section stringID="MAP_DESIGN_SUMMARY">
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="1"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="600312"/>
+        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="5"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="600060"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="2 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="2 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="1920" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="819"/>
-        <item AVAILABLE="1920" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="1116">
-          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="99"/>
+        <item AVAILABLE="1920" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="846">
+          <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="830"/>
+          <item dataType="int" stringID="MAP_NUM_SLICE_LATCH" value="16"/>
         </item>
-        <item AVAILABLE="960" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="858">
+        <item AVAILABLE="1920" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="1181">
+          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="132"/>
+        </item>
+        <item AVAILABLE="960" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="890">
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>
       <section stringID="MAP_IOB_REPORTING">
         <section stringID="MAP_IOB_DATA">
-          <item AVAILABLE="83" dataType="int" stringID="MAP_AGG_BONDED_IO" value="52"/>
+          <item AVAILABLE="83" dataType="int" stringID="MAP_AGG_BONDED_IO" value="49"/>
         </section>
       </section>
       <section stringID="MAP_HARD_IP_REPORTING">
@@ -137,20 +140,6 @@
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
           <row stringID="row" value="7">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Byte_Switch&lt;0>"/>
-            <item stringID="Type" value="IBUF"/>
-            <item stringID="Direction" value="INPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
-            <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
-          </row>
-          <row stringID="row" value="8">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Byte_Switch&lt;1>"/>
-            <item stringID="Type" value="IBUF"/>
-            <item stringID="Direction" value="INPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
-            <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
-          </row>
-          <row stringID="row" value="9">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Data&lt;0>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -159,7 +148,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="10">
+          <row stringID="row" value="8">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Data&lt;1>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -168,7 +157,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="11">
+          <row stringID="row" value="9">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Data&lt;2>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -177,7 +166,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="12">
+          <row stringID="row" value="10">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Data&lt;3>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -186,7 +175,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="13">
+          <row stringID="row" value="11">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Data&lt;4>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -195,7 +184,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="14">
+          <row stringID="row" value="12">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Data&lt;5>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -204,7 +193,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="15">
+          <row stringID="row" value="13">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Data&lt;6>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -213,7 +202,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="16">
+          <row stringID="row" value="14">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Data&lt;7>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -222,7 +211,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="17">
+          <row stringID="row" value="15">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Inst&lt;0>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -231,7 +220,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="18">
+          <row stringID="row" value="16">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Inst&lt;1>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -240,7 +229,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="19">
+          <row stringID="row" value="17">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Inst&lt;2>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -249,7 +238,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="20">
+          <row stringID="row" value="18">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Inst&lt;3>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -258,7 +247,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="21">
+          <row stringID="row" value="19">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Inst&lt;4>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -267,7 +256,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="22">
+          <row stringID="row" value="20">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Inst&lt;5>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -276,7 +265,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="23">
+          <row stringID="row" value="21">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Inst&lt;6>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -285,7 +274,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="24">
+          <row stringID="row" value="22">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Inst&lt;7>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -294,28 +283,28 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="25">
+          <row stringID="row" value="23">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SYS_CLK"/>
             <item stringID="Type" value="IBUF"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="26">
+          <row stringID="row" value="24">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="ShowMM"/>
             <item stringID="Type" value="IBUF"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="27">
+          <row stringID="row" value="25">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="TempToMM"/>
             <item stringID="Type" value="IBUF"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="28">
+          <row stringID="row" value="26">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Update&lt;0>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -324,7 +313,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="29">
+          <row stringID="row" value="27">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Update&lt;1>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -333,7 +322,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="30">
+          <row stringID="row" value="28">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Update&lt;2>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -342,7 +331,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="31">
+          <row stringID="row" value="29">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Update&lt;3>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -351,14 +340,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="32">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="WriteTemp"/>
-            <item stringID="Type" value="IBUF"/>
-            <item stringID="Direction" value="INPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
-            <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
-          </row>
-          <row stringID="row" value="33">
+          <row stringID="row" value="30">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="anO&lt;0>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -367,7 +349,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="34">
+          <row stringID="row" value="31">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="anO&lt;1>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -376,7 +358,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="35">
+          <row stringID="row" value="32">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="anO&lt;2>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -385,7 +367,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="36">
+          <row stringID="row" value="33">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="anO&lt;3>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -394,7 +376,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="37">
+          <row stringID="row" value="34">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="col&lt;0>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -403,7 +385,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="38">
+          <row stringID="row" value="35">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="col&lt;1>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -412,7 +394,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="39">
+          <row stringID="row" value="36">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="col&lt;2>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -421,7 +403,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="40">
+          <row stringID="row" value="37">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="col&lt;3>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -430,7 +412,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="41">
+          <row stringID="row" value="38">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="row&lt;0>"/>
             <item stringID="Type" value="IBUF"/>
             <item stringID="Direction" value="INPUT"/>
@@ -438,7 +420,7 @@
             <item stringID="Resistor" value="PULLDOWN"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="42">
+          <row stringID="row" value="39">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="row&lt;1>"/>
             <item stringID="Type" value="IBUF"/>
             <item stringID="Direction" value="INPUT"/>
@@ -446,7 +428,7 @@
             <item stringID="Resistor" value="PULLDOWN"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="43">
+          <row stringID="row" value="40">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="row&lt;2>"/>
             <item stringID="Type" value="IBUF"/>
             <item stringID="Direction" value="INPUT"/>
@@ -454,7 +436,7 @@
             <item stringID="Resistor" value="PULLDOWN"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="44">
+          <row stringID="row" value="41">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="row&lt;3>"/>
             <item stringID="Type" value="IBUF"/>
             <item stringID="Direction" value="INPUT"/>
@@ -462,7 +444,7 @@
             <item stringID="Resistor" value="PULLDOWN"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="45">
+          <row stringID="row" value="42">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="sseg&lt;0>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -471,7 +453,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="46">
+          <row stringID="row" value="43">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="sseg&lt;1>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -480,7 +462,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="47">
+          <row stringID="row" value="44">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="sseg&lt;2>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -489,7 +471,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="48">
+          <row stringID="row" value="45">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="sseg&lt;3>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -498,7 +480,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="49">
+          <row stringID="row" value="46">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="sseg&lt;4>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -507,7 +489,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="50">
+          <row stringID="row" value="47">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="sseg&lt;5>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -516,7 +498,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="51">
+          <row stringID="row" value="48">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="sseg&lt;6>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -525,7 +507,7 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
-          <row stringID="row" value="52">
+          <row stringID="row" value="49">
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="sseg&lt;7>"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -538,7 +520,7 @@
       </section>
       <section stringID="MAP_RPM_MACROS">
         <section stringID="MAP_SHAPE_SECTION">
-          <item dataType="int" stringID="MAP_NUM_SHAPE" value="40"/>
+          <item dataType="int" stringID="MAP_NUM_SHAPE" value="42"/>
         </section>
       </section>
       <section stringID="MAP_GUIDE_REPORT"/>

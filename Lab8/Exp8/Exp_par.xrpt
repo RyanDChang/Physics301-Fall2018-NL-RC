@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Thu Oct 25 15:21:57 2018">
+  <application stringID="par" timeStamp="Tue Oct 30 14:38:58 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -33,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz"/>
-          <item stringID="speed" value="1488.766 MHz"/>
+          <item stringID="speed" value="1250.195 MHz"/>
         </row>
       </table>
     </section>
@@ -77,7 +77,7 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y11"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="17.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.034000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.031000"/>
             <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.071000"/>
           </row>
           <row stringID="row" value="2">
@@ -86,8 +86,8 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X1Y10"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="17.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.004000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.044000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.006000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.062000"/>
           </row>
           <row stringID="row" value="3">
             <item label="Clock Net" stringID="CLOCK_NET" value="CLK_BUFGP"/>
@@ -95,16 +95,16 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y10"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="8.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.001000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.054000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.004000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.057000"/>
           </row>
           <row stringID="row" value="4">
             <item label="Clock Net" stringID="CLOCK_NET" value="XLXI_7/XLXI_10/clk_1k"/>
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="Local"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="9.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.039000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.545000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.015000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.517000"/>
           </row>
         </table>
       </section>
@@ -472,7 +472,7 @@
           </row>
           <row stringID="row" value="58">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="F12"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="anO&lt;3>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="anO&lt;0>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO/A0"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -604,7 +604,7 @@
           </row>
           <row stringID="row" value="76">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="J12"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="anO&lt;2>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="anO&lt;1>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L04N_1/A9/RHCLK1"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -660,7 +660,7 @@
           </row>
           <row stringID="row" value="84">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="K14"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="anO&lt;0>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="anO&lt;3>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L04P_1/A10/RHCLK0"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -756,10 +756,18 @@
           </row>
           <row stringID="row" value="95">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="M5"/>
-            <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="DIFFM"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="TC"/>
+            <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L04P_2/D4/GCLK14"/>
-            <item stringID="Direction" value="UNUSED"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_Standard" value="LVCMOS25*"/>
             <item label="IO Bank&#xA;Number" stringID="IO_Bank_Number" value="2"/>
+            <item label="Drive&#xA;(mA)" stringID="Drive" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="Slew_Rate" value="SLOW"/>
+            <item label="Termination" stringID="Termination" value="NONE**"/>
+            <item label="Constraint" stringID="Constraint" value="LOCATED"/>
+            <item label="IO&#xA;Register" stringID="IO_Register" value="NO"/>
+            <item label="Signal&#xA;Integrity" stringID="Signal_Integrity" value="NONE"/>
           </row>
           <row stringID="row" value="96">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="M6"/>
@@ -810,7 +818,7 @@
           </row>
           <row stringID="row" value="103">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="M13"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="anO&lt;1>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="anO&lt;2>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L02N_1/A13"/>
             <item stringID="Direction" value="OUTPUT"/>

@@ -1,10 +1,10 @@
 
 # PlanAhead Generated physical constraints 
 
-NET "anO[0]" LOC = K14;
-NET "anO[1]" LOC = M13;
-NET "anO[2]" LOC = J12;
-NET "anO[3]" LOC = F12;
+NET "anO[0]" LOC = F12;
+NET "anO[1]" LOC = J12;
+NET "anO[2]" LOC = M13;
+NET "anO[3]" LOC = K14;
 NET "sseg[7]" LOC = N13;
 NET "sseg[6]" LOC = L14;
 NET "sseg[5]" LOC = H12;
@@ -16,3 +16,4 @@ NET "sseg[0]" LOC = M12;
 NET "CLK" LOC = C8;
 NET "SysClock" LOC = B8;
 NET "EN" LOC = P11;
+NET "TC" LOC = M5;

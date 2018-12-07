@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym Bytex4MUX /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/Bytex4MUX.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp6/Bytex4MUX.sym 

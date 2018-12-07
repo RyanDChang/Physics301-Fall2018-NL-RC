@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.6
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Exp5.vhf
--- /___/   /\     Timestamp : 11/13/2018 15:31:14
+-- /___/   /\     Timestamp : 11/15/2018 13:37:14
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,6 +18,93 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity FD8CE_MXILINX_Exp5 is
+   port ( C   : in    std_logic; 
+          CE  : in    std_logic; 
+          CLR : in    std_logic; 
+          D   : in    std_logic_vector (7 downto 0); 
+          Q   : out   std_logic_vector (7 downto 0));
+end FD8CE_MXILINX_Exp5;
+
+architecture BEHAVIORAL of FD8CE_MXILINX_Exp5 is
+   attribute BOX_TYPE   : string ;
+   component FDCE
+      generic( INIT : bit :=  '0');
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             D   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
+   
+begin
+   I_Q0 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(0),
+                Q=>Q(0));
+   
+   I_Q1 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(1),
+                Q=>Q(1));
+   
+   I_Q2 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(2),
+                Q=>Q(2));
+   
+   I_Q3 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(3),
+                Q=>Q(3));
+   
+   I_Q4 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(4),
+                Q=>Q(4));
+   
+   I_Q5 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(5),
+                Q=>Q(5));
+   
+   I_Q6 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(6),
+                Q=>Q(6));
+   
+   I_Q7 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(7),
+                Q=>Q(7));
+   
+end BEHAVIORAL;
+
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -373,93 +460,6 @@ begin
    I_36_228 : INV
       port map (I=>ADD,
                 O=>SUB7);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity FD8CE_MXILINX_Exp5 is
-   port ( C   : in    std_logic; 
-          CE  : in    std_logic; 
-          CLR : in    std_logic; 
-          D   : in    std_logic_vector (7 downto 0); 
-          Q   : out   std_logic_vector (7 downto 0));
-end FD8CE_MXILINX_Exp5;
-
-architecture BEHAVIORAL of FD8CE_MXILINX_Exp5 is
-   attribute BOX_TYPE   : string ;
-   component FDCE
-      generic( INIT : bit :=  '0');
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
-   
-begin
-   I_Q0 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(0),
-                Q=>Q(0));
-   
-   I_Q1 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(1),
-                Q=>Q(1));
-   
-   I_Q2 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(2),
-                Q=>Q(2));
-   
-   I_Q3 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(3),
-                Q=>Q(3));
-   
-   I_Q4 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(4),
-                Q=>Q(4));
-   
-   I_Q5 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(5),
-                Q=>Q(5));
-   
-   I_Q6 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(6),
-                Q=>Q(6));
-   
-   I_Q7 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(7),
-                Q=>Q(7));
    
 end BEHAVIORAL;
 
@@ -1592,13 +1592,14 @@ architecture BEHAVIORAL of Exp5 is
    signal XLXN_98              : std_logic_vector (7 downto 0);
    signal XLXN_99              : std_logic_vector (7 downto 0);
    signal XLXN_147             : std_logic;
-   signal XLXN_157             : std_logic_vector (7 downto 0);
+   signal XLXN_162             : std_logic_vector (7 downto 0);
    signal Yogi                 : std_logic;
    signal XLXI_3_D0_openSignal : std_logic;
    signal XLXI_3_D1_openSignal : std_logic;
    signal XLXI_3_D2_openSignal : std_logic;
    signal XLXI_3_D3_openSignal : std_logic;
    signal XLXI_3_L_openSignal  : std_logic;
+   signal XLXI_97_A_openSignal : std_logic_vector (7 downto 0);
    component PULLUP
       port ( O : out   std_logic);
    end component;
@@ -1722,6 +1723,7 @@ architecture BEHAVIORAL of Exp5 is
    attribute HU_SET of XLXI_79 : label is "XLXI_79_29";
    attribute HU_SET of XLXI_90 : label is "XLXI_90_30";
    attribute HU_SET of XLXI_97 : label is "XLXI_97_31";
+   attribute HU_SET of XLXI_98 : label is "XLXI_98_32";
 begin
    XLXI_1 : PULLUP
       port map (O=>PULL_UP);
@@ -1819,7 +1821,7 @@ begin
                 QB(7 downto 0)=>XLXN_99(7 downto 0));
    
    XLXI_89 : DisplayModule
-      port map (Ain(7 downto 0)=>XLXN_157(7 downto 0),
+      port map (Ain(7 downto 0)=>XLXN_162(7 downto 0),
                 CLK=>SYS_CLK,
                 Dout(7 downto 0)=>Basket(7 downto 0),
                 Data(7 downto 0)=>sseg(7 downto 0),
@@ -1843,16 +1845,20 @@ begin
                 O=>XLXN_147);
    
    XLXI_97 : ADSU8_MXILINX_Exp5
-      port map (A(7 downto 0)=>Count_Q(7 downto 0),
+      port map (A(7 downto 0)=>XLXI_97_A_openSignal(7 downto 0),
                 ADD=>PULL_DOWN,
                 B(7 downto 0)=>J(7 downto 0),
                 CI=>PULL_UP,
                 CO=>open,
                 OFL=>open,
-                S(7 downto 0)=>XLXN_157(7 downto 0));
+                S=>open);
    
-   XLXI_99 : PULLUP
-      port map (O=>J(0));
+   XLXI_98 : FD8CE_MXILINX_Exp5
+      port map (C=>CLK,
+                CE=>PULL_UP,
+                CLR=>CLR,
+                D(7 downto 0)=>Count_Q(7 downto 0),
+                Q(7 downto 0)=>XLXN_162(7 downto 0));
    
 end BEHAVIORAL;
 

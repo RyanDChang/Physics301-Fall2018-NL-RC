@@ -39,12 +39,20 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+TC          |    9.428(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
 Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.327|         |         |         |
+CLK            |    4.161|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SysClock
@@ -52,11 +60,11 @@ Clock to Setup on destination clock SysClock
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SysClock       |    9.409|         |         |         |
+SysClock       |    8.888|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Oct 25 15:22:03 2018 
+Analysis completed Tue Oct 30 14:39:04 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

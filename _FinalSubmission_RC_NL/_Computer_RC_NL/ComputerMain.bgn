@@ -6,7 +6,7 @@ Loading device for application Rf_Device from file '3s100e.nph' in environment
 -4
 Opened constraints file ComputerMain.pcf.
 
-Thu Dec  6 14:13:34 2018
+Thu Dec  6 15:29:53 2018
 
 /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No ComputerMain.ncd 
 
@@ -94,7 +94,19 @@ Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_2/XLXI_4/rowON is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_2/TIH is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_2/TDL is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_2/TIL is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_2/TDH is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+DRC detected 0 errors and 5 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "ComputerMain.bit".

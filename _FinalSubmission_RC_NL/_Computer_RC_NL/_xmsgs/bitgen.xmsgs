@@ -8,5 +8,17 @@
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_2/XLXI_4/rowON</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_2/TIH</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_2/TDL</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_2/TIL</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_2/TDH</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
 </messages>
 

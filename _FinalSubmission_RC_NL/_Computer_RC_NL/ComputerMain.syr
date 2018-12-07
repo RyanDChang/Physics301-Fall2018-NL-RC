@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: ComputerMain.prj
@@ -119,12 +119,8 @@ Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmis
 Architecture behavioral of Entity oneshot is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/decoder16keyEn.vhd" in Library work.
 Architecture doric of Entity decoder16keyen is up to date.
-Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sseg_mux4D.vhd" in Library work.
-Architecture behavioral of Entity sseg_mux4d is up to date.
 Compiling vhdl file "/home/nick/Desktop/Goodies/goodies-20181206/shiftreg_hex2D.vhd" in Library work.
 Architecture behavioral of Entity shiftreg_hex2d is up to date.
-Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd" in Library work.
-Architecture behavioral of Entity sel_strobeb is up to date.
 Compiling vhdl file "/home/nick/Desktop/Goodies/goodies-20181206/DCM_50M.vhd" in Library work.
 Architecture behavioral of Entity dcm_50m is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sRAM32x8_generic.vhd" in Library work.
@@ -132,9 +128,13 @@ Architecture behavioral of Entity sram32x8_generic is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/MainMem.vhf" in Library work.
 Architecture behavioral of Entity mainmem is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" in Library work.
-Architecture behavioral of Entity fd4ce_mxilinx_keypadinput is up to date.
 Architecture behavioral of Entity d2_4e_mxilinx_keypadinput is up to date.
+Architecture behavioral of Entity ld4_mxilinx_keypadinput is up to date.
 Architecture behavioral of Entity keypadinput is up to date.
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sseg_mux4D.vhd" in Library work.
+Architecture behavioral of Entity sseg_mux4d is up to date.
+Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd" in Library work.
+Architecture behavioral of Entity sel_strobeb is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ALU_Module.vhf" in Library work.
 Architecture behavioral of Entity adsu8_mxilinx_alu_module is up to date.
 Architecture behavioral of Entity alu_module is up to date.
@@ -157,6 +157,12 @@ Analyzing hierarchy for entity <sel_strobeB> in library <work> (architecture <be
 
 Analyzing hierarchy for entity <ALU_Module> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <DCM_50M> in library <work> (architecture <behavioral>) with generics.
+	DIV100 = 50
+	DIV10k = 5000
+	DIV1k = 500
+	DIV50 = 25
+
 Analyzing hierarchy for entity <sRAM32x8_generic> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <col_strobe> in library <work> (architecture <behavioral>).
@@ -175,15 +181,9 @@ Analyzing hierarchy for entity <decoder16keyEn> in library <work> (architecture 
 
 Analyzing hierarchy for entity <D2_4E_MXILINX_KeypadInput> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FD4CE_MXILINX_KeypadInput> in library <work> (architecture <behavioral>).
-
 Analyzing hierarchy for entity <shiftreg_hex2D> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <DCM_50M> in library <work> (architecture <behavioral>) with generics.
-	DIV100 = 50
-	DIV10k = 5000
-	DIV1k = 500
-	DIV50 = 25
+Analyzing hierarchy for entity <LD4_MXILINX_KeypadInput> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <ADSU8_MXILINX_ALU_Module> in library <work> (architecture <behavioral>).
 
@@ -194,12 +194,14 @@ Analyzing hierarchy for entity <switch_debounce> in library <work> (architecture
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <ComputerMain> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 134: Unconnected output port 'keyValid' of component 'KeypadInput'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 148: Unconnected output port 'anO' of component 'sseg_mux4D'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 148: Unconnected output port 'ssegO' of component 'sseg_mux4D'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 182: Unconnected output port 'CO' of component 'ALU_Module'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 182: Unconnected output port 'ALU_Out' of component 'ALU_Module'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 182: Unconnected output port 'OFL' of component 'ALU_Module'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 137: Unconnected output port 'keyValid' of component 'KeypadInput'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 181: Unconnected output port 'CO' of component 'ALU_Module'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 181: Unconnected output port 'ALU_Out' of component 'ALU_Module'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 181: Unconnected output port 'OFL' of component 'ALU_Module'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 189: Unconnected output port 'CLK1M' of component 'DCM_50M'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 189: Unconnected output port 'CLK10k' of component 'DCM_50M'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 189: Unconnected output port 'CLK1' of component 'DCM_50M'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf" line 189: Unconnected output port 'CLK100' of component 'DCM_50M'.
 Entity <ComputerMain> analyzed. Unit <ComputerMain> generated.
 
 Analyzing Entity <MainMem> in library <work> (Architecture <behavioral>).
@@ -209,12 +211,12 @@ Analyzing Entity <sRAM32x8_generic> in library <work> (Architecture <behavioral>
 Entity <sRAM32x8_generic> analyzed. Unit <sRAM32x8_generic> generated.
 
 Analyzing Entity <KeypadInput> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_108_0" for instance <XLXI_108> in unit <KeypadInput>.
-    Set user-defined property "HU_SET =  XLXI_110_1" for instance <XLXI_110> in unit <KeypadInput>.
-    Set user-defined property "HU_SET =  XLXI_111_2" for instance <XLXI_111> in unit <KeypadInput>.
-    Set user-defined property "HU_SET =  XLXI_112_3" for instance <XLXI_112> in unit <KeypadInput>.
-    Set user-defined property "HU_SET =  XLXI_113_4" for instance <XLXI_113> in unit <KeypadInput>.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" line 511: Unconnected output port 'CLK1' of component 'DCM_50M'.
+    Set user-defined property "HU_SET =  XLXI_108_4" for instance <XLXI_108> in unit <KeypadInput>.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf" line 373: Unconnected output port 'CLK1' of component 'DCM_50M'.
+    Set user-defined property "HU_SET =  XLXI_127_0" for instance <XLXI_127> in unit <KeypadInput>.
+    Set user-defined property "HU_SET =  XLXI_128_2" for instance <XLXI_128> in unit <KeypadInput>.
+    Set user-defined property "HU_SET =  XLXI_130_1" for instance <XLXI_130> in unit <KeypadInput>.
+    Set user-defined property "HU_SET =  XLXI_131_3" for instance <XLXI_131> in unit <KeypadInput>.
 Entity <KeypadInput> analyzed. Unit <KeypadInput> generated.
 
 Analyzing Entity <col_strobe> in library <work> (Architecture <behavioral>).
@@ -242,22 +244,15 @@ Entity <decoder16keyEn> analyzed. Unit <decoder16keyEn> generated.
 Analyzing Entity <D2_4E_MXILINX_KeypadInput> in library <work> (Architecture <behavioral>).
 Entity <D2_4E_MXILINX_KeypadInput> analyzed. Unit <D2_4E_MXILINX_KeypadInput> generated.
 
-Analyzing Entity <FD4CE_MXILINX_KeypadInput> in library <work> (Architecture <behavioral>).
-    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD4CE_MXILINX_KeypadInput>.
-    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD4CE_MXILINX_KeypadInput>.
-    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD4CE_MXILINX_KeypadInput>.
-    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD4CE_MXILINX_KeypadInput>.
-Entity <FD4CE_MXILINX_KeypadInput> analyzed. Unit <FD4CE_MXILINX_KeypadInput> generated.
-
 Analyzing Entity <shiftreg_hex2D> in library <work> (Architecture <behavioral>).
 Entity <shiftreg_hex2D> analyzed. Unit <shiftreg_hex2D> generated.
 
-Analyzing generic Entity <DCM_50M> in library <work> (Architecture <behavioral>).
-	DIV100 = 50
-	DIV10k = 5000
-	DIV1k = 500
-	DIV50 = 25
-Entity <DCM_50M> analyzed. Unit <DCM_50M> generated.
+Analyzing Entity <LD4_MXILINX_KeypadInput> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <LD4_MXILINX_KeypadInput>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <LD4_MXILINX_KeypadInput>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <LD4_MXILINX_KeypadInput>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <LD4_MXILINX_KeypadInput>.
+Entity <LD4_MXILINX_KeypadInput> analyzed. Unit <LD4_MXILINX_KeypadInput> generated.
 
 Analyzing Entity <sseg_mux4D> in library <work> (Architecture <behavioral>).
 Entity <sseg_mux4D> analyzed. Unit <sseg_mux4D> generated.
@@ -291,6 +286,13 @@ Analyzing Entity <ADSU8_MXILINX_ALU_Module> in library <work> (Architecture <beh
     Set user-defined property "RLOC =  X1Y0" for instance <I_36_111> in unit <ADSU8_MXILINX_ALU_Module>.
 Entity <ADSU8_MXILINX_ALU_Module> analyzed. Unit <ADSU8_MXILINX_ALU_Module> generated.
 
+Analyzing generic Entity <DCM_50M> in library <work> (Architecture <behavioral>).
+	DIV100 = 50
+	DIV10k = 5000
+	DIV1k = 500
+	DIV50 = 25
+Entity <DCM_50M> analyzed. Unit <DCM_50M> generated.
+
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -315,6 +317,34 @@ Synthesizing Unit <sel_strobeB>.
 	inferred   1 ROM(s).
 	inferred   4 D-type flip-flop(s).
 Unit <sel_strobeB> synthesized.
+
+
+Synthesizing Unit <DCM_50M>.
+    Related source file is "/home/nick/Desktop/Goodies/goodies-20181206/DCM_50M.vhd".
+    Found 1-bit register for signal <clk_1<0>>.
+    Found 1-bit register for signal <clk_100<0>>.
+    Found 1-bit register for signal <clk_10k<0>>.
+    Found 32-bit adder for signal <clk_1_0$add0000> created at line 164.
+    Found 1-bit register for signal <clk_1k<0>>.
+    Found 32-bit adder for signal <clk_1k_0$add0000> created at line 116.
+    Found 1-bit register for signal <clk_1m>.
+    Found 32-bit up counter for signal <cnt1>.
+    Found 32-bit comparator greater for signal <cnt1$cmp_gt0000> created at line 165.
+    Found 32-bit up counter for signal <cnt100>.
+    Found 32-bit adder for signal <cnt100$add0000> created at line 140.
+    Found 32-bit comparator greater for signal <cnt100$cmp_gt0000> created at line 141.
+    Found 32-bit up counter for signal <cnt10k>.
+    Found 32-bit adder for signal <cnt10k$add0000> created at line 92.
+    Found 32-bit comparator greater for signal <cnt10k$cmp_gt0000> created at line 93.
+    Found 32-bit up counter for signal <cnt1k>.
+    Found 32-bit comparator greater for signal <cnt1k$cmp_gt0000> created at line 117.
+    Found 5-bit up counter for signal <cnt1M>.
+    Summary:
+	inferred   5 Counter(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <DCM_50M> synthesized.
 
 
 Synthesizing Unit <sRAM32x8_generic>.
@@ -392,34 +422,6 @@ Synthesizing Unit <shiftreg_hex2D>.
 Unit <shiftreg_hex2D> synthesized.
 
 
-Synthesizing Unit <DCM_50M>.
-    Related source file is "/home/nick/Desktop/Goodies/goodies-20181206/DCM_50M.vhd".
-    Found 1-bit register for signal <clk_1<0>>.
-    Found 1-bit register for signal <clk_100<0>>.
-    Found 1-bit register for signal <clk_10k<0>>.
-    Found 32-bit adder for signal <clk_1_0$add0000> created at line 164.
-    Found 1-bit register for signal <clk_1k<0>>.
-    Found 32-bit adder for signal <clk_1k_0$add0000> created at line 116.
-    Found 1-bit register for signal <clk_1m>.
-    Found 32-bit up counter for signal <cnt1>.
-    Found 32-bit comparator greater for signal <cnt1$cmp_gt0000> created at line 165.
-    Found 32-bit up counter for signal <cnt100>.
-    Found 32-bit adder for signal <cnt100$add0000> created at line 140.
-    Found 32-bit comparator greater for signal <cnt100$cmp_gt0000> created at line 141.
-    Found 32-bit up counter for signal <cnt10k>.
-    Found 32-bit adder for signal <cnt10k$add0000> created at line 92.
-    Found 32-bit comparator greater for signal <cnt10k$cmp_gt0000> created at line 93.
-    Found 32-bit up counter for signal <cnt1k>.
-    Found 32-bit comparator greater for signal <cnt1k$cmp_gt0000> created at line 117.
-    Found 5-bit up counter for signal <cnt1M>.
-    Summary:
-	inferred   5 Counter(s).
-	inferred   5 D-type flip-flop(s).
-	inferred   4 Adder/Subtractor(s).
-	inferred   4 Comparator(s).
-Unit <DCM_50M> synthesized.
-
-
 Synthesizing Unit <switch_debounce>.
     Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/Parts/debounce.vhd".
     Found 1-bit register for signal <sw_out>.
@@ -455,9 +457,9 @@ Synthesizing Unit <D2_4E_MXILINX_KeypadInput>.
 Unit <D2_4E_MXILINX_KeypadInput> synthesized.
 
 
-Synthesizing Unit <FD4CE_MXILINX_KeypadInput>.
+Synthesizing Unit <LD4_MXILINX_KeypadInput>.
     Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf".
-Unit <FD4CE_MXILINX_KeypadInput> synthesized.
+Unit <LD4_MXILINX_KeypadInput> synthesized.
 
 
 Synthesizing Unit <ADSU8_MXILINX_ALU_Module>.
@@ -468,10 +470,7 @@ Unit <ADSU8_MXILINX_ALU_Module> synthesized.
 
 Synthesizing Unit <KeypadInput>.
     Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/KeypadInput.vhf".
-WARNING:Xst:653 - Signal <XLXI_113_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_112_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_111_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_110_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <CLK1M> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <KeypadInput> synthesized.
 
 
@@ -484,6 +483,8 @@ Unit <ALU_Module> synthesized.
 
 Synthesizing Unit <ComputerMain>.
     Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.vhf".
+WARNING:Xst:647 - Input <WriteTemp> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <XLXI_19_RST_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_18_OP_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
 WARNING:Xst:653 - Signal <XLXI_18_Bin_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <XLXI_18_Ain_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
@@ -494,23 +495,23 @@ Unit <ComputerMain> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 4
- 16x7-bit ROM                                          : 2
- 4x2-bit ROM                                           : 2
-# Adders/Subtractors                                   : 9
- 32-bit adder                                          : 5
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x2-bit ROM                                           : 1
+# Adders/Subtractors                                   : 13
+ 32-bit adder                                          : 9
  32-bit subtractor                                     : 4
-# Counters                                             : 5
- 32-bit up counter                                     : 4
- 5-bit up counter                                      : 1
-# Registers                                            : 104
- 1-bit register                                        : 21
- 2-bit register                                        : 4
+# Counters                                             : 10
+ 32-bit up counter                                     : 8
+ 5-bit up counter                                      : 2
+# Registers                                            : 107
+ 1-bit register                                        : 26
+ 2-bit register                                        : 2
  32-bit register                                       : 5
  4-bit register                                        : 10
  8-bit register                                        : 64
-# Comparators                                          : 16
- 32-bit comparator greater                             : 10
+# Comparators                                          : 20
+ 32-bit comparator greater                             : 14
  32-bit comparator less                                : 1
  32-bit comparator lessequal                           : 4
  4-bit comparator equal                                : 1
@@ -528,10 +529,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1290 - Hierarchical block <XLXI_3> is unconnected in block <ComputerMain>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <XLXI_9> is unconnected in block <ComputerMain>.
-   It will be removed from the design.
 INFO:Xst:2261 - The FF/Latch <lobster> in Unit <XLXI_4> is equivalent to the following FF/Latch, which will be removed : <keyL> 
 
 Synthesizing (advanced) Unit <sel_strobeB>.
@@ -542,19 +539,19 @@ Unit <sel_strobeB> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 4
- 16x7-bit ROM                                          : 2
- 4x2-bit ROM                                           : 2
-# Adders/Subtractors                                   : 9
- 32-bit adder                                          : 5
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x2-bit ROM                                           : 1
+# Adders/Subtractors                                   : 13
+ 32-bit adder                                          : 9
  32-bit subtractor                                     : 4
-# Counters                                             : 5
- 32-bit up counter                                     : 4
- 5-bit up counter                                      : 1
-# Registers                                            : 757
- Flip-Flops                                            : 757
-# Comparators                                          : 16
- 32-bit comparator greater                             : 10
+# Counters                                             : 10
+ 32-bit up counter                                     : 8
+ 5-bit up counter                                      : 2
+# Registers                                            : 742
+ Flip-Flops                                            : 742
+# Comparators                                          : 20
+ 32-bit comparator greater                             : 14
  32-bit comparator less                                : 1
  32-bit comparator lessequal                           : 4
  4-bit comparator equal                                : 1
@@ -570,12 +567,10 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <lobster> in Unit <key_detect> is equivalent to the following FF/Latch, which will be removed : <keyL> 
-WARNING:Xst:2677 - Node <XLXI_9/sel_0> of sequential type is unconnected in block <ComputerMain>.
-WARNING:Xst:2677 - Node <XLXI_9/sel_1> of sequential type is unconnected in block <ComputerMain>.
-WARNING:Xst:2677 - Node <XLXI_9/selx_0> of sequential type is unconnected in block <ComputerMain>.
-WARNING:Xst:2677 - Node <XLXI_9/selx_1> of sequential type is unconnected in block <ComputerMain>.
 
 Optimizing unit <ComputerMain> ...
+
+Optimizing unit <DCM_50M> ...
 
 Optimizing unit <col_strobe> ...
 
@@ -585,13 +580,11 @@ Optimizing unit <oneshot> ...
 
 Optimizing unit <shiftreg_hex2D> ...
 
-Optimizing unit <DCM_50M> ...
-
 Optimizing unit <switch_debounce> ...
 
 Optimizing unit <D2_4E_MXILINX_KeypadInput> ...
 
-Optimizing unit <FD4CE_MXILINX_KeypadInput> ...
+Optimizing unit <LD4_MXILINX_KeypadInput> ...
 
 Optimizing unit <ADSU8_MXILINX_ALU_Module> ...
 
@@ -660,12 +653,123 @@ WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/cnt1k_3> of sequential type is unconnec
 WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/cnt1k_2> of sequential type is unconnected in block <ComputerMain>.
 WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/cnt1k_1> of sequential type is unconnected in block <ComputerMain>.
 WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/cnt1k_0> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/cnt1M_4> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/cnt1M_3> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/cnt1M_2> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/cnt1M_1> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/cnt1M_0> of sequential type is unconnected in block <ComputerMain>.
 WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/clk_1k_0> of sequential type is unconnected in block <ComputerMain>.
 WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/clk_1_0> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_2/XLXI_125/clk_1m> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_31> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_30> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_29> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_28> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_27> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_26> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_25> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_24> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_23> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_22> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_21> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_20> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_19> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_18> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_17> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_16> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_15> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_14> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_13> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_12> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_11> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_10> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_9> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_8> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_7> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_6> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_5> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_4> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_3> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_2> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_1> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1_0> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_31> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_30> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_29> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_28> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_27> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_26> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_25> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_24> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_23> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_22> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_21> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_20> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_19> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_18> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_17> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_16> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_15> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_14> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_13> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_12> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_11> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_10> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_9> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_8> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_7> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_6> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_5> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_4> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_3> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_2> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_1> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt10k_0> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1M_4> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1M_3> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1M_2> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1M_1> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt1M_0> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_31> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_30> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_29> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_28> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_27> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_26> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_25> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_24> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_23> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_22> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_21> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_20> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_19> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_18> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_17> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_16> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_15> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_14> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_13> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_12> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_11> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_10> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_9> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_8> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_7> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_6> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_5> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_4> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_3> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_2> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_1> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/cnt100_0> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/clk_10k_0> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/clk_100_0> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/clk_1_0> of sequential type is unconnected in block <ComputerMain>.
+WARNING:Xst:2677 - Node <XLXI_19/clk_1m> of sequential type is unconnected in block <ComputerMain>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ComputerMain, actual ratio is 95.
+Found area constraint ratio of 100 (+ 5) on block ComputerMain, actual ratio is 98.
 
 Final Macro Processing ...
 
@@ -673,8 +777,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 819
- Flip-Flops                                            : 819
+# Registers                                            : 830
+ Flip-Flops                                            : 830
 
 =========================================================================
 
@@ -700,27 +804,28 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 55
+# IOs                              : 53
 
 Cell Usage :
-# BELS                             : 2186
-#      AND2                        : 5
+# BELS                             : 2393
+#      AND2                        : 1
 #      AND3                        : 1
 #      AND3B1                      : 2
 #      AND3B2                      : 1
+#      BUF                         : 4
 #      GND                         : 3
-#      INV                         : 36
-#      LUT1                        : 99
-#      LUT2                        : 77
-#      LUT3                        : 446
+#      INV                         : 42
+#      LUT1                        : 132
+#      LUT2                        : 111
+#      LUT3                        : 444
 #      LUT3_D                      : 4
-#      LUT4                        : 350
+#      LUT4                        : 349
 #      LUT4_D                      : 112
 #      LUT4_L                      : 12
-#      MUXCY                       : 440
+#      MUXCY                       : 516
 #      MUXCY_D                     : 2
 #      MUXCY_L                     : 12
-#      MUXF5                       : 138
+#      MUXF5                       : 135
 #      MUXF6                       : 64
 #      MUXF7                       : 32
 #      MUXF8                       : 16
@@ -729,22 +834,24 @@ Cell Usage :
 #      VCC                         : 1
 #      XOR2                        : 10
 #      XOR3                        : 16
-#      XORCY                       : 304
-# FlipFlops/Latches                : 819
+#      XORCY                       : 368
+# FlipFlops/Latches                : 846
 #      FD                          : 139
-#      FDCE                        : 66
-#      FDE                         : 608
+#      FDCE                        : 50
+#      FDE                         : 635
 #      FDR                         : 6
+#      LD                          : 16
 # Clock Buffers                    : 3
 #      BUFG                        : 2
 #      BUFGP                       : 1
-# IO Buffers                       : 51
-#      IBUF                        : 15
+# IO Buffers                       : 48
+#      IBUF                        : 12
 #      OBUF                        : 20
 #      OBUFT                       : 16
-# Others                           : 40
+# Others                           : 36
 #      FMAP                        : 16
-#      PULLDOWN                    : 24
+#      PULLDOWN                    : 19
+#      PULLUP                      : 1
 =========================================================================
 
 Device utilization summary:
@@ -752,12 +859,14 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      928  out of    960    96%  
- Number of Slice Flip Flops:            819  out of   1920    42%  
- Number of 4 input LUTs:               1136  out of   1920    59%  
- Number of IOs:                          55
- Number of bonded IOBs:                  52  out of     83    62%  
+ Number of Slices:                      962  out of    960   100% (*) 
+ Number of Slice Flip Flops:            846  out of   1920    44%  
+ Number of 4 input LUTs:               1206  out of   1920    62%  
+ Number of IOs:                          53
+ Number of bonded IOBs:                  49  out of     83    59%  
  Number of GCLKs:                         3  out of     24    12%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -777,18 +886,22 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------+---------------------------------+-------+
-Clock Signal                               | Clock buffer(FF name)           | Load  |
--------------------------------------------+---------------------------------+-------+
-SYS_CLK                                    | BUFGP                           | 584   |
-XLXI_2/XLXI_125/clk_1m                     | NONE(XLXI_2/XLXI_124/selx_1)    | 4     |
-XLXI_2/XLXI_125/clk_100_0                  | NONE(XLXI_2/XLXI_2/colx_3)      | 8     |
-XLXI_2/XLXI_4/rowON(XLXI_2/XLXI_4/rowON1:O)| NONE(*)(XLXI_2/XLXI_4/lastrow_3)| 9     |
-XLXI_2/XLXI_4/lobster                      | NONE(XLXI_2/XLXI_6/arm)         | 1     |
-XLXI_2/XLXI_125/clk_10k_01                 | BUFG                            | 189   |
-XLXI_2/XLXI_6/pls1                         | BUFG                            | 24    |
--------------------------------------------+---------------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
+---------------------------------------------+---------------------------------+-------+
+Clock Signal                                 | Clock buffer(FF name)           | Load  |
+---------------------------------------------+---------------------------------+-------+
+XLXI_19/clk_1k_0                             | NONE(XLXI_9/sel_0)              | 4     |
+SYS_CLK                                      | BUFGP                           | 611   |
+XLXI_2/XLXI_125/clk_100_0                    | NONE(XLXI_2/XLXI_2/colx_3)      | 8     |
+XLXI_2/XLXI_4/rowON(XLXI_2/XLXI_4/rowON1:O)  | NONE(*)(XLXI_2/XLXI_4/lastrow_3)| 9     |
+XLXI_2/XLXI_4/lobster                        | NONE(XLXI_2/XLXI_6/arm)         | 1     |
+XLXI_2/XLXI_125/clk_10k_01                   | BUFG                            | 173   |
+XLXI_2/XLXI_6/pls1                           | BUFG                            | 24    |
+XLXI_2/XLXI_108/D2(XLXI_2/XLXI_108/I_36_31:O)| NONE(*)(XLXI_2/XLXI_127/I_Q0)   | 4     |
+XLXI_2/XLXI_108/D1(XLXI_2/XLXI_108/I_36_32:O)| NONE(*)(XLXI_2/XLXI_128/I_Q0)   | 4     |
+XLXI_2/XLXI_108/D3(XLXI_2/XLXI_108/I_36_30:O)| NONE(*)(XLXI_2/XLXI_130/I_Q0)   | 4     |
+XLXI_2/XLXI_108/D0(XLXI_2/XLXI_108/I_36_33:O)| NONE(*)(XLXI_2/XLXI_131/I_Q0)   | 4     |
+---------------------------------------------+---------------------------------+-------+
+(*) These 5 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -799,7 +912,6 @@ Asynchronous Control Signals Information:
 Control Signal                                                                       | Buffer(FF name)              | Load  |
 -------------------------------------------------------------------------------------+------------------------------+-------+
 XLXI_2/XLXI_6/arm_cmp_gt0000(XLXI_2/XLXI_6/Mcompar_arm_cmp_gt0000_cy<11>_inv_INV_0:O)| NONE(XLXI_2/XLXI_6/arm)      | 33    |
-N0(XST_GND:G)                                                                        | NONE(XLXI_2/XLXI_110/I_Q0)   | 16    |
 XLXI_2/XLXI_4/lobster_and0000(XLXI_2/XLXI_4/lobster_and000086:O)                     | NONE(XLXI_2/XLXI_4/lastcol_0)| 9     |
 -------------------------------------------------------------------------------------+------------------------------+-------+
 
@@ -809,7 +921,7 @@ Speed Grade: -4
 
    Minimum period: 11.992ns (Maximum Frequency: 83.390MHz)
    Minimum input arrival time before clock: 12.741ns
-   Maximum output required time after clock: 11.517ns
+   Maximum output required time after clock: 11.330ns
    Maximum combinational path delay: 9.007ns
 
 Timing Detail:
@@ -817,26 +929,113 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_2/XLXI_125/clk_1m'
+Timing constraint: Default period analysis for Clock 'XLXI_19/clk_1k_0'
   Clock period: 2.225ns (frequency: 449.438MHz)
   Total number of paths / destination ports: 5 / 4
 -------------------------------------------------------------------------
 Delay:               2.225ns (Levels of Logic = 1)
-  Source:            XLXI_2/XLXI_124/selx_1 (FF)
-  Destination:       XLXI_2/XLXI_124/sel_0 (FF)
-  Source Clock:      XLXI_2/XLXI_125/clk_1m rising
-  Destination Clock: XLXI_2/XLXI_125/clk_1m rising
+  Source:            XLXI_9/selx_1 (FF)
+  Destination:       XLXI_9/sel_0 (FF)
+  Source Clock:      XLXI_19/clk_1k_0 rising
+  Destination Clock: XLXI_19/clk_1k_0 rising
 
-  Data Path: XLXI_2/XLXI_124/selx_1 to XLXI_2/XLXI_124/sel_0
+  Data Path: XLXI_9/selx_1 to XLXI_9/sel_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.591   0.622  XLXI_2/XLXI_124/selx_1 (XLXI_2/XLXI_124/selx_1)
-     LUT2:I0->O            1   0.704   0.000  XLXI_2/XLXI_124/Mrom_sel_mux0001111 (XLXI_2/XLXI_124/Mrom_sel_mux00011)
-     FD:D                      0.308          XLXI_2/XLXI_124/sel_0
+     FD:C->Q               2   0.591   0.622  XLXI_9/selx_1 (XLXI_9/selx_1)
+     LUT2:I0->O            1   0.704   0.000  XLXI_9/Mrom_sel_mux0001111 (XLXI_9/Mrom_sel_mux00011)
+     FD:D                      0.308          XLXI_9/sel_0
     ----------------------------------------
     Total                      2.225ns (1.603ns logic, 0.622ns route)
                                        (72.0% logic, 28.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYS_CLK'
+  Clock period: 11.992ns (frequency: 83.390MHz)
+  Total number of paths / destination ports: 944067 / 102
+-------------------------------------------------------------------------
+Delay:               11.992ns (Levels of Logic = 66)
+  Source:            XLXI_2/XLXI_125/cnt100_1 (FF)
+  Destination:       XLXI_2/XLXI_125/cnt100_31 (FF)
+  Source Clock:      SYS_CLK rising
+  Destination Clock: SYS_CLK rising
+
+  Data Path: XLXI_2/XLXI_125/cnt100_1 to XLXI_2/XLXI_125/cnt100_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.622  XLXI_2/XLXI_125/cnt100_1 (XLXI_2/XLXI_125/cnt100_1)
+     LUT1:I0->O            1   0.704   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<1>_rt (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<1> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<2> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<3> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<4> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<5> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<6> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<7> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<8> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<9> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<10> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<11> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<12> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<13> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<14> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<15> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<16> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<17> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<18> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<19> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<20> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<21> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<22> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<23> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<24> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<25> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<26> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<27> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<28> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<28>)
+     XORCY:CI->O           1   0.804   0.595  XLXI_2/XLXI_125/Madd_cnt100_add0000_xor<29> (XLXI_2/XLXI_125/cnt100_add0000<29>)
+     LUT2:I0->O            1   0.704   0.000  XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_lut<11> (XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_lut<11>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_cy<11> (XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_cy<11>)
+     MUXCY:CI->O          34   0.059   1.342  XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_cy<12> (XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_cy<12>)
+     LUT2:I1->O            1   0.704   0.000  XLXI_2/XLXI_125/Mcount_cnt100_lut<0> (XLXI_2/XLXI_125/Mcount_cnt100_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<0> (XLXI_2/XLXI_125/Mcount_cnt100_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<1> (XLXI_2/XLXI_125/Mcount_cnt100_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<2> (XLXI_2/XLXI_125/Mcount_cnt100_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<3> (XLXI_2/XLXI_125/Mcount_cnt100_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<4> (XLXI_2/XLXI_125/Mcount_cnt100_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<5> (XLXI_2/XLXI_125/Mcount_cnt100_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<6> (XLXI_2/XLXI_125/Mcount_cnt100_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<7> (XLXI_2/XLXI_125/Mcount_cnt100_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<8> (XLXI_2/XLXI_125/Mcount_cnt100_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<9> (XLXI_2/XLXI_125/Mcount_cnt100_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<10> (XLXI_2/XLXI_125/Mcount_cnt100_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<11> (XLXI_2/XLXI_125/Mcount_cnt100_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<12> (XLXI_2/XLXI_125/Mcount_cnt100_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<13> (XLXI_2/XLXI_125/Mcount_cnt100_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<14> (XLXI_2/XLXI_125/Mcount_cnt100_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<15> (XLXI_2/XLXI_125/Mcount_cnt100_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<16> (XLXI_2/XLXI_125/Mcount_cnt100_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<17> (XLXI_2/XLXI_125/Mcount_cnt100_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<18> (XLXI_2/XLXI_125/Mcount_cnt100_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<19> (XLXI_2/XLXI_125/Mcount_cnt100_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<20> (XLXI_2/XLXI_125/Mcount_cnt100_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<21> (XLXI_2/XLXI_125/Mcount_cnt100_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<22> (XLXI_2/XLXI_125/Mcount_cnt100_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<23> (XLXI_2/XLXI_125/Mcount_cnt100_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<24> (XLXI_2/XLXI_125/Mcount_cnt100_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<25> (XLXI_2/XLXI_125/Mcount_cnt100_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<26> (XLXI_2/XLXI_125/Mcount_cnt100_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<27> (XLXI_2/XLXI_125/Mcount_cnt100_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<28> (XLXI_2/XLXI_125/Mcount_cnt100_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<29> (XLXI_2/XLXI_125/Mcount_cnt100_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<30> (XLXI_2/XLXI_125/Mcount_cnt100_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  XLXI_2/XLXI_125/Mcount_cnt100_xor<31> (XLXI_2/XLXI_125/Mcount_cnt10031)
+     FDE:D                     0.308          XLXI_2/XLXI_125/cnt100_31
+    ----------------------------------------
+    Total                     11.992ns (9.433ns logic, 2.559ns route)
+                                       (78.7% logic, 21.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_2/XLXI_125/clk_100_0'
@@ -969,93 +1168,6 @@ Delay:               1.319ns (Levels of Logic = 0)
                                        (68.2% logic, 31.8% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'SYS_CLK'
-  Clock period: 11.992ns (frequency: 83.390MHz)
-  Total number of paths / destination ports: 629413 / 75
--------------------------------------------------------------------------
-Delay:               11.992ns (Levels of Logic = 66)
-  Source:            XLXI_2/XLXI_125/cnt100_1 (FF)
-  Destination:       XLXI_2/XLXI_125/cnt100_31 (FF)
-  Source Clock:      SYS_CLK rising
-  Destination Clock: SYS_CLK rising
-
-  Data Path: XLXI_2/XLXI_125/cnt100_1 to XLXI_2/XLXI_125/cnt100_31
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              2   0.591   0.622  XLXI_2/XLXI_125/cnt100_1 (XLXI_2/XLXI_125/cnt100_1)
-     LUT1:I0->O            1   0.704   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<1>_rt (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<1>_rt)
-     MUXCY:S->O            1   0.464   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<1> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<1>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<2> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<3> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<4> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<4>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<5> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<5>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<6> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<6>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<7> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<7>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<8> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<8>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<9> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<9>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<10> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<10>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<11> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<11>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<12> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<12>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<13> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<13>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<14> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<14>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<15> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<15>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<16> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<16>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<17> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<17>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<18> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<18>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<19> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<19>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<20> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<20>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<21> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<21>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<22> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<22>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<23> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<23>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<24> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<24>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<25> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<25>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<26> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<26>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<27> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<27>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<28> (XLXI_2/XLXI_125/Madd_cnt100_add0000_cy<28>)
-     XORCY:CI->O           1   0.804   0.595  XLXI_2/XLXI_125/Madd_cnt100_add0000_xor<29> (XLXI_2/XLXI_125/cnt100_add0000<29>)
-     LUT2:I0->O            1   0.704   0.000  XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_lut<11> (XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_lut<11>)
-     MUXCY:S->O            1   0.464   0.000  XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_cy<11> (XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_cy<11>)
-     MUXCY:CI->O          34   0.059   1.342  XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_cy<12> (XLXI_2/XLXI_125/Mcompar_cnt100_cmp_gt0000_cy<12>)
-     LUT2:I1->O            1   0.704   0.000  XLXI_2/XLXI_125/Mcount_cnt100_lut<0> (XLXI_2/XLXI_125/Mcount_cnt100_lut<0>)
-     MUXCY:S->O            1   0.464   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<0> (XLXI_2/XLXI_125/Mcount_cnt100_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<1> (XLXI_2/XLXI_125/Mcount_cnt100_cy<1>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<2> (XLXI_2/XLXI_125/Mcount_cnt100_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<3> (XLXI_2/XLXI_125/Mcount_cnt100_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<4> (XLXI_2/XLXI_125/Mcount_cnt100_cy<4>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<5> (XLXI_2/XLXI_125/Mcount_cnt100_cy<5>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<6> (XLXI_2/XLXI_125/Mcount_cnt100_cy<6>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<7> (XLXI_2/XLXI_125/Mcount_cnt100_cy<7>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<8> (XLXI_2/XLXI_125/Mcount_cnt100_cy<8>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<9> (XLXI_2/XLXI_125/Mcount_cnt100_cy<9>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<10> (XLXI_2/XLXI_125/Mcount_cnt100_cy<10>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<11> (XLXI_2/XLXI_125/Mcount_cnt100_cy<11>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<12> (XLXI_2/XLXI_125/Mcount_cnt100_cy<12>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<13> (XLXI_2/XLXI_125/Mcount_cnt100_cy<13>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<14> (XLXI_2/XLXI_125/Mcount_cnt100_cy<14>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<15> (XLXI_2/XLXI_125/Mcount_cnt100_cy<15>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<16> (XLXI_2/XLXI_125/Mcount_cnt100_cy<16>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<17> (XLXI_2/XLXI_125/Mcount_cnt100_cy<17>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<18> (XLXI_2/XLXI_125/Mcount_cnt100_cy<18>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<19> (XLXI_2/XLXI_125/Mcount_cnt100_cy<19>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<20> (XLXI_2/XLXI_125/Mcount_cnt100_cy<20>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<21> (XLXI_2/XLXI_125/Mcount_cnt100_cy<21>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<22> (XLXI_2/XLXI_125/Mcount_cnt100_cy<22>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<23> (XLXI_2/XLXI_125/Mcount_cnt100_cy<23>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<24> (XLXI_2/XLXI_125/Mcount_cnt100_cy<24>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<25> (XLXI_2/XLXI_125/Mcount_cnt100_cy<25>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<26> (XLXI_2/XLXI_125/Mcount_cnt100_cy<26>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<27> (XLXI_2/XLXI_125/Mcount_cnt100_cy<27>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<28> (XLXI_2/XLXI_125/Mcount_cnt100_cy<28>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<29> (XLXI_2/XLXI_125/Mcount_cnt100_cy<29>)
-     MUXCY:CI->O           0   0.059   0.000  XLXI_2/XLXI_125/Mcount_cnt100_cy<30> (XLXI_2/XLXI_125/Mcount_cnt100_cy<30>)
-     XORCY:CI->O           1   0.804   0.000  XLXI_2/XLXI_125/Mcount_cnt100_xor<31> (XLXI_2/XLXI_125/Mcount_cnt10031)
-     FDE:D                     0.308          XLXI_2/XLXI_125/cnt100_31
-    ----------------------------------------
-    Total                     11.992ns (9.433ns logic, 2.559ns route)
-                                       (78.7% logic, 21.3% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SYS_CLK'
   Total number of paths / destination ports: 3584 / 512
 -------------------------------------------------------------------------
@@ -1081,7 +1193,7 @@ Offset:              6.937ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_2/XLXI_6/pls1'
   Total number of paths / destination ports: 24 / 24
 -------------------------------------------------------------------------
-Offset:              4.421ns (Levels of Logic = 2)
+Offset:              4.438ns (Levels of Logic = 2)
   Source:            AorD (PAD)
   Destination:       XLXI_2/XLXI_121/bOUT2_3 (FF)
   Destination Clock: XLXI_2/XLXI_6/pls1 rising
@@ -1090,16 +1202,16 @@ Offset:              4.421ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.218   0.983  AorD_IBUF (AorD_IBUF)
+     IBUF:I->O            14   1.218   1.000  AorD_IBUF (AorD_IBUF)
      INV:I->O             12   0.704   0.961  XLXI_2/XLXI_69 (XLXI_2/XLXN_114)
      FDCE:CE                   0.555          XLXI_2/XLXI_121/bSHFT_0
     ----------------------------------------
-    Total                      4.421ns (2.477ns logic, 1.944ns route)
-                                       (56.0% logic, 44.0% route)
+    Total                      4.438ns (2.477ns logic, 1.961ns route)
+                                       (55.8% logic, 44.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_2/XLXI_125/clk_10k_01'
-  Total number of paths / destination ports: 23160 / 164
+  Total number of paths / destination ports: 23112 / 148
 -------------------------------------------------------------------------
 Offset:              12.741ns (Levels of Logic = 23)
   Source:            row<0> (PAD)
@@ -1161,7 +1273,7 @@ Offset:              4.450ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_4/rowON'
   Total number of paths / destination ports: 140 / 4
 -------------------------------------------------------------------------
-Offset:              11.517ns (Levels of Logic = 7)
+Offset:              11.330ns (Levels of Logic = 7)
   Source:            XLXI_2/XLXI_4/lastcol_1 (FF)
   Destination:       Update<0> (PAD)
   Source Clock:      XLXI_2/XLXI_4/rowON rising
@@ -1173,58 +1285,128 @@ Offset:              11.517ns (Levels of Logic = 7)
      FDCE:C->Q             8   0.591   0.932  XLXI_2/XLXI_4/lastcol_1 (XLXI_2/XLXI_4/lastcol_1)
      LUT4:I0->O            4   0.704   0.622  XLXI_2/XLXI_11/binO_cmp_eq00061 (XLXI_2/XLXI_11/binO_cmp_eq0006)
      LUT3:I2->O            1   0.704   0.595  XLXI_2/XLXI_11/binO<0>40 (XLXI_2/XLXI_11/binO<0>40)
-     LUT4:I0->O            1   0.704   0.424  XLXI_2/XLXI_11/binO<0>48_SW0 (N31)
+     LUT4:I0->O            1   0.704   0.424  XLXI_2/XLXI_11/binO<0>48_SW0 (N111)
      LUT4:I3->O            1   0.704   0.000  XLXI_2/XLXI_11/binO<0>591 (XLXI_2/XLXI_11/binO<0>59)
-     MUXF5:I0->O           9   0.321   0.820  XLXI_2/XLXI_11/binO<0>59_f5 (XLXI_2/buster<0>)
-     AND2:I1->O            1   0.704   0.420  XLXI_2/XLXI_115 (Update_0_OBUF)
+     MUXF5:I0->O           5   0.321   0.633  XLXI_2/XLXI_11/binO<0>59_f5 (XLXI_2/buster<0>)
+     BUF:I->O              1   0.704   0.420  XLXI_2/XLXI_144 (Update_0_OBUF)
      OBUF:I->O                 3.272          Update_0_OBUF (Update<0>)
     ----------------------------------------
-    Total                     11.517ns (7.704ns logic, 3.813ns route)
-                                       (66.9% logic, 33.1% route)
+    Total                     11.330ns (7.704ns logic, 3.626ns route)
+                                       (68.0% logic, 32.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_125/clk_1m'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_19/clk_1k_0'
   Total number of paths / destination ports: 95 / 12
 -------------------------------------------------------------------------
-Offset:              7.991ns (Levels of Logic = 4)
-  Source:            XLXI_2/XLXI_124/sel_0 (FF)
+Offset:              8.087ns (Levels of Logic = 4)
+  Source:            XLXI_9/sel_0 (FF)
   Destination:       sseg<6> (PAD)
-  Source Clock:      XLXI_2/XLXI_125/clk_1m rising
+  Source Clock:      XLXI_19/clk_1k_0 rising
 
-  Data Path: XLXI_2/XLXI_124/sel_0 to sseg<6>
+  Data Path: XLXI_9/sel_0 to sseg<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              15   0.591   1.096  XLXI_2/XLXI_124/sel_0 (XLXI_2/XLXI_124/sel_0)
-     LUT4:I1->O            1   0.704   0.000  XLXI_2/XLXI_120/hexO<3>_F (N35)
-     MUXF5:I0->O           7   0.321   0.883  XLXI_2/XLXI_120/hexO<3> (XLXI_2/XLXI_120/hexO<3>)
-     LUT4:I0->O            1   0.704   0.420  XLXI_2/XLXI_120/Mrom_hexO_rom000041 (sseg_2_OBUF)
+     FD:C->Q              15   0.591   1.192  XLXI_9/sel_0 (XLXI_9/sel_0)
+     LUT4:I0->O            1   0.704   0.000  XLXI_3/hexO<3>1 (XLXI_3/hexO<3>1)
+     MUXF5:I1->O           7   0.321   0.883  XLXI_3/hexO<3>_f5 (XLXI_3/hexO<3>)
+     LUT4:I0->O            1   0.704   0.420  XLXI_3/Mrom_hexO_rom000041 (sseg_2_OBUF)
      OBUF:I->O                 3.272          sseg_2_OBUF (sseg<2>)
     ----------------------------------------
-    Total                      7.991ns (5.592ns logic, 2.399ns route)
-                                       (70.0% logic, 30.0% route)
+    Total                      8.087ns (5.592ns logic, 2.495ns route)
+                                       (69.1% logic, 30.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_6/pls1'
-  Total number of paths / destination ports: 112 / 7
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_108/D0'
+  Total number of paths / destination ports: 28 / 7
 -------------------------------------------------------------------------
-Offset:              7.350ns (Levels of Logic = 4)
-  Source:            XLXI_2/XLXI_121/bOUT1_0 (FF)
+Offset:              8.322ns (Levels of Logic = 5)
+  Source:            XLXI_2/XLXI_131/I_Q0 (LATCH)
   Destination:       sseg<6> (PAD)
-  Source Clock:      XLXI_2/XLXI_6/pls1 rising
+  Source Clock:      XLXI_2/XLXI_108/D0 falling
 
-  Data Path: XLXI_2/XLXI_121/bOUT1_0 to sseg<6>
+  Data Path: XLXI_2/XLXI_131/I_Q0 to sseg<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.591   0.455  XLXI_2/XLXI_121/bOUT1_0 (XLXI_2/XLXI_121/bOUT1_0)
-     LUT4:I2->O            1   0.704   0.000  XLXI_2/XLXI_120/hexO<0>_F (N41)
-     MUXF5:I0->O           7   0.321   0.883  XLXI_2/XLXI_120/hexO<0> (XLXI_2/XLXI_120/hexO<0>)
-     LUT4:I0->O            1   0.704   0.420  XLXI_2/XLXI_120/Mrom_hexO_rom000031 (sseg_3_OBUF)
+     LD:G->Q              33   0.676   1.342  I_Q0 (Q0)
+     end scope: 'XLXI_2/XLXI_131'
+     LUT4:I1->O            1   0.704   0.000  XLXI_3/hexO<0>2 (XLXI_3/hexO<0>2)
+     MUXF5:I0->O           7   0.321   0.883  XLXI_3/hexO<0>_f5 (XLXI_3/hexO<0>)
+     LUT4:I0->O            1   0.704   0.420  XLXI_3/Mrom_hexO_rom000031 (sseg_3_OBUF)
      OBUF:I->O                 3.272          sseg_3_OBUF (sseg<3>)
     ----------------------------------------
-    Total                      7.350ns (5.592ns logic, 1.758ns route)
-                                       (76.1% logic, 23.9% route)
+    Total                      8.322ns (5.677ns logic, 2.645ns route)
+                                       (68.2% logic, 31.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_108/D2'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              8.247ns (Levels of Logic = 5)
+  Source:            XLXI_2/XLXI_127/I_Q0 (LATCH)
+  Destination:       sseg<6> (PAD)
+  Source Clock:      XLXI_2/XLXI_108/D2 falling
+
+  Data Path: XLXI_2/XLXI_127/I_Q0 to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              33   0.676   1.267  I_Q0 (Q0)
+     end scope: 'XLXI_2/XLXI_127'
+     LUT4:I3->O            1   0.704   0.000  XLXI_3/hexO<0>2 (XLXI_3/hexO<0>2)
+     MUXF5:I0->O           7   0.321   0.883  XLXI_3/hexO<0>_f5 (XLXI_3/hexO<0>)
+     LUT4:I0->O            1   0.704   0.420  XLXI_3/Mrom_hexO_rom000031 (sseg_3_OBUF)
+     OBUF:I->O                 3.272          sseg_3_OBUF (sseg<3>)
+    ----------------------------------------
+    Total                      8.247ns (5.677ns logic, 2.570ns route)
+                                       (68.8% logic, 31.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_108/D1'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              8.322ns (Levels of Logic = 5)
+  Source:            XLXI_2/XLXI_128/I_Q0 (LATCH)
+  Destination:       sseg<6> (PAD)
+  Source Clock:      XLXI_2/XLXI_108/D1 falling
+
+  Data Path: XLXI_2/XLXI_128/I_Q0 to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              33   0.676   1.342  I_Q0 (Q0)
+     end scope: 'XLXI_2/XLXI_128'
+     LUT4:I1->O            1   0.704   0.000  XLXI_3/hexO<0>1 (XLXI_3/hexO<0>1)
+     MUXF5:I1->O           7   0.321   0.883  XLXI_3/hexO<0>_f5 (XLXI_3/hexO<0>)
+     LUT4:I0->O            1   0.704   0.420  XLXI_3/Mrom_hexO_rom000031 (sseg_3_OBUF)
+     OBUF:I->O                 3.272          sseg_3_OBUF (sseg<3>)
+    ----------------------------------------
+    Total                      8.322ns (5.677ns logic, 2.645ns route)
+                                       (68.2% logic, 31.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_108/D3'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              8.247ns (Levels of Logic = 5)
+  Source:            XLXI_2/XLXI_130/I_Q0 (LATCH)
+  Destination:       sseg<6> (PAD)
+  Source Clock:      XLXI_2/XLXI_108/D3 falling
+
+  Data Path: XLXI_2/XLXI_130/I_Q0 to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              33   0.676   1.267  I_Q0 (Q0)
+     end scope: 'XLXI_2/XLXI_130'
+     LUT4:I3->O            1   0.704   0.000  XLXI_3/hexO<0>1 (XLXI_3/hexO<0>1)
+     MUXF5:I1->O           7   0.321   0.883  XLXI_3/hexO<0>_f5 (XLXI_3/hexO<0>)
+     LUT4:I0->O            1   0.704   0.420  XLXI_3/Mrom_hexO_rom000031 (sseg_3_OBUF)
+     OBUF:I->O                 3.272          sseg_3_OBUF (sseg<3>)
+    ----------------------------------------
+    Total                      8.247ns (5.677ns logic, 2.570ns route)
+                                       (68.8% logic, 31.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SYS_CLK'
@@ -1252,7 +1434,7 @@ Offset:              7.370ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 516 / 20
+  Total number of paths / destination ports: 512 / 16
 -------------------------------------------------------------------------
 Delay:               9.007ns (Levels of Logic = 7)
   Source:            Address<0> (PAD)
@@ -1276,15 +1458,15 @@ Delay:               9.007ns (Levels of Logic = 7)
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.81 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.52 secs
  
 --> 
 
 
-Total memory usage is 563668 kilobytes
+Total memory usage is 564068 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  101 (   0 filtered)
+Number of warnings :  208 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

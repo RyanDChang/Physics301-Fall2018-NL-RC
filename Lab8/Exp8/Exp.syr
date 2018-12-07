@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: Exp.prj
@@ -165,9 +165,9 @@ Analyzing hierarchy for entity <mux4SSD> in library <work> (architecture <behavi
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <Exp> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/Exp.vhf" line 537: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_Exp'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/Exp.vhf" line 558: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_Exp'.
     Set user-defined property "HU_SET =  XLXI_1_9" for instance <XLXI_1> in unit <Exp>.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/Exp.vhf" line 554: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_Exp'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/Exp.vhf" line 575: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_Exp'.
     Set user-defined property "HU_SET =  XLXI_2_10" for instance <XLXI_2> in unit <Exp>.
 Entity <Exp> analyzed. Unit <Exp> generated.
 
@@ -519,17 +519,17 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 15
+# IOs                              : 16
 
 Cell Usage :
-# BELS                             : 536
+# BELS                             : 539
 #      AND2                        : 20
 #      AND2B1                      : 14
 #      AND2B2                      : 4
 #      AND3                        : 2
 #      AND3B3                      : 2
 #      AND4                        : 2
-#      AND4B4                      : 2
+#      AND4B4                      : 3
 #      GND                         : 1
 #      INV                         : 11
 #      LUT1                        : 127
@@ -538,7 +538,7 @@ Cell Usage :
 #      LUT4                        : 24
 #      MUXCY                       : 147
 #      MUXF5                       : 1
-#      OR2                         : 18
+#      OR2                         : 20
 #      VCC                         : 3
 #      XOR2                        : 8
 #      XORCY                       : 128
@@ -551,9 +551,9 @@ Cell Usage :
 # Clock Buffers                    : 3
 #      BUFG                        : 1
 #      BUFGP                       : 2
-# IO Buffers                       : 12
+# IO Buffers                       : 13
 #      IBUF                        : 1
-#      OBUF                        : 11
+#      OBUF                        : 12
 # Others                           : 5
 #      PULLDOWN                    : 1
 #      PULLUP                      : 4
@@ -567,8 +567,8 @@ Selected Device : 3s100ecp132-4
  Number of Slices:                       92  out of    960     9%  
  Number of Slice Flip Flops:             83  out of   1920     4%  
  Number of 4 input LUTs:                184  out of   1920     9%  
- Number of IOs:                          15
- Number of bonded IOBs:                  14  out of     83    16%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  15  out of     83    18%  
  Number of GCLKs:                         3  out of     24    12%  
 
 ---------------------------
@@ -622,7 +622,7 @@ Speed Grade: -4
 
    Minimum period: 10.324ns (Maximum Frequency: 96.860MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 7.856ns
+   Maximum output required time after clock: 8.279ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -762,36 +762,62 @@ Delay:               9.046ns (Levels of Logic = 33)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 8.626ns (frequency: 115.929MHz)
-  Total number of paths / destination ports: 260 / 16
+  Clock period: 9.590ns (frequency: 104.275MHz)
+  Total number of paths / destination ports: 356 / 16
 -------------------------------------------------------------------------
-Delay:               8.626ns (Levels of Logic = 9)
-  Source:            XLXI_2/I_Q1/I_36_35 (FF)
-  Destination:       XLXI_2/I_Q3/I_36_35 (FF)
+Delay:               9.590ns (Levels of Logic = 9)
+  Source:            XLXI_1/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_1/I_Q3/I_36_35 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: XLXI_2/I_Q1/I_36_35 to XLXI_2/I_Q3/I_36_35
+  Data Path: XLXI_1/I_Q0/I_36_35 to XLXI_1/I_Q3/I_36_35
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            13   0.591   0.983  I_36_35 (Q)
-     end scope: 'I_Q1'
-     AND2B2:I0->O          1   0.704   0.420  I_36_3 (T2_DN)
-     begin scope: 'I_T2'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'I_T2'
-     begin scope: 'I_Q2'
-     XOR2:I0->O            1   0.704   0.420  I_36_32 (TQ)
-     begin scope: 'I_36_30'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'I_36_30'
-     FDCE:D                    0.308          I_36_35
+     FDCE:C->Q            11   0.591   0.933  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND4:I3->O            1   0.704   0.420  I_36_10 (TC_UP)
+     begin scope: 'I_TC'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             3   0.704   0.531  I_36_8 (O)
+     end scope: 'I_TC'
+     end scope: 'XLXI_1'
+     OR2:I0->O            10   0.704   0.882  XLXI_8 (Load)
+     OR2:I1->O             2   0.704   0.447  XLXI_34 (CE)
+     begin scope: 'XLXI_1'
+     OR2:I0->O             4   0.704   0.587  I_36_60 (OR_CE_L)
+     begin scope: 'I_Q3'
+     FDCE:CE                   0.555          I_36_35
     ----------------------------------------
-    Total                      8.626ns (5.123ns logic, 3.503ns route)
-                                       (59.4% logic, 40.6% route)
+    Total                      9.590ns (5.370ns logic, 4.220ns route)
+                                       (56.0% logic, 44.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              8.279ns (Levels of Logic = 6)
+  Source:            XLXI_1/I_Q0/I_36_35 (FF)
+  Destination:       TC (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_1/I_Q0/I_36_35 to TC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.591   0.933  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND4:I3->O            1   0.704   0.420  I_36_10 (TC_UP)
+     begin scope: 'I_TC'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             3   0.704   0.531  I_36_8 (O)
+     end scope: 'I_TC'
+     end scope: 'XLXI_1'
+     OBUF:I->O                 3.272          TC_OBUF (TC)
+    ----------------------------------------
+    Total                      8.279ns (5.975ns logic, 2.304ns route)
+                                       (72.2% logic, 27.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_7/XLXI_10/clk_1k'
@@ -819,12 +845,12 @@ Offset:              7.856ns (Levels of Logic = 4)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.38 secs
+Total CPU time to Xst completion: 4.47 secs
  
 --> 
 
 
-Total memory usage is 544360 kilobytes
+Total memory usage is 544392 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   85 (   0 filtered)

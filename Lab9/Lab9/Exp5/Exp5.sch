@@ -37,17 +37,16 @@
         <signal name="Yogi" />
         <signal name="Booboo" />
         <signal name="SYS_CLK" />
-        <signal name="Count_Q(7:0)" />
         <signal name="sseg(7:0)" />
         <signal name="anO(3:0)" />
         <signal name="Basket(7:0)" />
         <signal name="Result(7:0)" />
         <signal name="R" />
         <signal name="XLXN_147" />
-        <signal name="XLXN_157(7:0)" />
         <signal name="CLR" />
-        <signal name="J(7:0)" />
-        <signal name="J(0)" />
+        <signal name="XLXN_162(7:0)" />
+        <signal name="XLXN_163" />
+        <signal name="Count_Q(7:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Output" name="sseg(7:0)" />
@@ -347,7 +346,7 @@
         </block>
         <block symbolname="DisplayModule" name="XLXI_89">
             <blockpin signalname="SYS_CLK" name="CLK" />
-            <blockpin signalname="XLXN_157(7:0)" name="Ain(7:0)" />
+            <blockpin signalname="XLXN_162(7:0)" name="Ain(7:0)" />
             <blockpin signalname="Basket(7:0)" name="Dout(7:0)" />
             <blockpin signalname="anO(3:0)" name="DisplayData(3:0)" />
             <blockpin signalname="sseg(7:0)" name="Data(7:0)" />
@@ -369,17 +368,12 @@
             <blockpin signalname="Yogi" name="I1" />
             <blockpin signalname="XLXN_147" name="O" />
         </block>
-        <block symbolname="adsu8" name="XLXI_97">
-            <blockpin signalname="Count_Q(7:0)" name="A(7:0)" />
-            <blockpin signalname="PULL_DOWN" name="ADD" />
-            <blockpin signalname="J(7:0)" name="B(7:0)" />
-            <blockpin signalname="PULL_UP" name="CI" />
-            <blockpin name="CO" />
-            <blockpin name="OFL" />
-            <blockpin signalname="XLXN_157(7:0)" name="S(7:0)" />
-        </block>
-        <block symbolname="pullup" name="XLXI_99">
-            <blockpin signalname="J(0)" name="O" />
+        <block symbolname="fd8ce" name="XLXI_98">
+            <blockpin signalname="CLK" name="C" />
+            <blockpin signalname="PULL_UP" name="CE" />
+            <blockpin signalname="CLR" name="CLR" />
+            <blockpin signalname="Count_Q(7:0)" name="D(7:0)" />
+            <blockpin signalname="XLXN_162(7:0)" name="Q(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -703,27 +697,9 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2112" y="1264" type="branch" />
             <wire x2="2160" y1="1264" y2="1264" x1="2112" />
         </branch>
-        <branch name="Count_Q(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="512" y="2384" type="branch" />
-            <wire x2="816" y1="2384" y2="2384" x1="512" />
-        </branch>
-        <instance x="816" y="2704" name="XLXI_97" orien="R0" />
-        <branch name="PULL_DOWN">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="720" y="2640" type="branch" />
-            <wire x2="816" y1="2640" y2="2640" x1="720" />
-        </branch>
-        <branch name="PULL_UP">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="720" y="2256" type="branch" />
-            <wire x2="816" y1="2256" y2="2256" x1="720" />
-        </branch>
         <branch name="Basket(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1760" y="2592" type="branch" />
             <wire x2="1824" y1="2592" y2="2592" x1="1760" />
-        </branch>
-        <branch name="XLXN_157(7:0)">
-            <wire x2="1536" y1="2448" y2="2448" x1="1264" />
-            <wire x2="1536" y1="2448" y2="2528" x1="1536" />
-            <wire x2="1824" y1="2528" y2="2528" x1="1536" />
         </branch>
         <branch name="CLR">
             <wire x2="320" y1="1328" y2="1328" x1="288" />
@@ -733,19 +709,28 @@
             <wire x2="2688" y1="2224" y2="2224" x1="2640" />
         </branch>
         <iomarker fontsize="28" x="288" y="1328" name="CLR" orien="R180" />
-        <branch name="J(7:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="640" y="2512" type="branch" />
-            <wire x2="640" y1="2512" y2="2512" x1="608" />
-            <wire x2="816" y1="2512" y2="2512" x1="640" />
+        <branch name="XLXN_162(7:0)">
+            <wire x2="1472" y1="2384" y2="2384" x1="1184" />
+            <wire x2="1472" y1="2384" y2="2528" x1="1472" />
+            <wire x2="1824" y1="2528" y2="2528" x1="1472" />
         </branch>
-        <branch name="J(0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="352" y="2016" type="branch" />
-            <wire x2="352" y1="2016" y2="2016" x1="272" />
-            <wire x2="384" y1="2016" y2="2016" x1="352" />
-            <wire x2="464" y1="2016" y2="2016" x1="384" />
-            <wire x2="592" y1="2016" y2="2016" x1="464" />
-            <wire x2="592" y1="1968" y2="2016" x1="592" />
+        <instance x="800" y="2640" name="XLXI_98" orien="R0" />
+        <branch name="PULL_UP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="2448" type="branch" />
+            <wire x2="800" y1="2448" y2="2448" x1="752" />
         </branch>
-        <instance x="528" y="1968" name="XLXI_99" orien="R0" />
+        <branch name="CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="2512" type="branch" />
+            <wire x2="800" y1="2512" y2="2512" x1="752" />
+        </branch>
+        <branch name="CLR">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="2608" type="branch" />
+            <wire x2="800" y1="2608" y2="2608" x1="752" />
+        </branch>
+        <branch name="Count_Q(7:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="720" y="2384" type="branch" />
+            <wire x2="720" y1="2384" y2="2384" x1="704" />
+            <wire x2="800" y1="2384" y2="2384" x1="720" />
+        </branch>
     </sheet>
 </drawing>

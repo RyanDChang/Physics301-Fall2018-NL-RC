@@ -45,36 +45,71 @@ Setup/Hold to clock SYS_CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-Address<0>  |    8.434(R)|   -2.128(R)|SYS_CLK_BUFGP     |   0.000|
-Address<1>  |    5.979(R)|   -0.130(R)|SYS_CLK_BUFGP     |   0.000|
-Address<2>  |    6.684(R)|    0.015(R)|SYS_CLK_BUFGP     |   0.000|
-Address<3>  |    5.752(R)|   -0.504(R)|SYS_CLK_BUFGP     |   0.000|
-Address<4>  |    7.099(R)|   -1.368(R)|SYS_CLK_BUFGP     |   0.000|
-ShowMM      |    6.907(R)|   -1.092(R)|SYS_CLK_BUFGP     |   0.000|
-TempToMM    |    6.405(R)|   -0.907(R)|SYS_CLK_BUFGP     |   0.000|
+Address<0>  |    7.305(R)|   -2.223(R)|SYS_CLK_BUFGP     |   0.000|
+Address<1>  |    6.158(R)|   -0.261(R)|SYS_CLK_BUFGP     |   0.000|
+Address<2>  |    6.289(R)|   -0.599(R)|SYS_CLK_BUFGP     |   0.000|
+Address<3>  |    6.326(R)|   -0.358(R)|SYS_CLK_BUFGP     |   0.000|
+Address<4>  |    6.836(R)|   -1.897(R)|SYS_CLK_BUFGP     |   0.000|
+ShowMM      |    6.228(R)|   -1.426(R)|SYS_CLK_BUFGP     |   0.000|
+TempToMM    |    5.434(R)|   -0.770(R)|SYS_CLK_BUFGP     |   0.000|
 ------------+------------+------------+------------------+--------+
+
+Clock AorD to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+sseg<0>     |   15.119(F)|XLXI_2/TDH        |   0.000|
+            |   15.104(F)|XLXI_2/TDL        |   0.000|
+            |   15.821(F)|XLXI_2/TIH        |   0.000|
+            |   15.115(F)|XLXI_2/TIL        |   0.000|
+sseg<1>     |   15.766(F)|XLXI_2/TDH        |   0.000|
+            |   15.751(F)|XLXI_2/TDL        |   0.000|
+            |   16.468(F)|XLXI_2/TIH        |   0.000|
+            |   16.179(F)|XLXI_2/TIL        |   0.000|
+sseg<2>     |   15.748(F)|XLXI_2/TDH        |   0.000|
+            |   15.733(F)|XLXI_2/TDL        |   0.000|
+            |   16.450(F)|XLXI_2/TIH        |   0.000|
+            |   16.166(F)|XLXI_2/TIL        |   0.000|
+sseg<3>     |   15.448(F)|XLXI_2/TDH        |   0.000|
+            |   15.433(F)|XLXI_2/TDL        |   0.000|
+            |   16.150(F)|XLXI_2/TIH        |   0.000|
+            |   15.409(F)|XLXI_2/TIL        |   0.000|
+sseg<4>     |   15.708(F)|XLXI_2/TDH        |   0.000|
+            |   15.693(F)|XLXI_2/TDL        |   0.000|
+            |   16.410(F)|XLXI_2/TIH        |   0.000|
+            |   16.126(F)|XLXI_2/TIL        |   0.000|
+sseg<5>     |   15.826(F)|XLXI_2/TDH        |   0.000|
+            |   15.811(F)|XLXI_2/TDL        |   0.000|
+            |   16.528(F)|XLXI_2/TIH        |   0.000|
+            |   16.239(F)|XLXI_2/TIL        |   0.000|
+sseg<6>     |   15.641(F)|XLXI_2/TDH        |   0.000|
+            |   15.626(F)|XLXI_2/TDL        |   0.000|
+            |   16.343(F)|XLXI_2/TIH        |   0.000|
+            |   15.637(F)|XLXI_2/TIL        |   0.000|
+------------+------------+------------------+--------+
 
 Clock SYS_CLK to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-Data<0>     |   11.709(R)|SYS_CLK_BUFGP     |   0.000|
-Data<1>     |   10.822(R)|SYS_CLK_BUFGP     |   0.000|
-Data<2>     |   11.131(R)|SYS_CLK_BUFGP     |   0.000|
-Data<3>     |   11.358(R)|SYS_CLK_BUFGP     |   0.000|
-Data<4>     |   11.736(R)|SYS_CLK_BUFGP     |   0.000|
-Data<5>     |   11.462(R)|SYS_CLK_BUFGP     |   0.000|
-Data<6>     |   11.189(R)|SYS_CLK_BUFGP     |   0.000|
-Data<7>     |   11.009(R)|SYS_CLK_BUFGP     |   0.000|
-Inst<0>     |   11.833(R)|SYS_CLK_BUFGP     |   0.000|
-Inst<1>     |   10.996(R)|SYS_CLK_BUFGP     |   0.000|
-Inst<2>     |   12.291(R)|SYS_CLK_BUFGP     |   0.000|
-Inst<3>     |   11.515(R)|SYS_CLK_BUFGP     |   0.000|
-Inst<4>     |   11.467(R)|SYS_CLK_BUFGP     |   0.000|
-Inst<5>     |   11.004(R)|SYS_CLK_BUFGP     |   0.000|
-Inst<6>     |   10.883(R)|SYS_CLK_BUFGP     |   0.000|
-Inst<7>     |   10.931(R)|SYS_CLK_BUFGP     |   0.000|
+Data<0>     |   11.218(R)|SYS_CLK_BUFGP     |   0.000|
+Data<1>     |   11.062(R)|SYS_CLK_BUFGP     |   0.000|
+Data<2>     |   10.722(R)|SYS_CLK_BUFGP     |   0.000|
+Data<3>     |   11.335(R)|SYS_CLK_BUFGP     |   0.000|
+Data<4>     |   10.612(R)|SYS_CLK_BUFGP     |   0.000|
+Data<5>     |   10.803(R)|SYS_CLK_BUFGP     |   0.000|
+Data<6>     |   11.303(R)|SYS_CLK_BUFGP     |   0.000|
+Data<7>     |   11.311(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<0>     |   11.039(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<1>     |   10.890(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<2>     |   10.809(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<3>     |   10.701(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<4>     |   10.973(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<5>     |   11.289(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<6>     |   11.702(R)|SYS_CLK_BUFGP     |   0.000|
+Inst<7>     |   11.372(R)|SYS_CLK_BUFGP     |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock SYS_CLK
@@ -82,124 +117,121 @@ Clock to Setup on destination clock SYS_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SYS_CLK        |   12.285|         |         |         |
+AorD           |         |    7.002|         |         |
+SYS_CLK        |   12.254|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-Address<0>     |Data<0>        |   11.134|
-Address<0>     |Data<1>        |   10.114|
-Address<0>     |Data<2>        |    9.753|
-Address<0>     |Data<3>        |   10.953|
-Address<0>     |Data<4>        |   12.038|
-Address<0>     |Data<5>        |   11.932|
-Address<0>     |Data<6>        |   10.303|
-Address<0>     |Data<7>        |   10.955|
-Address<0>     |Inst<0>        |   10.533|
-Address<0>     |Inst<1>        |   10.358|
-Address<0>     |Inst<2>        |   10.692|
-Address<0>     |Inst<3>        |   10.695|
-Address<0>     |Inst<4>        |    9.786|
-Address<0>     |Inst<5>        |    9.243|
-Address<0>     |Inst<6>        |    9.653|
-Address<0>     |Inst<7>        |   10.348|
-Address<1>     |Data<0>        |   10.688|
-Address<1>     |Data<1>        |    9.364|
-Address<1>     |Data<2>        |    9.631|
-Address<1>     |Data<3>        |   10.627|
-Address<1>     |Data<4>        |   10.523|
-Address<1>     |Data<5>        |   11.007|
-Address<1>     |Data<6>        |    9.906|
-Address<1>     |Data<7>        |   10.348|
-Address<1>     |Inst<0>        |   10.983|
-Address<1>     |Inst<1>        |   10.725|
-Address<1>     |Inst<2>        |   10.614|
-Address<1>     |Inst<3>        |   10.251|
-Address<1>     |Inst<4>        |    8.972|
-Address<1>     |Inst<5>        |    7.521|
-Address<1>     |Inst<6>        |    9.894|
-Address<1>     |Inst<7>        |   10.548|
-Address<2>     |Data<0>        |   10.196|
-Address<2>     |Data<1>        |    9.802|
-Address<2>     |Data<2>        |   10.339|
-Address<2>     |Data<3>        |   10.353|
-Address<2>     |Data<4>        |    9.881|
-Address<2>     |Data<5>        |   10.137|
-Address<2>     |Data<6>        |   10.884|
-Address<2>     |Data<7>        |   10.524|
-Address<2>     |Inst<0>        |   10.173|
-Address<2>     |Inst<1>        |   10.317|
-Address<2>     |Inst<2>        |    9.772|
-Address<2>     |Inst<3>        |    9.013|
-Address<2>     |Inst<4>        |    8.578|
-Address<2>     |Inst<5>        |    8.326|
-Address<2>     |Inst<6>        |    9.647|
-Address<2>     |Inst<7>        |   10.028|
-Address<3>     |Data<0>        |   10.104|
-Address<3>     |Data<1>        |    9.197|
-Address<3>     |Data<2>        |    9.708|
-Address<3>     |Data<3>        |   10.818|
-Address<3>     |Data<4>        |    9.154|
-Address<3>     |Data<5>        |    9.126|
-Address<3>     |Data<6>        |   11.361|
-Address<3>     |Data<7>        |   10.753|
-Address<3>     |Inst<0>        |    9.817|
-Address<3>     |Inst<1>        |    9.675|
-Address<3>     |Inst<2>        |    9.783|
-Address<3>     |Inst<3>        |    9.390|
-Address<3>     |Inst<4>        |    8.594|
-Address<3>     |Inst<5>        |    7.764|
-Address<3>     |Inst<6>        |    8.088|
-Address<3>     |Inst<7>        |    8.480|
-Address<4>     |Data<0>        |    9.470|
-Address<4>     |Data<1>        |    8.842|
-Address<4>     |Data<2>        |    9.596|
-Address<4>     |Data<3>        |    9.327|
-Address<4>     |Data<4>        |    7.223|
-Address<4>     |Data<5>        |    7.708|
-Address<4>     |Data<6>        |    8.394|
-Address<4>     |Data<7>        |    9.256|
-Address<4>     |Inst<0>        |    9.691|
-Address<4>     |Inst<1>        |    9.811|
-Address<4>     |Inst<2>        |    9.200|
-Address<4>     |Inst<3>        |    9.059|
-Address<4>     |Inst<4>        |    8.797|
-Address<4>     |Inst<5>        |    8.553|
-Address<4>     |Inst<6>        |    8.266|
-Address<4>     |Inst<7>        |    8.906|
-ShowMM         |Data<0>        |    7.234|
-ShowMM         |Data<1>        |    6.667|
-ShowMM         |Data<2>        |    6.655|
-ShowMM         |Data<3>        |    6.687|
-ShowMM         |Data<4>        |    7.242|
-ShowMM         |Data<5>        |    6.430|
-ShowMM         |Data<6>        |    7.546|
-ShowMM         |Data<7>        |    6.703|
-ShowMM         |Inst<0>        |    6.206|
-ShowMM         |Inst<1>        |    5.677|
-ShowMM         |Inst<2>        |    6.716|
-ShowMM         |Inst<3>        |    6.197|
-ShowMM         |Inst<4>        |    7.486|
-ShowMM         |Inst<5>        |    7.507|
-ShowMM         |Inst<6>        |    6.917|
-ShowMM         |Inst<7>        |    6.989|
-WriteTemp      |Update<0>      |    8.239|
-WriteTemp      |Update<1>      |    8.809|
-WriteTemp      |Update<2>      |    8.019|
-WriteTemp      |Update<3>      |    8.018|
+Address<0>     |Data<0>        |    8.748|
+Address<0>     |Data<1>        |    9.944|
+Address<0>     |Data<2>        |   11.723|
+Address<0>     |Data<3>        |   11.778|
+Address<0>     |Data<4>        |   10.352|
+Address<0>     |Data<5>        |   10.751|
+Address<0>     |Data<6>        |   12.299|
+Address<0>     |Data<7>        |   12.496|
+Address<0>     |Inst<0>        |   10.511|
+Address<0>     |Inst<1>        |   10.206|
+Address<0>     |Inst<2>        |   11.280|
+Address<0>     |Inst<3>        |   10.482|
+Address<0>     |Inst<4>        |   12.252|
+Address<0>     |Inst<5>        |   12.106|
+Address<0>     |Inst<6>        |    9.510|
+Address<0>     |Inst<7>        |    8.923|
+Address<1>     |Data<0>        |    7.829|
+Address<1>     |Data<1>        |    8.295|
+Address<1>     |Data<2>        |    9.119|
+Address<1>     |Data<3>        |    9.290|
+Address<1>     |Data<4>        |    9.973|
+Address<1>     |Data<5>        |   10.321|
+Address<1>     |Data<6>        |    9.507|
+Address<1>     |Data<7>        |    9.794|
+Address<1>     |Inst<0>        |   10.046|
+Address<1>     |Inst<1>        |    9.721|
+Address<1>     |Inst<2>        |   11.104|
+Address<1>     |Inst<3>        |   10.008|
+Address<1>     |Inst<4>        |   10.215|
+Address<1>     |Inst<5>        |   11.083|
+Address<1>     |Inst<6>        |    9.177|
+Address<1>     |Inst<7>        |    8.757|
+Address<2>     |Data<0>        |    8.107|
+Address<2>     |Data<1>        |    8.643|
+Address<2>     |Data<2>        |    9.992|
+Address<2>     |Data<3>        |   10.382|
+Address<2>     |Data<4>        |    9.663|
+Address<2>     |Data<5>        |   10.225|
+Address<2>     |Data<6>        |   10.330|
+Address<2>     |Data<7>        |   10.882|
+Address<2>     |Inst<0>        |    9.660|
+Address<2>     |Inst<1>        |    9.719|
+Address<2>     |Inst<2>        |    9.757|
+Address<2>     |Inst<3>        |    9.964|
+Address<2>     |Inst<4>        |    8.926|
+Address<2>     |Inst<5>        |    9.746|
+Address<2>     |Inst<6>        |    8.576|
+Address<2>     |Inst<7>        |    7.590|
+Address<3>     |Data<0>        |    7.695|
+Address<3>     |Data<1>        |    8.223|
+Address<3>     |Data<2>        |    9.031|
+Address<3>     |Data<3>        |    9.096|
+Address<3>     |Data<4>        |    9.345|
+Address<3>     |Data<5>        |   10.179|
+Address<3>     |Data<6>        |    9.356|
+Address<3>     |Data<7>        |    9.659|
+Address<3>     |Inst<0>        |    8.833|
+Address<3>     |Inst<1>        |   10.188|
+Address<3>     |Inst<2>        |    9.330|
+Address<3>     |Inst<3>        |    9.347|
+Address<3>     |Inst<4>        |    8.803|
+Address<3>     |Inst<5>        |    9.048|
+Address<3>     |Inst<6>        |    7.944|
+Address<3>     |Inst<7>        |    7.455|
+Address<4>     |Data<0>        |    8.347|
+Address<4>     |Data<1>        |    9.112|
+Address<4>     |Data<2>        |    7.651|
+Address<4>     |Data<3>        |    8.275|
+Address<4>     |Data<4>        |    8.154|
+Address<4>     |Data<5>        |    8.967|
+Address<4>     |Data<6>        |    8.496|
+Address<4>     |Data<7>        |    8.261|
+Address<4>     |Inst<0>        |    8.961|
+Address<4>     |Inst<1>        |    9.753|
+Address<4>     |Inst<2>        |    8.723|
+Address<4>     |Inst<3>        |   10.012|
+Address<4>     |Inst<4>        |    8.220|
+Address<4>     |Inst<5>        |    8.420|
+Address<4>     |Inst<6>        |    9.925|
+Address<4>     |Inst<7>        |    9.395|
+ShowMM         |Data<0>        |    8.069|
+ShowMM         |Data<1>        |    8.317|
+ShowMM         |Data<2>        |    7.911|
+ShowMM         |Data<3>        |    8.215|
+ShowMM         |Data<4>        |    7.044|
+ShowMM         |Data<5>        |    6.541|
+ShowMM         |Data<6>        |    7.547|
+ShowMM         |Data<7>        |    6.783|
+ShowMM         |Inst<0>        |    7.057|
+ShowMM         |Inst<1>        |    6.796|
+ShowMM         |Inst<2>        |    6.031|
+ShowMM         |Inst<3>        |    7.312|
+ShowMM         |Inst<4>        |    7.563|
+ShowMM         |Inst<5>        |    6.024|
+ShowMM         |Inst<6>        |    8.091|
+ShowMM         |Inst<7>        |    8.343|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Dec  6 14:13:32 2018 
+Analysis completed Thu Dec  6 15:29:50 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 355 MB
+Peak Memory Usage: 356 MB
 
 
 

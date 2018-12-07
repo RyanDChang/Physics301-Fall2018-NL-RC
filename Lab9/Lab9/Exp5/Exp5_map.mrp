@@ -9,22 +9,22 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Nov 13 15:31:29 2018
+Mapped Date    : Thu Nov 15 13:44:56 2018
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
-  Number of Slice Flip Flops:            98 out of   1,920    5%
-  Number of 4 input LUTs:               122 out of   1,920    6%
+  Number of Slice Flip Flops:            99 out of   1,920    5%
+  Number of 4 input LUTs:                99 out of   1,920    5%
 Logic Distribution:
-  Number of occupied Slices:            140 out of     960   14%
-    Number of Slices containing only related logic:     140 out of     140 100%
-    Number of Slices containing unrelated logic:          0 out of     140   0%
+  Number of occupied Slices:            129 out of     960   13%
+    Number of Slices containing only related logic:     129 out of     129 100%
+    Number of Slices containing unrelated logic:          0 out of     129   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         250 out of   1,920   13%
-    Number used as logic:               122
+  Total Number of 4 input LUTs:         227 out of   1,920   11%
+    Number used as logic:                99
     Number used as a route-thru:        128
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -33,10 +33,10 @@ Logic Distribution:
   Number of bonded IOBs:                 15 out of      83   18%
   Number of BUFGMUXs:                     4 out of      24   16%
 
-  Number of RPM macros:            6
-Average Fanout of Non-Clock Nets:                2.25
+  Number of RPM macros:            5
+Average Fanout of Non-Clock Nets:                2.18
 
-Peak Memory Usage:  578 MB
+Peak Memory Usage:  577 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
@@ -86,13 +86,13 @@ WARNING:Pack:266 - The function generator XLXI_88/XLXI_33 failed to merge with
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network XLXI_97/OFL has no load.
-INFO:LIT:395 - The above info message is repeated 6 more times for the following
-   (max. 5 shown):
-   XLXI_79/OFL,
-   XLXI_3/CEO,
-   XLXI_88/XLXI_29/O,
-   XLXI_88/XLXI_30/O,
-   XLXI_88/XLXI_31/O
+INFO:LIT:395 - The above info message is repeated 14 more times for the
+   following (max. 5 shown):
+   XLXI_97/S<0>,
+   XLXI_97/S<1>,
+   XLXI_97/S<2>,
+   XLXI_97/S<3>,
+   XLXI_97/S<4>
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -101,9 +101,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  42 block(s) removed
-  50 block(s) optimized away
-  43 signal(s) removed
+  74 block(s) removed
+  60 block(s) optimized away
+  70 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -118,9 +118,48 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-The signal "XLXI_97/CO" is sourceless and has been removed.
+The signal "XLXI_97/C6O" is sourceless and has been removed.
  Sourceless block "XLXI_97/I_36_221" (XOR) removed.
   The signal "XLXI_97/OFL" is sourceless and has been removed.
+The signal "XLXI_97/CO" is sourceless and has been removed.
+The signal "XLXI_97/I0" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_73" (XOR) removed.
+  The signal "XLXI_97/S<0>" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_111" (MUX) removed.
+  The signal "XLXI_97/I_36_111/O" is sourceless and has been removed.
+The signal "XLXI_97/I1" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_74" (XOR) removed.
+  The signal "XLXI_97/S<1>" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_55" (MUX) removed.
+  The signal "XLXI_97/I_36_55/O" is sourceless and has been removed.
+The signal "XLXI_97/I2" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_76" (XOR) removed.
+  The signal "XLXI_97/S<2>" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_62" (MUX) removed.
+  The signal "XLXI_97/I_36_62/O" is sourceless and has been removed.
+The signal "XLXI_97/I3" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_75" (XOR) removed.
+  The signal "XLXI_97/S<3>" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_58" (MUX) removed.
+  The signal "XLXI_97/I_36_58/O" is sourceless and has been removed.
+The signal "XLXI_97/I4" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_78" (XOR) removed.
+  The signal "XLXI_97/S<4>" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_63" (MUX) removed.
+  The signal "XLXI_97/I_36_63/O" is sourceless and has been removed.
+The signal "XLXI_97/I5" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_77" (XOR) removed.
+  The signal "XLXI_97/S<5>" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_110" (MUX) removed.
+  The signal "XLXI_97/I_36_110/O" is sourceless and has been removed.
+The signal "XLXI_97/I6" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_81" (XOR) removed.
+  The signal "XLXI_97/S<6>" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_107" (MUX) removed.
+The signal "XLXI_97/I7" is sourceless and has been removed.
+ Sourceless block "XLXI_97/I_36_64" (MUX) removed.
+ Sourceless block "XLXI_97/I_36_80" (XOR) removed.
+  The signal "XLXI_97/S<7>" is sourceless and has been removed.
 The signal "XLXI_97/dummy" is sourceless and has been removed.
 The signal "XLXI_79/CO" is sourceless and has been removed.
  Sourceless block "XLXI_79/I_36_221" (XOR) removed.
@@ -179,6 +218,17 @@ The signal "XLXI_88/XLXI_32/I_M23/M1" is sourceless and has been removed.
 The signal "XLXI_88/XLXI_32/I_M01/M0" is sourceless and has been removed.
  Sourceless block "XLXI_88/XLXI_32/I_M01/I_36_38" (OR) removed.
 The signal "XLXI_88/XLXI_32/I_M01/M1" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "PULL_DOWN" is unused and has been removed.
+ Unused block "XLXI_2" (PULLDOWN) removed.
+The signal "XLXI_89/XLXI_1/Mrom_b11_mux0000" is unused and has been removed.
+The signal "XLXI_89/XLXI_1/Mrom_b11_mux00001" is unused and has been removed.
+The signal "XLXI_89/XLXI_1/Mrom_b11_mux00002" is unused and has been removed.
 Unused block "XLXI_3/I_36_10" (AND) removed.
 Unused block "XLXI_3/I_36_11" (AND) removed.
 Unused block "XLXI_3/I_36_16" (AND) removed.
@@ -200,14 +250,28 @@ Unused block "XLXI_88/XLXI_32/I_M01/I_36_30" (AND) removed.
 Unused block "XLXI_88/XLXI_32/I_M01/I_36_31" (AND) removed.
 Unused block "XLXI_88/XLXI_32/I_M23/I_36_30" (AND) removed.
 Unused block "XLXI_88/XLXI_32/I_M23/I_36_31" (AND) removed.
+Unused block "XLXI_97/I_36_100" (XOR) removed.
+Unused block "XLXI_97/I_36_222" (BUF) removed.
+Unused block "XLXI_97/I_36_109" (XOR) removed.
+Unused block "XLXI_97/I_36_226" (BUF) removed.
+Unused block "XLXI_97/I_36_50" (XOR) removed.
+Unused block "XLXI_97/I_36_112" (BUF) removed.
+Unused block "XLXI_97/I_36_56" (XOR) removed.
+Unused block "XLXI_97/I_36_223" (BUF) removed.
+Unused block "XLXI_97/I_36_57" (XOR) removed.
+Unused block "XLXI_97/I_36_224" (BUF) removed.
+Unused block "XLXI_97/I_36_59" (XOR) removed.
+Unused block "XLXI_97/I_36_227" (BUF) removed.
+Unused block "XLXI_97/I_36_60" (XOR) removed.
+Unused block "XLXI_97/I_36_225" (BUF) removed.
+Unused block "XLXI_97/I_36_79" (XOR) removed.
+Unused block "XLXI_97/I_36_228" (BUF) removed.
 Unused block "XLXI_97/XST_GND" (ZERO) removed.
 Unused block "XLXI_79/I_36_64" (MUX) removed.
-Unused block "XLXI_97/I_36_64" (MUX) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
 PULLUP 		XLXI_1
-PULLDOWN 		XLXI_2
 VCC 		XLXI_3/I_36_1
 OR2 		XLXI_3/I_36_60
 AND2 		XLXI_3/I_Q0/I_36_30/I_36_9
@@ -245,15 +309,46 @@ OR2 		XLXI_88/XLXI_28/I_M01/I_36_38
 AND3 		XLXI_88/XLXI_28/I_M23/I_36_30
 AND3B1 		XLXI_88/XLXI_28/I_M23/I_36_31
 OR2 		XLXI_88/XLXI_28/I_M23/I_36_38
-XOR3 		XLXI_97/I_36_109
-INV 		XLXI_97/I_36_226
-XOR3 		XLXI_97/I_36_59
-INV 		XLXI_97/I_36_227
-XOR3 		XLXI_97/I_36_60
-INV 		XLXI_97/I_36_225
-XOR3 		XLXI_97/I_36_79
-INV 		XLXI_97/I_36_228
-PULLUP 		XLXI_99
+FDCP 		XLXI_89/XLXI_1/Dout1_1
+   optimized to 0
+FDCP 		XLXI_89/XLXI_1/Dout1_2
+   optimized to 0
+FDCP 		XLXI_89/XLXI_1/Dout1_3
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b11_mux000011
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b11_mux0000111
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b11_mux000021
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b4_mux000011
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b4_mux0000111
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b4_mux000021
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b4_mux000031
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b6_mux0000111
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b6_mux000021
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b6_mux000031
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b8_mux000021
+   optimized to 0
+LUT4 		XLXI_89/XLXI_1/Mrom_b8_mux000031
+   optimized to 0
+LUT3 		XLXI_89/XLXI_1/Mrom_b_mux000031
+   optimized to 0
+FDCE 		XLXI_98/I_Q4
+   optimized to 0
+FDCE 		XLXI_98/I_Q5
+   optimized to 0
+FDCE 		XLXI_98/I_Q6
+   optimized to 0
+FDCE 		XLXI_98/I_Q7
+   optimized to 0
 GND 		XST_GND
 VCC 		XST_VCC
 
@@ -291,7 +386,6 @@ XLXI_3/XLXI_3_I_Q1_21
 XLXI_3/XLXI_3_I_Q2_20                   
 XLXI_3/XLXI_3_I_Q3_19                   
 XLXI_79_29                              
-XLXI_97_31                              
 
 Section 8 - Guide Report
 ------------------------

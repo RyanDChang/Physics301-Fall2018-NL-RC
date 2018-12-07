@@ -14,27 +14,26 @@
          <ClosedNode>/KeypadInput C:|Users|Robert|Desktop|phys301|ISE projects|_Ryan|RC_NL_Final|_FinalSubmission_RC_NL|CustomParts|InputModule|KeypadInput.sch/XLXI_3 - key4_dbnc - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ComputerMain (/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.sch)</SelectedItem>
+         <SelectedItem>DisplayModule (/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/DisplayModule.sch)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >10</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >16</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000216000000020000000000000000000000000200000064ffffffff000000810000000300000002000002160000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ComputerMain (/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/ComputerMain.sch)</CurrentItem>
+      <CurrentItem>DisplayModule (/home/nick/git-repos/Physics301-Fall2018-NL-RC/_FinalSubmission_RC_NL/_Computer_RC_NL/DisplayModule.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Update All Schematic Files</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Update All Schematic Files</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -55,7 +54,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f1000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000125000000010001000100000000000000000000000064ffffffff000000810000000000000001000001250000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -63,7 +62,6 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
@@ -73,7 +71,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -84,13 +82,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Create Schematic Symbol</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Create Schematic Symbol</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>

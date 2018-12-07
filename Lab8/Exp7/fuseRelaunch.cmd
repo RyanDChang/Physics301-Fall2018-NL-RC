@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7_isim_beh.exe" -prj "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7_beh.prj" "work.Exp7" 

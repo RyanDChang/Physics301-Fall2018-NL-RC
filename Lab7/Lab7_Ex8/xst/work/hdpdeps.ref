@@ -1,9 +1,0 @@
-V3 6
-FL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/Physics301-Fall2018-NL-RC-master_10_7/Physics301-Fall2018-NL-RC-master/Lab7/Lab7_Ex8/Lab7_Ex8.vhf" 2018/10/11.15:01:03 P.20131013
-EN work/Lab7_Ex8 1539295267 \
-      FL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/Physics301-Fall2018-NL-RC-master_10_7/Physics301-Fall2018-NL-RC-master/Lab7/Lab7_Ex8/Lab7_Ex8.vhf" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/Lab7_Ex8/BEHAVIORAL 1539295268 \
-      FL "C:/Users/Robert/Desktop/phys301/ISE projects/_Ryan/Physics301-Fall2018-NL-RC-master_10_7/Physics301-Fall2018-NL-RC-master/Lab7/Lab7_Ex8/Lab7_Ex8.vhf" \
-      EN work/Lab7_Ex8 1539295267 CP FDRS CP INV

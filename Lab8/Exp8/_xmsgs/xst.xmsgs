@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/Exp.vhf</arg>&quot; line <arg fmt="%d" index="2">537</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/Exp.vhf</arg>&quot; line <arg fmt="%d" index="2">558</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/Exp.vhf</arg>&quot; line <arg fmt="%d" index="2">554</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/Exp.vhf</arg>&quot; line <arg fmt="%d" index="2">575</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp</arg>&apos;.
 </msg>
 
 <msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp8/seven_seg.vhf</arg>&quot; line <arg fmt="%d" index="2">101</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK1M</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.

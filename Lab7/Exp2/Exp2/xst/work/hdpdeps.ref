@@ -1,9 +1,0 @@
-V3 5
-FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp2/Exp2/Exp2.vhf 2018/10/11.12:21:19 P.68d
-EN work/Exp2 1539285682 \
-      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp2/Exp2/Exp2.vhf \
-      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
-      PH unisim/VCOMPONENTS 1370735613
-AR work/Exp2/BEHAVIORAL 1539285683 \
-      FL /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp2/Exp2/Exp2.vhf \
-      EN work/Exp2 1539285682 CP XNOR2

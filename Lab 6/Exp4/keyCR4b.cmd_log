@@ -1,6 +1,0 @@
-vhdtdtfi -lib work ../../../../Downloads/keyCR4b.vhd -prj Exp4 -o keyCR4b.spl -module keyCR4b -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e keyCR4b.spl {/home/nick/Documents/Physics/Lab 6/Exp4/keyCR4b.sym} 
-vhdtdtfi -lib work ../../../../Downloads/keyCR4b.vhd -prj Exp4 -o keyCR4b.spl -module keyCR4b -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e keyCR4b.spl {/home/nick/Documents/Physics/Lab 6/Exp4/keyCR4b.sym} 
-vhdtdtfi -lib work ../../../../Downloads/keyCR4b.vhd -prj Exp4 -o keyCR4b.spl -module keyCR4b -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e keyCR4b.spl {/home/nick/Documents/Physics/Lab 6/Exp4/keyCR4b.sym} 

@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <ImplementationReportsDirectory>C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab7/Exp10</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/</ImplementationReportsDirectory>
   <ModuleName>Exp10</ModuleName>
-  <DateModified>2018-11-07T19:43:51</DateModified>
-  <SavedFilePath>C:/Users/Vason/Documents/GitHub/Physics301-Fall2018-NL-RC/Lab7/Exp10/iseconfig/Exp10.xreport</SavedFilePath>
+  <DateModified>2018-11-13T13:27:25</DateModified>
+  <SavedFilePath>/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp10/iseconfig/Exp10.xreport</SavedFilePath>
   <DateInitialized>2018-11-07T19:43:51</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

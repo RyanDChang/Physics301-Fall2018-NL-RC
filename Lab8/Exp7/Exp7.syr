@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: Exp7.prj
@@ -170,9 +170,10 @@ Analyzing hierarchy for entity <mux4SSD> in library <work> (architecture <behavi
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <Exp7> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf" line 661: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_Exp7'.
-WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf" line 661: Unconnected output port 'TC' of component 'CB4CLED_MXILINX_Exp7'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf" line 655: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_Exp7'.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf" line 655: Unconnected output port 'TC' of component 'CB4CLED_MXILINX_Exp7'.
     Set user-defined property "HU_SET =  XLXI_1_9" for instance <XLXI_1> in unit <Exp7>.
+WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf" line 682: Unconnected output port 'Q' of component 'FJKC_MXILINX_Exp7'.
     Set user-defined property "HU_SET =  XLXI_27_10" for instance <XLXI_27> in unit <Exp7>.
 Entity <Exp7> analyzed. Unit <Exp7> generated.
 
@@ -343,6 +344,8 @@ Unit <CB4CLED_MXILINX_Exp7> synthesized.
 
 Synthesizing Unit <Exp7>.
     Related source file is "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf".
+WARNING:Xst:653 - Signal <data7> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <data12> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXN_5> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_27_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <Q<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
@@ -416,6 +419,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dout1_2> (without i
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dout1_1> (without init value) has a constant value of 0 in block <bin2BCD3en>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dout2_0> (without init value) has a constant value of 0 in block <bin2BCD3en>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dout2_1> (without init value) has a constant value of 0 in block <bin2BCD3en>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2170 - Unit Exp7 : the following signal(s) form a combinatorial loop: QNot, UpDown.
 
 Optimizing unit <Exp7> ...
 
@@ -537,10 +541,10 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 16
+# IOs                              : 18
 
 Cell Usage :
-# BELS                             : 509
+# BELS                             : 503
 #      AND2                        : 10
 #      AND2B1                      : 8
 #      AND2B2                      : 2
@@ -548,10 +552,10 @@ Cell Usage :
 #      AND3B1                      : 1
 #      AND3B2                      : 1
 #      AND3B3                      : 1
-#      AND4                        : 3
+#      AND4                        : 1
 #      AND4B4                      : 1
 #      GND                         : 1
-#      INV                         : 15
+#      INV                         : 11
 #      LUT1                        : 127
 #      LUT2                        : 14
 #      LUT3                        : 8
@@ -573,9 +577,11 @@ Cell Usage :
 # Clock Buffers                    : 3
 #      BUFG                        : 1
 #      BUFGP                       : 2
-# IO Buffers                       : 13
+# IO Buffers                       : 15
 #      IBUF                        : 2
-#      OBUF                        : 11
+#      OBUF                        : 13
+# Logical                          : 3
+#      NAND2                       : 3
 # Others                           : 3
 #      PULLDOWN                    : 1
 #      PULLUP                      : 2
@@ -588,9 +594,9 @@ Selected Device : 3s100ecp132-4
 
  Number of Slices:                      111  out of    960    11%  
  Number of Slice Flip Flops:             80  out of   1920     4%  
- Number of 4 input LUTs:                188  out of   1920     9%  
- Number of IOs:                          16
- Number of bonded IOBs:                  15  out of     83    18%  
+ Number of 4 input LUTs:                184  out of   1920     9%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  17  out of     83    20%  
  Number of GCLKs:                         3  out of     24    12%  
 
 ---------------------------
@@ -784,27 +790,29 @@ Delay:               9.046ns (Levels of Logic = 33)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 8.660ns (frequency: 115.473MHz)
-  Total number of paths / destination ports: 48 / 5
+  Clock period: 8.987ns (frequency: 111.272MHz)
+  Total number of paths / destination ports: 24 / 5
 -------------------------------------------------------------------------
-Delay:               8.660ns (Levels of Logic = 9)
-  Source:            XLXI_1/I_Q1/I_36_35 (FF)
+Delay:               8.987ns (Levels of Logic = 10)
+  Source:            XLXI_1/I_Q3/I_36_35 (FF)
   Destination:       XLXI_1/I_Q3/I_36_35 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: XLXI_1/I_Q1/I_36_35 to XLXI_1/I_Q3/I_36_35
+  Data Path: XLXI_1/I_Q3/I_36_35 to XLXI_1/I_Q3/I_36_35
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            15   0.591   1.017  I_36_35 (Q)
-     end scope: 'I_Q1'
-     AND2B2:I0->O          1   0.704   0.420  I_36_3 (T2_DN)
-     begin scope: 'I_T2'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     FDCE:C->Q            10   0.591   0.882  I_36_35 (Q)
+     end scope: 'I_Q3'
+     end scope: 'XLXI_1'
+     NAND2:I1->O          10   0.704   0.882  XLXI_44 (UpDown_OBUF)
+     begin scope: 'XLXI_1'
+     begin scope: 'I_T3'
+     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'I_T2'
-     begin scope: 'I_Q2'
+     end scope: 'I_T3'
+     begin scope: 'I_Q3'
      XOR2:I0->O            1   0.704   0.420  I_36_32 (TQ)
      begin scope: 'I_36_30'
      AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
@@ -812,8 +820,8 @@ Delay:               8.660ns (Levels of Logic = 9)
      end scope: 'I_36_30'
      FDCE:D                    0.308          I_36_35
     ----------------------------------------
-    Total                      8.660ns (5.123ns logic, 3.537ns route)
-                                       (59.2% logic, 40.8% route)
+    Total                      8.987ns (5.123ns logic, 3.864ns route)
+                                       (57.0% logic, 43.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
@@ -841,6 +849,29 @@ Offset:              4.594ns (Levels of Logic = 5)
                                        (63.9% logic, 36.1% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Offset:              7.482ns (Levels of Logic = 4)
+  Source:            XLXI_1/I_Q3/I_36_35 (FF)
+  Destination:       QNot (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_1/I_Q3/I_36_35 to QNot
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.591   0.882  I_36_35 (Q)
+     end scope: 'I_Q3'
+     end scope: 'XLXI_1'
+     NAND2:I1->O          10   0.704   0.882  XLXI_44 (UpDown_OBUF)
+     NAND2:I1->O           2   0.704   0.447  XLXI_45 (QNot_OBUF)
+     OBUF:I->O                 3.272          QNot_OBUF (QNot)
+    ----------------------------------------
+    Total                      7.482ns (5.271ns logic, 2.211ns route)
+                                       (70.4% logic, 29.6% route)
+
+=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_11/XLXI_10/clk_1k'
   Total number of paths / destination ports: 120 / 11
 -------------------------------------------------------------------------
@@ -866,14 +897,14 @@ Offset:              7.856ns (Levels of Logic = 4)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.70 secs
+Total CPU time to Xst completion: 4.69 secs
  
 --> 
 
 
-Total memory usage is 544616 kilobytes
+Total memory usage is 544584 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   85 (   0 filtered)
+Number of warnings :   89 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 

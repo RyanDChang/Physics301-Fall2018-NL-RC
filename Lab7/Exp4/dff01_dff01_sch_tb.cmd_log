@@ -1,2 +1,0 @@
-vhdtdtfi -lib work ../../../../Downloads/dff01TB.vhd -prj Exp4 -o dff01_dff01_sch_tb.spl -module dff01_dff01_sch_tb -template /opt/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e dff01_dff01_sch_tb.spl /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab7/Exp4/dff01_dff01_sch_tb.sym 

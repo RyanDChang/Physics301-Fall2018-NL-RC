@@ -1,6 +1,0 @@
-[Inputs]
-En
-=Ain[3:0]=
-[Outputs]
-=Dout[15:0]=
-[BiDir]

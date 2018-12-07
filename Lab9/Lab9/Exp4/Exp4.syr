@@ -118,27 +118,17 @@ Architecture behavioral of Entity dcm_50m is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd" in Library work.
 Architecture behavioral of Entity sel_strobeb is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp4/DisplayModule.vhf" in Library work.
-Entity <DisplayModule> compiled.
-Entity <DisplayModule> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity displaymodule is up to date.
 Compiling vhdl file "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp4/Exp4.vhf" in Library work.
-Entity <d2_4e_mxilinx_exp4> compiled.
-Entity <d2_4e_mxilinx_exp4> (Architecture <behavioral>) compiled.
-Entity <m2_1b1_mxilinx_exp4> compiled.
-Entity <m2_1b1_mxilinx_exp4> (Architecture <behavioral>) compiled.
-Entity <m2_1_mxilinx_exp4> compiled.
-Entity <m2_1_mxilinx_exp4> (Architecture <behavioral>) compiled.
-Entity <ftclex_mxilinx_exp4> compiled.
-Entity <ftclex_mxilinx_exp4> (Architecture <behavioral>) compiled.
-Entity <cb2cled_mxilinx_exp4> compiled.
-Entity <cb2cled_mxilinx_exp4> (Architecture <behavioral>) compiled.
-Entity <fjkce_mxilinx_exp4> compiled.
-Entity <fjkce_mxilinx_exp4> (Architecture <behavioral>) compiled.
-Entity <d4_16e_mxilinx_exp4> compiled.
-Entity <d4_16e_mxilinx_exp4> (Architecture <behavioral>) compiled.
-Entity <cb4cled_mxilinx_exp4> compiled.
-Entity <cb4cled_mxilinx_exp4> (Architecture <behavioral>) compiled.
-Entity <exp4> compiled.
-Entity <exp4> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity d2_4e_mxilinx_exp4 is up to date.
+Architecture behavioral of Entity m2_1b1_mxilinx_exp4 is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_exp4 is up to date.
+Architecture behavioral of Entity ftclex_mxilinx_exp4 is up to date.
+Architecture behavioral of Entity cb2cled_mxilinx_exp4 is up to date.
+Architecture behavioral of Entity fjkce_mxilinx_exp4 is up to date.
+Architecture behavioral of Entity d4_16e_mxilinx_exp4 is up to date.
+Architecture behavioral of Entity cb4cled_mxilinx_exp4 is up to date.
+Architecture behavioral of Entity exp4 is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -156,7 +146,7 @@ Analyzing hierarchy for entity <CB2CLED_MXILINX_Exp4> in library <work> (archite
 
 Analyzing hierarchy for entity <D2_4E_MXILINX_Exp4> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <DisplayModule> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <DisplayModule> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <FTCLEX_MXILINX_Exp4> in library <work> (architecture <behavioral>) with generics.
 	INIT = '0'
@@ -244,7 +234,7 @@ Entity <CB2CLED_MXILINX_Exp4> analyzed. Unit <CB2CLED_MXILINX_Exp4> generated.
 Analyzing Entity <D2_4E_MXILINX_Exp4> in library <work> (Architecture <behavioral>).
 Entity <D2_4E_MXILINX_Exp4> analyzed. Unit <D2_4E_MXILINX_Exp4> generated.
 
-Analyzing Entity <DisplayModule> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <DisplayModule> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp4/DisplayModule.vhf" line 100: Unconnected output port 'Dout3' of component 'bin2BCD3en'.
 WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp4/DisplayModule.vhf" line 100: Unconnected output port 'Dout2' of component 'bin2BCD3en'.
 WARNING:Xst:753 - "/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp4/DisplayModule.vhf" line 100: Unconnected output port 'RBout' of component 'bin2BCD3en'.
@@ -1008,8 +998,8 @@ Offset:              8.053ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.79 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 4.75 secs
  
 --> 
 

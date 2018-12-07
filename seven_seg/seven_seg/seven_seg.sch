@@ -150,6 +150,17 @@
             <blockpin signalname="XLXN_17(3:0)" name="Dout0(3:0)" />
             <blockpin name="RBout(3:0)" />
         </block>
+        <block symbolname="constant" name="XLXI_15">
+            <attr value="0" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_41(3:0)" name="O" />
+        </block>
+        <block symbolname="pullup" name="XLXI_16">
+            <blockpin signalname="XLXN_42" name="O" />
+        </block>
         <block symbolname="mux4SSD" name="XLXI_14">
             <blockpin signalname="XLXN_42" name="rb_in" />
             <blockpin signalname="XLXN_14(3:0)" name="hexD(3:0)" />
@@ -161,17 +172,6 @@
             <blockpin signalname="XLXN_37" name="dpO" />
             <blockpin signalname="anO(3:0)" name="anO(3:0)" />
             <blockpin signalname="XLXN_36(3:0)" name="hexO(3:0)" />
-        </block>
-        <block symbolname="constant" name="XLXI_15">
-            <attr value="0" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_41(3:0)" name="O" />
-        </block>
-        <block symbolname="pullup" name="XLXI_16">
-            <blockpin signalname="XLXN_42" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -229,8 +229,6 @@
         </instance>
         <instance x="1296" y="1248" name="XLXI_13" orien="R0">
         </instance>
-        <instance x="1904" y="1312" name="XLXI_14" orien="R0">
-        </instance>
         <branch name="XLXN_39">
             <wire x2="1040" y1="1088" y2="1088" x1="880" />
             <wire x2="1040" y1="1088" y2="1360" x1="1040" />
@@ -252,5 +250,7 @@
             <wire x2="1904" y1="896" y2="896" x1="1840" />
         </branch>
         <instance x="1776" y="848" name="XLXI_16" orien="R0" />
+        <instance x="1904" y="1312" name="XLXI_14" orien="R0">
+        </instance>
     </sheet>
 </drawing>

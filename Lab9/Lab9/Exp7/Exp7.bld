@@ -1,0 +1,39 @@
+Release 14.6 ngdbuild P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -nt timestamp -uc
+/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.ucf -p
+xc3s100e-cp132-4 Exp7.ngc Exp7.ngd
+
+Reading NGO file
+"/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/Exp7.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/Exp5.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 400308 kilobytes
+
+Writing NGD file "Exp7.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "Exp7.bld"...

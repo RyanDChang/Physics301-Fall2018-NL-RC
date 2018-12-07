@@ -5,10 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf</arg>&quot; line <arg fmt="%d" index="2">661</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp7</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf</arg>&quot; line <arg fmt="%d" index="2">655</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp7</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf</arg>&quot; line <arg fmt="%d" index="2">661</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp7</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf</arg>&quot; line <arg fmt="%d" index="2">655</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLED_MXILINX_Exp7</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/Exp7.vhf</arg>&quot; line <arg fmt="%d" index="2">682</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q</arg>&apos; of component &apos;<arg fmt="%s" index="4">FJKC_MXILINX_Exp7</arg>&apos;.
 </msg>
 
 <msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab8/Exp7/seven_seg.vhf</arg>&quot; line <arg fmt="%d" index="2">101</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK1M</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
@@ -30,6 +33,12 @@
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">Dout3</arg>&gt; in unit &lt;<arg fmt="%s" index="2">bin2BCD3en</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">data7</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">data12</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_5</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
@@ -76,6 +85,8 @@
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Dout2_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">bin2BCD3en</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">Exp7</arg> : the following signal(s) form a combinatorial loop: </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_11/XLXI_10/cnt10k_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp7</arg>&gt;.
 </msg>

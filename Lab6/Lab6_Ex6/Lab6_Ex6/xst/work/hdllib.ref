@@ -1,8 +1,8 @@
 EN dcm_50m NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd sub00/vhpl02 1539116083
-EN ssd_1dig NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd sub00/vhpl06 1539118183
+EN ssd_1dig NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd sub00/vhpl06 1543522740
 AR mux4ssd behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd sub00/vhpl05 1539116086
 EN bin2bcd3en NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd sub00/vhpl00 1539116081
-AR ssd_1dig behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd sub00/vhpl07 1539118184
+AR ssd_1dig behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd sub00/vhpl07 1543522741
 EN mux4ssd NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd sub00/vhpl04 1539116085
 MO Lab6_Ex6 NULL Lab6_Ex6.vf vlg13/_lab6___ex6.bin 1539118183
 AR bin2bcd3en behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd sub00/vhpl01 1539116082

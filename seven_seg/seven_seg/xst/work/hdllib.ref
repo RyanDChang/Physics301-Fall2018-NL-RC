@@ -1,0 +1,11 @@
+EN dcm_50m NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd sub00/vhpl02 1539888419
+EN sel_strobeb NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd sub00/vhpl06 1539888423
+EN ssd_1dig NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd sub00/vhpl08 1539888425
+MO seven_seg NULL seven_seg.vf vlg6F/seven__seg.bin 1539888417
+AR mux4ssd behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd sub00/vhpl05 1539888422
+EN bin2bcd3en NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd sub00/vhpl00 1539888417
+AR sel_strobeb behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/sel_strobeB.vhd sub00/vhpl07 1539888424
+AR ssd_1dig behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/SSD_1dig.vhd sub00/vhpl09 1539888426
+EN mux4ssd NULL /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/mux4SSD.vhd sub00/vhpl04 1539888421
+AR bin2bcd3en behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/bin2BCD3en.vhd sub00/vhpl01 1539888418
+AR dcm_50m behavioral /home/nick/git-repos/Physics301-Fall2018-NL-RC/goodies/DCM_50M.vhd sub00/vhpl03 1539888420

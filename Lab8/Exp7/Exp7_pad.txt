@@ -1,7 +1,7 @@
 Release 14.6 - par P.68d (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Oct 25 14:56:30 2018
+Tue Oct 30 13:53:11 2018
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -114,7 +114,7 @@ Pinout by Pin Number:
 |M2        |           |DIFFM    |IO_L01P_2/CSO_B          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |M3        |           |         |GND                      |         |           |              |          |         |           |         |         |          |           |                |
 |M4        |           |DIFFM    |IO_L03P_2/D7/GCLK12      |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|M5        |           |DIFFM    |IO_L04P_2/D4/GCLK14      |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|M5        |UpDown     |IOB      |IO_L04P_2/D4/GCLK14      |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |M6        |           |DIFFMI   |IP_L05P_2/RDWR_B/GCLK0   |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |M7        |           |         |GND                      |         |           |              |          |         |           |         |         |          |           |                |
 |M8        |           |         |VCCO_2                   |         |           |2             |          |         |           |         |2.50     |          |           |                |
@@ -144,7 +144,7 @@ Pinout by Pin Number:
 |P4        |           |IOB      |IO/D5                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P5        |           |         |GND                      |         |           |              |          |         |           |         |         |          |           |                |
 |P6        |           |DIFFM    |IO_L06P_2/D2/GCLK2       |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P7        |           |DIFFS    |IO_L06N_2/D1/GCLK3       |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P7        |QNot       |IOB      |IO_L06N_2/D1/GCLK3       |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |P8        |           |DIFFM    |IO_L07P_2/M0             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P9        |           |         |VCCAUX                   |         |           |              |          |         |           |         |2.5      |          |           |                |
 |P10       |           |         |NC                       |         |           |              |          |         |           |         |         |          |           |                |

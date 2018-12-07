@@ -1,14 +1,15 @@
 //! **************************************************************************
-// Written by: Map P.68d on Thu Oct 25 15:21:55 2018
+// Written by: Map P.68d on Tue Oct 30 14:38:54 2018
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "EN" LOCATE = SITE "P11" LEVEL 1;
-COMP "anO<0>" LOCATE = SITE "K14" LEVEL 1;
-COMP "anO<1>" LOCATE = SITE "M13" LEVEL 1;
-COMP "anO<2>" LOCATE = SITE "J12" LEVEL 1;
+COMP "TC" LOCATE = SITE "M5" LEVEL 1;
+COMP "anO<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "anO<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "anO<2>" LOCATE = SITE "M13" LEVEL 1;
 COMP "sseg<0>" LOCATE = SITE "M12" LEVEL 1;
-COMP "anO<3>" LOCATE = SITE "F12" LEVEL 1;
+COMP "anO<3>" LOCATE = SITE "K14" LEVEL 1;
 COMP "sseg<1>" LOCATE = SITE "L13" LEVEL 1;
 COMP "sseg<2>" LOCATE = SITE "P12" LEVEL 1;
 COMP "sseg<3>" LOCATE = SITE "N11" LEVEL 1;

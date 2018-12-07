@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym muxA /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/muxA.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/muxA.sym 
+sch2sym -intstyle ise -family spartan3e -refsym muxA /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/muxA.sch /home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/muxA.sym 

@@ -1,0 +1,2 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/muxA.vhf,-w,/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp5/muxA.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/Exp7.vhf,-w,/home/nick/git-repos/Physics301-Fall2018-NL-RC/Lab9/Lab9/Exp7/Exp7.sch

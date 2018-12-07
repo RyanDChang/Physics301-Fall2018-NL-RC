@@ -9,7 +9,7 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Nov 13 15:31:29 2018
+Mapped Date    : Thu Nov 15 13:44:56 2018
 
 Mapping design into LUTs...
 Running directed packing...
@@ -27,15 +27,15 @@ Design Summary:
 Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
-  Number of Slice Flip Flops:            98 out of   1,920    5%
-  Number of 4 input LUTs:               122 out of   1,920    6%
+  Number of Slice Flip Flops:            99 out of   1,920    5%
+  Number of 4 input LUTs:                99 out of   1,920    5%
 Logic Distribution:
-  Number of occupied Slices:            140 out of     960   14%
-    Number of Slices containing only related logic:     140 out of     140 100%
-    Number of Slices containing unrelated logic:          0 out of     140   0%
+  Number of occupied Slices:            129 out of     960   13%
+    Number of Slices containing only related logic:     129 out of     129 100%
+    Number of Slices containing unrelated logic:          0 out of     129   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         250 out of   1,920   13%
-    Number used as logic:               122
+  Total Number of 4 input LUTs:         227 out of   1,920   11%
+    Number used as logic:                99
     Number used as a route-thru:        128
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -44,10 +44,10 @@ Logic Distribution:
   Number of bonded IOBs:                 15 out of      83   18%
   Number of BUFGMUXs:                     4 out of      24   16%
 
-  Number of RPM macros:            6
-Average Fanout of Non-Clock Nets:                2.25
+  Number of RPM macros:            5
+Average Fanout of Non-Clock Nets:                2.18
 
-Peak Memory Usage:  578 MB
+Peak Memory Usage:  577 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 

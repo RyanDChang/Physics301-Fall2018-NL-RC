@@ -1,7 +1,7 @@
 Release 14.6 par P.68d (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Nick::  Thu Oct 25 15:21:57 2018
+Nick::  Tue Oct 30 14:38:57 2018
 
 par -w -intstyle ise -ol high -t 1 Exp_map.ncd Exp.ncd Exp.pcf 
 
@@ -24,7 +24,7 @@ Device speed data version:  "PRODUCTION 1.27 2013-06-08".
 
 Design Summary Report:
 
- Number of External IOBs                          14 out of 83     16%
+ Number of External IOBs                          15 out of 83     18%
 
    Number of External Input IOBs                  3
 
@@ -32,10 +32,10 @@ Design Summary Report:
         Number of LOCed External Input IBUFs      3 out of 3     100%
 
 
-   Number of External Output IOBs                11
+   Number of External Output IOBs                12
 
-      Number of External Output IOBs             11
-        Number of LOCed External Output IOBs     11 out of 11    100%
+      Number of External Output IOBs             12
+        Number of LOCed External Output IOBs     12 out of 12    100%
 
 
    Number of External Bidir IOBs                  0
@@ -52,8 +52,8 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 0 secs 
+Finished initial Timing Analysis.  REAL time: 0 secs 
 
 
 Starting Placer
@@ -61,40 +61,40 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:9bc357ad) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:b1e54cb8) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:9bc357ad) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:b1e54cb8) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:9bc357ad) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:b1e54cb8) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:a56194a5) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:bc952030) REAL time: 1 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:a56194a5) REAL time: 1 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:bc952030) REAL time: 1 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:a56194a5) REAL time: 1 secs 
+Phase 6.36  Local Placement Optimization (Checksum:bc952030) REAL time: 1 secs 
 
 Phase 7.8  Global Placement
-.........
+............................
 ..
-......................................
+........................
 ..
 ..
-Phase 7.8  Global Placement (Checksum:3db32bb2) REAL time: 2 secs 
+Phase 7.8  Global Placement (Checksum:5f231bd6) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:3db32bb2) REAL time: 2 secs 
+Phase 8.5  Local Placement Optimization (Checksum:5f231bd6) REAL time: 2 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:a45d3d7c) REAL time: 2 secs 
+Phase 9.18  Placement Optimization (Checksum:5eed4406) REAL time: 2 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:a45d3d7c) REAL time: 2 secs 
+Phase 10.5  Local Placement Optimization (Checksum:5eed4406) REAL time: 2 secs 
 
 Total REAL time to Placer completion: 2 secs 
 Total CPU  time to Placer completion: 2 secs 
@@ -105,13 +105,13 @@ Writing design to file Exp.ncd
 Starting Router
 
 
-Phase  1  : 516 unrouted;      REAL time: 3 secs 
+Phase  1  : 527 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 458 unrouted;      REAL time: 3 secs 
+Phase  2  : 469 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 23 unrouted;      REAL time: 3 secs 
+Phase  3  : 38 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 35 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 49 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
@@ -152,15 +152,15 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|      SysClock_BUFGP | BUFGMUX_X2Y11| No   |   17 |  0.034     |  0.071      |
+|      SysClock_BUFGP | BUFGMUX_X2Y11| No   |   17 |  0.031     |  0.071      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_10/clk_1 |              |      |      |            |             |
-|                   m | BUFGMUX_X1Y10| No   |   17 |  0.004     |  0.044      |
+|                   m | BUFGMUX_X1Y10| No   |   17 |  0.006     |  0.062      |
 +---------------------+--------------+------+------+------------+-------------+
-|           CLK_BUFGP | BUFGMUX_X2Y10| No   |    8 |  0.001     |  0.054      |
+|           CLK_BUFGP | BUFGMUX_X2Y10| No   |    8 |  0.004     |  0.057      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_10/clk_1 |              |      |      |            |             |
-|                   k |         Local|      |    9 |  0.039     |  1.545      |
+|                   k |         Local|      |    9 |  0.015     |  1.517      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -180,17 +180,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Sys | SETUP       |         N/A|     9.409ns|     N/A|           0
-  Clock_BUFGP                               | HOLD        |     1.104ns|            |       0|           0
+  Autotimespec constraint for clock net Sys | SETUP       |         N/A|     8.888ns|     N/A|           0
+  Clock_BUFGP                               | HOLD        |     1.035ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     8.877ns|     N/A|           0
-  I_7/XLXI_10/clk_1m                        | HOLD        |     1.035ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     8.891ns|     N/A|           0
+  I_7/XLXI_10/clk_1m                        | HOLD        |     1.025ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     4.327ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     1.380ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     4.161ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     1.338ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.180ns|     N/A|           0
-  I_7/XLXI_10/clk_1k                        | HOLD        |     0.986ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.254ns|     N/A|           0
+  I_7/XLXI_10/clk_1k                        | HOLD        |     0.910ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
