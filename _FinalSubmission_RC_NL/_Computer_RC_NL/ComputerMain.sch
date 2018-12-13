@@ -25,8 +25,8 @@
         <signal name="XLXN_44(7:0)" />
         <signal name="anO(7:0)" />
         <signal name="sseg(7:0)" />
-        <signal name="XLXN_49" />
-        <signal name="XLXN_50" />
+        <signal name="Sel0" />
+        <signal name="Sel1" />
         <signal name="ALUout(7:0)" />
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Input" name="Address(7:0)" />
@@ -38,6 +38,8 @@
         <port polarity="Input" name="AorD" />
         <port polarity="Output" name="Update(3:0)" />
         <port polarity="BiDirectional" name="col(3:0)" />
+        <port polarity="Input" name="Sel0" />
+        <port polarity="Input" name="Sel1" />
         <blockdef name="MainMem">
             <timestamp>2018-12-13T2:7:21</timestamp>
             <rect width="288" x="64" y="-384" height="384" />
@@ -107,10 +109,8 @@
             <rect width="256" x="64" y="-256" height="320" />
         </blockdef>
         <blockdef name="DisplayModule">
-            <timestamp>2018-12-13T2:18:5</timestamp>
+            <timestamp>2018-12-13T2:25:48</timestamp>
             <line x2="0" y1="32" y2="32" x1="64" />
-            <rect width="64" x="0" y="84" height="24" />
-            <line x2="0" y1="96" y2="96" x1="64" />
             <rect width="64" x="0" y="-684" height="24" />
             <line x2="0" y1="-672" y2="-672" x1="64" />
             <rect width="64" x="0" y="-620" height="24" />
@@ -128,6 +128,21 @@
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
             <rect width="256" x="64" y="-704" height="832" />
+            <rect width="64" x="0" y="-236" height="24" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+        </blockdef>
+        <blockdef name="ControlUnit">
+            <timestamp>2018-12-12T18:1:42</timestamp>
+            <rect width="64" x="320" y="20" height="24" />
+            <line x2="384" y1="32" y2="32" x1="320" />
+            <rect width="64" x="0" y="-300" height="24" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <rect width="64" x="0" y="-236" height="24" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="256" x="64" y="-320" height="384" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="32" y2="32" x1="64" />
         </blockdef>
         <block symbolname="MainMem" name="XLXI_1">
             <blockpin signalname="ShowMM" name="nCS" />
@@ -176,12 +191,20 @@
             <blockpin signalname="XLXN_44(7:0)" name="View3(7:0)" />
             <blockpin signalname="TempData(7:0)" name="TempData(7:0)" />
             <blockpin signalname="Data(7:0)" name="MemData(7:0)" />
-            <blockpin signalname="XLXN_49" name="S0" />
-            <blockpin signalname="XLXN_50" name="S1" />
+            <blockpin signalname="Sel0" name="S0" />
+            <blockpin signalname="Sel1" name="S1" />
             <blockpin signalname="anO(7:0)" name="anO(3:0)" />
             <blockpin signalname="sseg(7:0)" name="sseg(7:0)" />
             <blockpin signalname="Clk1k" name="Clk1k" />
             <blockpin signalname="ALUout(7:0)" name="ALUout(7:0)" />
+        </block>
+        <block symbolname="ControlUnit" name="XLXI_21">
+            <blockpin name="Inst(7:0)" />
+            <blockpin name="En_IR" />
+            <blockpin name="En_Save" />
+            <blockpin name="Data(7:0)" />
+            <blockpin name="CLK" />
+            <blockpin name="Inst_out(255:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -295,21 +318,27 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3184" y="2496" type="branch" />
             <wire x2="3184" y1="2496" y2="2496" x1="3088" />
         </branch>
-        <branch name="XLXN_49">
+        <branch name="Sel0">
+            <wire x2="2656" y1="2432" y2="2432" x1="2576" />
             <wire x2="2704" y1="2432" y2="2432" x1="2656" />
         </branch>
-        <branch name="XLXN_50">
+        <branch name="Sel1">
+            <wire x2="2656" y1="2496" y2="2496" x1="2576" />
             <wire x2="2704" y1="2496" y2="2496" x1="2656" />
         </branch>
         <branch name="Clk1k">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2656" y="2560" type="branch" />
             <wire x2="2704" y1="2560" y2="2560" x1="2656" />
         </branch>
-        <branch name="ALUout(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2656" y="2624" type="branch" />
-            <wire x2="2704" y1="2624" y2="2624" x1="2656" />
-        </branch>
         <instance x="2704" y="2528" name="XLXI_20" orien="R0">
         </instance>
+        <branch name="ALUout(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2656" y="2304" type="branch" />
+            <wire x2="2704" y1="2304" y2="2304" x1="2656" />
+        </branch>
+        <instance x="2720" y="1360" name="XLXI_21" orien="R0">
+        </instance>
+        <iomarker fontsize="28" x="2576" y="2432" name="Sel0" orien="R180" />
+        <iomarker fontsize="28" x="2576" y="2496" name="Sel1" orien="R180" />
     </sheet>
 </drawing>

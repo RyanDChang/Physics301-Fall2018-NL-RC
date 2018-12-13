@@ -1,7 +1,0 @@
-select figure at 2935 2289 8 -branches -sn=1
-update symbols DisplayModule
-select figure at 2712 2682 8 -branches -sn=1
-select all in 2437 2566 2712 2682 -branches -enclosed -sn=1
-move selection by -32 -336 -keepConn -sn=1
-move selection by 32 16 -keepConn -sn=1
-select figure at 2343 2244 8 -branches -sn=1
