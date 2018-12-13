@@ -27,7 +27,7 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
     </file>
-    <file xil_pn:name="../../goodies/col_strobe.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="../Parts/col_strobe.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
     </file>
@@ -54,11 +54,11 @@
     <file xil_pn:name="ComputerMain.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="../../goodies/sseg_mux4D.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="../Parts/sseg_mux4D.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
     </file>
-    <file xil_pn:name="../../goodies/sel_strobeB.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="../Parts/sel_strobeB.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
     </file>
@@ -74,11 +74,11 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="85"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
     </file>
-    <file xil_pn:name="../../../../Desktop/Goodies/goodies-20181206/DCM_50M.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="../Parts/DCM_50M.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="98"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
     </file>
-    <file xil_pn:name="../../../../Desktop/Goodies/goodies-20181206/shiftreg_hex2D.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="../Parts/shiftreg_hex2D.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="99"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
     </file>
