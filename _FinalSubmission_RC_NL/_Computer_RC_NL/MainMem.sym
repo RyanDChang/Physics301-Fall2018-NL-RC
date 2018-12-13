@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="MainMem">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2018-12-6T21:58:20</timestamp>
+    <timestamp>2018-12-13T2:7:21</timestamp>
     <pin polarity="Input" x="0" y="-352" name="nCS" />
     <pin polarity="Input" x="0" y="-288" name="nWE" />
     <pin polarity="Input" x="0" y="-224" name="WCLK" />
